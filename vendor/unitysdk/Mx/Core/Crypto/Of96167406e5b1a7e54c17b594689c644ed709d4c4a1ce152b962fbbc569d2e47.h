@@ -1,0 +1,36 @@
+#pragma once
+#include "../../../unitysdk.h"
+
+#define MX_CORE_CRYPTO_OF96167406E5B1A7E54C17B594689C644ED709D4C4A1CE152B962FBBC569D2E47_.CTOR_OFFSET UNITYSDK_OFFSET(0x107CDB0)
+#define MX_CORE_CRYPTO_OF96167406E5B1A7E54C17B594689C644ED709D4C4A1CE152B962FBBC569D2E47_GET_KEY_OFFSET UNITYSDK_OFFSET(0x107CDC0)
+#define MX_CORE_CRYPTO_OF96167406E5B1A7E54C17B594689C644ED709D4C4A1CE152B962FBBC569D2E47_SET_KEY_OFFSET UNITYSDK_OFFSET(0x107CE70)
+
+namespace MX::Core::Crypto
+{
+	inline static constexpr unsigned int Of96167406e5b1a7e54c17b594689c644ed709d4c4a1ce152b962fbbc569d2e47_TypeDefinitionIndex = 12903;
+
+	class Of96167406e5b1a7e54c17b594689c644ed709d4c4a1ce152b962fbbc569d2e47 : public Il2CppObject
+	{
+	public:
+		::Il2CppArray<::System::Object*>* part1; // 0x10
+		::Il2CppArray<::System::Object*>* part2; // 0x18
+		::Il2CppArray<::System::Object*>* part3; // 0x20
+
+		::System::Void .ctor()
+		{
+			((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_CORE_CRYPTO_OF96167406E5B1A7E54C17B594689C644ED709D4C4A1CE152B962FBBC569D2E47_.CTOR_OFFSET))(nullptr);
+		}
+
+		::Il2CppArray<::System::Object*>* get_Key()
+		{
+			return ((::Il2CppArray<::System::Object*>*(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_CORE_CRYPTO_OF96167406E5B1A7E54C17B594689C644ED709D4C4A1CE152B962FBBC569D2E47_GET_KEY_OFFSET))(nullptr);
+		}
+
+		::System::Void set_Key(::Il2CppArray<::System::Object*>* arg)
+		{
+			((::System::Void(*)(::Il2CppArray<::System::Object*>*, ::PVOID))((::PBYTE)hIl2Cpp + MX_CORE_CRYPTO_OF96167406E5B1A7E54C17B594689C644ED709D4C4A1CE152B962FBBC569D2E47_SET_KEY_OFFSET))(arg, nullptr);
+		}
+
+	};
+}
+

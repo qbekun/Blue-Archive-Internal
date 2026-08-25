@@ -1,0 +1,160 @@
+#pragma once
+#include "../../../../../../../../unitysdk.h"
+
+namespace BestHTTP::SecureProtocol::Org::BouncyCastle::Math { class BigInteger; }
+namespace BestHTTP::SecureProtocol::Org::BouncyCastle::Math::EC { class ECFieldElement; }
+namespace BestHTTP::SecureProtocol::Org::BouncyCastle::Math::EC::Custom::Djb { class Curve25519FieldElement; }
+
+#define BESTHTTP_SECUREPROTOCOL_ORG_BOUNCYCASTLE_MATH_EC_CUSTOM_DJB_CURVE25519FIELDELEMENT_.CTOR_OFFSET UNITYSDK_OFFSET(0x5DE2F0)
+#define BESTHTTP_SECUREPROTOCOL_ORG_BOUNCYCASTLE_MATH_EC_CUSTOM_DJB_CURVE25519FIELDELEMENT_.CTOR_OFFSET UNITYSDK_OFFSET(0x5E03D0)
+#define BESTHTTP_SECUREPROTOCOL_ORG_BOUNCYCASTLE_MATH_EC_CUSTOM_DJB_CURVE25519FIELDELEMENT_.CTOR_OFFSET UNITYSDK_OFFSET(0x5DF010)
+#define BESTHTTP_SECUREPROTOCOL_ORG_BOUNCYCASTLE_MATH_EC_CUSTOM_DJB_CURVE25519FIELDELEMENT_GET_ISZERO_OFFSET UNITYSDK_OFFSET(0x5E0400)
+#define BESTHTTP_SECUREPROTOCOL_ORG_BOUNCYCASTLE_MATH_EC_CUSTOM_DJB_CURVE25519FIELDELEMENT_GET_ISONE_OFFSET UNITYSDK_OFFSET(0x5E0410)
+#define BESTHTTP_SECUREPROTOCOL_ORG_BOUNCYCASTLE_MATH_EC_CUSTOM_DJB_CURVE25519FIELDELEMENT_TESTBITZERO_OFFSET UNITYSDK_OFFSET(0x5E0420)
+#define BESTHTTP_SECUREPROTOCOL_ORG_BOUNCYCASTLE_MATH_EC_CUSTOM_DJB_CURVE25519FIELDELEMENT_TOBIGINTEGER_OFFSET UNITYSDK_OFFSET(0x5E0440)
+#define BESTHTTP_SECUREPROTOCOL_ORG_BOUNCYCASTLE_MATH_EC_CUSTOM_DJB_CURVE25519FIELDELEMENT_GET_FIELDNAME_OFFSET UNITYSDK_OFFSET(0x5E0450)
+#define BESTHTTP_SECUREPROTOCOL_ORG_BOUNCYCASTLE_MATH_EC_CUSTOM_DJB_CURVE25519FIELDELEMENT_GET_FIELDSIZE_OFFSET UNITYSDK_OFFSET(0x5E0480)
+#define BESTHTTP_SECUREPROTOCOL_ORG_BOUNCYCASTLE_MATH_EC_CUSTOM_DJB_CURVE25519FIELDELEMENT_ADD_OFFSET UNITYSDK_OFFSET(0x5E0500)
+#define BESTHTTP_SECUREPROTOCOL_ORG_BOUNCYCASTLE_MATH_EC_CUSTOM_DJB_CURVE25519FIELDELEMENT_ADDONE_OFFSET UNITYSDK_OFFSET(0x5E0600)
+#define BESTHTTP_SECUREPROTOCOL_ORG_BOUNCYCASTLE_MATH_EC_CUSTOM_DJB_CURVE25519FIELDELEMENT_SUBTRACT_OFFSET UNITYSDK_OFFSET(0x5E06A0)
+#define BESTHTTP_SECUREPROTOCOL_ORG_BOUNCYCASTLE_MATH_EC_CUSTOM_DJB_CURVE25519FIELDELEMENT_MULTIPLY_OFFSET UNITYSDK_OFFSET(0x5E07A0)
+#define BESTHTTP_SECUREPROTOCOL_ORG_BOUNCYCASTLE_MATH_EC_CUSTOM_DJB_CURVE25519FIELDELEMENT_DIVIDE_OFFSET UNITYSDK_OFFSET(0x5E0900)
+#define BESTHTTP_SECUREPROTOCOL_ORG_BOUNCYCASTLE_MATH_EC_CUSTOM_DJB_CURVE25519FIELDELEMENT_NEGATE_OFFSET UNITYSDK_OFFSET(0x5E0A90)
+#define BESTHTTP_SECUREPROTOCOL_ORG_BOUNCYCASTLE_MATH_EC_CUSTOM_DJB_CURVE25519FIELDELEMENT_SQUARE_OFFSET UNITYSDK_OFFSET(0x5E0BB0)
+#define BESTHTTP_SECUREPROTOCOL_ORG_BOUNCYCASTLE_MATH_EC_CUSTOM_DJB_CURVE25519FIELDELEMENT_INVERT_OFFSET UNITYSDK_OFFSET(0x5E0CC0)
+#define BESTHTTP_SECUREPROTOCOL_ORG_BOUNCYCASTLE_MATH_EC_CUSTOM_DJB_CURVE25519FIELDELEMENT_SQRT_OFFSET UNITYSDK_OFFSET(0x5E0DA0)
+#define BESTHTTP_SECUREPROTOCOL_ORG_BOUNCYCASTLE_MATH_EC_CUSTOM_DJB_CURVE25519FIELDELEMENT_EQUALS_OFFSET UNITYSDK_OFFSET(0x5E1570)
+#define BESTHTTP_SECUREPROTOCOL_ORG_BOUNCYCASTLE_MATH_EC_CUSTOM_DJB_CURVE25519FIELDELEMENT_EQUALS_OFFSET UNITYSDK_OFFSET(0x5E1600)
+#define BESTHTTP_SECUREPROTOCOL_ORG_BOUNCYCASTLE_MATH_EC_CUSTOM_DJB_CURVE25519FIELDELEMENT_EQUALS_OFFSET UNITYSDK_OFFSET(0x5E1690)
+#define BESTHTTP_SECUREPROTOCOL_ORG_BOUNCYCASTLE_MATH_EC_CUSTOM_DJB_CURVE25519FIELDELEMENT_GETHASHCODE_OFFSET UNITYSDK_OFFSET(0x5E16B0)
+#define BESTHTTP_SECUREPROTOCOL_ORG_BOUNCYCASTLE_MATH_EC_CUSTOM_DJB_CURVE25519FIELDELEMENT_.CCTOR_OFFSET UNITYSDK_OFFSET(0x5E1790)
+
+namespace BestHTTP::SecureProtocol::Org::BouncyCastle::Math::EC::Custom::Djb
+{
+	inline static constexpr unsigned int Curve25519FieldElement_TypeDefinitionIndex = 21997;
+
+	class Curve25519FieldElement : public ::Mono::Security::Cryptography::MD4Managed
+	{
+	public:
+		::BestHTTP::SecureProtocol::Org::BouncyCastle::Math::BigInteger* Q; // 0x0
+		::Il2CppArray<::System::Object*>* PRECOMP_POW2; // 0x8
+		::Il2CppArray<::System::Object*>* x; // 0x10
+
+		::System::Void .ctor(::BestHTTP::SecureProtocol::Org::BouncyCastle::Math::BigInteger* arg)
+		{
+			((::System::Void(*)(::BestHTTP::SecureProtocol::Org::BouncyCastle::Math::BigInteger*, ::PVOID))((::PBYTE)hIl2Cpp + BESTHTTP_SECUREPROTOCOL_ORG_BOUNCYCASTLE_MATH_EC_CUSTOM_DJB_CURVE25519FIELDELEMENT_.CTOR_OFFSET))(arg, nullptr);
+		}
+
+		::System::Void .ctor()
+		{
+			((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + BESTHTTP_SECUREPROTOCOL_ORG_BOUNCYCASTLE_MATH_EC_CUSTOM_DJB_CURVE25519FIELDELEMENT_.CTOR_OFFSET))(nullptr);
+		}
+
+		::System::Void .ctor(::Il2CppArray<::System::Object*>* arg)
+		{
+			((::System::Void(*)(::Il2CppArray<::System::Object*>*, ::PVOID))((::PBYTE)hIl2Cpp + BESTHTTP_SECUREPROTOCOL_ORG_BOUNCYCASTLE_MATH_EC_CUSTOM_DJB_CURVE25519FIELDELEMENT_.CTOR_OFFSET))(arg, nullptr);
+		}
+
+		::System::Boolean get_IsZero()
+		{
+			return (return (::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + BESTHTTP_SECUREPROTOCOL_ORG_BOUNCYCASTLE_MATH_EC_CUSTOM_DJB_CURVE25519FIELDELEMENT_GET_ISZERO_OFFSET))(nullptr);
+		}
+
+		::System::Boolean get_IsOne()
+		{
+			return (return (::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + BESTHTTP_SECUREPROTOCOL_ORG_BOUNCYCASTLE_MATH_EC_CUSTOM_DJB_CURVE25519FIELDELEMENT_GET_ISONE_OFFSET))(nullptr);
+		}
+
+		::System::Boolean TestBitZero()
+		{
+			return (return (::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + BESTHTTP_SECUREPROTOCOL_ORG_BOUNCYCASTLE_MATH_EC_CUSTOM_DJB_CURVE25519FIELDELEMENT_TESTBITZERO_OFFSET))(nullptr);
+		}
+
+		::BestHTTP::SecureProtocol::Org::BouncyCastle::Math::BigInteger* ToBigInteger()
+		{
+			return (return (::BestHTTP::SecureProtocol::Org::BouncyCastle::Math::BigInteger*(*)(::PVOID))((::PBYTE)hIl2Cpp + BESTHTTP_SECUREPROTOCOL_ORG_BOUNCYCASTLE_MATH_EC_CUSTOM_DJB_CURVE25519FIELDELEMENT_TOBIGINTEGER_OFFSET))(nullptr);
+		}
+
+		::System::String* get_FieldName()
+		{
+			return (return (::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + BESTHTTP_SECUREPROTOCOL_ORG_BOUNCYCASTLE_MATH_EC_CUSTOM_DJB_CURVE25519FIELDELEMENT_GET_FIELDNAME_OFFSET))(nullptr);
+		}
+
+		::System::Int32 get_FieldSize()
+		{
+			return (return (::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + BESTHTTP_SECUREPROTOCOL_ORG_BOUNCYCASTLE_MATH_EC_CUSTOM_DJB_CURVE25519FIELDELEMENT_GET_FIELDSIZE_OFFSET))(nullptr);
+		}
+
+		::BestHTTP::SecureProtocol::Org::BouncyCastle::Math::EC::ECFieldElement* Add(::BestHTTP::SecureProtocol::Org::BouncyCastle::Math::EC::ECFieldElement* arg)
+		{
+			return (return (::BestHTTP::SecureProtocol::Org::BouncyCastle::Math::EC::ECFieldElement*(*)(::BestHTTP::SecureProtocol::Org::BouncyCastle::Math::EC::ECFieldElement*, ::PVOID))((::PBYTE)hIl2Cpp + BESTHTTP_SECUREPROTOCOL_ORG_BOUNCYCASTLE_MATH_EC_CUSTOM_DJB_CURVE25519FIELDELEMENT_ADD_OFFSET))(arg, nullptr);
+		}
+
+		::BestHTTP::SecureProtocol::Org::BouncyCastle::Math::EC::ECFieldElement* AddOne()
+		{
+			return (return (::BestHTTP::SecureProtocol::Org::BouncyCastle::Math::EC::ECFieldElement*(*)(::PVOID))((::PBYTE)hIl2Cpp + BESTHTTP_SECUREPROTOCOL_ORG_BOUNCYCASTLE_MATH_EC_CUSTOM_DJB_CURVE25519FIELDELEMENT_ADDONE_OFFSET))(nullptr);
+		}
+
+		::BestHTTP::SecureProtocol::Org::BouncyCastle::Math::EC::ECFieldElement* Subtract(::BestHTTP::SecureProtocol::Org::BouncyCastle::Math::EC::ECFieldElement* arg)
+		{
+			return (return (::BestHTTP::SecureProtocol::Org::BouncyCastle::Math::EC::ECFieldElement*(*)(::BestHTTP::SecureProtocol::Org::BouncyCastle::Math::EC::ECFieldElement*, ::PVOID))((::PBYTE)hIl2Cpp + BESTHTTP_SECUREPROTOCOL_ORG_BOUNCYCASTLE_MATH_EC_CUSTOM_DJB_CURVE25519FIELDELEMENT_SUBTRACT_OFFSET))(arg, nullptr);
+		}
+
+		::BestHTTP::SecureProtocol::Org::BouncyCastle::Math::EC::ECFieldElement* Multiply(::BestHTTP::SecureProtocol::Org::BouncyCastle::Math::EC::ECFieldElement* arg)
+		{
+			return (return (::BestHTTP::SecureProtocol::Org::BouncyCastle::Math::EC::ECFieldElement*(*)(::BestHTTP::SecureProtocol::Org::BouncyCastle::Math::EC::ECFieldElement*, ::PVOID))((::PBYTE)hIl2Cpp + BESTHTTP_SECUREPROTOCOL_ORG_BOUNCYCASTLE_MATH_EC_CUSTOM_DJB_CURVE25519FIELDELEMENT_MULTIPLY_OFFSET))(arg, nullptr);
+		}
+
+		::BestHTTP::SecureProtocol::Org::BouncyCastle::Math::EC::ECFieldElement* Divide(::BestHTTP::SecureProtocol::Org::BouncyCastle::Math::EC::ECFieldElement* arg)
+		{
+			return (return (::BestHTTP::SecureProtocol::Org::BouncyCastle::Math::EC::ECFieldElement*(*)(::BestHTTP::SecureProtocol::Org::BouncyCastle::Math::EC::ECFieldElement*, ::PVOID))((::PBYTE)hIl2Cpp + BESTHTTP_SECUREPROTOCOL_ORG_BOUNCYCASTLE_MATH_EC_CUSTOM_DJB_CURVE25519FIELDELEMENT_DIVIDE_OFFSET))(arg, nullptr);
+		}
+
+		::BestHTTP::SecureProtocol::Org::BouncyCastle::Math::EC::ECFieldElement* Negate()
+		{
+			return (return (::BestHTTP::SecureProtocol::Org::BouncyCastle::Math::EC::ECFieldElement*(*)(::PVOID))((::PBYTE)hIl2Cpp + BESTHTTP_SECUREPROTOCOL_ORG_BOUNCYCASTLE_MATH_EC_CUSTOM_DJB_CURVE25519FIELDELEMENT_NEGATE_OFFSET))(nullptr);
+		}
+
+		::BestHTTP::SecureProtocol::Org::BouncyCastle::Math::EC::ECFieldElement* Square()
+		{
+			return (return (::BestHTTP::SecureProtocol::Org::BouncyCastle::Math::EC::ECFieldElement*(*)(::PVOID))((::PBYTE)hIl2Cpp + BESTHTTP_SECUREPROTOCOL_ORG_BOUNCYCASTLE_MATH_EC_CUSTOM_DJB_CURVE25519FIELDELEMENT_SQUARE_OFFSET))(nullptr);
+		}
+
+		::BestHTTP::SecureProtocol::Org::BouncyCastle::Math::EC::ECFieldElement* Invert()
+		{
+			return (return (::BestHTTP::SecureProtocol::Org::BouncyCastle::Math::EC::ECFieldElement*(*)(::PVOID))((::PBYTE)hIl2Cpp + BESTHTTP_SECUREPROTOCOL_ORG_BOUNCYCASTLE_MATH_EC_CUSTOM_DJB_CURVE25519FIELDELEMENT_INVERT_OFFSET))(nullptr);
+		}
+
+		::BestHTTP::SecureProtocol::Org::BouncyCastle::Math::EC::ECFieldElement* Sqrt()
+		{
+			return (return (::BestHTTP::SecureProtocol::Org::BouncyCastle::Math::EC::ECFieldElement*(*)(::PVOID))((::PBYTE)hIl2Cpp + BESTHTTP_SECUREPROTOCOL_ORG_BOUNCYCASTLE_MATH_EC_CUSTOM_DJB_CURVE25519FIELDELEMENT_SQRT_OFFSET))(nullptr);
+		}
+
+		::System::Boolean Equals(::System::Object* arg)
+		{
+			return (return (::System::Boolean(*)(::System::Object*, ::PVOID))((::PBYTE)hIl2Cpp + BESTHTTP_SECUREPROTOCOL_ORG_BOUNCYCASTLE_MATH_EC_CUSTOM_DJB_CURVE25519FIELDELEMENT_EQUALS_OFFSET))(arg, nullptr);
+		}
+
+		::System::Boolean Equals(::BestHTTP::SecureProtocol::Org::BouncyCastle::Math::EC::ECFieldElement* arg)
+		{
+			return (return (::System::Boolean(*)(::BestHTTP::SecureProtocol::Org::BouncyCastle::Math::EC::ECFieldElement*, ::PVOID))((::PBYTE)hIl2Cpp + BESTHTTP_SECUREPROTOCOL_ORG_BOUNCYCASTLE_MATH_EC_CUSTOM_DJB_CURVE25519FIELDELEMENT_EQUALS_OFFSET))(arg, nullptr);
+		}
+
+		::System::Boolean Equals(::BestHTTP::SecureProtocol::Org::BouncyCastle::Math::EC::Custom::Djb::Curve25519FieldElement* arg)
+		{
+			return (return (::System::Boolean(*)(::BestHTTP::SecureProtocol::Org::BouncyCastle::Math::EC::Custom::Djb::Curve25519FieldElement*, ::PVOID))((::PBYTE)hIl2Cpp + BESTHTTP_SECUREPROTOCOL_ORG_BOUNCYCASTLE_MATH_EC_CUSTOM_DJB_CURVE25519FIELDELEMENT_EQUALS_OFFSET))(arg, nullptr);
+		}
+
+		::System::Int32 GetHashCode()
+		{
+			return (return (::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + BESTHTTP_SECUREPROTOCOL_ORG_BOUNCYCASTLE_MATH_EC_CUSTOM_DJB_CURVE25519FIELDELEMENT_GETHASHCODE_OFFSET))(nullptr);
+		}
+
+		::System::Void .cctor()
+		{
+			((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + BESTHTTP_SECUREPROTOCOL_ORG_BOUNCYCASTLE_MATH_EC_CUSTOM_DJB_CURVE25519FIELDELEMENT_.CCTOR_OFFSET))(nullptr);
+		}
+
+	};
+}
+

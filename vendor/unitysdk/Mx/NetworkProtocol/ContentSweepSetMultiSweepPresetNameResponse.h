@@ -1,0 +1,42 @@
+#pragma once
+#include "../../unitysdk.h"
+
+namespace MX::NetworkProtocol { class Protocol; }
+
+#define MX_NETWORKPROTOCOL_CONTENTSWEEPSETMULTISWEEPPRESETNAMERESPONSE_SET_MULTISWEEPPRESETDBS_OFFSET UNITYSDK_OFFSET(0xF419C0)
+#define MX_NETWORKPROTOCOL_CONTENTSWEEPSETMULTISWEEPPRESETNAMERESPONSE_.CTOR_OFFSET UNITYSDK_OFFSET(0xF419D0)
+#define MX_NETWORKPROTOCOL_CONTENTSWEEPSETMULTISWEEPPRESETNAMERESPONSE_GET_PROTOCOL_OFFSET UNITYSDK_OFFSET(0xF419E0)
+#define MX_NETWORKPROTOCOL_CONTENTSWEEPSETMULTISWEEPPRESETNAMERESPONSE_GET_MULTISWEEPPRESETDBS_OFFSET UNITYSDK_OFFSET(0xF419F0)
+
+namespace MX::NetworkProtocol
+{
+	inline static constexpr unsigned int ContentSweepSetMultiSweepPresetNameResponse_TypeDefinitionIndex = 11594;
+
+	class ContentSweepSetMultiSweepPresetNameResponse : public Il2CppObject
+	{
+	public:
+		Il2CppObject* _MultiSweepPresetDBs_k__BackingField; // 0x50
+
+		::System::Void set_MultiSweepPresetDBs(Il2CppObject* arg)
+		{
+			((::System::Void(*)(Il2CppObject*, ::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_CONTENTSWEEPSETMULTISWEEPPRESETNAMERESPONSE_SET_MULTISWEEPPRESETDBS_OFFSET))(arg, nullptr);
+		}
+
+		::System::Void .ctor()
+		{
+			((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_CONTENTSWEEPSETMULTISWEEPPRESETNAMERESPONSE_.CTOR_OFFSET))(nullptr);
+		}
+
+		::MX::NetworkProtocol::Protocol* get_Protocol()
+		{
+			return ((::MX::NetworkProtocol::Protocol*(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_CONTENTSWEEPSETMULTISWEEPPRESETNAMERESPONSE_GET_PROTOCOL_OFFSET))(nullptr);
+		}
+
+		Il2CppObject* get_MultiSweepPresetDBs()
+		{
+			return ((Il2CppObject*(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_CONTENTSWEEPSETMULTISWEEPPRESETNAMERESPONSE_GET_MULTISWEEPPRESETDBS_OFFSET))(nullptr);
+		}
+
+	};
+}
+

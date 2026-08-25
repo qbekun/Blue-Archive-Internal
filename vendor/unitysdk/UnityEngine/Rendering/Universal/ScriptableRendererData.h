@@ -1,0 +1,94 @@
+#pragma once
+#include "../../../unitysdk.h"
+
+namespace UnityEngine::Rendering::Universal { class ScriptableRenderer; }
+
+#define UNITYENGINE_RENDERING_UNIVERSAL_SCRIPTABLERENDERERDATA_.CTOR_OFFSET UNITYSDK_OFFSET(0xA072010)
+#define UNITYENGINE_RENDERING_UNIVERSAL_SCRIPTABLERENDERERDATA_TRYGETRENDERERFEATURE_OFFSET UNITYSDK_OFFSET(0x000000)
+#define UNITYENGINE_RENDERING_UNIVERSAL_SCRIPTABLERENDERERDATA_SET_USENATIVERENDERPASS_OFFSET UNITYSDK_OFFSET(0xA0720E0)
+#define UNITYENGINE_RENDERING_UNIVERSAL_SCRIPTABLERENDERERDATA_SETDIRTY_OFFSET UNITYSDK_OFFSET(0xA0720F0)
+#define UNITYENGINE_RENDERING_UNIVERSAL_SCRIPTABLERENDERERDATA_INTERNALCREATERENDERER_OFFSET UNITYSDK_OFFSET(0xA072100)
+#define UNITYENGINE_RENDERING_UNIVERSAL_SCRIPTABLERENDERERDATA_GET_USENATIVERENDERPASS_OFFSET UNITYSDK_OFFSET(0xA072120)
+#define UNITYENGINE_RENDERING_UNIVERSAL_SCRIPTABLERENDERERDATA_CREATE_OFFSET UNITYSDK_OFFSET(0x000000)
+#define UNITYENGINE_RENDERING_UNIVERSAL_SCRIPTABLERENDERERDATA_ONENABLE_OFFSET UNITYSDK_OFFSET(0xA072130)
+#define UNITYENGINE_RENDERING_UNIVERSAL_SCRIPTABLERENDERERDATA_ONVALIDATE_OFFSET UNITYSDK_OFFSET(0xA072140)
+#define UNITYENGINE_RENDERING_UNIVERSAL_SCRIPTABLERENDERERDATA_SET_ISINVALIDATED_OFFSET UNITYSDK_OFFSET(0xA072150)
+#define UNITYENGINE_RENDERING_UNIVERSAL_SCRIPTABLERENDERERDATA_GET_RENDERERFEATURES_OFFSET UNITYSDK_OFFSET(0xA072160)
+#define UNITYENGINE_RENDERING_UNIVERSAL_SCRIPTABLERENDERERDATA_GET_ISINVALIDATED_OFFSET UNITYSDK_OFFSET(0xA072170)
+
+namespace UnityEngine::Rendering::Universal
+{
+	inline static constexpr unsigned int ScriptableRendererData_TypeDefinitionIndex = 32746;
+
+	class ScriptableRendererData : public Il2CppObject
+	{
+	public:
+		::System::Boolean _isInvalidated_k__BackingField; // 0x18
+		DebugShaderResources* debugShaders; // 0x20
+		Il2CppObject* m_RendererFeatures; // 0x28
+		Il2CppObject* m_RendererFeatureMap; // 0x30
+		::System::Boolean m_UseNativeRenderPass; // 0x38
+
+		::System::Void .ctor()
+		{
+			((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_RENDERING_UNIVERSAL_SCRIPTABLERENDERERDATA_.CTOR_OFFSET))(nullptr);
+		}
+
+		::System::Boolean TryGetRendererFeature(Il2CppObject&* arg)
+		{
+			return (return (::System::Boolean(*)(Il2CppObject&*, ::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_RENDERING_UNIVERSAL_SCRIPTABLERENDERERDATA_TRYGETRENDERERFEATURE_OFFSET))(arg, nullptr);
+		}
+
+		::System::Void set_useNativeRenderPass(::System::Boolean arg)
+		{
+			((::System::Void(*)(::System::Boolean, ::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_RENDERING_UNIVERSAL_SCRIPTABLERENDERERDATA_SET_USENATIVERENDERPASS_OFFSET))(arg, nullptr);
+		}
+
+		::System::Void SetDirty()
+		{
+			((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_RENDERING_UNIVERSAL_SCRIPTABLERENDERERDATA_SETDIRTY_OFFSET))(nullptr);
+		}
+
+		::UnityEngine::Rendering::Universal::ScriptableRenderer* InternalCreateRenderer()
+		{
+			return (return (::UnityEngine::Rendering::Universal::ScriptableRenderer*(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_RENDERING_UNIVERSAL_SCRIPTABLERENDERERDATA_INTERNALCREATERENDERER_OFFSET))(nullptr);
+		}
+
+		::System::Boolean get_useNativeRenderPass()
+		{
+			return (return (::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_RENDERING_UNIVERSAL_SCRIPTABLERENDERERDATA_GET_USENATIVERENDERPASS_OFFSET))(nullptr);
+		}
+
+		::UnityEngine::Rendering::Universal::ScriptableRenderer* Create()
+		{
+			return (return (::UnityEngine::Rendering::Universal::ScriptableRenderer*(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_RENDERING_UNIVERSAL_SCRIPTABLERENDERERDATA_CREATE_OFFSET))(nullptr);
+		}
+
+		::System::Void OnEnable()
+		{
+			((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_RENDERING_UNIVERSAL_SCRIPTABLERENDERERDATA_ONENABLE_OFFSET))(nullptr);
+		}
+
+		::System::Void OnValidate()
+		{
+			((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_RENDERING_UNIVERSAL_SCRIPTABLERENDERERDATA_ONVALIDATE_OFFSET))(nullptr);
+		}
+
+		::System::Void set_isInvalidated(::System::Boolean arg)
+		{
+			((::System::Void(*)(::System::Boolean, ::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_RENDERING_UNIVERSAL_SCRIPTABLERENDERERDATA_SET_ISINVALIDATED_OFFSET))(arg, nullptr);
+		}
+
+		Il2CppObject* get_rendererFeatures()
+		{
+			return (return (Il2CppObject*(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_RENDERING_UNIVERSAL_SCRIPTABLERENDERERDATA_GET_RENDERERFEATURES_OFFSET))(nullptr);
+		}
+
+		::System::Boolean get_isInvalidated()
+		{
+			return (return (::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_RENDERING_UNIVERSAL_SCRIPTABLERENDERERDATA_GET_ISINVALIDATED_OFFSET))(nullptr);
+		}
+
+	};
+}
+

@@ -1,0 +1,68 @@
+#pragma once
+#include "../../unitysdk.h"
+
+namespace MX::NetworkProtocol { class Protocol; }
+
+#define MX_NETWORKPROTOCOL_CRAFTNODESIMULATECHEATRESPONSE_GET_PROTOCOL_OFFSET UNITYSDK_OFFSET(0xF3FCA0)
+#define MX_NETWORKPROTOCOL_CRAFTNODESIMULATECHEATRESPONSE_SET_SIMULATIONCOUNT_OFFSET UNITYSDK_OFFSET(0xF3FCB0)
+#define MX_NETWORKPROTOCOL_CRAFTNODESIMULATECHEATRESPONSE_GET_SIMULATIONCOUNT_OFFSET UNITYSDK_OFFSET(0xF3FCC0)
+#define MX_NETWORKPROTOCOL_CRAFTNODESIMULATECHEATRESPONSE_SET_TIER_OFFSET UNITYSDK_OFFSET(0xF3FCD0)
+#define MX_NETWORKPROTOCOL_CRAFTNODESIMULATECHEATRESPONSE_GET_TIER_OFFSET UNITYSDK_OFFSET(0xF3FCE0)
+#define MX_NETWORKPROTOCOL_CRAFTNODESIMULATECHEATRESPONSE_SET_NODEIDANDCOUNT_OFFSET UNITYSDK_OFFSET(0xF3FCF0)
+#define MX_NETWORKPROTOCOL_CRAFTNODESIMULATECHEATRESPONSE_GET_NODEIDANDCOUNT_OFFSET UNITYSDK_OFFSET(0xF3FD00)
+#define MX_NETWORKPROTOCOL_CRAFTNODESIMULATECHEATRESPONSE_.CTOR_OFFSET UNITYSDK_OFFSET(0xF3FD10)
+
+namespace MX::NetworkProtocol
+{
+	inline static constexpr unsigned int CraftNodeSimulateCheatResponse_TypeDefinitionIndex = 11538;
+
+	class CraftNodeSimulateCheatResponse : public Il2CppObject
+	{
+	public:
+		Il2CppObject* _NodeIdAndCount_k__BackingField; // 0x50
+		::System::Int64 _SimulationCount_k__BackingField; // 0x58
+		::System::Int64 _Tier_k__BackingField; // 0x60
+
+		::MX::NetworkProtocol::Protocol* get_Protocol()
+		{
+			return ((::MX::NetworkProtocol::Protocol*(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_CRAFTNODESIMULATECHEATRESPONSE_GET_PROTOCOL_OFFSET))(nullptr);
+		}
+
+		::System::Void set_SimulationCount(::System::Int64 arg)
+		{
+			((::System::Void(*)(::System::Int64, ::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_CRAFTNODESIMULATECHEATRESPONSE_SET_SIMULATIONCOUNT_OFFSET))(arg, nullptr);
+		}
+
+		::System::Int64 get_SimulationCount()
+		{
+			return ((::System::Int64(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_CRAFTNODESIMULATECHEATRESPONSE_GET_SIMULATIONCOUNT_OFFSET))(nullptr);
+		}
+
+		::System::Void set_Tier(::System::Int64 arg)
+		{
+			((::System::Void(*)(::System::Int64, ::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_CRAFTNODESIMULATECHEATRESPONSE_SET_TIER_OFFSET))(arg, nullptr);
+		}
+
+		::System::Int64 get_Tier()
+		{
+			return ((::System::Int64(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_CRAFTNODESIMULATECHEATRESPONSE_GET_TIER_OFFSET))(nullptr);
+		}
+
+		::System::Void set_NodeIdAndCount(Il2CppObject* arg)
+		{
+			((::System::Void(*)(Il2CppObject*, ::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_CRAFTNODESIMULATECHEATRESPONSE_SET_NODEIDANDCOUNT_OFFSET))(arg, nullptr);
+		}
+
+		Il2CppObject* get_NodeIdAndCount()
+		{
+			return ((Il2CppObject*(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_CRAFTNODESIMULATECHEATRESPONSE_GET_NODEIDANDCOUNT_OFFSET))(nullptr);
+		}
+
+		::System::Void .ctor()
+		{
+			((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_CRAFTNODESIMULATECHEATRESPONSE_.CTOR_OFFSET))(nullptr);
+		}
+
+	};
+}
+

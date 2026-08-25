@@ -1,0 +1,95 @@
+#pragma once
+#include "../../unitysdk.h"
+
+namespace UnityEngine::AddressableAssets { class AddressablesImpl; }
+
+#define UNITYENGINE_ADDRESSABLEASSETS_CLEANBUNDLECACHEOPERATION_.CTOR_OFFSET UNITYSDK_OFFSET(0x9E095B0)
+#define UNITYENGINE_ADDRESSABLEASSETS_CLEANBUNDLECACHEOPERATION_START_OFFSET UNITYSDK_OFFSET(0x9E09640)
+#define UNITYENGINE_ADDRESSABLEASSETS_CLEANBUNDLECACHEOPERATION_COMPLETEINTERNAL_OFFSET UNITYSDK_OFFSET(0x9E0C180)
+#define UNITYENGINE_ADDRESSABLEASSETS_CLEANBUNDLECACHEOPERATION_INVOKEWAITFORCOMPLETION_OFFSET UNITYSDK_OFFSET(0x9E0C200)
+#define UNITYENGINE_ADDRESSABLEASSETS_CLEANBUNDLECACHEOPERATION_DESTROY_OFFSET UNITYSDK_OFFSET(0x9E0C4E0)
+#define UNITYENGINE_ADDRESSABLEASSETS_CLEANBUNDLECACHEOPERATION_GETDEPENDENCIES_OFFSET UNITYSDK_OFFSET(0x9E0C550)
+#define UNITYENGINE_ADDRESSABLEASSETS_CLEANBUNDLECACHEOPERATION_EXECUTE_OFFSET UNITYSDK_OFFSET(0x9E0C650)
+#define UNITYENGINE_ADDRESSABLEASSETS_CLEANBUNDLECACHEOPERATION_UNITYENGINE.RESOURCEMANAGEMENT.IUPDATERECEIVER.UPDATE_OFFSET UNITYSDK_OFFSET(0x9E0D710)
+#define UNITYENGINE_ADDRESSABLEASSETS_CLEANBUNDLECACHEOPERATION_REMOVECACHEENTRIES_OFFSET UNITYSDK_OFFSET(0x9E0C2D0)
+#define UNITYENGINE_ADDRESSABLEASSETS_CLEANBUNDLECACHEOPERATION_DETERMINECACHEDIRSNOTINUSE_OFFSET UNITYSDK_OFFSET(0x9E0D770)
+#define UNITYENGINE_ADDRESSABLEASSETS_CLEANBUNDLECACHEOPERATION_DETERMINECACHEDIRSNOTINUSE_OFFSET UNITYSDK_OFFSET(0x9E0D300)
+#define UNITYENGINE_ADDRESSABLEASSETS_CLEANBUNDLECACHEOPERATION_GETCACHEDIRSINUSE_OFFSET UNITYSDK_OFFSET(0x9E0C8A0)
+
+namespace UnityEngine::AddressableAssets
+{
+	inline static constexpr unsigned int CleanBundleCacheOperation_TypeDefinitionIndex = 36204;
+
+	class CleanBundleCacheOperation : public ::FlatData::LimitedStageExcelTable
+	{
+	public:
+		::UnityEngine::AddressableAssets::AddressablesImpl* m_Addressables; // 0x88
+		Il2CppObject* m_DepOp; // 0x90
+		Il2CppObject* m_CacheDirsForRemoval; // 0xB0
+		::System::Threading::Thread* m_EnumerationThread; // 0xB8
+		::System::String* m_BaseCachePath; // 0xC0
+		::System::Boolean m_UseMultiThreading; // 0xC8
+
+		::System::Void .ctor(::UnityEngine::AddressableAssets::AddressablesImpl* arg, ::System::Boolean arg)
+		{
+			((::System::Void(*)(::UnityEngine::AddressableAssets::AddressablesImpl*, ::System::Boolean, ::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_ADDRESSABLEASSETS_CLEANBUNDLECACHEOPERATION_.CTOR_OFFSET))(arg, arg, nullptr);
+		}
+
+		Il2CppObject* Start(Il2CppObject* arg)
+		{
+			return (return (Il2CppObject*(*)(Il2CppObject*, ::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_ADDRESSABLEASSETS_CLEANBUNDLECACHEOPERATION_START_OFFSET))(arg, nullptr);
+		}
+
+		::System::Void CompleteInternal(::System::Boolean arg, ::System::Boolean arg, ::System::String* str)
+		{
+			((::System::Void(*)(::System::Boolean, ::System::Boolean, ::System::String*, ::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_ADDRESSABLEASSETS_CLEANBUNDLECACHEOPERATION_COMPLETEINTERNAL_OFFSET))(arg, arg, str, nullptr);
+		}
+
+		::System::Boolean InvokeWaitForCompletion()
+		{
+			return (return (::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_ADDRESSABLEASSETS_CLEANBUNDLECACHEOPERATION_INVOKEWAITFORCOMPLETION_OFFSET))(nullptr);
+		}
+
+		::System::Void Destroy()
+		{
+			((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_ADDRESSABLEASSETS_CLEANBUNDLECACHEOPERATION_DESTROY_OFFSET))(nullptr);
+		}
+
+		::System::Void GetDependencies(Il2CppObject* arg)
+		{
+			((::System::Void(*)(Il2CppObject*, ::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_ADDRESSABLEASSETS_CLEANBUNDLECACHEOPERATION_GETDEPENDENCIES_OFFSET))(arg, nullptr);
+		}
+
+		::System::Void Execute()
+		{
+			((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_ADDRESSABLEASSETS_CLEANBUNDLECACHEOPERATION_EXECUTE_OFFSET))(nullptr);
+		}
+
+		::System::Void UnityEngine.ResourceManagement.IUpdateReceiver.Update(::System::Single arg)
+		{
+			((::System::Void(*)(::System::Single, ::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_ADDRESSABLEASSETS_CLEANBUNDLECACHEOPERATION_UNITYENGINE.RESOURCEMANAGEMENT.IUPDATERECEIVER.UPDATE_OFFSET))(arg, nullptr);
+		}
+
+		::System::Void RemoveCacheEntries()
+		{
+			((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_ADDRESSABLEASSETS_CLEANBUNDLECACHEOPERATION_REMOVECACHEENTRIES_OFFSET))(nullptr);
+		}
+
+		::System::Void DetermineCacheDirsNotInUse(::System::Object* arg)
+		{
+			((::System::Void(*)(::System::Object*, ::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_ADDRESSABLEASSETS_CLEANBUNDLECACHEOPERATION_DETERMINECACHEDIRSNOTINUSE_OFFSET))(arg, nullptr);
+		}
+
+		::System::Void DetermineCacheDirsNotInUse(Il2CppObject* arg)
+		{
+			((::System::Void(*)(Il2CppObject*, ::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_ADDRESSABLEASSETS_CLEANBUNDLECACHEOPERATION_DETERMINECACHEDIRSNOTINUSE_OFFSET))(arg, nullptr);
+		}
+
+		Il2CppObject* GetCacheDirsInUse(Il2CppObject* arg)
+		{
+			return (return (Il2CppObject*(*)(Il2CppObject*, ::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_ADDRESSABLEASSETS_CLEANBUNDLECACHEOPERATION_GETCACHEDIRSINUSE_OFFSET))(arg, nullptr);
+		}
+
+	};
+}
+

@@ -1,0 +1,69 @@
+#pragma once
+#include "../../unitysdk.h"
+
+namespace MX::GameLogic::DBModel { class MiniGameCCGCampOption; }
+namespace MX::NetworkProtocol { class Protocol; }
+
+#define MX_NETWORKPROTOCOL_MINIGAMECCGSELECTCAMPACTIONREQUEST_GET_SELECTEDOPTION_OFFSET UNITYSDK_OFFSET(0xF4A100)
+#define MX_NETWORKPROTOCOL_MINIGAMECCGSELECTCAMPACTIONREQUEST_GET_EVENTCONTENTID_OFFSET UNITYSDK_OFFSET(0xF4A110)
+#define MX_NETWORKPROTOCOL_MINIGAMECCGSELECTCAMPACTIONREQUEST_SET_SELECTEDOPTION_OFFSET UNITYSDK_OFFSET(0xF4A120)
+#define MX_NETWORKPROTOCOL_MINIGAMECCGSELECTCAMPACTIONREQUEST_.CTOR_OFFSET UNITYSDK_OFFSET(0xF4A130)
+#define MX_NETWORKPROTOCOL_MINIGAMECCGSELECTCAMPACTIONREQUEST_SET_EVENTCONTENTID_OFFSET UNITYSDK_OFFSET(0xF4A140)
+#define MX_NETWORKPROTOCOL_MINIGAMECCGSELECTCAMPACTIONREQUEST_GET_PROTOCOL_OFFSET UNITYSDK_OFFSET(0xF4A150)
+#define MX_NETWORKPROTOCOL_MINIGAMECCGSELECTCAMPACTIONREQUEST_GET_REMOVECARDDBIDS_OFFSET UNITYSDK_OFFSET(0xF4A160)
+#define MX_NETWORKPROTOCOL_MINIGAMECCGSELECTCAMPACTIONREQUEST_SET_REMOVECARDDBIDS_OFFSET UNITYSDK_OFFSET(0xF4A170)
+
+namespace MX::NetworkProtocol
+{
+	inline static constexpr unsigned int MiniGameCCGSelectCampActionRequest_TypeDefinitionIndex = 11937;
+
+	class MiniGameCCGSelectCampActionRequest : public Il2CppObject
+	{
+	public:
+		::System::Int64 _EventContentId_k__BackingField; // 0x40
+		::MX::GameLogic::DBModel::MiniGameCCGCampOption* _SelectedOption_k__BackingField; // 0x48
+		Il2CppObject* _RemoveCardDBIds_k__BackingField; // 0x50
+
+		::MX::GameLogic::DBModel::MiniGameCCGCampOption* get_SelectedOption()
+		{
+			return ((::MX::GameLogic::DBModel::MiniGameCCGCampOption*(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_MINIGAMECCGSELECTCAMPACTIONREQUEST_GET_SELECTEDOPTION_OFFSET))(nullptr);
+		}
+
+		::System::Int64 get_EventContentId()
+		{
+			return ((::System::Int64(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_MINIGAMECCGSELECTCAMPACTIONREQUEST_GET_EVENTCONTENTID_OFFSET))(nullptr);
+		}
+
+		::System::Void set_SelectedOption(::MX::GameLogic::DBModel::MiniGameCCGCampOption* arg)
+		{
+			((::System::Void(*)(::MX::GameLogic::DBModel::MiniGameCCGCampOption*, ::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_MINIGAMECCGSELECTCAMPACTIONREQUEST_SET_SELECTEDOPTION_OFFSET))(arg, nullptr);
+		}
+
+		::System::Void .ctor()
+		{
+			((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_MINIGAMECCGSELECTCAMPACTIONREQUEST_.CTOR_OFFSET))(nullptr);
+		}
+
+		::System::Void set_EventContentId(::System::Int64 arg)
+		{
+			((::System::Void(*)(::System::Int64, ::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_MINIGAMECCGSELECTCAMPACTIONREQUEST_SET_EVENTCONTENTID_OFFSET))(arg, nullptr);
+		}
+
+		::MX::NetworkProtocol::Protocol* get_Protocol()
+		{
+			return ((::MX::NetworkProtocol::Protocol*(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_MINIGAMECCGSELECTCAMPACTIONREQUEST_GET_PROTOCOL_OFFSET))(nullptr);
+		}
+
+		Il2CppObject* get_RemoveCardDBIds()
+		{
+			return ((Il2CppObject*(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_MINIGAMECCGSELECTCAMPACTIONREQUEST_GET_REMOVECARDDBIDS_OFFSET))(nullptr);
+		}
+
+		::System::Void set_RemoveCardDBIds(Il2CppObject* arg)
+		{
+			((::System::Void(*)(Il2CppObject*, ::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_MINIGAMECCGSELECTCAMPACTIONREQUEST_SET_REMOVECARDDBIDS_OFFSET))(arg, nullptr);
+		}
+
+	};
+}
+

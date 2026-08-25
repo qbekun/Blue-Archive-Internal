@@ -1,0 +1,55 @@
+#pragma once
+#include "../../unitysdk.h"
+
+namespace MX::NetworkProtocol { class Protocol; }
+
+#define MX_NETWORKPROTOCOL_SCENARIOACCOUNTSTUDENTCHANGEREQUEST_SET_ACCOUNTSTUDENTBEFORE_OFFSET UNITYSDK_OFFSET(0xF4DAE0)
+#define MX_NETWORKPROTOCOL_SCENARIOACCOUNTSTUDENTCHANGEREQUEST_.CTOR_OFFSET UNITYSDK_OFFSET(0xF4DAF0)
+#define MX_NETWORKPROTOCOL_SCENARIOACCOUNTSTUDENTCHANGEREQUEST_GET_ACCOUNTSTUDENTBEFORE_OFFSET UNITYSDK_OFFSET(0xF4DB00)
+#define MX_NETWORKPROTOCOL_SCENARIOACCOUNTSTUDENTCHANGEREQUEST_GET_ACCOUNTSTUDENT_OFFSET UNITYSDK_OFFSET(0xF4DB10)
+#define MX_NETWORKPROTOCOL_SCENARIOACCOUNTSTUDENTCHANGEREQUEST_GET_PROTOCOL_OFFSET UNITYSDK_OFFSET(0xF4DB20)
+#define MX_NETWORKPROTOCOL_SCENARIOACCOUNTSTUDENTCHANGEREQUEST_SET_ACCOUNTSTUDENT_OFFSET UNITYSDK_OFFSET(0xF4DB30)
+
+namespace MX::NetworkProtocol
+{
+	inline static constexpr unsigned int ScenarioAccountStudentChangeRequest_TypeDefinitionIndex = 12069;
+
+	class ScenarioAccountStudentChangeRequest : public Il2CppObject
+	{
+	public:
+		::System::Int64 _AccountStudent_k__BackingField; // 0x40
+		::System::Int64 _AccountStudentBefore_k__BackingField; // 0x48
+
+		::System::Void set_AccountStudentBefore(::System::Int64 arg)
+		{
+			((::System::Void(*)(::System::Int64, ::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_SCENARIOACCOUNTSTUDENTCHANGEREQUEST_SET_ACCOUNTSTUDENTBEFORE_OFFSET))(arg, nullptr);
+		}
+
+		::System::Void .ctor()
+		{
+			((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_SCENARIOACCOUNTSTUDENTCHANGEREQUEST_.CTOR_OFFSET))(nullptr);
+		}
+
+		::System::Int64 get_AccountStudentBefore()
+		{
+			return ((::System::Int64(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_SCENARIOACCOUNTSTUDENTCHANGEREQUEST_GET_ACCOUNTSTUDENTBEFORE_OFFSET))(nullptr);
+		}
+
+		::System::Int64 get_AccountStudent()
+		{
+			return ((::System::Int64(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_SCENARIOACCOUNTSTUDENTCHANGEREQUEST_GET_ACCOUNTSTUDENT_OFFSET))(nullptr);
+		}
+
+		::MX::NetworkProtocol::Protocol* get_Protocol()
+		{
+			return ((::MX::NetworkProtocol::Protocol*(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_SCENARIOACCOUNTSTUDENTCHANGEREQUEST_GET_PROTOCOL_OFFSET))(nullptr);
+		}
+
+		::System::Void set_AccountStudent(::System::Int64 arg)
+		{
+			((::System::Void(*)(::System::Int64, ::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_SCENARIOACCOUNTSTUDENTCHANGEREQUEST_SET_ACCOUNTSTUDENT_OFFSET))(arg, nullptr);
+		}
+
+	};
+}
+

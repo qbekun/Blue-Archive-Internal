@@ -1,0 +1,388 @@
+#pragma once
+#include "../../../../unitysdk.h"
+
+namespace MX::Logic::Data { class DamageByHitEffectValue; }
+namespace MX::Core::Math { class BasisPoint; }
+namespace MX::Logic::Battles { class Battle; }
+namespace MX::Logic::Battles { class O1054ef03f4eac11d4d980230b18b9ac5604ed06a81b68c87276faa849ac55e5a; }
+namespace MX::Logic::Data { class ExtraStatDamageEffectValue; }
+namespace FlatData { class StatType; }
+namespace MX::Logic::Data { class DamageByHitTriggerType; }
+namespace MX::Logic::Skills { class ExtraStatType; }
+namespace MX::Logic::Skills { class SkillSpecification; }
+namespace MX::Logic::Skills::LogicEffects { class LogicEffectHitSpecification; }
+namespace MX::Logic::Skills { class SkillType; }
+namespace MX::Logic::Battles { class DamageResultEventArgs; }
+namespace MX::Logic::Data { class DamageModifier; }
+namespace MX::Logic::Data { class DamageByHitRemoveCondition; }
+namespace MX::Logic::Skills { class DamageRatioApplyType; }
+namespace FlatData { class BulletType; }
+namespace MX::Logic::Battles { class LifeGainEventArgs; }
+namespace MX::Logic::Data { class BlackboardKeyType; }
+
+#define MX_LOGIC_SKILLS_LOGICEFFECTS_DAMAGEBYHITEFFECT_GET_DEFENSEPENETRATIONRATE_OFFSET UNITYSDK_OFFSET(0x1410A10)
+#define MX_LOGIC_SKILLS_LOGICEFFECTS_DAMAGEBYHITEFFECT_GET_BONUSSOURCEFIRST_OFFSET UNITYSDK_OFFSET(0x1410A40)
+#define MX_LOGIC_SKILLS_LOGICEFFECTS_DAMAGEBYHITEFFECT_GET_DISPELLABLE_OFFSET UNITYSDK_OFFSET(0x1410A60)
+#define MX_LOGIC_SKILLS_LOGICEFFECTS_DAMAGEBYHITEFFECT_GET_IGNOREMAXDAMAGEFORBLACKBOARDBONUS_OFFSET UNITYSDK_OFFSET(0x1410A80)
+#define MX_LOGIC_SKILLS_LOGICEFFECTS_DAMAGEBYHITEFFECT_GET_APPLYBULLETTYPE_OFFSET UNITYSDK_OFFSET(0x1410AB0)
+#define MX_LOGIC_SKILLS_LOGICEFFECTS_DAMAGEBYHITEFFECT_GET_APPLYEXDAMAGEDRATIO_OFFSET UNITYSDK_OFFSET(0x1410AD0)
+#define MX_LOGIC_SKILLS_LOGICEFFECTS_DAMAGEBYHITEFFECT_GET_TRIGGERTYPE_OFFSET UNITYSDK_OFFSET(0x1410B00)
+#define MX_LOGIC_SKILLS_LOGICEFFECTS_DAMAGEBYHITEFFECT_GET_APPLYWEAKDAMAGEDRATIO_OFFSET UNITYSDK_OFFSET(0x1410B20)
+#define MX_LOGIC_SKILLS_LOGICEFFECTS_DAMAGEBYHITEFFECT_GET_AMOUNT_OFFSET UNITYSDK_OFFSET(0x1410B30)
+#define MX_LOGIC_SKILLS_LOGICEFFECTS_DAMAGEBYHITEFFECT_GET_ADDSOURCE_OFFSET UNITYSDK_OFFSET(0x1410B50)
+#define MX_LOGIC_SKILLS_LOGICEFFECTS_DAMAGEBYHITEFFECT_.CTOR_OFFSET UNITYSDK_OFFSET(0x1410B70)
+#define MX_LOGIC_SKILLS_LOGICEFFECTS_DAMAGEBYHITEFFECT_GET_BONUSRATEFIRST_OFFSET UNITYSDK_OFFSET(0x1411190)
+#define MX_LOGIC_SKILLS_LOGICEFFECTS_DAMAGEBYHITEFFECT_SET_APPLYEFFECTIVEDAMAGEDRATIO_OFFSET UNITYSDK_OFFSET(0x14111B0)
+#define MX_LOGIC_SKILLS_LOGICEFFECTS_DAMAGEBYHITEFFECT_GET_OVERRIDESKILLTYPE_OFFSET UNITYSDK_OFFSET(0x1411130)
+#define MX_LOGIC_SKILLS_LOGICEFFECTS_DAMAGEBYHITEFFECT_LOGICEFFECTPROCESSOR_DAMAGEPROCESSED_OFFSET UNITYSDK_OFFSET(0x14111C0)
+#define MX_LOGIC_SKILLS_LOGICEFFECTS_DAMAGEBYHITEFFECT_GET_APPLYSTABILITY_OFFSET UNITYSDK_OFFSET(0x1411500)
+#define MX_LOGIC_SKILLS_LOGICEFFECTS_DAMAGEBYHITEFFECT_GET_ISDURATIONCHANGEDBYSTAT_OFFSET UNITYSDK_OFFSET(0x1411530)
+#define MX_LOGIC_SKILLS_LOGICEFFECTS_DAMAGEBYHITEFFECT_ADDDAMAGEMODIFIER_OFFSET UNITYSDK_OFFSET(0x1411540)
+#define MX_LOGIC_SKILLS_LOGICEFFECTS_DAMAGEBYHITEFFECT_ISREMOVECONDITIONMET_OFFSET UNITYSDK_OFFSET(0x1411650)
+#define MX_LOGIC_SKILLS_LOGICEFFECTS_DAMAGEBYHITEFFECT_SET_DAMAGEMODIFIERS_OFFSET UNITYSDK_OFFSET(0x14117B0)
+#define MX_LOGIC_SKILLS_LOGICEFFECTS_DAMAGEBYHITEFFECT_GET_ADDRATE_OFFSET UNITYSDK_OFFSET(0x14117D0)
+#define MX_LOGIC_SKILLS_LOGICEFFECTS_DAMAGEBYHITEFFECT_GET_APPLYENHANCEEXDAMAGERATE_OFFSET UNITYSDK_OFFSET(0x1411800)
+#define MX_LOGIC_SKILLS_LOGICEFFECTS_DAMAGEBYHITEFFECT_GET_DAMAGEMODIFIERS_OFFSET UNITYSDK_OFFSET(0x1411830)
+#define MX_LOGIC_SKILLS_LOGICEFFECTS_DAMAGEBYHITEFFECT_GET_APPLYRESISTDAMAGEDRATIO_OFFSET UNITYSDK_OFFSET(0x1411840)
+#define MX_LOGIC_SKILLS_LOGICEFFECTS_DAMAGEBYHITEFFECT_GET_REMOVECONDITION_OFFSET UNITYSDK_OFFSET(0x1411790)
+#define MX_LOGIC_SKILLS_LOGICEFFECTS_DAMAGEBYHITEFFECT_GET_APPLYTERRAINADAPTATIONDAMAGE_OFFSET UNITYSDK_OFFSET(0x1411850)
+#define MX_LOGIC_SKILLS_LOGICEFFECTS_DAMAGEBYHITEFFECT_GET_APPLYNORMALDAMAGEDRATIO_OFFSET UNITYSDK_OFFSET(0x1411880)
+#define MX_LOGIC_SKILLS_LOGICEFFECTS_DAMAGEBYHITEFFECT_GET_IGNORESHIELD_OFFSET UNITYSDK_OFFSET(0x1411890)
+#define MX_LOGIC_SKILLS_LOGICEFFECTS_DAMAGEBYHITEFFECT_ACTIVATE_OFFSET UNITYSDK_OFFSET(0x14118C0)
+#define MX_LOGIC_SKILLS_LOGICEFFECTS_DAMAGEBYHITEFFECT_SET_DAMAGEMULTIPLIER_OFFSET UNITYSDK_OFFSET(0x1411BA0)
+#define MX_LOGIC_SKILLS_LOGICEFFECTS_DAMAGEBYHITEFFECT_GET_DURATIONFRAME_OFFSET UNITYSDK_OFFSET(0x1411BB0)
+#define MX_LOGIC_SKILLS_LOGICEFFECTS_DAMAGEBYHITEFFECT_GET_APPLYDAMAGERATIO2_OFFSET UNITYSDK_OFFSET(0x1411BD0)
+#define MX_LOGIC_SKILLS_LOGICEFFECTS_DAMAGEBYHITEFFECT_SET_APPLYWEAKDAMAGEDRATIO_OFFSET UNITYSDK_OFFSET(0x1411BF0)
+#define MX_LOGIC_SKILLS_LOGICEFFECTS_DAMAGEBYHITEFFECT_SET_APPLYRESISTDAMAGEDRATIO_OFFSET UNITYSDK_OFFSET(0x1411C00)
+#define MX_LOGIC_SKILLS_LOGICEFFECTS_DAMAGEBYHITEFFECT_GET_OVERRIDEBULLETTYPE_OFFSET UNITYSDK_OFFSET(0x1411C10)
+#define MX_LOGIC_SKILLS_LOGICEFFECTS_DAMAGEBYHITEFFECT_GET_DAMAGEMULTIPLIER_OFFSET UNITYSDK_OFFSET(0x1411C40)
+#define MX_LOGIC_SKILLS_LOGICEFFECTS_DAMAGEBYHITEFFECT_GET_DONOTKILLTARGET_OFFSET UNITYSDK_OFFSET(0x1411C50)
+#define MX_LOGIC_SKILLS_LOGICEFFECTS_DAMAGEBYHITEFFECT_CHECKEXPIRED_OFFSET UNITYSDK_OFFSET(0x1411B30)
+#define MX_LOGIC_SKILLS_LOGICEFFECTS_DAMAGEBYHITEFFECT_GET_BULLETTYPETOOVERRIDE_OFFSET UNITYSDK_OFFSET(0x1411CA0)
+#define MX_LOGIC_SKILLS_LOGICEFFECTS_DAMAGEBYHITEFFECT_GET_REMOVECONDITIONARGUMENT_OFFSET UNITYSDK_OFFSET(0x1411770)
+#define MX_LOGIC_SKILLS_LOGICEFFECTS_DAMAGEBYHITEFFECT_SETDAMAGEMULTIPLIER_OFFSET UNITYSDK_OFFSET(0x1411CD0)
+#define MX_LOGIC_SKILLS_LOGICEFFECTS_DAMAGEBYHITEFFECT_GET_MAXDAMAGERATE_OFFSET UNITYSDK_OFFSET(0x1411CE0)
+#define MX_LOGIC_SKILLS_LOGICEFFECTS_DAMAGEBYHITEFFECT_GET_APPLYENHANCEWEAKDAMAGERATE_OFFSET UNITYSDK_OFFSET(0x1411D10)
+#define MX_LOGIC_SKILLS_LOGICEFFECTS_DAMAGEBYHITEFFECT_GET_APPLYENHANCEBULLETTYPE_OFFSET UNITYSDK_OFFSET(0x1411D40)
+#define MX_LOGIC_SKILLS_LOGICEFFECTS_DAMAGEBYHITEFFECT_MAKEDAMAGEEFFECTVALUE_OFFSET UNITYSDK_OFFSET(0x1410C90)
+#define MX_LOGIC_SKILLS_LOGICEFFECTS_DAMAGEBYHITEFFECT_GET_BONUSSOURCEBLACKBOARDKEYSTRING_OFFSET UNITYSDK_OFFSET(0x1411DB0)
+#define MX_LOGIC_SKILLS_LOGICEFFECTS_DAMAGEBYHITEFFECT_LOGICEFFECTPROCESSOR_HEALED_OFFSET UNITYSDK_OFFSET(0x1411E40)
+#define MX_LOGIC_SKILLS_LOGICEFFECTS_DAMAGEBYHITEFFECT_GET_APPLYEFFECTIVEDAMAGEDRATIO_OFFSET UNITYSDK_OFFSET(0x1411FA0)
+#define MX_LOGIC_SKILLS_LOGICEFFECTS_DAMAGEBYHITEFFECT_SET_APPLYNORMALDAMAGEDRATIO_OFFSET UNITYSDK_OFFSET(0x1411FB0)
+#define MX_LOGIC_SKILLS_LOGICEFFECTS_DAMAGEBYHITEFFECT_GET_OVERRIDESKILLDAMAGETYPE_OFFSET UNITYSDK_OFFSET(0x1411160)
+#define MX_LOGIC_SKILLS_LOGICEFFECTS_DAMAGEBYHITEFFECT_APPLY_OFFSET UNITYSDK_OFFSET(0x1411320)
+#define MX_LOGIC_SKILLS_LOGICEFFECTS_DAMAGEBYHITEFFECT_GET_APPLYENHANCEBASICSDAMAGERATE_OFFSET UNITYSDK_OFFSET(0x14133D0)
+#define MX_LOGIC_SKILLS_LOGICEFFECTS_DAMAGEBYHITEFFECT_GET_BONUSSOURCEBLACKBOARDKEYTYPE_OFFSET UNITYSDK_OFFSET(0x1411DE0)
+#define MX_LOGIC_SKILLS_LOGICEFFECTS_DAMAGEBYHITEFFECT_GET_APPLYDEFENSE_OFFSET UNITYSDK_OFFSET(0x1411D90)
+#define MX_LOGIC_SKILLS_LOGICEFFECTS_DAMAGEBYHITEFFECT_GET_BONUSRATEBLACKBOARD_OFFSET UNITYSDK_OFFSET(0x1411E10)
+#define MX_LOGIC_SKILLS_LOGICEFFECTS_DAMAGEBYHITEFFECT_GET_VALUE_OFFSET UNITYSDK_OFFSET(0x1413400)
+#define MX_LOGIC_SKILLS_LOGICEFFECTS_DAMAGEBYHITEFFECT_GET_APPLYDAMAGERATIO_OFFSET UNITYSDK_OFFSET(0x1411D70)
+
+namespace MX::Logic::Skills::LogicEffects
+{
+	inline static constexpr unsigned int DamageByHitEffect_TypeDefinitionIndex = 14727;
+
+	class DamageByHitEffect : public Il2CppObject
+	{
+	public:
+		::MX::Logic::Data::DamageByHitEffectValue* _value_k__BackingField; // 0xD0
+		::MX::Core::Math::BasisPoint* _DamageMultiplier_k__BackingField; // 0xD8
+		Il2CppObject* _DamageModifiers_k__BackingField; // 0xE0
+		::MX::Logic::Battles::Battle* battle; // 0xE8
+		::MX::Logic::Battles::O1054ef03f4eac11d4d980230b18b9ac5604ed06a81b68c87276faa849ac55e5a* logicEffectProcessor; // 0xF0
+		Il2CppObject* ability; // 0xF8
+		::MX::Logic::Data::ExtraStatDamageEffectValue* extraStatDamageEffectValue; // 0x100
+		::System::Int32 CurrentCount; // 0x108
+		::System::Boolean _ApplyWeakDamagedRatio_k__BackingField; // 0x10C
+		::System::Boolean _ApplyEffectiveDamagedRatio_k__BackingField; // 0x10D
+		::System::Boolean _ApplyNormalDamagedRatio_k__BackingField; // 0x10E
+		::System::Boolean _ApplyResistDamagedRatio_k__BackingField; // 0x10F
+
+		::System::Int64 get_DefensePenetrationRate()
+		{
+			return ((::System::Int64(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_LOGIC_SKILLS_LOGICEFFECTS_DAMAGEBYHITEFFECT_GET_DEFENSEPENETRATIONRATE_OFFSET))(nullptr);
+		}
+
+		::FlatData::StatType* get_BonusSourceFirst()
+		{
+			return ((::FlatData::StatType*(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_LOGIC_SKILLS_LOGICEFFECTS_DAMAGEBYHITEFFECT_GET_BONUSSOURCEFIRST_OFFSET))(nullptr);
+		}
+
+		::System::Boolean get_Dispellable()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_LOGIC_SKILLS_LOGICEFFECTS_DAMAGEBYHITEFFECT_GET_DISPELLABLE_OFFSET))(nullptr);
+		}
+
+		::System::Boolean get_IgnoreMaxDamageForBlackboardBonus()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_LOGIC_SKILLS_LOGICEFFECTS_DAMAGEBYHITEFFECT_GET_IGNOREMAXDAMAGEFORBLACKBOARDBONUS_OFFSET))(nullptr);
+		}
+
+		::System::Boolean get_ApplyBulletType()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_LOGIC_SKILLS_LOGICEFFECTS_DAMAGEBYHITEFFECT_GET_APPLYBULLETTYPE_OFFSET))(nullptr);
+		}
+
+		::System::Boolean get_ApplyExDamagedRatio()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_LOGIC_SKILLS_LOGICEFFECTS_DAMAGEBYHITEFFECT_GET_APPLYEXDAMAGEDRATIO_OFFSET))(nullptr);
+		}
+
+		::MX::Logic::Data::DamageByHitTriggerType* get_TriggerType()
+		{
+			return ((::MX::Logic::Data::DamageByHitTriggerType*(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_LOGIC_SKILLS_LOGICEFFECTS_DAMAGEBYHITEFFECT_GET_TRIGGERTYPE_OFFSET))(nullptr);
+		}
+
+		::System::Boolean get_ApplyWeakDamagedRatio()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_LOGIC_SKILLS_LOGICEFFECTS_DAMAGEBYHITEFFECT_GET_APPLYWEAKDAMAGEDRATIO_OFFSET))(nullptr);
+		}
+
+		::System::Int64 get_Amount()
+		{
+			return ((::System::Int64(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_LOGIC_SKILLS_LOGICEFFECTS_DAMAGEBYHITEFFECT_GET_AMOUNT_OFFSET))(nullptr);
+		}
+
+		::MX::Logic::Skills::ExtraStatType* get_AddSource()
+		{
+			return ((::MX::Logic::Skills::ExtraStatType*(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_LOGIC_SKILLS_LOGICEFFECTS_DAMAGEBYHITEFFECT_GET_ADDSOURCE_OFFSET))(nullptr);
+		}
+
+		::System::Void .ctor(::MX::Logic::Data::DamageByHitEffectValue* arg, ::MX::Logic::Skills::SkillSpecification* arg2, ::MX::Logic::Skills::LogicEffects::LogicEffectHitSpecification* arg3)
+		{
+			((::System::Void(*)(::MX::Logic::Data::DamageByHitEffectValue*, ::MX::Logic::Skills::SkillSpecification*, ::MX::Logic::Skills::LogicEffects::LogicEffectHitSpecification*, ::PVOID))((::PBYTE)hIl2Cpp + MX_LOGIC_SKILLS_LOGICEFFECTS_DAMAGEBYHITEFFECT_.CTOR_OFFSET))(arg, arg2, arg3, nullptr);
+		}
+
+		::MX::Core::Math::BasisPoint* get_BonusRateFirst()
+		{
+			return ((::MX::Core::Math::BasisPoint*(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_LOGIC_SKILLS_LOGICEFFECTS_DAMAGEBYHITEFFECT_GET_BONUSRATEFIRST_OFFSET))(nullptr);
+		}
+
+		::System::Void set_ApplyEffectiveDamagedRatio(::System::Boolean arg)
+		{
+			((::System::Void(*)(::System::Boolean, ::PVOID))((::PBYTE)hIl2Cpp + MX_LOGIC_SKILLS_LOGICEFFECTS_DAMAGEBYHITEFFECT_SET_APPLYEFFECTIVEDAMAGEDRATIO_OFFSET))(arg, nullptr);
+		}
+
+		::MX::Logic::Skills::SkillType* get_OverrideSkillType()
+		{
+			return ((::MX::Logic::Skills::SkillType*(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_LOGIC_SKILLS_LOGICEFFECTS_DAMAGEBYHITEFFECT_GET_OVERRIDESKILLTYPE_OFFSET))(nullptr);
+		}
+
+		::System::Void LogicEffectProcessor_DamageProcessed(::System::Object* arg, ::MX::Logic::Battles::DamageResultEventArgs* arg2)
+		{
+			((::System::Void(*)(::System::Object*, ::MX::Logic::Battles::DamageResultEventArgs*, ::PVOID))((::PBYTE)hIl2Cpp + MX_LOGIC_SKILLS_LOGICEFFECTS_DAMAGEBYHITEFFECT_LOGICEFFECTPROCESSOR_DAMAGEPROCESSED_OFFSET))(arg, arg2, nullptr);
+		}
+
+		::System::Boolean get_ApplyStability()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_LOGIC_SKILLS_LOGICEFFECTS_DAMAGEBYHITEFFECT_GET_APPLYSTABILITY_OFFSET))(nullptr);
+		}
+
+		::System::Boolean get_IsDurationChangedByStat()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_LOGIC_SKILLS_LOGICEFFECTS_DAMAGEBYHITEFFECT_GET_ISDURATIONCHANGEDBYSTAT_OFFSET))(nullptr);
+		}
+
+		::System::Void AddDamageModifier(::MX::Logic::Data::DamageModifier* arg)
+		{
+			((::System::Void(*)(::MX::Logic::Data::DamageModifier*, ::PVOID))((::PBYTE)hIl2Cpp + MX_LOGIC_SKILLS_LOGICEFFECTS_DAMAGEBYHITEFFECT_ADDDAMAGEMODIFIER_OFFSET))(arg, nullptr);
+		}
+
+		::System::Boolean IsRemoveConditionMet()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_LOGIC_SKILLS_LOGICEFFECTS_DAMAGEBYHITEFFECT_ISREMOVECONDITIONMET_OFFSET))(nullptr);
+		}
+
+		::System::Void set_DamageModifiers(Il2CppObject* arg)
+		{
+			((::System::Void(*)(Il2CppObject*, ::PVOID))((::PBYTE)hIl2Cpp + MX_LOGIC_SKILLS_LOGICEFFECTS_DAMAGEBYHITEFFECT_SET_DAMAGEMODIFIERS_OFFSET))(arg, nullptr);
+		}
+
+		::System::Int64 get_AddRate()
+		{
+			return ((::System::Int64(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_LOGIC_SKILLS_LOGICEFFECTS_DAMAGEBYHITEFFECT_GET_ADDRATE_OFFSET))(nullptr);
+		}
+
+		::System::Boolean get_ApplyEnhanceExDamageRate()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_LOGIC_SKILLS_LOGICEFFECTS_DAMAGEBYHITEFFECT_GET_APPLYENHANCEEXDAMAGERATE_OFFSET))(nullptr);
+		}
+
+		Il2CppObject* get_DamageModifiers()
+		{
+			return ((Il2CppObject*(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_LOGIC_SKILLS_LOGICEFFECTS_DAMAGEBYHITEFFECT_GET_DAMAGEMODIFIERS_OFFSET))(nullptr);
+		}
+
+		::System::Boolean get_ApplyResistDamagedRatio()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_LOGIC_SKILLS_LOGICEFFECTS_DAMAGEBYHITEFFECT_GET_APPLYRESISTDAMAGEDRATIO_OFFSET))(nullptr);
+		}
+
+		::MX::Logic::Data::DamageByHitRemoveCondition* get_RemoveCondition()
+		{
+			return ((::MX::Logic::Data::DamageByHitRemoveCondition*(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_LOGIC_SKILLS_LOGICEFFECTS_DAMAGEBYHITEFFECT_GET_REMOVECONDITION_OFFSET))(nullptr);
+		}
+
+		::System::Boolean get_ApplyTerrainAdaptationDamage()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_LOGIC_SKILLS_LOGICEFFECTS_DAMAGEBYHITEFFECT_GET_APPLYTERRAINADAPTATIONDAMAGE_OFFSET))(nullptr);
+		}
+
+		::System::Boolean get_ApplyNormalDamagedRatio()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_LOGIC_SKILLS_LOGICEFFECTS_DAMAGEBYHITEFFECT_GET_APPLYNORMALDAMAGEDRATIO_OFFSET))(nullptr);
+		}
+
+		::System::Boolean get_IgnoreShield()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_LOGIC_SKILLS_LOGICEFFECTS_DAMAGEBYHITEFFECT_GET_IGNORESHIELD_OFFSET))(nullptr);
+		}
+
+		::System::Void Activate(::MX::Logic::Battles::Battle* arg, Il2CppObject* arg2)
+		{
+			((::System::Void(*)(::MX::Logic::Battles::Battle*, Il2CppObject*, ::PVOID))((::PBYTE)hIl2Cpp + MX_LOGIC_SKILLS_LOGICEFFECTS_DAMAGEBYHITEFFECT_ACTIVATE_OFFSET))(arg, arg2, nullptr);
+		}
+
+		::System::Void set_DamageMultiplier(::MX::Core::Math::BasisPoint* arg)
+		{
+			((::System::Void(*)(::MX::Core::Math::BasisPoint*, ::PVOID))((::PBYTE)hIl2Cpp + MX_LOGIC_SKILLS_LOGICEFFECTS_DAMAGEBYHITEFFECT_SET_DAMAGEMULTIPLIER_OFFSET))(arg, nullptr);
+		}
+
+		::System::Int32 get_DurationFrame()
+		{
+			return ((::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_LOGIC_SKILLS_LOGICEFFECTS_DAMAGEBYHITEFFECT_GET_DURATIONFRAME_OFFSET))(nullptr);
+		}
+
+		::MX::Logic::Skills::DamageRatioApplyType* get_ApplyDamageRatio2()
+		{
+			return ((::MX::Logic::Skills::DamageRatioApplyType*(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_LOGIC_SKILLS_LOGICEFFECTS_DAMAGEBYHITEFFECT_GET_APPLYDAMAGERATIO2_OFFSET))(nullptr);
+		}
+
+		::System::Void set_ApplyWeakDamagedRatio(::System::Boolean arg)
+		{
+			((::System::Void(*)(::System::Boolean, ::PVOID))((::PBYTE)hIl2Cpp + MX_LOGIC_SKILLS_LOGICEFFECTS_DAMAGEBYHITEFFECT_SET_APPLYWEAKDAMAGEDRATIO_OFFSET))(arg, nullptr);
+		}
+
+		::System::Void set_ApplyResistDamagedRatio(::System::Boolean arg)
+		{
+			((::System::Void(*)(::System::Boolean, ::PVOID))((::PBYTE)hIl2Cpp + MX_LOGIC_SKILLS_LOGICEFFECTS_DAMAGEBYHITEFFECT_SET_APPLYRESISTDAMAGEDRATIO_OFFSET))(arg, nullptr);
+		}
+
+		::System::Boolean get_OverrideBulletType()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_LOGIC_SKILLS_LOGICEFFECTS_DAMAGEBYHITEFFECT_GET_OVERRIDEBULLETTYPE_OFFSET))(nullptr);
+		}
+
+		::MX::Core::Math::BasisPoint* get_DamageMultiplier()
+		{
+			return ((::MX::Core::Math::BasisPoint*(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_LOGIC_SKILLS_LOGICEFFECTS_DAMAGEBYHITEFFECT_GET_DAMAGEMULTIPLIER_OFFSET))(nullptr);
+		}
+
+		::System::Boolean get_DoNotKillTarget()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_LOGIC_SKILLS_LOGICEFFECTS_DAMAGEBYHITEFFECT_GET_DONOTKILLTARGET_OFFSET))(nullptr);
+		}
+
+		::System::Collections::IEnumerator* CheckExpired()
+		{
+			return ((::System::Collections::IEnumerator*(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_LOGIC_SKILLS_LOGICEFFECTS_DAMAGEBYHITEFFECT_CHECKEXPIRED_OFFSET))(nullptr);
+		}
+
+		::FlatData::BulletType* get_BulletTypeToOverride()
+		{
+			return ((::FlatData::BulletType*(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_LOGIC_SKILLS_LOGICEFFECTS_DAMAGEBYHITEFFECT_GET_BULLETTYPETOOVERRIDE_OFFSET))(nullptr);
+		}
+
+		::System::Int32 get_RemoveConditionArgument()
+		{
+			return ((::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_LOGIC_SKILLS_LOGICEFFECTS_DAMAGEBYHITEFFECT_GET_REMOVECONDITIONARGUMENT_OFFSET))(nullptr);
+		}
+
+		::System::Void SetDamageMultiplier(::System::Int64 arg)
+		{
+			((::System::Void(*)(::System::Int64, ::PVOID))((::PBYTE)hIl2Cpp + MX_LOGIC_SKILLS_LOGICEFFECTS_DAMAGEBYHITEFFECT_SETDAMAGEMULTIPLIER_OFFSET))(arg, nullptr);
+		}
+
+		::System::Int64 get_MaxDamageRate()
+		{
+			return ((::System::Int64(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_LOGIC_SKILLS_LOGICEFFECTS_DAMAGEBYHITEFFECT_GET_MAXDAMAGERATE_OFFSET))(nullptr);
+		}
+
+		::System::Boolean get_ApplyEnhanceWeakDamageRate()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_LOGIC_SKILLS_LOGICEFFECTS_DAMAGEBYHITEFFECT_GET_APPLYENHANCEWEAKDAMAGERATE_OFFSET))(nullptr);
+		}
+
+		::System::Boolean get_ApplyEnhanceBulletType()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_LOGIC_SKILLS_LOGICEFFECTS_DAMAGEBYHITEFFECT_GET_APPLYENHANCEBULLETTYPE_OFFSET))(nullptr);
+		}
+
+		::MX::Logic::Data::ExtraStatDamageEffectValue* MakeDamageEffectValue()
+		{
+			return ((::MX::Logic::Data::ExtraStatDamageEffectValue*(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_LOGIC_SKILLS_LOGICEFFECTS_DAMAGEBYHITEFFECT_MAKEDAMAGEEFFECTVALUE_OFFSET))(nullptr);
+		}
+
+		::System::String* get_BonusSourceBlackboardKeyString()
+		{
+			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_LOGIC_SKILLS_LOGICEFFECTS_DAMAGEBYHITEFFECT_GET_BONUSSOURCEBLACKBOARDKEYSTRING_OFFSET))(nullptr);
+		}
+
+		::System::Void LogicEffectProcessor_Healed(::System::Object* arg, ::MX::Logic::Battles::LifeGainEventArgs* arg2)
+		{
+			((::System::Void(*)(::System::Object*, ::MX::Logic::Battles::LifeGainEventArgs*, ::PVOID))((::PBYTE)hIl2Cpp + MX_LOGIC_SKILLS_LOGICEFFECTS_DAMAGEBYHITEFFECT_LOGICEFFECTPROCESSOR_HEALED_OFFSET))(arg, arg2, nullptr);
+		}
+
+		::System::Boolean get_ApplyEffectiveDamagedRatio()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_LOGIC_SKILLS_LOGICEFFECTS_DAMAGEBYHITEFFECT_GET_APPLYEFFECTIVEDAMAGEDRATIO_OFFSET))(nullptr);
+		}
+
+		::System::Void set_ApplyNormalDamagedRatio(::System::Boolean arg)
+		{
+			((::System::Void(*)(::System::Boolean, ::PVOID))((::PBYTE)hIl2Cpp + MX_LOGIC_SKILLS_LOGICEFFECTS_DAMAGEBYHITEFFECT_SET_APPLYNORMALDAMAGEDRATIO_OFFSET))(arg, nullptr);
+		}
+
+		::MX::Logic::Skills::SkillType* get_OverrideSkillDamageType()
+		{
+			return ((::MX::Logic::Skills::SkillType*(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_LOGIC_SKILLS_LOGICEFFECTS_DAMAGEBYHITEFFECT_GET_OVERRIDESKILLDAMAGETYPE_OFFSET))(nullptr);
+		}
+
+		::System::Void Apply(::System::Int64 arg)
+		{
+			((::System::Void(*)(::System::Int64, ::PVOID))((::PBYTE)hIl2Cpp + MX_LOGIC_SKILLS_LOGICEFFECTS_DAMAGEBYHITEFFECT_APPLY_OFFSET))(arg, nullptr);
+		}
+
+		::System::Boolean get_ApplyEnhanceBasicsDamageRate()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_LOGIC_SKILLS_LOGICEFFECTS_DAMAGEBYHITEFFECT_GET_APPLYENHANCEBASICSDAMAGERATE_OFFSET))(nullptr);
+		}
+
+		::MX::Logic::Data::BlackboardKeyType* get_BonusSourceBlackboardKeyType()
+		{
+			return ((::MX::Logic::Data::BlackboardKeyType*(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_LOGIC_SKILLS_LOGICEFFECTS_DAMAGEBYHITEFFECT_GET_BONUSSOURCEBLACKBOARDKEYTYPE_OFFSET))(nullptr);
+		}
+
+		::System::Boolean get_ApplyDefense()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_LOGIC_SKILLS_LOGICEFFECTS_DAMAGEBYHITEFFECT_GET_APPLYDEFENSE_OFFSET))(nullptr);
+		}
+
+		::System::Int64 get_BonusRateBlackboard()
+		{
+			return ((::System::Int64(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_LOGIC_SKILLS_LOGICEFFECTS_DAMAGEBYHITEFFECT_GET_BONUSRATEBLACKBOARD_OFFSET))(nullptr);
+		}
+
+		::MX::Logic::Data::DamageByHitEffectValue* get_value()
+		{
+			return ((::MX::Logic::Data::DamageByHitEffectValue*(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_LOGIC_SKILLS_LOGICEFFECTS_DAMAGEBYHITEFFECT_GET_VALUE_OFFSET))(nullptr);
+		}
+
+		::MX::Logic::Skills::DamageRatioApplyType* get_ApplyDamageRatio()
+		{
+			return ((::MX::Logic::Skills::DamageRatioApplyType*(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_LOGIC_SKILLS_LOGICEFFECTS_DAMAGEBYHITEFFECT_GET_APPLYDAMAGERATIO_OFFSET))(nullptr);
+		}
+
+	};
+}
+

@@ -1,0 +1,79 @@
+#pragma once
+#include "../../../unitysdk.h"
+
+namespace MX::Data::Excel { class EventContentClueSearchRoundExcel; }
+
+#define MX_DATA_DATAMODEL_EVENTCONTENTCLUESEARCHROUNDINFO_GET_HINTLOCALIZEID_OFFSET UNITYSDK_OFFSET(0x19843D0)
+#define MX_DATA_DATAMODEL_EVENTCONTENTCLUESEARCHROUNDINFO_GET_CLEARPAGEIMAGEPATH_OFFSET UNITYSDK_OFFSET(0x19843E0)
+#define MX_DATA_DATAMODEL_EVENTCONTENTCLUESEARCHROUNDINFO_GET_EVENTCONTENTID_OFFSET UNITYSDK_OFFSET(0x19843F0)
+#define MX_DATA_DATAMODEL_EVENTCONTENTCLUESEARCHROUNDINFO_GET_ISLOOP_OFFSET UNITYSDK_OFFSET(0x1984400)
+#define MX_DATA_DATAMODEL_EVENTCONTENTCLUESEARCHROUNDINFO_GET_TARGETIMAGEPATH_OFFSET UNITYSDK_OFFSET(0x1984410)
+#define MX_DATA_DATAMODEL_EVENTCONTENTCLUESEARCHROUNDINFO_.CTOR_OFFSET UNITYSDK_OFFSET(0x1984420)
+#define MX_DATA_DATAMODEL_EVENTCONTENTCLUESEARCHROUNDINFO_GET_REWARDID_OFFSET UNITYSDK_OFFSET(0x1984610)
+#define MX_DATA_DATAMODEL_EVENTCONTENTCLUESEARCHROUNDINFO_GET_CLUESLOTINFOS_OFFSET UNITYSDK_OFFSET(0x1984620)
+#define MX_DATA_DATAMODEL_EVENTCONTENTCLUESEARCHROUNDINFO_GET_CLEARLOCALIZEID_OFFSET UNITYSDK_OFFSET(0x1984630)
+#define MX_DATA_DATAMODEL_EVENTCONTENTCLUESEARCHROUNDINFO_GET_ROUND_OFFSET UNITYSDK_OFFSET(0x1984640)
+
+namespace MX::Data::DataModel
+{
+	inline static constexpr unsigned int EventContentClueSearchRoundInfo_TypeDefinitionIndex = 16533;
+
+	class EventContentClueSearchRoundInfo : public Il2CppObject
+	{
+	public:
+		::MX::Data::Excel::EventContentClueSearchRoundExcel* _excel; // 0x10
+		Il2CppObject* _ClueSlotInfos_k__BackingField; // 0x20
+
+		::System::UInt32 get_HintlocalizeId()
+		{
+			return (return (::System::UInt32(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_DATA_DATAMODEL_EVENTCONTENTCLUESEARCHROUNDINFO_GET_HINTLOCALIZEID_OFFSET))(nullptr);
+		}
+
+		::System::String* get_ClearPageImagePath()
+		{
+			return (return (::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_DATA_DATAMODEL_EVENTCONTENTCLUESEARCHROUNDINFO_GET_CLEARPAGEIMAGEPATH_OFFSET))(nullptr);
+		}
+
+		::System::Int64 get_EventContentId()
+		{
+			return (return (::System::Int64(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_DATA_DATAMODEL_EVENTCONTENTCLUESEARCHROUNDINFO_GET_EVENTCONTENTID_OFFSET))(nullptr);
+		}
+
+		::System::Boolean get_IsLoop()
+		{
+			return (return (::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_DATA_DATAMODEL_EVENTCONTENTCLUESEARCHROUNDINFO_GET_ISLOOP_OFFSET))(nullptr);
+		}
+
+		::System::String* get_TargetImagePath()
+		{
+			return (return (::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_DATA_DATAMODEL_EVENTCONTENTCLUESEARCHROUNDINFO_GET_TARGETIMAGEPATH_OFFSET))(nullptr);
+		}
+
+		::System::Void .ctor(::MX::Data::Excel::EventContentClueSearchRoundExcel* arg)
+		{
+			((::System::Void(*)(::MX::Data::Excel::EventContentClueSearchRoundExcel*, ::PVOID))((::PBYTE)hIl2Cpp + MX_DATA_DATAMODEL_EVENTCONTENTCLUESEARCHROUNDINFO_.CTOR_OFFSET))(arg, nullptr);
+		}
+
+		::System::Int64 get_RewardId()
+		{
+			return (return (::System::Int64(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_DATA_DATAMODEL_EVENTCONTENTCLUESEARCHROUNDINFO_GET_REWARDID_OFFSET))(nullptr);
+		}
+
+		Il2CppObject* get_ClueSlotInfos()
+		{
+			return (return (Il2CppObject*(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_DATA_DATAMODEL_EVENTCONTENTCLUESEARCHROUNDINFO_GET_CLUESLOTINFOS_OFFSET))(nullptr);
+		}
+
+		::System::UInt32 get_ClearlocalizeId()
+		{
+			return (return (::System::UInt32(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_DATA_DATAMODEL_EVENTCONTENTCLUESEARCHROUNDINFO_GET_CLEARLOCALIZEID_OFFSET))(nullptr);
+		}
+
+		::System::Int64 get_Round()
+		{
+			return (return (::System::Int64(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_DATA_DATAMODEL_EVENTCONTENTCLUESEARCHROUNDINFO_GET_ROUND_OFFSET))(nullptr);
+		}
+
+	};
+}
+

@@ -1,0 +1,114 @@
+#pragma once
+#include "../../../unitysdk.h"
+
+namespace NPA::Editor::Auth::View { class NXPPlayNowAccountSettingsView; }
+namespace NPA::Editor { class NXToyLocaleManager; }
+namespace NPA::Auth { class NXPToyLoginResult; }
+namespace NPA::Auth { class NXPToySignOutResult; }
+
+#define NPA_EDITOR_AUTH_NXPPLAYNOWACCOUNTSETTINGSDIALOG_.CTOR_OFFSET UNITYSDK_OFFSET(0x9CAB490)
+#define NPA_EDITOR_AUTH_NXPPLAYNOWACCOUNTSETTINGSDIALOG_SETCALLBACK_OFFSET UNITYSDK_OFFSET(0x9CAB660)
+#define NPA_EDITOR_AUTH_NXPPLAYNOWACCOUNTSETTINGSDIALOG_LINKNEXONACCOUNT_OFFSET UNITYSDK_OFFSET(0x9CAB740)
+#define NPA_EDITOR_AUTH_NXPPLAYNOWACCOUNTSETTINGSDIALOG_SHOWLINKNEXONACCOUNTALERT_OFFSET UNITYSDK_OFFSET(0x9CAB850)
+#define NPA_EDITOR_AUTH_NXPPLAYNOWACCOUNTSETTINGSDIALOG_HANDLELOGINERROR_OFFSET UNITYSDK_OFFSET(0x9CAB920)
+#define NPA_EDITOR_AUTH_NXPPLAYNOWACCOUNTSETTINGSDIALOG_SIGNOUT_OFFSET UNITYSDK_OFFSET(0x9CABB80)
+#define NPA_EDITOR_AUTH_NXPPLAYNOWACCOUNTSETTINGSDIALOG_INVOKECANCELRESULT_OFFSET UNITYSDK_OFFSET(0x9CABC40)
+#define NPA_EDITOR_AUTH_NXPPLAYNOWACCOUNTSETTINGSDIALOG_INVOKERESULT_OFFSET UNITYSDK_OFFSET(0x9CABD20)
+#define NPA_EDITOR_AUTH_NXPPLAYNOWACCOUNTSETTINGSDIALOG_DESTROY_OFFSET UNITYSDK_OFFSET(0x9CABE40)
+#define NPA_EDITOR_AUTH_NXPPLAYNOWACCOUNTSETTINGSDIALOG__LINKNEXONACCOUNT_B__6_0_OFFSET UNITYSDK_OFFSET(0x9CABE50)
+#define NPA_EDITOR_AUTH_NXPPLAYNOWACCOUNTSETTINGSDIALOG__LINKNEXONACCOUNT_B__6_1_OFFSET UNITYSDK_OFFSET(0x9CAC020)
+#define NPA_EDITOR_AUTH_NXPPLAYNOWACCOUNTSETTINGSDIALOG__SHOWLINKNEXONACCOUNTALERT_B__7_0_OFFSET UNITYSDK_OFFSET(0x9CAC120)
+#define NPA_EDITOR_AUTH_NXPPLAYNOWACCOUNTSETTINGSDIALOG__HANDLELOGINERROR_B__8_0_OFFSET UNITYSDK_OFFSET(0x9CAC2B0)
+#define NPA_EDITOR_AUTH_NXPPLAYNOWACCOUNTSETTINGSDIALOG__HANDLELOGINERROR_B__8_1_OFFSET UNITYSDK_OFFSET(0x9CAC2C0)
+#define NPA_EDITOR_AUTH_NXPPLAYNOWACCOUNTSETTINGSDIALOG__SIGNOUT_B__9_0_OFFSET UNITYSDK_OFFSET(0x9CAC2F0)
+
+namespace NPA::Editor::Auth
+{
+	inline static constexpr unsigned int NXPPlayNowAccountSettingsDialog_TypeDefinitionIndex = 27166;
+
+	class NXPPlayNowAccountSettingsDialog : public Il2CppObject
+	{
+	public:
+		::NPA::Editor::Auth::View::NXPPlayNowAccountSettingsView* playNowAccountSettingsView; // 0x30
+		Il2CppObject* callback; // 0x38
+		::NPA::Editor::NXToyLocaleManager* localeManager; // 0x40
+		::System::Boolean isAccountChanged; // 0x48
+
+		::System::Void .ctor(Il2CppObject* arg)
+		{
+			((::System::Void(*)(Il2CppObject*, ::PVOID))((::PBYTE)hIl2Cpp + NPA_EDITOR_AUTH_NXPPLAYNOWACCOUNTSETTINGSDIALOG_.CTOR_OFFSET))(arg, nullptr);
+		}
+
+		::System::Void SetCallback()
+		{
+			((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + NPA_EDITOR_AUTH_NXPPLAYNOWACCOUNTSETTINGSDIALOG_SETCALLBACK_OFFSET))(nullptr);
+		}
+
+		::System::Void LinkNexonAccount()
+		{
+			((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + NPA_EDITOR_AUTH_NXPPLAYNOWACCOUNTSETTINGSDIALOG_LINKNEXONACCOUNT_OFFSET))(nullptr);
+		}
+
+		::System::Void ShowLinkNexonAccountAlert(::System::String* str)
+		{
+			((::System::Void(*)(::System::String*, ::PVOID))((::PBYTE)hIl2Cpp + NPA_EDITOR_AUTH_NXPPLAYNOWACCOUNTSETTINGSDIALOG_SHOWLINKNEXONACCOUNTALERT_OFFSET))(str, nullptr);
+		}
+
+		::System::Boolean HandleLoginError(::NPA::Auth::NXPToyLoginResult* arg)
+		{
+			return (return (::System::Boolean(*)(::NPA::Auth::NXPToyLoginResult*, ::PVOID))((::PBYTE)hIl2Cpp + NPA_EDITOR_AUTH_NXPPLAYNOWACCOUNTSETTINGSDIALOG_HANDLELOGINERROR_OFFSET))(arg, nullptr);
+		}
+
+		::System::Void SignOut()
+		{
+			((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + NPA_EDITOR_AUTH_NXPPLAYNOWACCOUNTSETTINGSDIALOG_SIGNOUT_OFFSET))(nullptr);
+		}
+
+		::System::Void InvokeCancelResult()
+		{
+			((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + NPA_EDITOR_AUTH_NXPPLAYNOWACCOUNTSETTINGSDIALOG_INVOKECANCELRESULT_OFFSET))(nullptr);
+		}
+
+		::System::Void InvokeResult(::NPA::Auth::NXPToyLoginResult* arg)
+		{
+			((::System::Void(*)(::NPA::Auth::NXPToyLoginResult*, ::PVOID))((::PBYTE)hIl2Cpp + NPA_EDITOR_AUTH_NXPPLAYNOWACCOUNTSETTINGSDIALOG_INVOKERESULT_OFFSET))(arg, nullptr);
+		}
+
+		::System::Void Destroy()
+		{
+			((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + NPA_EDITOR_AUTH_NXPPLAYNOWACCOUNTSETTINGSDIALOG_DESTROY_OFFSET))(nullptr);
+		}
+
+		::System::Void _LinkNexonAccount_b__6_0(::NPA::Auth::NXPToyLoginResult* arg)
+		{
+			((::System::Void(*)(::NPA::Auth::NXPToyLoginResult*, ::PVOID))((::PBYTE)hIl2Cpp + NPA_EDITOR_AUTH_NXPPLAYNOWACCOUNTSETTINGSDIALOG__LINKNEXONACCOUNT_B__6_0_OFFSET))(arg, nullptr);
+		}
+
+		::System::Void _LinkNexonAccount_b__6_1(::System::String* str)
+		{
+			((::System::Void(*)(::System::String*, ::PVOID))((::PBYTE)hIl2Cpp + NPA_EDITOR_AUTH_NXPPLAYNOWACCOUNTSETTINGSDIALOG__LINKNEXONACCOUNT_B__6_1_OFFSET))(str, nullptr);
+		}
+
+		::System::Void _ShowLinkNexonAccountAlert_b__7_0(::NPA::Auth::NXPToyLoginResult* arg)
+		{
+			((::System::Void(*)(::NPA::Auth::NXPToyLoginResult*, ::PVOID))((::PBYTE)hIl2Cpp + NPA_EDITOR_AUTH_NXPPLAYNOWACCOUNTSETTINGSDIALOG__SHOWLINKNEXONACCOUNTALERT_B__7_0_OFFSET))(arg, nullptr);
+		}
+
+		::System::Void _HandleLoginError_b__8_0()
+		{
+			((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + NPA_EDITOR_AUTH_NXPPLAYNOWACCOUNTSETTINGSDIALOG__HANDLELOGINERROR_B__8_0_OFFSET))(nullptr);
+		}
+
+		::System::Void _HandleLoginError_b__8_1()
+		{
+			((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + NPA_EDITOR_AUTH_NXPPLAYNOWACCOUNTSETTINGSDIALOG__HANDLELOGINERROR_B__8_1_OFFSET))(nullptr);
+		}
+
+		::System::Void _SignOut_b__9_0(::NPA::Auth::NXPToySignOutResult* arg)
+		{
+			((::System::Void(*)(::NPA::Auth::NXPToySignOutResult*, ::PVOID))((::PBYTE)hIl2Cpp + NPA_EDITOR_AUTH_NXPPLAYNOWACCOUNTSETTINGSDIALOG__SIGNOUT_B__9_0_OFFSET))(arg, nullptr);
+		}
+
+	};
+}
+

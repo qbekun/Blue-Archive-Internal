@@ -1,0 +1,96 @@
+#pragma once
+#include "../../unitysdk.h"
+
+namespace MX::GameLogic::DBModel { class SchoolDungeonStageHistoryDB; }
+namespace MX::GameLogic::Parcel { class ParcelResultDB; }
+namespace MX::NetworkProtocol { class Protocol; }
+
+#define MX_NETWORKPROTOCOL_SCHOOLDUNGEONBATTLERESULTRESPONSE_.CTOR_OFFSET UNITYSDK_OFFSET(0xF4E6B0)
+#define MX_NETWORKPROTOCOL_SCHOOLDUNGEONBATTLERESULTRESPONSE_SET_SCHOOLDUNGEONSTAGEHISTORYDB_OFFSET UNITYSDK_OFFSET(0xF4E6C0)
+#define MX_NETWORKPROTOCOL_SCHOOLDUNGEONBATTLERESULTRESPONSE_GET_PROTOCOL_OFFSET UNITYSDK_OFFSET(0xF4E6D0)
+#define MX_NETWORKPROTOCOL_SCHOOLDUNGEONBATTLERESULTRESPONSE_SET_PARCELRESULTDB_OFFSET UNITYSDK_OFFSET(0xF4E6E0)
+#define MX_NETWORKPROTOCOL_SCHOOLDUNGEONBATTLERESULTRESPONSE_GET_FIRSTCLEARREWARD_OFFSET UNITYSDK_OFFSET(0xF4E6F0)
+#define MX_NETWORKPROTOCOL_SCHOOLDUNGEONBATTLERESULTRESPONSE_SET_LEVELUPCHARACTERDBS_OFFSET UNITYSDK_OFFSET(0xF4E700)
+#define MX_NETWORKPROTOCOL_SCHOOLDUNGEONBATTLERESULTRESPONSE_SET_THREESTARREWARD_OFFSET UNITYSDK_OFFSET(0xF4E710)
+#define MX_NETWORKPROTOCOL_SCHOOLDUNGEONBATTLERESULTRESPONSE_GET_LEVELUPCHARACTERDBS_OFFSET UNITYSDK_OFFSET(0xF4E720)
+#define MX_NETWORKPROTOCOL_SCHOOLDUNGEONBATTLERESULTRESPONSE_SET_FIRSTCLEARREWARD_OFFSET UNITYSDK_OFFSET(0xF4E730)
+#define MX_NETWORKPROTOCOL_SCHOOLDUNGEONBATTLERESULTRESPONSE_GET_SCHOOLDUNGEONSTAGEHISTORYDB_OFFSET UNITYSDK_OFFSET(0xF4E740)
+#define MX_NETWORKPROTOCOL_SCHOOLDUNGEONBATTLERESULTRESPONSE_GET_PARCELRESULTDB_OFFSET UNITYSDK_OFFSET(0xF4E750)
+#define MX_NETWORKPROTOCOL_SCHOOLDUNGEONBATTLERESULTRESPONSE_GET_THREESTARREWARD_OFFSET UNITYSDK_OFFSET(0xF4E760)
+
+namespace MX::NetworkProtocol
+{
+	inline static constexpr unsigned int SchoolDungeonBattleResultResponse_TypeDefinitionIndex = 12104;
+
+	class SchoolDungeonBattleResultResponse : public Il2CppObject
+	{
+	public:
+		::MX::GameLogic::DBModel::SchoolDungeonStageHistoryDB* _SchoolDungeonStageHistoryDB_k__BackingField; // 0x50
+		Il2CppObject* _LevelUpCharacterDBs_k__BackingField; // 0x58
+		Il2CppObject* _FirstClearReward_k__BackingField; // 0x60
+		Il2CppObject* _ThreeStarReward_k__BackingField; // 0x68
+		::MX::GameLogic::Parcel::ParcelResultDB* _ParcelResultDB_k__BackingField; // 0x70
+
+		::System::Void .ctor()
+		{
+			((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_SCHOOLDUNGEONBATTLERESULTRESPONSE_.CTOR_OFFSET))(nullptr);
+		}
+
+		::System::Void set_SchoolDungeonStageHistoryDB(::MX::GameLogic::DBModel::SchoolDungeonStageHistoryDB* arg)
+		{
+			((::System::Void(*)(::MX::GameLogic::DBModel::SchoolDungeonStageHistoryDB*, ::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_SCHOOLDUNGEONBATTLERESULTRESPONSE_SET_SCHOOLDUNGEONSTAGEHISTORYDB_OFFSET))(arg, nullptr);
+		}
+
+		::MX::NetworkProtocol::Protocol* get_Protocol()
+		{
+			return ((::MX::NetworkProtocol::Protocol*(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_SCHOOLDUNGEONBATTLERESULTRESPONSE_GET_PROTOCOL_OFFSET))(nullptr);
+		}
+
+		::System::Void set_ParcelResultDB(::MX::GameLogic::Parcel::ParcelResultDB* arg)
+		{
+			((::System::Void(*)(::MX::GameLogic::Parcel::ParcelResultDB*, ::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_SCHOOLDUNGEONBATTLERESULTRESPONSE_SET_PARCELRESULTDB_OFFSET))(arg, nullptr);
+		}
+
+		Il2CppObject* get_FirstClearReward()
+		{
+			return ((Il2CppObject*(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_SCHOOLDUNGEONBATTLERESULTRESPONSE_GET_FIRSTCLEARREWARD_OFFSET))(nullptr);
+		}
+
+		::System::Void set_LevelUpCharacterDBs(Il2CppObject* arg)
+		{
+			((::System::Void(*)(Il2CppObject*, ::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_SCHOOLDUNGEONBATTLERESULTRESPONSE_SET_LEVELUPCHARACTERDBS_OFFSET))(arg, nullptr);
+		}
+
+		::System::Void set_ThreeStarReward(Il2CppObject* arg)
+		{
+			((::System::Void(*)(Il2CppObject*, ::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_SCHOOLDUNGEONBATTLERESULTRESPONSE_SET_THREESTARREWARD_OFFSET))(arg, nullptr);
+		}
+
+		Il2CppObject* get_LevelUpCharacterDBs()
+		{
+			return ((Il2CppObject*(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_SCHOOLDUNGEONBATTLERESULTRESPONSE_GET_LEVELUPCHARACTERDBS_OFFSET))(nullptr);
+		}
+
+		::System::Void set_FirstClearReward(Il2CppObject* arg)
+		{
+			((::System::Void(*)(Il2CppObject*, ::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_SCHOOLDUNGEONBATTLERESULTRESPONSE_SET_FIRSTCLEARREWARD_OFFSET))(arg, nullptr);
+		}
+
+		::MX::GameLogic::DBModel::SchoolDungeonStageHistoryDB* get_SchoolDungeonStageHistoryDB()
+		{
+			return ((::MX::GameLogic::DBModel::SchoolDungeonStageHistoryDB*(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_SCHOOLDUNGEONBATTLERESULTRESPONSE_GET_SCHOOLDUNGEONSTAGEHISTORYDB_OFFSET))(nullptr);
+		}
+
+		::MX::GameLogic::Parcel::ParcelResultDB* get_ParcelResultDB()
+		{
+			return ((::MX::GameLogic::Parcel::ParcelResultDB*(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_SCHOOLDUNGEONBATTLERESULTRESPONSE_GET_PARCELRESULTDB_OFFSET))(nullptr);
+		}
+
+		Il2CppObject* get_ThreeStarReward()
+		{
+			return ((Il2CppObject*(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_SCHOOLDUNGEONBATTLERESULTRESPONSE_GET_THREESTARREWARD_OFFSET))(nullptr);
+		}
+
+	};
+}
+

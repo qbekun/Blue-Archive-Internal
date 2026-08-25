@@ -1,0 +1,143 @@
+#pragma once
+#include "../../unitysdk.h"
+
+#define MX_SAVEDATA_SCENARIOMODECONTINUESAVEDATAV2_SET_INDEX_OFFSET UNITYSDK_OFFSET(0x1D03440)
+#define MX_SAVEDATA_SCENARIOMODECONTINUESAVEDATAV2_VALIDATE_OFFSET UNITYSDK_OFFSET(0x1D03450)
+#define MX_SAVEDATA_SCENARIOMODECONTINUESAVEDATAV2_SET_MODEID_OFFSET UNITYSDK_OFFSET(0x1D03460)
+#define MX_SAVEDATA_SCENARIOMODECONTINUESAVEDATAV2_.CTOR_OFFSET UNITYSDK_OFFSET(0x1D03470)
+#define MX_SAVEDATA_SCENARIOMODECONTINUESAVEDATAV2_GET_MODEID_OFFSET UNITYSDK_OFFSET(0x1D03480)
+#define MX_SAVEDATA_SCENARIOMODECONTINUESAVEDATAV2_SETDEFAULTDATA_OFFSET UNITYSDK_OFFSET(0x1D03490)
+#define MX_SAVEDATA_SCENARIOMODECONTINUESAVEDATAV2_SET_HISTORYLOGS_OFFSET UNITYSDK_OFFSET(0x1D03520)
+#define MX_SAVEDATA_SCENARIOMODECONTINUESAVEDATAV2_SET_FRONTFINISHED_OFFSET UNITYSDK_OFFSET(0x1D03530)
+#define MX_SAVEDATA_SCENARIOMODECONTINUESAVEDATAV2_GET_BACKFINISHED_OFFSET UNITYSDK_OFFSET(0x1D03540)
+#define MX_SAVEDATA_SCENARIOMODECONTINUESAVEDATAV2_SET_BATTLEFINISHED_OFFSET UNITYSDK_OFFSET(0x1D03550)
+#define MX_SAVEDATA_SCENARIOMODECONTINUESAVEDATAV2_SET_FIELDFINISHED_OFFSET UNITYSDK_OFFSET(0x1D03560)
+#define MX_SAVEDATA_SCENARIOMODECONTINUESAVEDATAV2_GET_FIELDFINISHED_OFFSET UNITYSDK_OFFSET(0x1D03570)
+#define MX_SAVEDATA_SCENARIOMODECONTINUESAVEDATAV2_CLONE_OFFSET UNITYSDK_OFFSET(0x1D03580)
+#define MX_SAVEDATA_SCENARIOMODECONTINUESAVEDATAV2_GET_GROUPID_OFFSET UNITYSDK_OFFSET(0x1D03640)
+#define MX_SAVEDATA_SCENARIOMODECONTINUESAVEDATAV2_SET_BACKFINISHED_OFFSET UNITYSDK_OFFSET(0x1D03650)
+#define MX_SAVEDATA_SCENARIOMODECONTINUESAVEDATAV2_SET_GROUPID_OFFSET UNITYSDK_OFFSET(0x1D03660)
+#define MX_SAVEDATA_SCENARIOMODECONTINUESAVEDATAV2_GET_HISTORYLOGS_OFFSET UNITYSDK_OFFSET(0x1D03670)
+#define MX_SAVEDATA_SCENARIOMODECONTINUESAVEDATAV2_GET_FRONTFINISHED_OFFSET UNITYSDK_OFFSET(0x1D03680)
+#define MX_SAVEDATA_SCENARIOMODECONTINUESAVEDATAV2_GET_INDEX_OFFSET UNITYSDK_OFFSET(0x1D03690)
+#define MX_SAVEDATA_SCENARIOMODECONTINUESAVEDATAV2_GET_BATTLEFINISHED_OFFSET UNITYSDK_OFFSET(0x1D036A0)
+
+namespace MX::SaveData
+{
+	inline static constexpr unsigned int ScenarioModeContinueSaveDataV2_TypeDefinitionIndex = 19984;
+
+	class ScenarioModeContinueSaveDataV2 : public Il2CppObject
+	{
+	public:
+		::System::Int64 _ModeId_k__BackingField; // 0x10
+		::System::Boolean _FrontFinished_k__BackingField; // 0x18
+		::System::Boolean _BattleFinished_k__BackingField; // 0x19
+		::System::Boolean _BackFinished_k__BackingField; // 0x1A
+		::System::Int64 _GroupId_k__BackingField; // 0x20
+		::System::Int64 _Index_k__BackingField; // 0x28
+		Il2CppObject* _HistoryLogs_k__BackingField; // 0x30
+		::System::Boolean _FieldFinished_k__BackingField; // 0x38
+
+		::System::Void set_Index(::System::Int64 arg)
+		{
+			((::System::Void(*)(::System::Int64, ::PVOID))((::PBYTE)hIl2Cpp + MX_SAVEDATA_SCENARIOMODECONTINUESAVEDATAV2_SET_INDEX_OFFSET))(arg, nullptr);
+		}
+
+		::System::Boolean Validate()
+		{
+			return (return (::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_SAVEDATA_SCENARIOMODECONTINUESAVEDATAV2_VALIDATE_OFFSET))(nullptr);
+		}
+
+		::System::Void set_ModeId(::System::Int64 arg)
+		{
+			((::System::Void(*)(::System::Int64, ::PVOID))((::PBYTE)hIl2Cpp + MX_SAVEDATA_SCENARIOMODECONTINUESAVEDATAV2_SET_MODEID_OFFSET))(arg, nullptr);
+		}
+
+		::System::Void .ctor()
+		{
+			((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_SAVEDATA_SCENARIOMODECONTINUESAVEDATAV2_.CTOR_OFFSET))(nullptr);
+		}
+
+		::System::Int64 get_ModeId()
+		{
+			return (return (::System::Int64(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_SAVEDATA_SCENARIOMODECONTINUESAVEDATAV2_GET_MODEID_OFFSET))(nullptr);
+		}
+
+		::System::Void SetDefaultData()
+		{
+			((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_SAVEDATA_SCENARIOMODECONTINUESAVEDATAV2_SETDEFAULTDATA_OFFSET))(nullptr);
+		}
+
+		::System::Void set_HistoryLogs(Il2CppObject* arg)
+		{
+			((::System::Void(*)(Il2CppObject*, ::PVOID))((::PBYTE)hIl2Cpp + MX_SAVEDATA_SCENARIOMODECONTINUESAVEDATAV2_SET_HISTORYLOGS_OFFSET))(arg, nullptr);
+		}
+
+		::System::Void set_FrontFinished(::System::Boolean arg)
+		{
+			((::System::Void(*)(::System::Boolean, ::PVOID))((::PBYTE)hIl2Cpp + MX_SAVEDATA_SCENARIOMODECONTINUESAVEDATAV2_SET_FRONTFINISHED_OFFSET))(arg, nullptr);
+		}
+
+		::System::Boolean get_BackFinished()
+		{
+			return (return (::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_SAVEDATA_SCENARIOMODECONTINUESAVEDATAV2_GET_BACKFINISHED_OFFSET))(nullptr);
+		}
+
+		::System::Void set_BattleFinished(::System::Boolean arg)
+		{
+			((::System::Void(*)(::System::Boolean, ::PVOID))((::PBYTE)hIl2Cpp + MX_SAVEDATA_SCENARIOMODECONTINUESAVEDATAV2_SET_BATTLEFINISHED_OFFSET))(arg, nullptr);
+		}
+
+		::System::Void set_FieldFinished(::System::Boolean arg)
+		{
+			((::System::Void(*)(::System::Boolean, ::PVOID))((::PBYTE)hIl2Cpp + MX_SAVEDATA_SCENARIOMODECONTINUESAVEDATAV2_SET_FIELDFINISHED_OFFSET))(arg, nullptr);
+		}
+
+		::System::Boolean get_FieldFinished()
+		{
+			return (return (::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_SAVEDATA_SCENARIOMODECONTINUESAVEDATAV2_GET_FIELDFINISHED_OFFSET))(nullptr);
+		}
+
+		::System::Object* Clone()
+		{
+			return (return (::System::Object*(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_SAVEDATA_SCENARIOMODECONTINUESAVEDATAV2_CLONE_OFFSET))(nullptr);
+		}
+
+		::System::Int64 get_GroupId()
+		{
+			return (return (::System::Int64(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_SAVEDATA_SCENARIOMODECONTINUESAVEDATAV2_GET_GROUPID_OFFSET))(nullptr);
+		}
+
+		::System::Void set_BackFinished(::System::Boolean arg)
+		{
+			((::System::Void(*)(::System::Boolean, ::PVOID))((::PBYTE)hIl2Cpp + MX_SAVEDATA_SCENARIOMODECONTINUESAVEDATAV2_SET_BACKFINISHED_OFFSET))(arg, nullptr);
+		}
+
+		::System::Void set_GroupId(::System::Int64 arg)
+		{
+			((::System::Void(*)(::System::Int64, ::PVOID))((::PBYTE)hIl2Cpp + MX_SAVEDATA_SCENARIOMODECONTINUESAVEDATAV2_SET_GROUPID_OFFSET))(arg, nullptr);
+		}
+
+		Il2CppObject* get_HistoryLogs()
+		{
+			return (return (Il2CppObject*(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_SAVEDATA_SCENARIOMODECONTINUESAVEDATAV2_GET_HISTORYLOGS_OFFSET))(nullptr);
+		}
+
+		::System::Boolean get_FrontFinished()
+		{
+			return (return (::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_SAVEDATA_SCENARIOMODECONTINUESAVEDATAV2_GET_FRONTFINISHED_OFFSET))(nullptr);
+		}
+
+		::System::Int64 get_Index()
+		{
+			return (return (::System::Int64(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_SAVEDATA_SCENARIOMODECONTINUESAVEDATAV2_GET_INDEX_OFFSET))(nullptr);
+		}
+
+		::System::Boolean get_BattleFinished()
+		{
+			return (return (::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_SAVEDATA_SCENARIOMODECONTINUESAVEDATAV2_GET_BATTLEFINISHED_OFFSET))(nullptr);
+		}
+
+	};
+}
+

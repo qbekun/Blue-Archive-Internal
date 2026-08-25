@@ -1,0 +1,18 @@
+#pragma once
+#include "unitysdk.h"
+
+class CRASH_RECEIVE_SERVER_REGION;
+
+	inline static constexpr unsigned int CRASH_RECEIVE_SERVER_REGION_TypeDefinitionIndex = 10124;
+
+	class CRASH_RECEIVE_SERVER_REGION : public Il2CppObject
+	{
+	public:
+		::System::Int32 value__; // 0x10
+		CRASH_RECEIVE_SERVER_REGION* RECEIVE_SERVER_NEXON; // 0x0
+		CRASH_RECEIVE_SERVER_REGION* RECEIVE_SERVER_AWS_ASIA; // 0x0
+		CRASH_RECEIVE_SERVER_REGION* RECEIVE_SERVER_AWS_EU; // 0x0
+		CRASH_RECEIVE_SERVER_REGION* RECEIVE_SERVER_AWS_US; // 0x0
+
+	};
+

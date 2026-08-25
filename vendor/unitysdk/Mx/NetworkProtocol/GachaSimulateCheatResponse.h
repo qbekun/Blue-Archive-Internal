@@ -1,0 +1,81 @@
+#pragma once
+#include "../../unitysdk.h"
+
+namespace MX::NetworkProtocol { class Protocol; }
+
+#define MX_NETWORKPROTOCOL_GACHASIMULATECHEATRESPONSE_GET_PROTOCOL_OFFSET UNITYSDK_OFFSET(0xF3FC00)
+#define MX_NETWORKPROTOCOL_GACHASIMULATECHEATRESPONSE_SET_GOODSDEVNAME_OFFSET UNITYSDK_OFFSET(0xF3FC10)
+#define MX_NETWORKPROTOCOL_GACHASIMULATECHEATRESPONSE_GET_GOODSDEVNAME_OFFSET UNITYSDK_OFFSET(0xF3FC20)
+#define MX_NETWORKPROTOCOL_GACHASIMULATECHEATRESPONSE_SET_GOODSUNIQUEID_OFFSET UNITYSDK_OFFSET(0xF3FC30)
+#define MX_NETWORKPROTOCOL_GACHASIMULATECHEATRESPONSE_GET_GOODSUNIQUEID_OFFSET UNITYSDK_OFFSET(0xF3FC40)
+#define MX_NETWORKPROTOCOL_GACHASIMULATECHEATRESPONSE_GET_SIMULATIONCOUNT_OFFSET UNITYSDK_OFFSET(0xF3FC50)
+#define MX_NETWORKPROTOCOL_GACHASIMULATECHEATRESPONSE_SET_SIMULATIONCOUNT_OFFSET UNITYSDK_OFFSET(0xF3FC60)
+#define MX_NETWORKPROTOCOL_GACHASIMULATECHEATRESPONSE_.CTOR_OFFSET UNITYSDK_OFFSET(0xF3FC70)
+#define MX_NETWORKPROTOCOL_GACHASIMULATECHEATRESPONSE_SET_CHARACTERIDANDCOUNT_OFFSET UNITYSDK_OFFSET(0xF3FC80)
+#define MX_NETWORKPROTOCOL_GACHASIMULATECHEATRESPONSE_GET_CHARACTERIDANDCOUNT_OFFSET UNITYSDK_OFFSET(0xF3FC90)
+
+namespace MX::NetworkProtocol
+{
+	inline static constexpr unsigned int GachaSimulateCheatResponse_TypeDefinitionIndex = 11537;
+
+	class GachaSimulateCheatResponse : public Il2CppObject
+	{
+	public:
+		Il2CppObject* _CharacterIdAndCount_k__BackingField; // 0x50
+		::System::Int64 _SimulationCount_k__BackingField; // 0x58
+		::System::Int64 _GoodsUniqueId_k__BackingField; // 0x60
+		::System::String* _GoodsDevName_k__BackingField; // 0x68
+
+		::MX::NetworkProtocol::Protocol* get_Protocol()
+		{
+			return ((::MX::NetworkProtocol::Protocol*(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_GACHASIMULATECHEATRESPONSE_GET_PROTOCOL_OFFSET))(nullptr);
+		}
+
+		::System::Void set_GoodsDevName(::System::String* str)
+		{
+			((::System::Void(*)(::System::String*, ::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_GACHASIMULATECHEATRESPONSE_SET_GOODSDEVNAME_OFFSET))(str, nullptr);
+		}
+
+		::System::String* get_GoodsDevName()
+		{
+			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_GACHASIMULATECHEATRESPONSE_GET_GOODSDEVNAME_OFFSET))(nullptr);
+		}
+
+		::System::Void set_GoodsUniqueId(::System::Int64 arg)
+		{
+			((::System::Void(*)(::System::Int64, ::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_GACHASIMULATECHEATRESPONSE_SET_GOODSUNIQUEID_OFFSET))(arg, nullptr);
+		}
+
+		::System::Int64 get_GoodsUniqueId()
+		{
+			return ((::System::Int64(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_GACHASIMULATECHEATRESPONSE_GET_GOODSUNIQUEID_OFFSET))(nullptr);
+		}
+
+		::System::Int64 get_SimulationCount()
+		{
+			return ((::System::Int64(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_GACHASIMULATECHEATRESPONSE_GET_SIMULATIONCOUNT_OFFSET))(nullptr);
+		}
+
+		::System::Void set_SimulationCount(::System::Int64 arg)
+		{
+			((::System::Void(*)(::System::Int64, ::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_GACHASIMULATECHEATRESPONSE_SET_SIMULATIONCOUNT_OFFSET))(arg, nullptr);
+		}
+
+		::System::Void .ctor()
+		{
+			((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_GACHASIMULATECHEATRESPONSE_.CTOR_OFFSET))(nullptr);
+		}
+
+		::System::Void set_CharacterIdAndCount(Il2CppObject* arg)
+		{
+			((::System::Void(*)(Il2CppObject*, ::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_GACHASIMULATECHEATRESPONSE_SET_CHARACTERIDANDCOUNT_OFFSET))(arg, nullptr);
+		}
+
+		Il2CppObject* get_CharacterIdAndCount()
+		{
+			return ((Il2CppObject*(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_GACHASIMULATECHEATRESPONSE_GET_CHARACTERIDANDCOUNT_OFFSET))(nullptr);
+		}
+
+	};
+}
+

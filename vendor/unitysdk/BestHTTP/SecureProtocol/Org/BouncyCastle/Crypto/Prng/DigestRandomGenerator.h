@@ -1,0 +1,83 @@
+#pragma once
+#include "../../../../../../unitysdk.h"
+
+namespace BestHTTP::SecureProtocol::Org::BouncyCastle::Crypto { class IDigest; }
+
+#define BESTHTTP_SECUREPROTOCOL_ORG_BOUNCYCASTLE_CRYPTO_PRNG_DIGESTRANDOMGENERATOR_.CTOR_OFFSET UNITYSDK_OFFSET(0x67E6D0)
+#define BESTHTTP_SECUREPROTOCOL_ORG_BOUNCYCASTLE_CRYPTO_PRNG_DIGESTRANDOMGENERATOR_ADDSEEDMATERIAL_OFFSET UNITYSDK_OFFSET(0x67E840)
+#define BESTHTTP_SECUREPROTOCOL_ORG_BOUNCYCASTLE_CRYPTO_PRNG_DIGESTRANDOMGENERATOR_ADDSEEDMATERIAL_OFFSET UNITYSDK_OFFSET(0x67EB50)
+#define BESTHTTP_SECUREPROTOCOL_ORG_BOUNCYCASTLE_CRYPTO_PRNG_DIGESTRANDOMGENERATOR_NEXTBYTES_OFFSET UNITYSDK_OFFSET(0x67EDE0)
+#define BESTHTTP_SECUREPROTOCOL_ORG_BOUNCYCASTLE_CRYPTO_PRNG_DIGESTRANDOMGENERATOR_NEXTBYTES_OFFSET UNITYSDK_OFFSET(0x67EE10)
+#define BESTHTTP_SECUREPROTOCOL_ORG_BOUNCYCASTLE_CRYPTO_PRNG_DIGESTRANDOMGENERATOR_CYCLESEED_OFFSET UNITYSDK_OFFSET(0x67F0C0)
+#define BESTHTTP_SECUREPROTOCOL_ORG_BOUNCYCASTLE_CRYPTO_PRNG_DIGESTRANDOMGENERATOR_GENERATESTATE_OFFSET UNITYSDK_OFFSET(0x67EFB0)
+#define BESTHTTP_SECUREPROTOCOL_ORG_BOUNCYCASTLE_CRYPTO_PRNG_DIGESTRANDOMGENERATOR_DIGESTADDCOUNTER_OFFSET UNITYSDK_OFFSET(0x67ECF0)
+#define BESTHTTP_SECUREPROTOCOL_ORG_BOUNCYCASTLE_CRYPTO_PRNG_DIGESTRANDOMGENERATOR_DIGESTUPDATE_OFFSET UNITYSDK_OFFSET(0x67E9E0)
+#define BESTHTTP_SECUREPROTOCOL_ORG_BOUNCYCASTLE_CRYPTO_PRNG_DIGESTRANDOMGENERATOR_DIGESTDOFINAL_OFFSET UNITYSDK_OFFSET(0x67EAA0)
+
+namespace BestHTTP::SecureProtocol::Org::BouncyCastle::Crypto::Prng
+{
+	inline static constexpr unsigned int DigestRandomGenerator_TypeDefinitionIndex = 22280;
+
+	class DigestRandomGenerator : public Il2CppObject
+	{
+	public:
+		::System::Int64 CYCLE_COUNT; // 0x0
+		::System::Int64 stateCounter; // 0x10
+		::System::Int64 seedCounter; // 0x18
+		::BestHTTP::SecureProtocol::Org::BouncyCastle::Crypto::IDigest* digest; // 0x20
+		::Il2CppArray<::System::Object*>* state; // 0x28
+		::Il2CppArray<::System::Object*>* seed; // 0x30
+
+		::System::Void .ctor(::BestHTTP::SecureProtocol::Org::BouncyCastle::Crypto::IDigest* arg)
+		{
+			((::System::Void(*)(::BestHTTP::SecureProtocol::Org::BouncyCastle::Crypto::IDigest*, ::PVOID))((::PBYTE)hIl2Cpp + BESTHTTP_SECUREPROTOCOL_ORG_BOUNCYCASTLE_CRYPTO_PRNG_DIGESTRANDOMGENERATOR_.CTOR_OFFSET))(arg, nullptr);
+		}
+
+		::System::Void AddSeedMaterial(::Il2CppArray<::System::Object*>* arg)
+		{
+			((::System::Void(*)(::Il2CppArray<::System::Object*>*, ::PVOID))((::PBYTE)hIl2Cpp + BESTHTTP_SECUREPROTOCOL_ORG_BOUNCYCASTLE_CRYPTO_PRNG_DIGESTRANDOMGENERATOR_ADDSEEDMATERIAL_OFFSET))(arg, nullptr);
+		}
+
+		::System::Void AddSeedMaterial(::System::Int64 arg)
+		{
+			((::System::Void(*)(::System::Int64, ::PVOID))((::PBYTE)hIl2Cpp + BESTHTTP_SECUREPROTOCOL_ORG_BOUNCYCASTLE_CRYPTO_PRNG_DIGESTRANDOMGENERATOR_ADDSEEDMATERIAL_OFFSET))(arg, nullptr);
+		}
+
+		::System::Void NextBytes(::Il2CppArray<::System::Object*>* arg)
+		{
+			((::System::Void(*)(::Il2CppArray<::System::Object*>*, ::PVOID))((::PBYTE)hIl2Cpp + BESTHTTP_SECUREPROTOCOL_ORG_BOUNCYCASTLE_CRYPTO_PRNG_DIGESTRANDOMGENERATOR_NEXTBYTES_OFFSET))(arg, nullptr);
+		}
+
+		::System::Void NextBytes(::Il2CppArray<::System::Object*>* arg, ::System::Int32 arg, ::System::Int32 arg)
+		{
+			((::System::Void(*)(::Il2CppArray<::System::Object*>*, ::System::Int32, ::System::Int32, ::PVOID))((::PBYTE)hIl2Cpp + BESTHTTP_SECUREPROTOCOL_ORG_BOUNCYCASTLE_CRYPTO_PRNG_DIGESTRANDOMGENERATOR_NEXTBYTES_OFFSET))(arg, arg, arg, nullptr);
+		}
+
+		::System::Void CycleSeed()
+		{
+			((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + BESTHTTP_SECUREPROTOCOL_ORG_BOUNCYCASTLE_CRYPTO_PRNG_DIGESTRANDOMGENERATOR_CYCLESEED_OFFSET))(nullptr);
+		}
+
+		::System::Void GenerateState()
+		{
+			((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + BESTHTTP_SECUREPROTOCOL_ORG_BOUNCYCASTLE_CRYPTO_PRNG_DIGESTRANDOMGENERATOR_GENERATESTATE_OFFSET))(nullptr);
+		}
+
+		::System::Void DigestAddCounter(::System::Int64 arg)
+		{
+			((::System::Void(*)(::System::Int64, ::PVOID))((::PBYTE)hIl2Cpp + BESTHTTP_SECUREPROTOCOL_ORG_BOUNCYCASTLE_CRYPTO_PRNG_DIGESTRANDOMGENERATOR_DIGESTADDCOUNTER_OFFSET))(arg, nullptr);
+		}
+
+		::System::Void DigestUpdate(::Il2CppArray<::System::Object*>* arg)
+		{
+			((::System::Void(*)(::Il2CppArray<::System::Object*>*, ::PVOID))((::PBYTE)hIl2Cpp + BESTHTTP_SECUREPROTOCOL_ORG_BOUNCYCASTLE_CRYPTO_PRNG_DIGESTRANDOMGENERATOR_DIGESTUPDATE_OFFSET))(arg, nullptr);
+		}
+
+		::System::Void DigestDoFinal(::Il2CppArray<::System::Object*>* arg)
+		{
+			((::System::Void(*)(::Il2CppArray<::System::Object*>*, ::PVOID))((::PBYTE)hIl2Cpp + BESTHTTP_SECUREPROTOCOL_ORG_BOUNCYCASTLE_CRYPTO_PRNG_DIGESTRANDOMGENERATOR_DIGESTDOFINAL_OFFSET))(arg, nullptr);
+		}
+
+	};
+}
+

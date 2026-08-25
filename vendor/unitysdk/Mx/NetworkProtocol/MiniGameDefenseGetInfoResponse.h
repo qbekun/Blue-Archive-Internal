@@ -1,0 +1,55 @@
+#pragma once
+#include "../../unitysdk.h"
+
+namespace MX::NetworkProtocol { class Protocol; }
+
+#define MX_NETWORKPROTOCOL_MINIGAMEDEFENSEGETINFORESPONSE_SET_EVENTPOINTAMOUNT_OFFSET UNITYSDK_OFFSET(0xF494A0)
+#define MX_NETWORKPROTOCOL_MINIGAMEDEFENSEGETINFORESPONSE_GET_PROTOCOL_OFFSET UNITYSDK_OFFSET(0xF494B0)
+#define MX_NETWORKPROTOCOL_MINIGAMEDEFENSEGETINFORESPONSE_GET_DEFENSESTAGEHISTORYDBS_OFFSET UNITYSDK_OFFSET(0xF494C0)
+#define MX_NETWORKPROTOCOL_MINIGAMEDEFENSEGETINFORESPONSE_SET_DEFENSESTAGEHISTORYDBS_OFFSET UNITYSDK_OFFSET(0xF494D0)
+#define MX_NETWORKPROTOCOL_MINIGAMEDEFENSEGETINFORESPONSE_GET_EVENTPOINTAMOUNT_OFFSET UNITYSDK_OFFSET(0xF494E0)
+#define MX_NETWORKPROTOCOL_MINIGAMEDEFENSEGETINFORESPONSE_.CTOR_OFFSET UNITYSDK_OFFSET(0xF494F0)
+
+namespace MX::NetworkProtocol
+{
+	inline static constexpr unsigned int MiniGameDefenseGetInfoResponse_TypeDefinitionIndex = 11908;
+
+	class MiniGameDefenseGetInfoResponse : public Il2CppObject
+	{
+	public:
+		::System::Int64 _EventPointAmount_k__BackingField; // 0x50
+		Il2CppObject* _DefenseStageHistoryDBs_k__BackingField; // 0x58
+
+		::System::Void set_EventPointAmount(::System::Int64 arg)
+		{
+			((::System::Void(*)(::System::Int64, ::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_MINIGAMEDEFENSEGETINFORESPONSE_SET_EVENTPOINTAMOUNT_OFFSET))(arg, nullptr);
+		}
+
+		::MX::NetworkProtocol::Protocol* get_Protocol()
+		{
+			return ((::MX::NetworkProtocol::Protocol*(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_MINIGAMEDEFENSEGETINFORESPONSE_GET_PROTOCOL_OFFSET))(nullptr);
+		}
+
+		Il2CppObject* get_DefenseStageHistoryDBs()
+		{
+			return ((Il2CppObject*(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_MINIGAMEDEFENSEGETINFORESPONSE_GET_DEFENSESTAGEHISTORYDBS_OFFSET))(nullptr);
+		}
+
+		::System::Void set_DefenseStageHistoryDBs(Il2CppObject* arg)
+		{
+			((::System::Void(*)(Il2CppObject*, ::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_MINIGAMEDEFENSEGETINFORESPONSE_SET_DEFENSESTAGEHISTORYDBS_OFFSET))(arg, nullptr);
+		}
+
+		::System::Int64 get_EventPointAmount()
+		{
+			return ((::System::Int64(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_MINIGAMEDEFENSEGETINFORESPONSE_GET_EVENTPOINTAMOUNT_OFFSET))(nullptr);
+		}
+
+		::System::Void .ctor()
+		{
+			((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_MINIGAMEDEFENSEGETINFORESPONSE_.CTOR_OFFSET))(nullptr);
+		}
+
+	};
+}
+

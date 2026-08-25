@@ -1,0 +1,15 @@
+#pragma once
+#include "unitysdk.h"
+
+	inline static constexpr unsigned int <PrivateImplementationDetails>_TypeDefinitionIndex = 37280;
+
+	class <PrivateImplementationDetails> : public Il2CppObject
+	{
+	public:
+		__StaticArrayInitTypeSize=256* 07DB995E8ED2CFB0AB71EBA69F3A3EC07D5C6AC10C0C64F33E94ED2949B348AA; // 0x0
+		__StaticArrayInitTypeSize=32* C69994AC61B52FBCEA582D6CCCD595C12E00BDB18F0C6F593FB6B393CAEDB08C; // 0x100
+		::System::Int64 D0067CAD9A63E0813759A2BB841051CA73570C0DA2E08E840A8EB45DB6A7A010; // 0x120
+		__StaticArrayInitTypeSize=3* D5B592C05DC25B5032553F1B27F4139BE95E881F73DB33B02B05AB20C3F9981E; // 0x128
+
+	};
+

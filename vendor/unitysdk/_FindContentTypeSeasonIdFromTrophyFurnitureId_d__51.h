@@ -1,0 +1,86 @@
+#pragma once
+#include "unitysdk.h"
+
+namespace MX::Data { class RaidData; }
+namespace FlatData { class ContentType; }
+
+#define <FINDCONTENTTYPESEASONIDFROMTROPHYFURNITUREID>D__51_.CTOR_OFFSET UNITYSDK_OFFSET(0x192AD00)
+#define <FINDCONTENTTYPESEASONIDFROMTROPHYFURNITUREID>D__51_SYSTEM.IDISPOSABLE.DISPOSE_OFFSET UNITYSDK_OFFSET(0x192FB50)
+#define <FINDCONTENTTYPESEASONIDFROMTROPHYFURNITUREID>D__51_MOVENEXT_OFFSET UNITYSDK_OFFSET(0x192FC90)
+#define <FINDCONTENTTYPESEASONIDFROMTROPHYFURNITUREID>D__51___M__FINALLY1_OFFSET UNITYSDK_OFFSET(0x1930200)
+#define <FINDCONTENTTYPESEASONIDFROMTROPHYFURNITUREID>D__51___M__FINALLY2_OFFSET UNITYSDK_OFFSET(0x19301B0)
+#define <FINDCONTENTTYPESEASONIDFROMTROPHYFURNITUREID>D__51_SYSTEM.COLLECTIONS.GENERIC.IENUMERATOR_MX.DATA.RAIDDATA.IDCONTENTTYPEPAIR_.GET_CURRENT_OFFSET UNITYSDK_OFFSET(0x1930250)
+#define <FINDCONTENTTYPESEASONIDFROMTROPHYFURNITUREID>D__51_SYSTEM.COLLECTIONS.IENUMERATOR.RESET_OFFSET UNITYSDK_OFFSET(0x1930260)
+#define <FINDCONTENTTYPESEASONIDFROMTROPHYFURNITUREID>D__51_SYSTEM.COLLECTIONS.IENUMERATOR.GET_CURRENT_OFFSET UNITYSDK_OFFSET(0x19302B0)
+#define <FINDCONTENTTYPESEASONIDFROMTROPHYFURNITUREID>D__51_SYSTEM.COLLECTIONS.GENERIC.IENUMERABLE_MX.DATA.RAIDDATA.IDCONTENTTYPEPAIR_.GETENUMERATOR_OFFSET UNITYSDK_OFFSET(0x1930300)
+#define <FINDCONTENTTYPESEASONIDFROMTROPHYFURNITUREID>D__51_SYSTEM.COLLECTIONS.IENUMERABLE.GETENUMERATOR_OFFSET UNITYSDK_OFFSET(0x19303B0)
+
+	inline static constexpr unsigned int <FindContentTypeSeasonIdFromTrophyFurnitureId>d__51_TypeDefinitionIndex = 16325;
+
+	class <FindContentTypeSeasonIdFromTrophyFurnitureId>d__51 : public Il2CppObject
+	{
+	public:
+		::System::Int32 __1__state; // 0x10
+		IdContentTypePair* __2__current; // 0x18
+		::System::Int32 __l__initialThreadId; // 0x28
+		::System::Int64 furnitureId; // 0x30
+		::System::Int64 __3__furnitureId; // 0x38
+		::MX::Data::RaidData* __4__this; // 0x40
+		<>c__DisplayClass51_0* __8__1; // 0x48
+		::FlatData::ContentType* contentType; // 0x50
+		::FlatData::ContentType* __3__contentType; // 0x54
+		Il2CppObject* __7__wrap1; // 0x58
+		Il2CppObject* __7__wrap2; // 0x70
+
+		::System::Void .ctor(::System::Int32 arg)
+		{
+			((::System::Void(*)(::System::Int32, ::PVOID))((::PBYTE)hIl2Cpp + <FINDCONTENTTYPESEASONIDFROMTROPHYFURNITUREID>D__51_.CTOR_OFFSET))(arg, nullptr);
+		}
+
+		::System::Void System.IDisposable.Dispose()
+		{
+			((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + <FINDCONTENTTYPESEASONIDFROMTROPHYFURNITUREID>D__51_SYSTEM.IDISPOSABLE.DISPOSE_OFFSET))(nullptr);
+		}
+
+		::System::Boolean MoveNext()
+		{
+			return (return (::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + <FINDCONTENTTYPESEASONIDFROMTROPHYFURNITUREID>D__51_MOVENEXT_OFFSET))(nullptr);
+		}
+
+		::System::Void __m__Finally1()
+		{
+			((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + <FINDCONTENTTYPESEASONIDFROMTROPHYFURNITUREID>D__51___M__FINALLY1_OFFSET))(nullptr);
+		}
+
+		::System::Void __m__Finally2()
+		{
+			((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + <FINDCONTENTTYPESEASONIDFROMTROPHYFURNITUREID>D__51___M__FINALLY2_OFFSET))(nullptr);
+		}
+
+		IdContentTypePair* System.Collections.Generic.IEnumerator_MX.Data.RaidData.IdContentTypePair_.get_Current()
+		{
+			return (return (IdContentTypePair*(*)(::PVOID))((::PBYTE)hIl2Cpp + <FINDCONTENTTYPESEASONIDFROMTROPHYFURNITUREID>D__51_SYSTEM.COLLECTIONS.GENERIC.IENUMERATOR_MX.DATA.RAIDDATA.IDCONTENTTYPEPAIR_.GET_CURRENT_OFFSET))(nullptr);
+		}
+
+		::System::Void System.Collections.IEnumerator.Reset()
+		{
+			((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + <FINDCONTENTTYPESEASONIDFROMTROPHYFURNITUREID>D__51_SYSTEM.COLLECTIONS.IENUMERATOR.RESET_OFFSET))(nullptr);
+		}
+
+		::System::Object* System.Collections.IEnumerator.get_Current()
+		{
+			return (return (::System::Object*(*)(::PVOID))((::PBYTE)hIl2Cpp + <FINDCONTENTTYPESEASONIDFROMTROPHYFURNITUREID>D__51_SYSTEM.COLLECTIONS.IENUMERATOR.GET_CURRENT_OFFSET))(nullptr);
+		}
+
+		Il2CppObject* System.Collections.Generic.IEnumerable_MX.Data.RaidData.IdContentTypePair_.GetEnumerator()
+		{
+			return (return (Il2CppObject*(*)(::PVOID))((::PBYTE)hIl2Cpp + <FINDCONTENTTYPESEASONIDFROMTROPHYFURNITUREID>D__51_SYSTEM.COLLECTIONS.GENERIC.IENUMERABLE_MX.DATA.RAIDDATA.IDCONTENTTYPEPAIR_.GETENUMERATOR_OFFSET))(nullptr);
+		}
+
+		::System::Collections::IEnumerator* System.Collections.IEnumerable.GetEnumerator()
+		{
+			return (return (::System::Collections::IEnumerator*(*)(::PVOID))((::PBYTE)hIl2Cpp + <FINDCONTENTTYPESEASONIDFROMTROPHYFURNITUREID>D__51_SYSTEM.COLLECTIONS.IENUMERABLE.GETENUMERATOR_OFFSET))(nullptr);
+		}
+
+	};
+

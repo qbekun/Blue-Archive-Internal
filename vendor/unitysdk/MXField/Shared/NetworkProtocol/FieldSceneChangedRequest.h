@@ -1,0 +1,68 @@
+#pragma once
+#include "../../../unitysdk.h"
+
+namespace MX::NetworkProtocol { class Protocol; }
+
+#define MXFIELD_SHARED_NETWORKPROTOCOL_FIELDSCENECHANGEDREQUEST_GET_SCENEID_OFFSET UNITYSDK_OFFSET(0xE6EBF0)
+#define MXFIELD_SHARED_NETWORKPROTOCOL_FIELDSCENECHANGEDREQUEST_GET_DATEID_OFFSET UNITYSDK_OFFSET(0xE6EC00)
+#define MXFIELD_SHARED_NETWORKPROTOCOL_FIELDSCENECHANGEDREQUEST_SET_FIELDSEASONID_OFFSET UNITYSDK_OFFSET(0xE6EC10)
+#define MXFIELD_SHARED_NETWORKPROTOCOL_FIELDSCENECHANGEDREQUEST_GET_PROTOCOL_OFFSET UNITYSDK_OFFSET(0xE6EC20)
+#define MXFIELD_SHARED_NETWORKPROTOCOL_FIELDSCENECHANGEDREQUEST_GET_FIELDSEASONID_OFFSET UNITYSDK_OFFSET(0xE6EC30)
+#define MXFIELD_SHARED_NETWORKPROTOCOL_FIELDSCENECHANGEDREQUEST_SET_DATEID_OFFSET UNITYSDK_OFFSET(0xE6EC40)
+#define MXFIELD_SHARED_NETWORKPROTOCOL_FIELDSCENECHANGEDREQUEST_.CTOR_OFFSET UNITYSDK_OFFSET(0xE6EC50)
+#define MXFIELD_SHARED_NETWORKPROTOCOL_FIELDSCENECHANGEDREQUEST_SET_SCENEID_OFFSET UNITYSDK_OFFSET(0xE6EC60)
+
+namespace MXField::Shared::NetworkProtocol
+{
+	inline static constexpr unsigned int FieldSceneChangedRequest_TypeDefinitionIndex = 10530;
+
+	class FieldSceneChangedRequest : public Il2CppObject
+	{
+	public:
+		::System::Int64 _FieldSeasonId_k__BackingField; // 0x40
+		::System::Int64 _DateId_k__BackingField; // 0x48
+		::System::Int64 _SceneId_k__BackingField; // 0x50
+
+		::System::Int64 get_SceneId()
+		{
+			return ((::System::Int64(*)(::PVOID))((::PBYTE)hIl2Cpp + MXFIELD_SHARED_NETWORKPROTOCOL_FIELDSCENECHANGEDREQUEST_GET_SCENEID_OFFSET))(nullptr);
+		}
+
+		::System::Int64 get_DateId()
+		{
+			return ((::System::Int64(*)(::PVOID))((::PBYTE)hIl2Cpp + MXFIELD_SHARED_NETWORKPROTOCOL_FIELDSCENECHANGEDREQUEST_GET_DATEID_OFFSET))(nullptr);
+		}
+
+		::System::Void set_FieldSeasonId(::System::Int64 arg)
+		{
+			((::System::Void(*)(::System::Int64, ::PVOID))((::PBYTE)hIl2Cpp + MXFIELD_SHARED_NETWORKPROTOCOL_FIELDSCENECHANGEDREQUEST_SET_FIELDSEASONID_OFFSET))(arg, nullptr);
+		}
+
+		::MX::NetworkProtocol::Protocol* get_Protocol()
+		{
+			return ((::MX::NetworkProtocol::Protocol*(*)(::PVOID))((::PBYTE)hIl2Cpp + MXFIELD_SHARED_NETWORKPROTOCOL_FIELDSCENECHANGEDREQUEST_GET_PROTOCOL_OFFSET))(nullptr);
+		}
+
+		::System::Int64 get_FieldSeasonId()
+		{
+			return ((::System::Int64(*)(::PVOID))((::PBYTE)hIl2Cpp + MXFIELD_SHARED_NETWORKPROTOCOL_FIELDSCENECHANGEDREQUEST_GET_FIELDSEASONID_OFFSET))(nullptr);
+		}
+
+		::System::Void set_DateId(::System::Int64 arg)
+		{
+			((::System::Void(*)(::System::Int64, ::PVOID))((::PBYTE)hIl2Cpp + MXFIELD_SHARED_NETWORKPROTOCOL_FIELDSCENECHANGEDREQUEST_SET_DATEID_OFFSET))(arg, nullptr);
+		}
+
+		::System::Void .ctor()
+		{
+			((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MXFIELD_SHARED_NETWORKPROTOCOL_FIELDSCENECHANGEDREQUEST_.CTOR_OFFSET))(nullptr);
+		}
+
+		::System::Void set_SceneId(::System::Int64 arg)
+		{
+			((::System::Void(*)(::System::Int64, ::PVOID))((::PBYTE)hIl2Cpp + MXFIELD_SHARED_NETWORKPROTOCOL_FIELDSCENECHANGEDREQUEST_SET_SCENEID_OFFSET))(arg, nullptr);
+		}
+
+	};
+}
+

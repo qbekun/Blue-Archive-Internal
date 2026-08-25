@@ -1,0 +1,56 @@
+#pragma once
+#include "../../../unitysdk.h"
+
+#define SYSTEM_NET_CONFIGURATION_WEBPROXYSCRIPTELEMENT_.CTOR_OFFSET UNITYSDK_OFFSET(0x9AB49B0)
+#define SYSTEM_NET_CONFIGURATION_WEBPROXYSCRIPTELEMENT_GET_AUTOCONFIGURLRETRYINTERVAL_OFFSET UNITYSDK_OFFSET(0x9AB49E0)
+#define SYSTEM_NET_CONFIGURATION_WEBPROXYSCRIPTELEMENT_SET_AUTOCONFIGURLRETRYINTERVAL_OFFSET UNITYSDK_OFFSET(0x9AB4A10)
+#define SYSTEM_NET_CONFIGURATION_WEBPROXYSCRIPTELEMENT_GET_DOWNLOADTIMEOUT_OFFSET UNITYSDK_OFFSET(0x9AB4A40)
+#define SYSTEM_NET_CONFIGURATION_WEBPROXYSCRIPTELEMENT_SET_DOWNLOADTIMEOUT_OFFSET UNITYSDK_OFFSET(0x9AB4A70)
+#define SYSTEM_NET_CONFIGURATION_WEBPROXYSCRIPTELEMENT_GET_PROPERTIES_OFFSET UNITYSDK_OFFSET(0x9AB4AA0)
+#define SYSTEM_NET_CONFIGURATION_WEBPROXYSCRIPTELEMENT_POSTDESERIALIZE_OFFSET UNITYSDK_OFFSET(0x9AB4AD0)
+
+namespace System::Net::Configuration
+{
+	inline static constexpr unsigned int WebProxyScriptElement_TypeDefinitionIndex = 30002;
+
+	class WebProxyScriptElement : public Il2CppObject
+	{
+	public:
+		::System::Void .ctor()
+		{
+			((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_NET_CONFIGURATION_WEBPROXYSCRIPTELEMENT_.CTOR_OFFSET))(nullptr);
+		}
+
+		::System::Int32 get_AutoConfigUrlRetryInterval()
+		{
+			return (return (::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_NET_CONFIGURATION_WEBPROXYSCRIPTELEMENT_GET_AUTOCONFIGURLRETRYINTERVAL_OFFSET))(nullptr);
+		}
+
+		::System::Void set_AutoConfigUrlRetryInterval(::System::Int32 arg)
+		{
+			((::System::Void(*)(::System::Int32, ::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_NET_CONFIGURATION_WEBPROXYSCRIPTELEMENT_SET_AUTOCONFIGURLRETRYINTERVAL_OFFSET))(arg, nullptr);
+		}
+
+		::System::TimeSpan* get_DownloadTimeout()
+		{
+			return (return (::System::TimeSpan*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_NET_CONFIGURATION_WEBPROXYSCRIPTELEMENT_GET_DOWNLOADTIMEOUT_OFFSET))(nullptr);
+		}
+
+		::System::Void set_DownloadTimeout(::System::TimeSpan* arg)
+		{
+			((::System::Void(*)(::System::TimeSpan*, ::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_NET_CONFIGURATION_WEBPROXYSCRIPTELEMENT_SET_DOWNLOADTIMEOUT_OFFSET))(arg, nullptr);
+		}
+
+		::System::Configuration::ConfigurationPropertyCollection* get_Properties()
+		{
+			return (return (::System::Configuration::ConfigurationPropertyCollection*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_NET_CONFIGURATION_WEBPROXYSCRIPTELEMENT_GET_PROPERTIES_OFFSET))(nullptr);
+		}
+
+		::System::Void PostDeserialize()
+		{
+			((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_NET_CONFIGURATION_WEBPROXYSCRIPTELEMENT_POSTDESERIALIZE_OFFSET))(nullptr);
+		}
+
+	};
+}
+

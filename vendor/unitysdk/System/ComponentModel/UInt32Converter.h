@@ -1,0 +1,44 @@
+#pragma once
+#include "../../unitysdk.h"
+
+#define SYSTEM_COMPONENTMODEL_UINT32CONVERTER_GET_TARGETTYPE_OFFSET UNITYSDK_OFFSET(0x9B49FE0)
+#define SYSTEM_COMPONENTMODEL_UINT32CONVERTER_FROMSTRING_OFFSET UNITYSDK_OFFSET(0x9B4A040)
+#define SYSTEM_COMPONENTMODEL_UINT32CONVERTER_FROMSTRING_OFFSET UNITYSDK_OFFSET(0x9B4A0C0)
+#define SYSTEM_COMPONENTMODEL_UINT32CONVERTER_TOSTRING_OFFSET UNITYSDK_OFFSET(0x9B4A120)
+#define SYSTEM_COMPONENTMODEL_UINT32CONVERTER_.CTOR_OFFSET UNITYSDK_OFFSET(0x9B4A1B0)
+
+namespace System::ComponentModel
+{
+	inline static constexpr unsigned int UInt32Converter_TypeDefinitionIndex = 29469;
+
+	class UInt32Converter : public ::TriInspector::InlineEditorModes
+	{
+	public:
+		::System::Type* get_TargetType()
+		{
+			return (return (::System::Type*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_COMPONENTMODEL_UINT32CONVERTER_GET_TARGETTYPE_OFFSET))(nullptr);
+		}
+
+		::System::Object* FromString(::System::String* str, ::System::Int32 arg)
+		{
+			return (return (::System::Object*(*)(::System::String*, ::System::Int32, ::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_COMPONENTMODEL_UINT32CONVERTER_FROMSTRING_OFFSET))(str, arg, nullptr);
+		}
+
+		::System::Object* FromString(::System::String* str, ::System::Globalization::NumberFormatInfo* arg)
+		{
+			return (return (::System::Object*(*)(::System::String*, ::System::Globalization::NumberFormatInfo*, ::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_COMPONENTMODEL_UINT32CONVERTER_FROMSTRING_OFFSET))(str, arg, nullptr);
+		}
+
+		::System::String* ToString(::System::Object* arg, ::System::Globalization::NumberFormatInfo* arg)
+		{
+			return (return (::System::String*(*)(::System::Object*, ::System::Globalization::NumberFormatInfo*, ::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_COMPONENTMODEL_UINT32CONVERTER_TOSTRING_OFFSET))(arg, arg, nullptr);
+		}
+
+		::System::Void .ctor()
+		{
+			((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_COMPONENTMODEL_UINT32CONVERTER_.CTOR_OFFSET))(nullptr);
+		}
+
+	};
+}
+

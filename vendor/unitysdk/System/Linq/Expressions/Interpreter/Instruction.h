@@ -1,0 +1,86 @@
+#pragma once
+#include "../../../../unitysdk.h"
+
+#define SYSTEM_LINQ_EXPRESSIONS_INTERPRETER_INSTRUCTION_GET_CONSUMEDSTACK_OFFSET UNITYSDK_OFFSET(0x967B270)
+#define SYSTEM_LINQ_EXPRESSIONS_INTERPRETER_INSTRUCTION_GET_PRODUCEDSTACK_OFFSET UNITYSDK_OFFSET(0x967B280)
+#define SYSTEM_LINQ_EXPRESSIONS_INTERPRETER_INSTRUCTION_GET_CONSUMEDCONTINUATIONS_OFFSET UNITYSDK_OFFSET(0x967B290)
+#define SYSTEM_LINQ_EXPRESSIONS_INTERPRETER_INSTRUCTION_GET_PRODUCEDCONTINUATIONS_OFFSET UNITYSDK_OFFSET(0x967B2A0)
+#define SYSTEM_LINQ_EXPRESSIONS_INTERPRETER_INSTRUCTION_GET_STACKBALANCE_OFFSET UNITYSDK_OFFSET(0x967B2B0)
+#define SYSTEM_LINQ_EXPRESSIONS_INTERPRETER_INSTRUCTION_GET_CONTINUATIONSBALANCE_OFFSET UNITYSDK_OFFSET(0x967B2F0)
+#define SYSTEM_LINQ_EXPRESSIONS_INTERPRETER_INSTRUCTION_RUN_OFFSET UNITYSDK_OFFSET(0x000000)
+#define SYSTEM_LINQ_EXPRESSIONS_INTERPRETER_INSTRUCTION_GET_INSTRUCTIONNAME_OFFSET UNITYSDK_OFFSET(0x000000)
+#define SYSTEM_LINQ_EXPRESSIONS_INTERPRETER_INSTRUCTION_TOSTRING_OFFSET UNITYSDK_OFFSET(0x967B330)
+#define SYSTEM_LINQ_EXPRESSIONS_INTERPRETER_INSTRUCTION_TODEBUGSTRING_OFFSET UNITYSDK_OFFSET(0x967B390)
+#define SYSTEM_LINQ_EXPRESSIONS_INTERPRETER_INSTRUCTION_NULLCHECK_OFFSET UNITYSDK_OFFSET(0x9676510)
+#define SYSTEM_LINQ_EXPRESSIONS_INTERPRETER_INSTRUCTION_.CTOR_OFFSET UNITYSDK_OFFSET(0x9672690)
+
+namespace System::Linq::Expressions::Interpreter
+{
+	inline static constexpr unsigned int Instruction_TypeDefinitionIndex = 33271;
+
+	class Instruction : public Il2CppObject
+	{
+	public:
+		::System::Int32 get_ConsumedStack()
+		{
+			return (return (::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_LINQ_EXPRESSIONS_INTERPRETER_INSTRUCTION_GET_CONSUMEDSTACK_OFFSET))(nullptr);
+		}
+
+		::System::Int32 get_ProducedStack()
+		{
+			return (return (::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_LINQ_EXPRESSIONS_INTERPRETER_INSTRUCTION_GET_PRODUCEDSTACK_OFFSET))(nullptr);
+		}
+
+		::System::Int32 get_ConsumedContinuations()
+		{
+			return (return (::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_LINQ_EXPRESSIONS_INTERPRETER_INSTRUCTION_GET_CONSUMEDCONTINUATIONS_OFFSET))(nullptr);
+		}
+
+		::System::Int32 get_ProducedContinuations()
+		{
+			return (return (::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_LINQ_EXPRESSIONS_INTERPRETER_INSTRUCTION_GET_PRODUCEDCONTINUATIONS_OFFSET))(nullptr);
+		}
+
+		::System::Int32 get_StackBalance()
+		{
+			return (return (::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_LINQ_EXPRESSIONS_INTERPRETER_INSTRUCTION_GET_STACKBALANCE_OFFSET))(nullptr);
+		}
+
+		::System::Int32 get_ContinuationsBalance()
+		{
+			return (return (::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_LINQ_EXPRESSIONS_INTERPRETER_INSTRUCTION_GET_CONTINUATIONSBALANCE_OFFSET))(nullptr);
+		}
+
+		::System::Int32 Run(::System::Linq::Expressions::Interpreter::InterpretedFrame* arg)
+		{
+			return (return (::System::Int32(*)(::System::Linq::Expressions::Interpreter::InterpretedFrame*, ::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_LINQ_EXPRESSIONS_INTERPRETER_INSTRUCTION_RUN_OFFSET))(arg, nullptr);
+		}
+
+		::System::String* get_InstructionName()
+		{
+			return (return (::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_LINQ_EXPRESSIONS_INTERPRETER_INSTRUCTION_GET_INSTRUCTIONNAME_OFFSET))(nullptr);
+		}
+
+		::System::String* ToString()
+		{
+			return (return (::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_LINQ_EXPRESSIONS_INTERPRETER_INSTRUCTION_TOSTRING_OFFSET))(nullptr);
+		}
+
+		::System::String* ToDebugString(::System::Int32 arg, ::System::Object* arg, Il2CppObject* arg, Il2CppObject* arg)
+		{
+			return (return (::System::String*(*)(::System::Int32, ::System::Object*, Il2CppObject*, Il2CppObject*, ::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_LINQ_EXPRESSIONS_INTERPRETER_INSTRUCTION_TODEBUGSTRING_OFFSET))(arg, arg, arg, arg, nullptr);
+		}
+
+		::System::Void NullCheck(::System::Object* arg)
+		{
+			((::System::Void(*)(::System::Object*, ::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_LINQ_EXPRESSIONS_INTERPRETER_INSTRUCTION_NULLCHECK_OFFSET))(arg, nullptr);
+		}
+
+		::System::Void .ctor()
+		{
+			((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_LINQ_EXPRESSIONS_INTERPRETER_INSTRUCTION_.CTOR_OFFSET))(nullptr);
+		}
+
+	};
+}
+

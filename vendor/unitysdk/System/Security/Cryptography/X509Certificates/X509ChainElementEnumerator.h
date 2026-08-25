@@ -1,0 +1,46 @@
+#pragma once
+#include "../../../../unitysdk.h"
+
+#define SYSTEM_SECURITY_CRYPTOGRAPHY_X509CERTIFICATES_X509CHAINELEMENTENUMERATOR_.CTOR_OFFSET UNITYSDK_OFFSET(0x9B14F20)
+#define SYSTEM_SECURITY_CRYPTOGRAPHY_X509CERTIFICATES_X509CHAINELEMENTENUMERATOR_GET_CURRENT_OFFSET UNITYSDK_OFFSET(0x9B152A0)
+#define SYSTEM_SECURITY_CRYPTOGRAPHY_X509CERTIFICATES_X509CHAINELEMENTENUMERATOR_SYSTEM.COLLECTIONS.IENUMERATOR.GET_CURRENT_OFFSET UNITYSDK_OFFSET(0x9B15390)
+#define SYSTEM_SECURITY_CRYPTOGRAPHY_X509CERTIFICATES_X509CHAINELEMENTENUMERATOR_MOVENEXT_OFFSET UNITYSDK_OFFSET(0x9B15430)
+#define SYSTEM_SECURITY_CRYPTOGRAPHY_X509CERTIFICATES_X509CHAINELEMENTENUMERATOR_RESET_OFFSET UNITYSDK_OFFSET(0x9B154D0)
+
+namespace System::Security::Cryptography::X509Certificates
+{
+	inline static constexpr unsigned int X509ChainElementEnumerator_TypeDefinitionIndex = 29302;
+
+	class X509ChainElementEnumerator : public Il2CppObject
+	{
+	public:
+		::System::Collections::IEnumerator* enumerator; // 0x10
+
+		::System::Void .ctor(::System::Collections::IEnumerable* arg)
+		{
+			((::System::Void(*)(::System::Collections::IEnumerable*, ::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_SECURITY_CRYPTOGRAPHY_X509CERTIFICATES_X509CHAINELEMENTENUMERATOR_.CTOR_OFFSET))(arg, nullptr);
+		}
+
+		::System::Security::Cryptography::X509Certificates::X509ChainElement* get_Current()
+		{
+			return (return (::System::Security::Cryptography::X509Certificates::X509ChainElement*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_SECURITY_CRYPTOGRAPHY_X509CERTIFICATES_X509CHAINELEMENTENUMERATOR_GET_CURRENT_OFFSET))(nullptr);
+		}
+
+		::System::Object* System.Collections.IEnumerator.get_Current()
+		{
+			return (return (::System::Object*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_SECURITY_CRYPTOGRAPHY_X509CERTIFICATES_X509CHAINELEMENTENUMERATOR_SYSTEM.COLLECTIONS.IENUMERATOR.GET_CURRENT_OFFSET))(nullptr);
+		}
+
+		::System::Boolean MoveNext()
+		{
+			return (return (::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_SECURITY_CRYPTOGRAPHY_X509CERTIFICATES_X509CHAINELEMENTENUMERATOR_MOVENEXT_OFFSET))(nullptr);
+		}
+
+		::System::Void Reset()
+		{
+			((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_SECURITY_CRYPTOGRAPHY_X509CERTIFICATES_X509CHAINELEMENTENUMERATOR_RESET_OFFSET))(nullptr);
+		}
+
+	};
+}
+

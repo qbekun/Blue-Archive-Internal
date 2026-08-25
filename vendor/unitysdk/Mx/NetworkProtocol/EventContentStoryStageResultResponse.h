@@ -1,0 +1,83 @@
+#pragma once
+#include "../../unitysdk.h"
+
+namespace MX::GameLogic::DBModel { class CampaignStageHistoryDB; }
+namespace MX::GameLogic::Parcel { class ParcelResultDB; }
+namespace MX::NetworkProtocol { class Protocol; }
+
+#define MX_NETWORKPROTOCOL_EVENTCONTENTSTORYSTAGERESULTRESPONSE_GET_CAMPAIGNSTAGEHISTORYDB_OFFSET UNITYSDK_OFFSET(0xF45B70)
+#define MX_NETWORKPROTOCOL_EVENTCONTENTSTORYSTAGERESULTRESPONSE_GET_PROTOCOL_OFFSET UNITYSDK_OFFSET(0xF45B80)
+#define MX_NETWORKPROTOCOL_EVENTCONTENTSTORYSTAGERESULTRESPONSE_GET_FIRSTCLEARREWARD_OFFSET UNITYSDK_OFFSET(0xF45B90)
+#define MX_NETWORKPROTOCOL_EVENTCONTENTSTORYSTAGERESULTRESPONSE_SET_EVENTCONTENTCOLLECTIONDBS_OFFSET UNITYSDK_OFFSET(0xF45BA0)
+#define MX_NETWORKPROTOCOL_EVENTCONTENTSTORYSTAGERESULTRESPONSE_SET_CAMPAIGNSTAGEHISTORYDB_OFFSET UNITYSDK_OFFSET(0xF45BB0)
+#define MX_NETWORKPROTOCOL_EVENTCONTENTSTORYSTAGERESULTRESPONSE_SET_PARCELRESULTDB_OFFSET UNITYSDK_OFFSET(0xF45BC0)
+#define MX_NETWORKPROTOCOL_EVENTCONTENTSTORYSTAGERESULTRESPONSE_SET_FIRSTCLEARREWARD_OFFSET UNITYSDK_OFFSET(0xF45BD0)
+#define MX_NETWORKPROTOCOL_EVENTCONTENTSTORYSTAGERESULTRESPONSE_GET_EVENTCONTENTCOLLECTIONDBS_OFFSET UNITYSDK_OFFSET(0xF45BE0)
+#define MX_NETWORKPROTOCOL_EVENTCONTENTSTORYSTAGERESULTRESPONSE_GET_PARCELRESULTDB_OFFSET UNITYSDK_OFFSET(0xF45BF0)
+#define MX_NETWORKPROTOCOL_EVENTCONTENTSTORYSTAGERESULTRESPONSE_.CTOR_OFFSET UNITYSDK_OFFSET(0xF45C00)
+
+namespace MX::NetworkProtocol
+{
+	inline static constexpr unsigned int EventContentStoryStageResultResponse_TypeDefinitionIndex = 11756;
+
+	class EventContentStoryStageResultResponse : public Il2CppObject
+	{
+	public:
+		::MX::GameLogic::DBModel::CampaignStageHistoryDB* _CampaignStageHistoryDB_k__BackingField; // 0x50
+		::MX::GameLogic::Parcel::ParcelResultDB* _ParcelResultDB_k__BackingField; // 0x58
+		Il2CppObject* _FirstClearReward_k__BackingField; // 0x60
+		Il2CppObject* _EventContentCollectionDBs_k__BackingField; // 0x68
+
+		::MX::GameLogic::DBModel::CampaignStageHistoryDB* get_CampaignStageHistoryDB()
+		{
+			return ((::MX::GameLogic::DBModel::CampaignStageHistoryDB*(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_EVENTCONTENTSTORYSTAGERESULTRESPONSE_GET_CAMPAIGNSTAGEHISTORYDB_OFFSET))(nullptr);
+		}
+
+		::MX::NetworkProtocol::Protocol* get_Protocol()
+		{
+			return ((::MX::NetworkProtocol::Protocol*(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_EVENTCONTENTSTORYSTAGERESULTRESPONSE_GET_PROTOCOL_OFFSET))(nullptr);
+		}
+
+		Il2CppObject* get_FirstClearReward()
+		{
+			return ((Il2CppObject*(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_EVENTCONTENTSTORYSTAGERESULTRESPONSE_GET_FIRSTCLEARREWARD_OFFSET))(nullptr);
+		}
+
+		::System::Void set_EventContentCollectionDBs(Il2CppObject* arg)
+		{
+			((::System::Void(*)(Il2CppObject*, ::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_EVENTCONTENTSTORYSTAGERESULTRESPONSE_SET_EVENTCONTENTCOLLECTIONDBS_OFFSET))(arg, nullptr);
+		}
+
+		::System::Void set_CampaignStageHistoryDB(::MX::GameLogic::DBModel::CampaignStageHistoryDB* arg)
+		{
+			((::System::Void(*)(::MX::GameLogic::DBModel::CampaignStageHistoryDB*, ::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_EVENTCONTENTSTORYSTAGERESULTRESPONSE_SET_CAMPAIGNSTAGEHISTORYDB_OFFSET))(arg, nullptr);
+		}
+
+		::System::Void set_ParcelResultDB(::MX::GameLogic::Parcel::ParcelResultDB* arg)
+		{
+			((::System::Void(*)(::MX::GameLogic::Parcel::ParcelResultDB*, ::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_EVENTCONTENTSTORYSTAGERESULTRESPONSE_SET_PARCELRESULTDB_OFFSET))(arg, nullptr);
+		}
+
+		::System::Void set_FirstClearReward(Il2CppObject* arg)
+		{
+			((::System::Void(*)(Il2CppObject*, ::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_EVENTCONTENTSTORYSTAGERESULTRESPONSE_SET_FIRSTCLEARREWARD_OFFSET))(arg, nullptr);
+		}
+
+		Il2CppObject* get_EventContentCollectionDBs()
+		{
+			return ((Il2CppObject*(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_EVENTCONTENTSTORYSTAGERESULTRESPONSE_GET_EVENTCONTENTCOLLECTIONDBS_OFFSET))(nullptr);
+		}
+
+		::MX::GameLogic::Parcel::ParcelResultDB* get_ParcelResultDB()
+		{
+			return ((::MX::GameLogic::Parcel::ParcelResultDB*(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_EVENTCONTENTSTORYSTAGERESULTRESPONSE_GET_PARCELRESULTDB_OFFSET))(nullptr);
+		}
+
+		::System::Void .ctor()
+		{
+			((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_EVENTCONTENTSTORYSTAGERESULTRESPONSE_.CTOR_OFFSET))(nullptr);
+		}
+
+	};
+}
+

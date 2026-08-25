@@ -1,0 +1,105 @@
+#pragma once
+#include "unitysdk.h"
+
+class InstantiateFxInfoBase;
+namespace UnityEngine { class GameObject; }
+class ControlFxInstanceInfoBase;
+
+#define ANIMATIONEVENTRECEIVERDUMMY_SETMOUTHTILETODEFAULT_OFFSET UNITYSDK_OFFSET(0x20B0AB0)
+#define ANIMATIONEVENTRECEIVERDUMMY_ANIEVT_INSTANTIATEFXWITHINFO_OFFSET UNITYSDK_OFFSET(0x20B0AC0)
+#define ANIMATIONEVENTRECEIVERDUMMY_.CTOR_OFFSET UNITYSDK_OFFSET(0x20B0AD0)
+#define ANIMATIONEVENTRECEIVERDUMMY_ANIEVT_DISABLESHADOWS_OFFSET UNITYSDK_OFFSET(0x20B0AE0)
+#define ANIMATIONEVENTRECEIVERDUMMY_SETMOUTHTILE_OFFSET UNITYSDK_OFFSET(0x20B0AF0)
+#define ANIMATIONEVENTRECEIVERDUMMY_ANIEVT_DISABLEDITHERLINES_OFFSET UNITYSDK_OFFSET(0x20B0B00)
+#define ANIMATIONEVENTRECEIVERDUMMY_ANIEVT_ENABLESHADOWS_OFFSET UNITYSDK_OFFSET(0x20B0B10)
+#define ANIMATIONEVENTRECEIVERDUMMY_ANIEVT_ENABLESHADOWSAFTERSEC_OFFSET UNITYSDK_OFFSET(0x20B0B20)
+#define ANIMATIONEVENTRECEIVERDUMMY_ANIEVT_DISABLEDITHERLINESAFTERSEC_OFFSET UNITYSDK_OFFSET(0x20B0B30)
+#define ANIMATIONEVENTRECEIVERDUMMY_SETHORIZONTALLYFLIPPEDMOUTHTILE_OFFSET UNITYSDK_OFFSET(0x20B0B40)
+#define ANIMATIONEVENTRECEIVERDUMMY_ANIEVT_INSTANTIATEFX_OFFSET UNITYSDK_OFFSET(0x20B0B50)
+#define ANIMATIONEVENTRECEIVERDUMMY_ANIEVT_CONTROLFXWITHINFO_OFFSET UNITYSDK_OFFSET(0x20B0B60)
+#define ANIMATIONEVENTRECEIVERDUMMY_ANIEVT_ENABLECHILDRENDERER_OFFSET UNITYSDK_OFFSET(0x20B0B70)
+#define ANIMATIONEVENTRECEIVERDUMMY_ANIEVT_ENABLEDITHERLINES_OFFSET UNITYSDK_OFFSET(0x20B0B80)
+#define ANIMATIONEVENTRECEIVERDUMMY_ANIEVT_DISABLECHILDRENDERER_OFFSET UNITYSDK_OFFSET(0x20B0B90)
+
+	inline static constexpr unsigned int AnimationEventReceiverDummy_TypeDefinitionIndex = 3577;
+
+	class AnimationEventReceiverDummy : public Il2CppObject
+	{
+	public:
+		::System::Void SetMouthTileToDefault()
+		{
+			((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + ANIMATIONEVENTRECEIVERDUMMY_SETMOUTHTILETODEFAULT_OFFSET))(nullptr);
+		}
+
+		::System::Void AniEvt_InstantiateFxWithInfo(InstantiateFxInfoBase* arg)
+		{
+			((::System::Void(*)(InstantiateFxInfoBase*, ::PVOID))((::PBYTE)hIl2Cpp + ANIMATIONEVENTRECEIVERDUMMY_ANIEVT_INSTANTIATEFXWITHINFO_OFFSET))(arg, nullptr);
+		}
+
+		::System::Void .ctor()
+		{
+			((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + ANIMATIONEVENTRECEIVERDUMMY_.CTOR_OFFSET))(nullptr);
+		}
+
+		::System::Void AniEvt_DisableShadows()
+		{
+			((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + ANIMATIONEVENTRECEIVERDUMMY_ANIEVT_DISABLESHADOWS_OFFSET))(nullptr);
+		}
+
+		::System::Void SetMouthTile(::System::Int32 arg)
+		{
+			((::System::Void(*)(::System::Int32, ::PVOID))((::PBYTE)hIl2Cpp + ANIMATIONEVENTRECEIVERDUMMY_SETMOUTHTILE_OFFSET))(arg, nullptr);
+		}
+
+		::System::Void AniEvt_DisableDitherLines()
+		{
+			((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + ANIMATIONEVENTRECEIVERDUMMY_ANIEVT_DISABLEDITHERLINES_OFFSET))(nullptr);
+		}
+
+		::System::Void AniEvt_EnableShadows()
+		{
+			((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + ANIMATIONEVENTRECEIVERDUMMY_ANIEVT_ENABLESHADOWS_OFFSET))(nullptr);
+		}
+
+		::System::Void AniEvt_EnableShadowsAfterSec(::System::Single arg)
+		{
+			((::System::Void(*)(::System::Single, ::PVOID))((::PBYTE)hIl2Cpp + ANIMATIONEVENTRECEIVERDUMMY_ANIEVT_ENABLESHADOWSAFTERSEC_OFFSET))(arg, nullptr);
+		}
+
+		::System::Void AniEvt_DisableDitherLinesAfterSec(::System::Single arg)
+		{
+			((::System::Void(*)(::System::Single, ::PVOID))((::PBYTE)hIl2Cpp + ANIMATIONEVENTRECEIVERDUMMY_ANIEVT_DISABLEDITHERLINESAFTERSEC_OFFSET))(arg, nullptr);
+		}
+
+		::System::Void SetHorizontallyFlippedMouthTile(::System::Int32 arg)
+		{
+			((::System::Void(*)(::System::Int32, ::PVOID))((::PBYTE)hIl2Cpp + ANIMATIONEVENTRECEIVERDUMMY_SETHORIZONTALLYFLIPPEDMOUTHTILE_OFFSET))(arg, nullptr);
+		}
+
+		::System::Void AniEvt_InstantiateFx(::UnityEngine::GameObject* arg)
+		{
+			((::System::Void(*)(::UnityEngine::GameObject*, ::PVOID))((::PBYTE)hIl2Cpp + ANIMATIONEVENTRECEIVERDUMMY_ANIEVT_INSTANTIATEFX_OFFSET))(arg, nullptr);
+		}
+
+		::System::Void AniEvt_ControlFxWithInfo(ControlFxInstanceInfoBase* arg)
+		{
+			((::System::Void(*)(ControlFxInstanceInfoBase*, ::PVOID))((::PBYTE)hIl2Cpp + ANIMATIONEVENTRECEIVERDUMMY_ANIEVT_CONTROLFXWITHINFO_OFFSET))(arg, nullptr);
+		}
+
+		::System::Void AniEvt_EnableChildRenderer(::System::Int32 arg)
+		{
+			((::System::Void(*)(::System::Int32, ::PVOID))((::PBYTE)hIl2Cpp + ANIMATIONEVENTRECEIVERDUMMY_ANIEVT_ENABLECHILDRENDERER_OFFSET))(arg, nullptr);
+		}
+
+		::System::Void AniEvt_EnableDitherLines()
+		{
+			((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + ANIMATIONEVENTRECEIVERDUMMY_ANIEVT_ENABLEDITHERLINES_OFFSET))(nullptr);
+		}
+
+		::System::Void AniEvt_DisableChildRenderer(::System::Int32 arg)
+		{
+			((::System::Void(*)(::System::Int32, ::PVOID))((::PBYTE)hIl2Cpp + ANIMATIONEVENTRECEIVERDUMMY_ANIEVT_DISABLECHILDRENDERER_OFFSET))(arg, nullptr);
+		}
+
+	};
+

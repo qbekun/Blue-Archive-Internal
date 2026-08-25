@@ -1,0 +1,68 @@
+#pragma once
+#include "../../unitysdk.h"
+
+namespace MX::NetworkProtocol { class Protocol; }
+
+#define MX_NETWORKPROTOCOL_EQUIPMENTITEMTIERUPREQUEST_.CTOR_OFFSET UNITYSDK_OFFSET(0xF43720)
+#define MX_NETWORKPROTOCOL_EQUIPMENTITEMTIERUPREQUEST_GET_REPLACEINFOS_OFFSET UNITYSDK_OFFSET(0xF43730)
+#define MX_NETWORKPROTOCOL_EQUIPMENTITEMTIERUPREQUEST_SET_REPLACEINFOS_OFFSET UNITYSDK_OFFSET(0xF43740)
+#define MX_NETWORKPROTOCOL_EQUIPMENTITEMTIERUPREQUEST_SET_CHANGEPIECEINFOS_OFFSET UNITYSDK_OFFSET(0xF43750)
+#define MX_NETWORKPROTOCOL_EQUIPMENTITEMTIERUPREQUEST_GET_TARGETEQUIPMENTSERVERID_OFFSET UNITYSDK_OFFSET(0xF43760)
+#define MX_NETWORKPROTOCOL_EQUIPMENTITEMTIERUPREQUEST_SET_TARGETEQUIPMENTSERVERID_OFFSET UNITYSDK_OFFSET(0xF43770)
+#define MX_NETWORKPROTOCOL_EQUIPMENTITEMTIERUPREQUEST_GET_PROTOCOL_OFFSET UNITYSDK_OFFSET(0xF43780)
+#define MX_NETWORKPROTOCOL_EQUIPMENTITEMTIERUPREQUEST_GET_CHANGEPIECEINFOS_OFFSET UNITYSDK_OFFSET(0xF43790)
+
+namespace MX::NetworkProtocol
+{
+	inline static constexpr unsigned int EquipmentItemTierUpRequest_TypeDefinitionIndex = 11675;
+
+	class EquipmentItemTierUpRequest : public Il2CppObject
+	{
+	public:
+		::System::Int64 _TargetEquipmentServerId_k__BackingField; // 0x40
+		Il2CppObject* _ReplaceInfos_k__BackingField; // 0x48
+		Il2CppObject* _ChangePieceInfos_k__BackingField; // 0x50
+
+		::System::Void .ctor()
+		{
+			((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_EQUIPMENTITEMTIERUPREQUEST_.CTOR_OFFSET))(nullptr);
+		}
+
+		Il2CppObject* get_ReplaceInfos()
+		{
+			return ((Il2CppObject*(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_EQUIPMENTITEMTIERUPREQUEST_GET_REPLACEINFOS_OFFSET))(nullptr);
+		}
+
+		::System::Void set_ReplaceInfos(Il2CppObject* arg)
+		{
+			((::System::Void(*)(Il2CppObject*, ::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_EQUIPMENTITEMTIERUPREQUEST_SET_REPLACEINFOS_OFFSET))(arg, nullptr);
+		}
+
+		::System::Void set_ChangePieceInfos(Il2CppObject* arg)
+		{
+			((::System::Void(*)(Il2CppObject*, ::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_EQUIPMENTITEMTIERUPREQUEST_SET_CHANGEPIECEINFOS_OFFSET))(arg, nullptr);
+		}
+
+		::System::Int64 get_TargetEquipmentServerId()
+		{
+			return ((::System::Int64(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_EQUIPMENTITEMTIERUPREQUEST_GET_TARGETEQUIPMENTSERVERID_OFFSET))(nullptr);
+		}
+
+		::System::Void set_TargetEquipmentServerId(::System::Int64 arg)
+		{
+			((::System::Void(*)(::System::Int64, ::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_EQUIPMENTITEMTIERUPREQUEST_SET_TARGETEQUIPMENTSERVERID_OFFSET))(arg, nullptr);
+		}
+
+		::MX::NetworkProtocol::Protocol* get_Protocol()
+		{
+			return ((::MX::NetworkProtocol::Protocol*(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_EQUIPMENTITEMTIERUPREQUEST_GET_PROTOCOL_OFFSET))(nullptr);
+		}
+
+		Il2CppObject* get_ChangePieceInfos()
+		{
+			return ((Il2CppObject*(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_EQUIPMENTITEMTIERUPREQUEST_GET_CHANGEPIECEINFOS_OFFSET))(nullptr);
+		}
+
+	};
+}
+

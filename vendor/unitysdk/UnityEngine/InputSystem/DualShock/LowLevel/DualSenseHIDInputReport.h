@@ -1,0 +1,39 @@
+#pragma once
+#include "../../../../unitysdk.h"
+
+namespace UnityEngine::InputSystem::Utilities { class FourCC; }
+
+#define UNITYENGINE_INPUTSYSTEM_DUALSHOCK_LOWLEVEL_DUALSENSEHIDINPUTREPORT_.CCTOR_OFFSET UNITYSDK_OFFSET(0x9F53DF0)
+#define UNITYENGINE_INPUTSYSTEM_DUALSHOCK_LOWLEVEL_DUALSENSEHIDINPUTREPORT_GET_FORMAT_OFFSET UNITYSDK_OFFSET(0x9F53E60)
+
+namespace UnityEngine::InputSystem::DualShock::LowLevel
+{
+	inline static constexpr unsigned int DualSenseHIDInputReport_TypeDefinitionIndex = 28699;
+
+	class DualSenseHIDInputReport : public Il2CppObject
+	{
+	public:
+		::UnityEngine::InputSystem::Utilities::FourCC* Format; // 0x0
+		::System::Byte leftStickX; // 0x10
+		::System::Byte leftStickY; // 0x11
+		::System::Byte rightStickX; // 0x12
+		::System::Byte rightStickY; // 0x13
+		::System::Byte leftTrigger; // 0x14
+		::System::Byte rightTrigger; // 0x15
+		::System::Byte buttons0; // 0x16
+		::System::Byte buttons1; // 0x17
+		::System::Byte buttons2; // 0x18
+
+		::System::Void .cctor()
+		{
+			((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_INPUTSYSTEM_DUALSHOCK_LOWLEVEL_DUALSENSEHIDINPUTREPORT_.CCTOR_OFFSET))(nullptr);
+		}
+
+		::UnityEngine::InputSystem::Utilities::FourCC* get_format()
+		{
+			return (return (::UnityEngine::InputSystem::Utilities::FourCC*(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_INPUTSYSTEM_DUALSHOCK_LOWLEVEL_DUALSENSEHIDINPUTREPORT_GET_FORMAT_OFFSET))(nullptr);
+		}
+
+	};
+}
+

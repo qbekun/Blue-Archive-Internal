@@ -1,0 +1,55 @@
+#pragma once
+#include "../../../../../../unitysdk.h"
+
+namespace BestHTTP::SecureProtocol::Org::BouncyCastle::Crypto::Digests { class Gost3411_2012_512Digest; }
+namespace BestHTTP::SecureProtocol::Org::BouncyCastle::Utilities { class IMemoable; }
+
+#define BESTHTTP_SECUREPROTOCOL_ORG_BOUNCYCASTLE_CRYPTO_DIGESTS_GOST3411_2012_512DIGEST_GET_ALGORITHMNAME_OFFSET UNITYSDK_OFFSET(0x73E500)
+#define BESTHTTP_SECUREPROTOCOL_ORG_BOUNCYCASTLE_CRYPTO_DIGESTS_GOST3411_2012_512DIGEST_.CTOR_OFFSET UNITYSDK_OFFSET(0x73E530)
+#define BESTHTTP_SECUREPROTOCOL_ORG_BOUNCYCASTLE_CRYPTO_DIGESTS_GOST3411_2012_512DIGEST_.CTOR_OFFSET UNITYSDK_OFFSET(0x73E5B0)
+#define BESTHTTP_SECUREPROTOCOL_ORG_BOUNCYCASTLE_CRYPTO_DIGESTS_GOST3411_2012_512DIGEST_GETDIGESTSIZE_OFFSET UNITYSDK_OFFSET(0x73E650)
+#define BESTHTTP_SECUREPROTOCOL_ORG_BOUNCYCASTLE_CRYPTO_DIGESTS_GOST3411_2012_512DIGEST_COPY_OFFSET UNITYSDK_OFFSET(0x73E660)
+#define BESTHTTP_SECUREPROTOCOL_ORG_BOUNCYCASTLE_CRYPTO_DIGESTS_GOST3411_2012_512DIGEST_.CCTOR_OFFSET UNITYSDK_OFFSET(0x73E6C0)
+
+namespace BestHTTP::SecureProtocol::Org::BouncyCastle::Crypto::Digests
+{
+	inline static constexpr unsigned int Gost3411_2012_512Digest_TypeDefinitionIndex = 22590;
+
+	class Gost3411_2012_512Digest : public Il2CppObject
+	{
+	public:
+		::Il2CppArray<::System::Object*>* IV; // 0x0
+
+		::System::String* get_AlgorithmName()
+		{
+			return (return (::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + BESTHTTP_SECUREPROTOCOL_ORG_BOUNCYCASTLE_CRYPTO_DIGESTS_GOST3411_2012_512DIGEST_GET_ALGORITHMNAME_OFFSET))(nullptr);
+		}
+
+		::System::Void .ctor()
+		{
+			((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + BESTHTTP_SECUREPROTOCOL_ORG_BOUNCYCASTLE_CRYPTO_DIGESTS_GOST3411_2012_512DIGEST_.CTOR_OFFSET))(nullptr);
+		}
+
+		::System::Void .ctor(::BestHTTP::SecureProtocol::Org::BouncyCastle::Crypto::Digests::Gost3411_2012_512Digest* arg)
+		{
+			((::System::Void(*)(::BestHTTP::SecureProtocol::Org::BouncyCastle::Crypto::Digests::Gost3411_2012_512Digest*, ::PVOID))((::PBYTE)hIl2Cpp + BESTHTTP_SECUREPROTOCOL_ORG_BOUNCYCASTLE_CRYPTO_DIGESTS_GOST3411_2012_512DIGEST_.CTOR_OFFSET))(arg, nullptr);
+		}
+
+		::System::Int32 GetDigestSize()
+		{
+			return (return (::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + BESTHTTP_SECUREPROTOCOL_ORG_BOUNCYCASTLE_CRYPTO_DIGESTS_GOST3411_2012_512DIGEST_GETDIGESTSIZE_OFFSET))(nullptr);
+		}
+
+		::BestHTTP::SecureProtocol::Org::BouncyCastle::Utilities::IMemoable* Copy()
+		{
+			return (return (::BestHTTP::SecureProtocol::Org::BouncyCastle::Utilities::IMemoable*(*)(::PVOID))((::PBYTE)hIl2Cpp + BESTHTTP_SECUREPROTOCOL_ORG_BOUNCYCASTLE_CRYPTO_DIGESTS_GOST3411_2012_512DIGEST_COPY_OFFSET))(nullptr);
+		}
+
+		::System::Void .cctor()
+		{
+			((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + BESTHTTP_SECUREPROTOCOL_ORG_BOUNCYCASTLE_CRYPTO_DIGESTS_GOST3411_2012_512DIGEST_.CCTOR_OFFSET))(nullptr);
+		}
+
+	};
+}
+

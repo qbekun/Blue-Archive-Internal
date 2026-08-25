@@ -1,0 +1,52 @@
+#pragma once
+#include "../../unitysdk.h"
+
+#define UNITYENGINE_ADDRESSABLEASSETS_ASSETLABELREFERENCE_RUNTIMEKEYISVALID_OFFSET UNITYSDK_OFFSET(0x9E0A910)
+#define UNITYENGINE_ADDRESSABLEASSETS_ASSETLABELREFERENCE_GET_RUNTIMEKEY_OFFSET UNITYSDK_OFFSET(0x9E0A990)
+#define UNITYENGINE_ADDRESSABLEASSETS_ASSETLABELREFERENCE_GET_LABELSTRING_OFFSET UNITYSDK_OFFSET(0x9E0AA00)
+#define UNITYENGINE_ADDRESSABLEASSETS_ASSETLABELREFERENCE_.CTOR_OFFSET UNITYSDK_OFFSET(0x9E0AA10)
+#define UNITYENGINE_ADDRESSABLEASSETS_ASSETLABELREFERENCE_SET_LABELSTRING_OFFSET UNITYSDK_OFFSET(0x9E0AA20)
+#define UNITYENGINE_ADDRESSABLEASSETS_ASSETLABELREFERENCE_GETHASHCODE_OFFSET UNITYSDK_OFFSET(0x9E0AA30)
+
+namespace UnityEngine::AddressableAssets
+{
+	inline static constexpr unsigned int AssetLabelReference_TypeDefinitionIndex = 36192;
+
+	class AssetLabelReference : public Il2CppObject
+	{
+	public:
+		::System::String* m_LabelString; // 0x10
+
+		::System::Boolean RuntimeKeyIsValid()
+		{
+			return (return (::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_ADDRESSABLEASSETS_ASSETLABELREFERENCE_RUNTIMEKEYISVALID_OFFSET))(nullptr);
+		}
+
+		::System::Object* get_RuntimeKey()
+		{
+			return (return (::System::Object*(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_ADDRESSABLEASSETS_ASSETLABELREFERENCE_GET_RUNTIMEKEY_OFFSET))(nullptr);
+		}
+
+		::System::String* get_labelString()
+		{
+			return (return (::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_ADDRESSABLEASSETS_ASSETLABELREFERENCE_GET_LABELSTRING_OFFSET))(nullptr);
+		}
+
+		::System::Void .ctor()
+		{
+			((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_ADDRESSABLEASSETS_ASSETLABELREFERENCE_.CTOR_OFFSET))(nullptr);
+		}
+
+		::System::Void set_labelString(::System::String* str)
+		{
+			((::System::Void(*)(::System::String*, ::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_ADDRESSABLEASSETS_ASSETLABELREFERENCE_SET_LABELSTRING_OFFSET))(str, nullptr);
+		}
+
+		::System::Int32 GetHashCode()
+		{
+			return (return (::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_ADDRESSABLEASSETS_ASSETLABELREFERENCE_GETHASHCODE_OFFSET))(nullptr);
+		}
+
+	};
+}
+

@@ -1,0 +1,55 @@
+#pragma once
+#include "../../unitysdk.h"
+
+namespace MX::NetworkProtocol { class Protocol; }
+
+#define MX_NETWORKPROTOCOL_EVENTCONTENTCLUESEARCHSUBMITREQUEST_SET_SLOTNUMBER_OFFSET UNITYSDK_OFFSET(0xF46570)
+#define MX_NETWORKPROTOCOL_EVENTCONTENTCLUESEARCHSUBMITREQUEST_.CTOR_OFFSET UNITYSDK_OFFSET(0xF46580)
+#define MX_NETWORKPROTOCOL_EVENTCONTENTCLUESEARCHSUBMITREQUEST_SET_EVENTCONTENTID_OFFSET UNITYSDK_OFFSET(0xF46590)
+#define MX_NETWORKPROTOCOL_EVENTCONTENTCLUESEARCHSUBMITREQUEST_GET_PROTOCOL_OFFSET UNITYSDK_OFFSET(0xF465A0)
+#define MX_NETWORKPROTOCOL_EVENTCONTENTCLUESEARCHSUBMITREQUEST_GET_EVENTCONTENTID_OFFSET UNITYSDK_OFFSET(0xF465B0)
+#define MX_NETWORKPROTOCOL_EVENTCONTENTCLUESEARCHSUBMITREQUEST_GET_SLOTNUMBER_OFFSET UNITYSDK_OFFSET(0xF465C0)
+
+namespace MX::NetworkProtocol
+{
+	inline static constexpr unsigned int EventContentClueSearchSubmitRequest_TypeDefinitionIndex = 11783;
+
+	class EventContentClueSearchSubmitRequest : public Il2CppObject
+	{
+	public:
+		::System::Int64 _EventContentId_k__BackingField; // 0x40
+		::System::Int64 _SlotNumber_k__BackingField; // 0x48
+
+		::System::Void set_SlotNumber(::System::Int64 arg)
+		{
+			((::System::Void(*)(::System::Int64, ::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_EVENTCONTENTCLUESEARCHSUBMITREQUEST_SET_SLOTNUMBER_OFFSET))(arg, nullptr);
+		}
+
+		::System::Void .ctor()
+		{
+			((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_EVENTCONTENTCLUESEARCHSUBMITREQUEST_.CTOR_OFFSET))(nullptr);
+		}
+
+		::System::Void set_EventContentId(::System::Int64 arg)
+		{
+			((::System::Void(*)(::System::Int64, ::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_EVENTCONTENTCLUESEARCHSUBMITREQUEST_SET_EVENTCONTENTID_OFFSET))(arg, nullptr);
+		}
+
+		::MX::NetworkProtocol::Protocol* get_Protocol()
+		{
+			return ((::MX::NetworkProtocol::Protocol*(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_EVENTCONTENTCLUESEARCHSUBMITREQUEST_GET_PROTOCOL_OFFSET))(nullptr);
+		}
+
+		::System::Int64 get_EventContentId()
+		{
+			return ((::System::Int64(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_EVENTCONTENTCLUESEARCHSUBMITREQUEST_GET_EVENTCONTENTID_OFFSET))(nullptr);
+		}
+
+		::System::Int64 get_SlotNumber()
+		{
+			return ((::System::Int64(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_EVENTCONTENTCLUESEARCHSUBMITREQUEST_GET_SLOTNUMBER_OFFSET))(nullptr);
+		}
+
+	};
+}
+

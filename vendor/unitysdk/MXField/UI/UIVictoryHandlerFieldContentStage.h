@@ -1,0 +1,78 @@
+#pragma once
+#include "../../unitysdk.h"
+
+namespace MX::Logic::Data { class BattleTypes; }
+namespace Assets::_MX::Program::Scripts::Network { class BaseMessage; }
+namespace FlatData { class ContentType; }
+
+#define MXFIELD_UI_UIVICTORYHANDLERFIELDCONTENTSTAGE_.CTOR_OFFSET UNITYSDK_OFFSET(0xE84DB0)
+#define MXFIELD_UI_UIVICTORYHANDLERFIELDCONTENTSTAGE_HANDLECLOSE_OFFSET UNITYSDK_OFFSET(0xE84DC0)
+#define MXFIELD_UI_UIVICTORYHANDLERFIELDCONTENTSTAGE_ADDMISSIONPOPUP_OFFSET UNITYSDK_OFFSET(0xE84F80)
+#define MXFIELD_UI_UIVICTORYHANDLERFIELDCONTENTSTAGE_GET_BATTLETYPE_OFFSET UNITYSDK_OFFSET(0xE85010)
+#define MXFIELD_UI_UIVICTORYHANDLERFIELDCONTENTSTAGE_REQUESTRESULT_OFFSET UNITYSDK_OFFSET(0xE85020)
+#define MXFIELD_UI_UIVICTORYHANDLERFIELDCONTENTSTAGE_ATTACHLISTENER_OFFSET UNITYSDK_OFFSET(0xE85240)
+#define MXFIELD_UI_UIVICTORYHANDLERFIELDCONTENTSTAGE_HANDLERESULT_OFFSET UNITYSDK_OFFSET(0xE85310)
+#define MXFIELD_UI_UIVICTORYHANDLERFIELDCONTENTSTAGE_GET_CONTENTTYPE_OFFSET UNITYSDK_OFFSET(0xE853C0)
+#define MXFIELD_UI_UIVICTORYHANDLERFIELDCONTENTSTAGE_HANDLETOLOBBY_OFFSET UNITYSDK_OFFSET(0xE853D0)
+#define MXFIELD_UI_UIVICTORYHANDLERFIELDCONTENTSTAGE_DETACHLISTENER_OFFSET UNITYSDK_OFFSET(0xE85460)
+
+namespace MXField::UI
+{
+	inline static constexpr unsigned int UIVictoryHandlerFieldContentStage_TypeDefinitionIndex = 10641;
+
+	class UIVictoryHandlerFieldContentStage : public Il2CppObject
+	{
+	public:
+		::System::Void .ctor()
+		{
+			((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MXFIELD_UI_UIVICTORYHANDLERFIELDCONTENTSTAGE_.CTOR_OFFSET))(nullptr);
+		}
+
+		::System::Void HandleClose()
+		{
+			((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MXFIELD_UI_UIVICTORYHANDLERFIELDCONTENTSTAGE_HANDLECLOSE_OFFSET))(nullptr);
+		}
+
+		::System::Void AddMissionPopup(Il2CppObject* arg)
+		{
+			((::System::Void(*)(Il2CppObject*, ::PVOID))((::PBYTE)hIl2Cpp + MXFIELD_UI_UIVICTORYHANDLERFIELDCONTENTSTAGE_ADDMISSIONPOPUP_OFFSET))(arg, nullptr);
+		}
+
+		::MX::Logic::Data::BattleTypes* get_BattleType()
+		{
+			return ((::MX::Logic::Data::BattleTypes*(*)(::PVOID))((::PBYTE)hIl2Cpp + MXFIELD_UI_UIVICTORYHANDLERFIELDCONTENTSTAGE_GET_BATTLETYPE_OFFSET))(nullptr);
+		}
+
+		::System::Void RequestResult()
+		{
+			((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MXFIELD_UI_UIVICTORYHANDLERFIELDCONTENTSTAGE_REQUESTRESULT_OFFSET))(nullptr);
+		}
+
+		::System::Void AttachListener()
+		{
+			((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MXFIELD_UI_UIVICTORYHANDLERFIELDCONTENTSTAGE_ATTACHLISTENER_OFFSET))(nullptr);
+		}
+
+		::System::Boolean HandleResult(::Assets::_MX::Program::Scripts::Network::BaseMessage* arg)
+		{
+			return ((::System::Boolean(*)(::Assets::_MX::Program::Scripts::Network::BaseMessage*, ::PVOID))((::PBYTE)hIl2Cpp + MXFIELD_UI_UIVICTORYHANDLERFIELDCONTENTSTAGE_HANDLERESULT_OFFSET))(arg, nullptr);
+		}
+
+		::FlatData::ContentType* get_ContentType()
+		{
+			return ((::FlatData::ContentType*(*)(::PVOID))((::PBYTE)hIl2Cpp + MXFIELD_UI_UIVICTORYHANDLERFIELDCONTENTSTAGE_GET_CONTENTTYPE_OFFSET))(nullptr);
+		}
+
+		::System::Void HandleToLobby()
+		{
+			((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MXFIELD_UI_UIVICTORYHANDLERFIELDCONTENTSTAGE_HANDLETOLOBBY_OFFSET))(nullptr);
+		}
+
+		::System::Void DetachListener()
+		{
+			((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MXFIELD_UI_UIVICTORYHANDLERFIELDCONTENTSTAGE_DETACHLISTENER_OFFSET))(nullptr);
+		}
+
+	};
+}
+

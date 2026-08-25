@@ -1,0 +1,159 @@
+#pragma once
+#include "../../../../../../../../unitysdk.h"
+
+namespace BestHTTP::SecureProtocol::Org::BouncyCastle::Math { class BigInteger; }
+namespace BestHTTP::SecureProtocol::Org::BouncyCastle::Math::EC { class ECFieldElement; }
+namespace BestHTTP::SecureProtocol::Org::BouncyCastle::Math::EC::Custom::GM { class SM2P256V1FieldElement; }
+
+#define BESTHTTP_SECUREPROTOCOL_ORG_BOUNCYCASTLE_MATH_EC_CUSTOM_GM_SM2P256V1FIELDELEMENT_.CTOR_OFFSET UNITYSDK_OFFSET(0x5D9380)
+#define BESTHTTP_SECUREPROTOCOL_ORG_BOUNCYCASTLE_MATH_EC_CUSTOM_GM_SM2P256V1FIELDELEMENT_.CTOR_OFFSET UNITYSDK_OFFSET(0x5DB260)
+#define BESTHTTP_SECUREPROTOCOL_ORG_BOUNCYCASTLE_MATH_EC_CUSTOM_GM_SM2P256V1FIELDELEMENT_.CTOR_OFFSET UNITYSDK_OFFSET(0x5D9F40)
+#define BESTHTTP_SECUREPROTOCOL_ORG_BOUNCYCASTLE_MATH_EC_CUSTOM_GM_SM2P256V1FIELDELEMENT_GET_ISZERO_OFFSET UNITYSDK_OFFSET(0x5DB290)
+#define BESTHTTP_SECUREPROTOCOL_ORG_BOUNCYCASTLE_MATH_EC_CUSTOM_GM_SM2P256V1FIELDELEMENT_GET_ISONE_OFFSET UNITYSDK_OFFSET(0x5DB2A0)
+#define BESTHTTP_SECUREPROTOCOL_ORG_BOUNCYCASTLE_MATH_EC_CUSTOM_GM_SM2P256V1FIELDELEMENT_TESTBITZERO_OFFSET UNITYSDK_OFFSET(0x5DB2B0)
+#define BESTHTTP_SECUREPROTOCOL_ORG_BOUNCYCASTLE_MATH_EC_CUSTOM_GM_SM2P256V1FIELDELEMENT_TOBIGINTEGER_OFFSET UNITYSDK_OFFSET(0x5DB2D0)
+#define BESTHTTP_SECUREPROTOCOL_ORG_BOUNCYCASTLE_MATH_EC_CUSTOM_GM_SM2P256V1FIELDELEMENT_GET_FIELDNAME_OFFSET UNITYSDK_OFFSET(0x5DB2E0)
+#define BESTHTTP_SECUREPROTOCOL_ORG_BOUNCYCASTLE_MATH_EC_CUSTOM_GM_SM2P256V1FIELDELEMENT_GET_FIELDSIZE_OFFSET UNITYSDK_OFFSET(0x5DB310)
+#define BESTHTTP_SECUREPROTOCOL_ORG_BOUNCYCASTLE_MATH_EC_CUSTOM_GM_SM2P256V1FIELDELEMENT_ADD_OFFSET UNITYSDK_OFFSET(0x5DB390)
+#define BESTHTTP_SECUREPROTOCOL_ORG_BOUNCYCASTLE_MATH_EC_CUSTOM_GM_SM2P256V1FIELDELEMENT_ADDONE_OFFSET UNITYSDK_OFFSET(0x5DB490)
+#define BESTHTTP_SECUREPROTOCOL_ORG_BOUNCYCASTLE_MATH_EC_CUSTOM_GM_SM2P256V1FIELDELEMENT_SUBTRACT_OFFSET UNITYSDK_OFFSET(0x5DB530)
+#define BESTHTTP_SECUREPROTOCOL_ORG_BOUNCYCASTLE_MATH_EC_CUSTOM_GM_SM2P256V1FIELDELEMENT_MULTIPLY_OFFSET UNITYSDK_OFFSET(0x5DB680)
+#define BESTHTTP_SECUREPROTOCOL_ORG_BOUNCYCASTLE_MATH_EC_CUSTOM_GM_SM2P256V1FIELDELEMENT_DIVIDE_OFFSET UNITYSDK_OFFSET(0x5DB7E0)
+#define BESTHTTP_SECUREPROTOCOL_ORG_BOUNCYCASTLE_MATH_EC_CUSTOM_GM_SM2P256V1FIELDELEMENT_NEGATE_OFFSET UNITYSDK_OFFSET(0x5DB970)
+#define BESTHTTP_SECUREPROTOCOL_ORG_BOUNCYCASTLE_MATH_EC_CUSTOM_GM_SM2P256V1FIELDELEMENT_SQUARE_OFFSET UNITYSDK_OFFSET(0x5DBA90)
+#define BESTHTTP_SECUREPROTOCOL_ORG_BOUNCYCASTLE_MATH_EC_CUSTOM_GM_SM2P256V1FIELDELEMENT_INVERT_OFFSET UNITYSDK_OFFSET(0x5DBBA0)
+#define BESTHTTP_SECUREPROTOCOL_ORG_BOUNCYCASTLE_MATH_EC_CUSTOM_GM_SM2P256V1FIELDELEMENT_SQRT_OFFSET UNITYSDK_OFFSET(0x5DBC80)
+#define BESTHTTP_SECUREPROTOCOL_ORG_BOUNCYCASTLE_MATH_EC_CUSTOM_GM_SM2P256V1FIELDELEMENT_EQUALS_OFFSET UNITYSDK_OFFSET(0x5DC350)
+#define BESTHTTP_SECUREPROTOCOL_ORG_BOUNCYCASTLE_MATH_EC_CUSTOM_GM_SM2P256V1FIELDELEMENT_EQUALS_OFFSET UNITYSDK_OFFSET(0x5DC3E0)
+#define BESTHTTP_SECUREPROTOCOL_ORG_BOUNCYCASTLE_MATH_EC_CUSTOM_GM_SM2P256V1FIELDELEMENT_EQUALS_OFFSET UNITYSDK_OFFSET(0x5DC470)
+#define BESTHTTP_SECUREPROTOCOL_ORG_BOUNCYCASTLE_MATH_EC_CUSTOM_GM_SM2P256V1FIELDELEMENT_GETHASHCODE_OFFSET UNITYSDK_OFFSET(0x5DC490)
+#define BESTHTTP_SECUREPROTOCOL_ORG_BOUNCYCASTLE_MATH_EC_CUSTOM_GM_SM2P256V1FIELDELEMENT_.CCTOR_OFFSET UNITYSDK_OFFSET(0x5DC570)
+
+namespace BestHTTP::SecureProtocol::Org::BouncyCastle::Math::EC::Custom::GM
+{
+	inline static constexpr unsigned int SM2P256V1FieldElement_TypeDefinitionIndex = 21992;
+
+	class SM2P256V1FieldElement : public ::Mono::Security::Cryptography::MD4Managed
+	{
+	public:
+		::BestHTTP::SecureProtocol::Org::BouncyCastle::Math::BigInteger* Q; // 0x0
+		::Il2CppArray<::System::Object*>* x; // 0x10
+
+		::System::Void .ctor(::BestHTTP::SecureProtocol::Org::BouncyCastle::Math::BigInteger* arg)
+		{
+			((::System::Void(*)(::BestHTTP::SecureProtocol::Org::BouncyCastle::Math::BigInteger*, ::PVOID))((::PBYTE)hIl2Cpp + BESTHTTP_SECUREPROTOCOL_ORG_BOUNCYCASTLE_MATH_EC_CUSTOM_GM_SM2P256V1FIELDELEMENT_.CTOR_OFFSET))(arg, nullptr);
+		}
+
+		::System::Void .ctor()
+		{
+			((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + BESTHTTP_SECUREPROTOCOL_ORG_BOUNCYCASTLE_MATH_EC_CUSTOM_GM_SM2P256V1FIELDELEMENT_.CTOR_OFFSET))(nullptr);
+		}
+
+		::System::Void .ctor(::Il2CppArray<::System::Object*>* arg)
+		{
+			((::System::Void(*)(::Il2CppArray<::System::Object*>*, ::PVOID))((::PBYTE)hIl2Cpp + BESTHTTP_SECUREPROTOCOL_ORG_BOUNCYCASTLE_MATH_EC_CUSTOM_GM_SM2P256V1FIELDELEMENT_.CTOR_OFFSET))(arg, nullptr);
+		}
+
+		::System::Boolean get_IsZero()
+		{
+			return (return (::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + BESTHTTP_SECUREPROTOCOL_ORG_BOUNCYCASTLE_MATH_EC_CUSTOM_GM_SM2P256V1FIELDELEMENT_GET_ISZERO_OFFSET))(nullptr);
+		}
+
+		::System::Boolean get_IsOne()
+		{
+			return (return (::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + BESTHTTP_SECUREPROTOCOL_ORG_BOUNCYCASTLE_MATH_EC_CUSTOM_GM_SM2P256V1FIELDELEMENT_GET_ISONE_OFFSET))(nullptr);
+		}
+
+		::System::Boolean TestBitZero()
+		{
+			return (return (::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + BESTHTTP_SECUREPROTOCOL_ORG_BOUNCYCASTLE_MATH_EC_CUSTOM_GM_SM2P256V1FIELDELEMENT_TESTBITZERO_OFFSET))(nullptr);
+		}
+
+		::BestHTTP::SecureProtocol::Org::BouncyCastle::Math::BigInteger* ToBigInteger()
+		{
+			return (return (::BestHTTP::SecureProtocol::Org::BouncyCastle::Math::BigInteger*(*)(::PVOID))((::PBYTE)hIl2Cpp + BESTHTTP_SECUREPROTOCOL_ORG_BOUNCYCASTLE_MATH_EC_CUSTOM_GM_SM2P256V1FIELDELEMENT_TOBIGINTEGER_OFFSET))(nullptr);
+		}
+
+		::System::String* get_FieldName()
+		{
+			return (return (::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + BESTHTTP_SECUREPROTOCOL_ORG_BOUNCYCASTLE_MATH_EC_CUSTOM_GM_SM2P256V1FIELDELEMENT_GET_FIELDNAME_OFFSET))(nullptr);
+		}
+
+		::System::Int32 get_FieldSize()
+		{
+			return (return (::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + BESTHTTP_SECUREPROTOCOL_ORG_BOUNCYCASTLE_MATH_EC_CUSTOM_GM_SM2P256V1FIELDELEMENT_GET_FIELDSIZE_OFFSET))(nullptr);
+		}
+
+		::BestHTTP::SecureProtocol::Org::BouncyCastle::Math::EC::ECFieldElement* Add(::BestHTTP::SecureProtocol::Org::BouncyCastle::Math::EC::ECFieldElement* arg)
+		{
+			return (return (::BestHTTP::SecureProtocol::Org::BouncyCastle::Math::EC::ECFieldElement*(*)(::BestHTTP::SecureProtocol::Org::BouncyCastle::Math::EC::ECFieldElement*, ::PVOID))((::PBYTE)hIl2Cpp + BESTHTTP_SECUREPROTOCOL_ORG_BOUNCYCASTLE_MATH_EC_CUSTOM_GM_SM2P256V1FIELDELEMENT_ADD_OFFSET))(arg, nullptr);
+		}
+
+		::BestHTTP::SecureProtocol::Org::BouncyCastle::Math::EC::ECFieldElement* AddOne()
+		{
+			return (return (::BestHTTP::SecureProtocol::Org::BouncyCastle::Math::EC::ECFieldElement*(*)(::PVOID))((::PBYTE)hIl2Cpp + BESTHTTP_SECUREPROTOCOL_ORG_BOUNCYCASTLE_MATH_EC_CUSTOM_GM_SM2P256V1FIELDELEMENT_ADDONE_OFFSET))(nullptr);
+		}
+
+		::BestHTTP::SecureProtocol::Org::BouncyCastle::Math::EC::ECFieldElement* Subtract(::BestHTTP::SecureProtocol::Org::BouncyCastle::Math::EC::ECFieldElement* arg)
+		{
+			return (return (::BestHTTP::SecureProtocol::Org::BouncyCastle::Math::EC::ECFieldElement*(*)(::BestHTTP::SecureProtocol::Org::BouncyCastle::Math::EC::ECFieldElement*, ::PVOID))((::PBYTE)hIl2Cpp + BESTHTTP_SECUREPROTOCOL_ORG_BOUNCYCASTLE_MATH_EC_CUSTOM_GM_SM2P256V1FIELDELEMENT_SUBTRACT_OFFSET))(arg, nullptr);
+		}
+
+		::BestHTTP::SecureProtocol::Org::BouncyCastle::Math::EC::ECFieldElement* Multiply(::BestHTTP::SecureProtocol::Org::BouncyCastle::Math::EC::ECFieldElement* arg)
+		{
+			return (return (::BestHTTP::SecureProtocol::Org::BouncyCastle::Math::EC::ECFieldElement*(*)(::BestHTTP::SecureProtocol::Org::BouncyCastle::Math::EC::ECFieldElement*, ::PVOID))((::PBYTE)hIl2Cpp + BESTHTTP_SECUREPROTOCOL_ORG_BOUNCYCASTLE_MATH_EC_CUSTOM_GM_SM2P256V1FIELDELEMENT_MULTIPLY_OFFSET))(arg, nullptr);
+		}
+
+		::BestHTTP::SecureProtocol::Org::BouncyCastle::Math::EC::ECFieldElement* Divide(::BestHTTP::SecureProtocol::Org::BouncyCastle::Math::EC::ECFieldElement* arg)
+		{
+			return (return (::BestHTTP::SecureProtocol::Org::BouncyCastle::Math::EC::ECFieldElement*(*)(::BestHTTP::SecureProtocol::Org::BouncyCastle::Math::EC::ECFieldElement*, ::PVOID))((::PBYTE)hIl2Cpp + BESTHTTP_SECUREPROTOCOL_ORG_BOUNCYCASTLE_MATH_EC_CUSTOM_GM_SM2P256V1FIELDELEMENT_DIVIDE_OFFSET))(arg, nullptr);
+		}
+
+		::BestHTTP::SecureProtocol::Org::BouncyCastle::Math::EC::ECFieldElement* Negate()
+		{
+			return (return (::BestHTTP::SecureProtocol::Org::BouncyCastle::Math::EC::ECFieldElement*(*)(::PVOID))((::PBYTE)hIl2Cpp + BESTHTTP_SECUREPROTOCOL_ORG_BOUNCYCASTLE_MATH_EC_CUSTOM_GM_SM2P256V1FIELDELEMENT_NEGATE_OFFSET))(nullptr);
+		}
+
+		::BestHTTP::SecureProtocol::Org::BouncyCastle::Math::EC::ECFieldElement* Square()
+		{
+			return (return (::BestHTTP::SecureProtocol::Org::BouncyCastle::Math::EC::ECFieldElement*(*)(::PVOID))((::PBYTE)hIl2Cpp + BESTHTTP_SECUREPROTOCOL_ORG_BOUNCYCASTLE_MATH_EC_CUSTOM_GM_SM2P256V1FIELDELEMENT_SQUARE_OFFSET))(nullptr);
+		}
+
+		::BestHTTP::SecureProtocol::Org::BouncyCastle::Math::EC::ECFieldElement* Invert()
+		{
+			return (return (::BestHTTP::SecureProtocol::Org::BouncyCastle::Math::EC::ECFieldElement*(*)(::PVOID))((::PBYTE)hIl2Cpp + BESTHTTP_SECUREPROTOCOL_ORG_BOUNCYCASTLE_MATH_EC_CUSTOM_GM_SM2P256V1FIELDELEMENT_INVERT_OFFSET))(nullptr);
+		}
+
+		::BestHTTP::SecureProtocol::Org::BouncyCastle::Math::EC::ECFieldElement* Sqrt()
+		{
+			return (return (::BestHTTP::SecureProtocol::Org::BouncyCastle::Math::EC::ECFieldElement*(*)(::PVOID))((::PBYTE)hIl2Cpp + BESTHTTP_SECUREPROTOCOL_ORG_BOUNCYCASTLE_MATH_EC_CUSTOM_GM_SM2P256V1FIELDELEMENT_SQRT_OFFSET))(nullptr);
+		}
+
+		::System::Boolean Equals(::System::Object* arg)
+		{
+			return (return (::System::Boolean(*)(::System::Object*, ::PVOID))((::PBYTE)hIl2Cpp + BESTHTTP_SECUREPROTOCOL_ORG_BOUNCYCASTLE_MATH_EC_CUSTOM_GM_SM2P256V1FIELDELEMENT_EQUALS_OFFSET))(arg, nullptr);
+		}
+
+		::System::Boolean Equals(::BestHTTP::SecureProtocol::Org::BouncyCastle::Math::EC::ECFieldElement* arg)
+		{
+			return (return (::System::Boolean(*)(::BestHTTP::SecureProtocol::Org::BouncyCastle::Math::EC::ECFieldElement*, ::PVOID))((::PBYTE)hIl2Cpp + BESTHTTP_SECUREPROTOCOL_ORG_BOUNCYCASTLE_MATH_EC_CUSTOM_GM_SM2P256V1FIELDELEMENT_EQUALS_OFFSET))(arg, nullptr);
+		}
+
+		::System::Boolean Equals(::BestHTTP::SecureProtocol::Org::BouncyCastle::Math::EC::Custom::GM::SM2P256V1FieldElement* arg)
+		{
+			return (return (::System::Boolean(*)(::BestHTTP::SecureProtocol::Org::BouncyCastle::Math::EC::Custom::GM::SM2P256V1FieldElement*, ::PVOID))((::PBYTE)hIl2Cpp + BESTHTTP_SECUREPROTOCOL_ORG_BOUNCYCASTLE_MATH_EC_CUSTOM_GM_SM2P256V1FIELDELEMENT_EQUALS_OFFSET))(arg, nullptr);
+		}
+
+		::System::Int32 GetHashCode()
+		{
+			return (return (::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + BESTHTTP_SECUREPROTOCOL_ORG_BOUNCYCASTLE_MATH_EC_CUSTOM_GM_SM2P256V1FIELDELEMENT_GETHASHCODE_OFFSET))(nullptr);
+		}
+
+		::System::Void .cctor()
+		{
+			((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + BESTHTTP_SECUREPROTOCOL_ORG_BOUNCYCASTLE_MATH_EC_CUSTOM_GM_SM2P256V1FIELDELEMENT_.CCTOR_OFFSET))(nullptr);
+		}
+
+	};
+}
+

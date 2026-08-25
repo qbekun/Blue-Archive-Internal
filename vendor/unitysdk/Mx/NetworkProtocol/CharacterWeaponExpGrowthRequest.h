@@ -1,0 +1,55 @@
+#pragma once
+#include "../../unitysdk.h"
+
+namespace MX::NetworkProtocol { class Protocol; }
+
+#define MX_NETWORKPROTOCOL_CHARACTERWEAPONEXPGROWTHREQUEST_SET_CONSUMEUNIQUEIDANDCOUNTS_OFFSET UNITYSDK_OFFSET(0xF15E00)
+#define MX_NETWORKPROTOCOL_CHARACTERWEAPONEXPGROWTHREQUEST_GET_PROTOCOL_OFFSET UNITYSDK_OFFSET(0xF15E10)
+#define MX_NETWORKPROTOCOL_CHARACTERWEAPONEXPGROWTHREQUEST_SET_TARGETCHARACTERSERVERID_OFFSET UNITYSDK_OFFSET(0xF15E20)
+#define MX_NETWORKPROTOCOL_CHARACTERWEAPONEXPGROWTHREQUEST_GET_TARGETCHARACTERSERVERID_OFFSET UNITYSDK_OFFSET(0xF15E30)
+#define MX_NETWORKPROTOCOL_CHARACTERWEAPONEXPGROWTHREQUEST_.CTOR_OFFSET UNITYSDK_OFFSET(0xF15E40)
+#define MX_NETWORKPROTOCOL_CHARACTERWEAPONEXPGROWTHREQUEST_GET_CONSUMEUNIQUEIDANDCOUNTS_OFFSET UNITYSDK_OFFSET(0xF15E50)
+
+namespace MX::NetworkProtocol
+{
+	inline static constexpr unsigned int CharacterWeaponExpGrowthRequest_TypeDefinitionIndex = 11472;
+
+	class CharacterWeaponExpGrowthRequest : public Il2CppObject
+	{
+	public:
+		::System::Int64 _TargetCharacterServerId_k__BackingField; // 0x40
+		Il2CppObject* _ConsumeUniqueIdAndCounts_k__BackingField; // 0x48
+
+		::System::Void set_ConsumeUniqueIdAndCounts(Il2CppObject* arg)
+		{
+			((::System::Void(*)(Il2CppObject*, ::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_CHARACTERWEAPONEXPGROWTHREQUEST_SET_CONSUMEUNIQUEIDANDCOUNTS_OFFSET))(arg, nullptr);
+		}
+
+		::MX::NetworkProtocol::Protocol* get_Protocol()
+		{
+			return ((::MX::NetworkProtocol::Protocol*(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_CHARACTERWEAPONEXPGROWTHREQUEST_GET_PROTOCOL_OFFSET))(nullptr);
+		}
+
+		::System::Void set_TargetCharacterServerId(::System::Int64 arg)
+		{
+			((::System::Void(*)(::System::Int64, ::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_CHARACTERWEAPONEXPGROWTHREQUEST_SET_TARGETCHARACTERSERVERID_OFFSET))(arg, nullptr);
+		}
+
+		::System::Int64 get_TargetCharacterServerId()
+		{
+			return ((::System::Int64(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_CHARACTERWEAPONEXPGROWTHREQUEST_GET_TARGETCHARACTERSERVERID_OFFSET))(nullptr);
+		}
+
+		::System::Void .ctor()
+		{
+			((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_CHARACTERWEAPONEXPGROWTHREQUEST_.CTOR_OFFSET))(nullptr);
+		}
+
+		Il2CppObject* get_ConsumeUniqueIdAndCounts()
+		{
+			return ((Il2CppObject*(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_CHARACTERWEAPONEXPGROWTHREQUEST_GET_CONSUMEUNIQUEIDANDCOUNTS_OFFSET))(nullptr);
+		}
+
+	};
+}
+

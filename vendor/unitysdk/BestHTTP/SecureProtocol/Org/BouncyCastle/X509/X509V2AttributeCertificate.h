@@ -1,0 +1,184 @@
+#pragma once
+#include "../../../../../unitysdk.h"
+
+namespace BestHTTP::SecureProtocol::Org::BouncyCastle::Asn1::X509 { class AttributeCertificate; }
+namespace BestHTTP::SecureProtocol::Org::BouncyCastle::Math { class BigInteger; }
+namespace BestHTTP::SecureProtocol::Org::BouncyCastle::X509 { class AttributeCertificateHolder; }
+namespace BestHTTP::SecureProtocol::Org::BouncyCastle::X509 { class AttributeCertificateIssuer; }
+namespace BestHTTP::SecureProtocol::Org::BouncyCastle::Asn1::X509 { class AlgorithmIdentifier; }
+namespace BestHTTP::SecureProtocol::Org::BouncyCastle::Crypto { class AsymmetricKeyParameter; }
+namespace BestHTTP::SecureProtocol::Org::BouncyCastle::Crypto { class IVerifierFactoryProvider; }
+namespace BestHTTP::SecureProtocol::Org::BouncyCastle::Crypto { class IVerifierFactory; }
+namespace BestHTTP::SecureProtocol::Org::BouncyCastle::Asn1::X509 { class X509Extensions; }
+
+#define BESTHTTP_SECUREPROTOCOL_ORG_BOUNCYCASTLE_X509_X509V2ATTRIBUTECERTIFICATE_GETOBJECT_OFFSET UNITYSDK_OFFSET(0x8BC140)
+#define BESTHTTP_SECUREPROTOCOL_ORG_BOUNCYCASTLE_X509_X509V2ATTRIBUTECERTIFICATE_.CTOR_OFFSET UNITYSDK_OFFSET(0x8BC2A0)
+#define BESTHTTP_SECUREPROTOCOL_ORG_BOUNCYCASTLE_X509_X509V2ATTRIBUTECERTIFICATE_.CTOR_OFFSET UNITYSDK_OFFSET(0x8BC450)
+#define BESTHTTP_SECUREPROTOCOL_ORG_BOUNCYCASTLE_X509_X509V2ATTRIBUTECERTIFICATE_.CTOR_OFFSET UNITYSDK_OFFSET(0x8BC2C0)
+#define BESTHTTP_SECUREPROTOCOL_ORG_BOUNCYCASTLE_X509_X509V2ATTRIBUTECERTIFICATE_GET_VERSION_OFFSET UNITYSDK_OFFSET(0x8BC4C0)
+#define BESTHTTP_SECUREPROTOCOL_ORG_BOUNCYCASTLE_X509_X509V2ATTRIBUTECERTIFICATE_GET_SERIALNUMBER_OFFSET UNITYSDK_OFFSET(0x8BC500)
+#define BESTHTTP_SECUREPROTOCOL_ORG_BOUNCYCASTLE_X509_X509V2ATTRIBUTECERTIFICATE_GET_HOLDER_OFFSET UNITYSDK_OFFSET(0x8BC530)
+#define BESTHTTP_SECUREPROTOCOL_ORG_BOUNCYCASTLE_X509_X509V2ATTRIBUTECERTIFICATE_GET_ISSUER_OFFSET UNITYSDK_OFFSET(0x8BC610)
+#define BESTHTTP_SECUREPROTOCOL_ORG_BOUNCYCASTLE_X509_X509V2ATTRIBUTECERTIFICATE_GET_NOTBEFORE_OFFSET UNITYSDK_OFFSET(0x8BC680)
+#define BESTHTTP_SECUREPROTOCOL_ORG_BOUNCYCASTLE_X509_X509V2ATTRIBUTECERTIFICATE_GET_NOTAFTER_OFFSET UNITYSDK_OFFSET(0x8BC690)
+#define BESTHTTP_SECUREPROTOCOL_ORG_BOUNCYCASTLE_X509_X509V2ATTRIBUTECERTIFICATE_GETISSUERUNIQUEID_OFFSET UNITYSDK_OFFSET(0x8BC6A0)
+#define BESTHTTP_SECUREPROTOCOL_ORG_BOUNCYCASTLE_X509_X509V2ATTRIBUTECERTIFICATE_GET_ISVALIDNOW_OFFSET UNITYSDK_OFFSET(0x8BC7A0)
+#define BESTHTTP_SECUREPROTOCOL_ORG_BOUNCYCASTLE_X509_X509V2ATTRIBUTECERTIFICATE_ISVALID_OFFSET UNITYSDK_OFFSET(0x8BC800)
+#define BESTHTTP_SECUREPROTOCOL_ORG_BOUNCYCASTLE_X509_X509V2ATTRIBUTECERTIFICATE_CHECKVALIDITY_OFFSET UNITYSDK_OFFSET(0x8BC8C0)
+#define BESTHTTP_SECUREPROTOCOL_ORG_BOUNCYCASTLE_X509_X509V2ATTRIBUTECERTIFICATE_CHECKVALIDITY_OFFSET UNITYSDK_OFFSET(0x8BC920)
+#define BESTHTTP_SECUREPROTOCOL_ORG_BOUNCYCASTLE_X509_X509V2ATTRIBUTECERTIFICATE_GET_SIGNATUREALGORITHM_OFFSET UNITYSDK_OFFSET(0x8BCB10)
+#define BESTHTTP_SECUREPROTOCOL_ORG_BOUNCYCASTLE_X509_X509V2ATTRIBUTECERTIFICATE_GETSIGNATURE_OFFSET UNITYSDK_OFFSET(0x8BCB30)
+#define BESTHTTP_SECUREPROTOCOL_ORG_BOUNCYCASTLE_X509_X509V2ATTRIBUTECERTIFICATE_VERIFY_OFFSET UNITYSDK_OFFSET(0x8BCB50)
+#define BESTHTTP_SECUREPROTOCOL_ORG_BOUNCYCASTLE_X509_X509V2ATTRIBUTECERTIFICATE_VERIFY_OFFSET UNITYSDK_OFFSET(0x8BCBE0)
+#define BESTHTTP_SECUREPROTOCOL_ORG_BOUNCYCASTLE_X509_X509V2ATTRIBUTECERTIFICATE_CHECKSIGNATURE_OFFSET UNITYSDK_OFFSET(0x8BCCB0)
+#define BESTHTTP_SECUREPROTOCOL_ORG_BOUNCYCASTLE_X509_X509V2ATTRIBUTECERTIFICATE_GETENCODED_OFFSET UNITYSDK_OFFSET(0x8BD1D0)
+#define BESTHTTP_SECUREPROTOCOL_ORG_BOUNCYCASTLE_X509_X509V2ATTRIBUTECERTIFICATE_GETX509EXTENSIONS_OFFSET UNITYSDK_OFFSET(0x8BD1F0)
+#define BESTHTTP_SECUREPROTOCOL_ORG_BOUNCYCASTLE_X509_X509V2ATTRIBUTECERTIFICATE_GETATTRIBUTES_OFFSET UNITYSDK_OFFSET(0x8BD220)
+#define BESTHTTP_SECUREPROTOCOL_ORG_BOUNCYCASTLE_X509_X509V2ATTRIBUTECERTIFICATE_GETATTRIBUTES_OFFSET UNITYSDK_OFFSET(0x8BD3D0)
+#define BESTHTTP_SECUREPROTOCOL_ORG_BOUNCYCASTLE_X509_X509V2ATTRIBUTECERTIFICATE_EQUALS_OFFSET UNITYSDK_OFFSET(0x8BD8E0)
+#define BESTHTTP_SECUREPROTOCOL_ORG_BOUNCYCASTLE_X509_X509V2ATTRIBUTECERTIFICATE_GETHASHCODE_OFFSET UNITYSDK_OFFSET(0x8BD980)
+
+namespace BestHTTP::SecureProtocol::Org::BouncyCastle::X509
+{
+	inline static constexpr unsigned int X509V2AttributeCertificate_TypeDefinitionIndex = 21548;
+
+	class X509V2AttributeCertificate : public Il2CppObject
+	{
+	public:
+		::BestHTTP::SecureProtocol::Org::BouncyCastle::Asn1::X509::AttributeCertificate* cert; // 0x10
+		::System::DateTime* notBefore; // 0x18
+		::System::DateTime* notAfter; // 0x20
+
+		::BestHTTP::SecureProtocol::Org::BouncyCastle::Asn1::X509::AttributeCertificate* GetObject(::System::IO::Stream* arg)
+		{
+			return (return (::BestHTTP::SecureProtocol::Org::BouncyCastle::Asn1::X509::AttributeCertificate*(*)(::System::IO::Stream*, ::PVOID))((::PBYTE)hIl2Cpp + BESTHTTP_SECUREPROTOCOL_ORG_BOUNCYCASTLE_X509_X509V2ATTRIBUTECERTIFICATE_GETOBJECT_OFFSET))(arg, nullptr);
+		}
+
+		::System::Void .ctor(::System::IO::Stream* arg)
+		{
+			((::System::Void(*)(::System::IO::Stream*, ::PVOID))((::PBYTE)hIl2Cpp + BESTHTTP_SECUREPROTOCOL_ORG_BOUNCYCASTLE_X509_X509V2ATTRIBUTECERTIFICATE_.CTOR_OFFSET))(arg, nullptr);
+		}
+
+		::System::Void .ctor(::Il2CppArray<::System::Object*>* arg)
+		{
+			((::System::Void(*)(::Il2CppArray<::System::Object*>*, ::PVOID))((::PBYTE)hIl2Cpp + BESTHTTP_SECUREPROTOCOL_ORG_BOUNCYCASTLE_X509_X509V2ATTRIBUTECERTIFICATE_.CTOR_OFFSET))(arg, nullptr);
+		}
+
+		::System::Void .ctor(::BestHTTP::SecureProtocol::Org::BouncyCastle::Asn1::X509::AttributeCertificate* arg)
+		{
+			((::System::Void(*)(::BestHTTP::SecureProtocol::Org::BouncyCastle::Asn1::X509::AttributeCertificate*, ::PVOID))((::PBYTE)hIl2Cpp + BESTHTTP_SECUREPROTOCOL_ORG_BOUNCYCASTLE_X509_X509V2ATTRIBUTECERTIFICATE_.CTOR_OFFSET))(arg, nullptr);
+		}
+
+		::System::Int32 get_Version()
+		{
+			return (return (::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + BESTHTTP_SECUREPROTOCOL_ORG_BOUNCYCASTLE_X509_X509V2ATTRIBUTECERTIFICATE_GET_VERSION_OFFSET))(nullptr);
+		}
+
+		::BestHTTP::SecureProtocol::Org::BouncyCastle::Math::BigInteger* get_SerialNumber()
+		{
+			return (return (::BestHTTP::SecureProtocol::Org::BouncyCastle::Math::BigInteger*(*)(::PVOID))((::PBYTE)hIl2Cpp + BESTHTTP_SECUREPROTOCOL_ORG_BOUNCYCASTLE_X509_X509V2ATTRIBUTECERTIFICATE_GET_SERIALNUMBER_OFFSET))(nullptr);
+		}
+
+		::BestHTTP::SecureProtocol::Org::BouncyCastle::X509::AttributeCertificateHolder* get_Holder()
+		{
+			return (return (::BestHTTP::SecureProtocol::Org::BouncyCastle::X509::AttributeCertificateHolder*(*)(::PVOID))((::PBYTE)hIl2Cpp + BESTHTTP_SECUREPROTOCOL_ORG_BOUNCYCASTLE_X509_X509V2ATTRIBUTECERTIFICATE_GET_HOLDER_OFFSET))(nullptr);
+		}
+
+		::BestHTTP::SecureProtocol::Org::BouncyCastle::X509::AttributeCertificateIssuer* get_Issuer()
+		{
+			return (return (::BestHTTP::SecureProtocol::Org::BouncyCastle::X509::AttributeCertificateIssuer*(*)(::PVOID))((::PBYTE)hIl2Cpp + BESTHTTP_SECUREPROTOCOL_ORG_BOUNCYCASTLE_X509_X509V2ATTRIBUTECERTIFICATE_GET_ISSUER_OFFSET))(nullptr);
+		}
+
+		::System::DateTime* get_NotBefore()
+		{
+			return (return (::System::DateTime*(*)(::PVOID))((::PBYTE)hIl2Cpp + BESTHTTP_SECUREPROTOCOL_ORG_BOUNCYCASTLE_X509_X509V2ATTRIBUTECERTIFICATE_GET_NOTBEFORE_OFFSET))(nullptr);
+		}
+
+		::System::DateTime* get_NotAfter()
+		{
+			return (return (::System::DateTime*(*)(::PVOID))((::PBYTE)hIl2Cpp + BESTHTTP_SECUREPROTOCOL_ORG_BOUNCYCASTLE_X509_X509V2ATTRIBUTECERTIFICATE_GET_NOTAFTER_OFFSET))(nullptr);
+		}
+
+		::Il2CppArray<::System::Object*>* GetIssuerUniqueID()
+		{
+			return (return (::Il2CppArray<::System::Object*>*(*)(::PVOID))((::PBYTE)hIl2Cpp + BESTHTTP_SECUREPROTOCOL_ORG_BOUNCYCASTLE_X509_X509V2ATTRIBUTECERTIFICATE_GETISSUERUNIQUEID_OFFSET))(nullptr);
+		}
+
+		::System::Boolean get_IsValidNow()
+		{
+			return (return (::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + BESTHTTP_SECUREPROTOCOL_ORG_BOUNCYCASTLE_X509_X509V2ATTRIBUTECERTIFICATE_GET_ISVALIDNOW_OFFSET))(nullptr);
+		}
+
+		::System::Boolean IsValid(::System::DateTime* arg)
+		{
+			return (return (::System::Boolean(*)(::System::DateTime*, ::PVOID))((::PBYTE)hIl2Cpp + BESTHTTP_SECUREPROTOCOL_ORG_BOUNCYCASTLE_X509_X509V2ATTRIBUTECERTIFICATE_ISVALID_OFFSET))(arg, nullptr);
+		}
+
+		::System::Void CheckValidity()
+		{
+			((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + BESTHTTP_SECUREPROTOCOL_ORG_BOUNCYCASTLE_X509_X509V2ATTRIBUTECERTIFICATE_CHECKVALIDITY_OFFSET))(nullptr);
+		}
+
+		::System::Void CheckValidity(::System::DateTime* arg)
+		{
+			((::System::Void(*)(::System::DateTime*, ::PVOID))((::PBYTE)hIl2Cpp + BESTHTTP_SECUREPROTOCOL_ORG_BOUNCYCASTLE_X509_X509V2ATTRIBUTECERTIFICATE_CHECKVALIDITY_OFFSET))(arg, nullptr);
+		}
+
+		::BestHTTP::SecureProtocol::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier* get_SignatureAlgorithm()
+		{
+			return (return (::BestHTTP::SecureProtocol::Org::BouncyCastle::Asn1::X509::AlgorithmIdentifier*(*)(::PVOID))((::PBYTE)hIl2Cpp + BESTHTTP_SECUREPROTOCOL_ORG_BOUNCYCASTLE_X509_X509V2ATTRIBUTECERTIFICATE_GET_SIGNATUREALGORITHM_OFFSET))(nullptr);
+		}
+
+		::Il2CppArray<::System::Object*>* GetSignature()
+		{
+			return (return (::Il2CppArray<::System::Object*>*(*)(::PVOID))((::PBYTE)hIl2Cpp + BESTHTTP_SECUREPROTOCOL_ORG_BOUNCYCASTLE_X509_X509V2ATTRIBUTECERTIFICATE_GETSIGNATURE_OFFSET))(nullptr);
+		}
+
+		::System::Void Verify(::BestHTTP::SecureProtocol::Org::BouncyCastle::Crypto::AsymmetricKeyParameter* arg)
+		{
+			((::System::Void(*)(::BestHTTP::SecureProtocol::Org::BouncyCastle::Crypto::AsymmetricKeyParameter*, ::PVOID))((::PBYTE)hIl2Cpp + BESTHTTP_SECUREPROTOCOL_ORG_BOUNCYCASTLE_X509_X509V2ATTRIBUTECERTIFICATE_VERIFY_OFFSET))(arg, nullptr);
+		}
+
+		::System::Void Verify(::BestHTTP::SecureProtocol::Org::BouncyCastle::Crypto::IVerifierFactoryProvider* arg)
+		{
+			((::System::Void(*)(::BestHTTP::SecureProtocol::Org::BouncyCastle::Crypto::IVerifierFactoryProvider*, ::PVOID))((::PBYTE)hIl2Cpp + BESTHTTP_SECUREPROTOCOL_ORG_BOUNCYCASTLE_X509_X509V2ATTRIBUTECERTIFICATE_VERIFY_OFFSET))(arg, nullptr);
+		}
+
+		::System::Void CheckSignature(::BestHTTP::SecureProtocol::Org::BouncyCastle::Crypto::IVerifierFactory* arg)
+		{
+			((::System::Void(*)(::BestHTTP::SecureProtocol::Org::BouncyCastle::Crypto::IVerifierFactory*, ::PVOID))((::PBYTE)hIl2Cpp + BESTHTTP_SECUREPROTOCOL_ORG_BOUNCYCASTLE_X509_X509V2ATTRIBUTECERTIFICATE_CHECKSIGNATURE_OFFSET))(arg, nullptr);
+		}
+
+		::Il2CppArray<::System::Object*>* GetEncoded()
+		{
+			return (return (::Il2CppArray<::System::Object*>*(*)(::PVOID))((::PBYTE)hIl2Cpp + BESTHTTP_SECUREPROTOCOL_ORG_BOUNCYCASTLE_X509_X509V2ATTRIBUTECERTIFICATE_GETENCODED_OFFSET))(nullptr);
+		}
+
+		::BestHTTP::SecureProtocol::Org::BouncyCastle::Asn1::X509::X509Extensions* GetX509Extensions()
+		{
+			return (return (::BestHTTP::SecureProtocol::Org::BouncyCastle::Asn1::X509::X509Extensions*(*)(::PVOID))((::PBYTE)hIl2Cpp + BESTHTTP_SECUREPROTOCOL_ORG_BOUNCYCASTLE_X509_X509V2ATTRIBUTECERTIFICATE_GETX509EXTENSIONS_OFFSET))(nullptr);
+		}
+
+		::Il2CppArray<::System::Object*>* GetAttributes()
+		{
+			return (return (::Il2CppArray<::System::Object*>*(*)(::PVOID))((::PBYTE)hIl2Cpp + BESTHTTP_SECUREPROTOCOL_ORG_BOUNCYCASTLE_X509_X509V2ATTRIBUTECERTIFICATE_GETATTRIBUTES_OFFSET))(nullptr);
+		}
+
+		::Il2CppArray<::System::Object*>* GetAttributes(::System::String* str)
+		{
+			return (return (::Il2CppArray<::System::Object*>*(*)(::System::String*, ::PVOID))((::PBYTE)hIl2Cpp + BESTHTTP_SECUREPROTOCOL_ORG_BOUNCYCASTLE_X509_X509V2ATTRIBUTECERTIFICATE_GETATTRIBUTES_OFFSET))(str, nullptr);
+		}
+
+		::System::Boolean Equals(::System::Object* arg)
+		{
+			return (return (::System::Boolean(*)(::System::Object*, ::PVOID))((::PBYTE)hIl2Cpp + BESTHTTP_SECUREPROTOCOL_ORG_BOUNCYCASTLE_X509_X509V2ATTRIBUTECERTIFICATE_EQUALS_OFFSET))(arg, nullptr);
+		}
+
+		::System::Int32 GetHashCode()
+		{
+			return (return (::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + BESTHTTP_SECUREPROTOCOL_ORG_BOUNCYCASTLE_X509_X509V2ATTRIBUTECERTIFICATE_GETHASHCODE_OFFSET))(nullptr);
+		}
+
+	};
+}
+

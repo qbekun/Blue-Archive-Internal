@@ -1,0 +1,68 @@
+#pragma once
+#include "../../unitysdk.h"
+
+namespace MX::NetworkProtocol { class Protocol; }
+
+#define MX_NETWORKPROTOCOL_MINIGAMEMISSIONREWARDREQUEST_.CTOR_OFFSET UNITYSDK_OFFSET(0xF48440)
+#define MX_NETWORKPROTOCOL_MINIGAMEMISSIONREWARDREQUEST_GET_PROGRESSSERVERID_OFFSET UNITYSDK_OFFSET(0xF48450)
+#define MX_NETWORKPROTOCOL_MINIGAMEMISSIONREWARDREQUEST_GET_MISSIONUNIQUEID_OFFSET UNITYSDK_OFFSET(0xF48460)
+#define MX_NETWORKPROTOCOL_MINIGAMEMISSIONREWARDREQUEST_GET_EVENTCONTENTID_OFFSET UNITYSDK_OFFSET(0xF48470)
+#define MX_NETWORKPROTOCOL_MINIGAMEMISSIONREWARDREQUEST_SET_PROGRESSSERVERID_OFFSET UNITYSDK_OFFSET(0xF48480)
+#define MX_NETWORKPROTOCOL_MINIGAMEMISSIONREWARDREQUEST_SET_MISSIONUNIQUEID_OFFSET UNITYSDK_OFFSET(0xF48490)
+#define MX_NETWORKPROTOCOL_MINIGAMEMISSIONREWARDREQUEST_GET_PROTOCOL_OFFSET UNITYSDK_OFFSET(0xF484A0)
+#define MX_NETWORKPROTOCOL_MINIGAMEMISSIONREWARDREQUEST_SET_EVENTCONTENTID_OFFSET UNITYSDK_OFFSET(0xF484B0)
+
+namespace MX::NetworkProtocol
+{
+	inline static constexpr unsigned int MiniGameMissionRewardRequest_TypeDefinitionIndex = 11867;
+
+	class MiniGameMissionRewardRequest : public Il2CppObject
+	{
+	public:
+		::System::Int64 _MissionUniqueId_k__BackingField; // 0x40
+		::System::Int64 _ProgressServerId_k__BackingField; // 0x48
+		::System::Int64 _EventContentId_k__BackingField; // 0x50
+
+		::System::Void .ctor()
+		{
+			((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_MINIGAMEMISSIONREWARDREQUEST_.CTOR_OFFSET))(nullptr);
+		}
+
+		::System::Int64 get_ProgressServerId()
+		{
+			return ((::System::Int64(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_MINIGAMEMISSIONREWARDREQUEST_GET_PROGRESSSERVERID_OFFSET))(nullptr);
+		}
+
+		::System::Int64 get_MissionUniqueId()
+		{
+			return ((::System::Int64(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_MINIGAMEMISSIONREWARDREQUEST_GET_MISSIONUNIQUEID_OFFSET))(nullptr);
+		}
+
+		::System::Int64 get_EventContentId()
+		{
+			return ((::System::Int64(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_MINIGAMEMISSIONREWARDREQUEST_GET_EVENTCONTENTID_OFFSET))(nullptr);
+		}
+
+		::System::Void set_ProgressServerId(::System::Int64 arg)
+		{
+			((::System::Void(*)(::System::Int64, ::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_MINIGAMEMISSIONREWARDREQUEST_SET_PROGRESSSERVERID_OFFSET))(arg, nullptr);
+		}
+
+		::System::Void set_MissionUniqueId(::System::Int64 arg)
+		{
+			((::System::Void(*)(::System::Int64, ::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_MINIGAMEMISSIONREWARDREQUEST_SET_MISSIONUNIQUEID_OFFSET))(arg, nullptr);
+		}
+
+		::MX::NetworkProtocol::Protocol* get_Protocol()
+		{
+			return ((::MX::NetworkProtocol::Protocol*(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_MINIGAMEMISSIONREWARDREQUEST_GET_PROTOCOL_OFFSET))(nullptr);
+		}
+
+		::System::Void set_EventContentId(::System::Int64 arg)
+		{
+			((::System::Void(*)(::System::Int64, ::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_MINIGAMEMISSIONREWARDREQUEST_SET_EVENTCONTENTID_OFFSET))(arg, nullptr);
+		}
+
+	};
+}
+

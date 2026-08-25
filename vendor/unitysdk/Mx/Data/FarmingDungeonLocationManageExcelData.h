@@ -1,0 +1,131 @@
+#pragma once
+#include "../../unitysdk.h"
+
+namespace MX::Data::Excel { class FarmingDungeonLocationManageExcel; }
+namespace FlatData { class ContentType; }
+namespace FlatData { class WeekDungeonType; }
+namespace FlatData { class SchoolDungeonType; }
+
+#define MX_DATA_FARMINGDUNGEONLOCATIONMANAGEEXCELDATA_GET_FARMINGDUNGEONLOCATIONID_OFFSET UNITYSDK_OFFSET(0x1847680)
+#define MX_DATA_FARMINGDUNGEONLOCATIONMANAGEEXCELDATA_GET_CONTENTTYPE_OFFSET UNITYSDK_OFFSET(0x1847690)
+#define MX_DATA_FARMINGDUNGEONLOCATIONMANAGEEXCELDATA_GET_WEEKDUNGEONTYPE_OFFSET UNITYSDK_OFFSET(0x18476A0)
+#define MX_DATA_FARMINGDUNGEONLOCATIONMANAGEEXCELDATA_GET_SCHOOLDUNGEONTYPE_OFFSET UNITYSDK_OFFSET(0x18476B0)
+#define MX_DATA_FARMINGDUNGEONLOCATIONMANAGEEXCELDATA_GET_ORDER_OFFSET UNITYSDK_OFFSET(0x18476C0)
+#define MX_DATA_FARMINGDUNGEONLOCATIONMANAGEEXCELDATA_GET_OPENDATE_OFFSET UNITYSDK_OFFSET(0x18476D0)
+#define MX_DATA_FARMINGDUNGEONLOCATIONMANAGEEXCELDATA_SET_OPENDATE_OFFSET UNITYSDK_OFFSET(0x18476E0)
+#define MX_DATA_FARMINGDUNGEONLOCATIONMANAGEEXCELDATA_GET_ENDDATE_OFFSET UNITYSDK_OFFSET(0x18476F0)
+#define MX_DATA_FARMINGDUNGEONLOCATIONMANAGEEXCELDATA_SET_ENDDATE_OFFSET UNITYSDK_OFFSET(0x1847700)
+#define MX_DATA_FARMINGDUNGEONLOCATIONMANAGEEXCELDATA_GET_LOCATIONBUTTONIMAGEPATH_OFFSET UNITYSDK_OFFSET(0x1847710)
+#define MX_DATA_FARMINGDUNGEONLOCATIONMANAGEEXCELDATA_GET_LOCALIZECODETITLE_OFFSET UNITYSDK_OFFSET(0x1847720)
+#define MX_DATA_FARMINGDUNGEONLOCATIONMANAGEEXCELDATA_GET_LOCALIZECODEINFO_OFFSET UNITYSDK_OFFSET(0x1847730)
+#define MX_DATA_FARMINGDUNGEONLOCATIONMANAGEEXCELDATA_.CTOR_OFFSET UNITYSDK_OFFSET(0x1847740)
+#define MX_DATA_FARMINGDUNGEONLOCATIONMANAGEEXCELDATA_.CTOR_OFFSET UNITYSDK_OFFSET(0x1847750)
+#define MX_DATA_FARMINGDUNGEONLOCATIONMANAGEEXCELDATA_GET_ISWEEKDUNGEONDATA_OFFSET UNITYSDK_OFFSET(0x1847900)
+#define MX_DATA_FARMINGDUNGEONLOCATIONMANAGEEXCELDATA_GET_ISSCHOOLDUNGEONDATA_OFFSET UNITYSDK_OFFSET(0x1847940)
+#define MX_DATA_FARMINGDUNGEONLOCATIONMANAGEEXCELDATA_GET_ISINVALID_OFFSET UNITYSDK_OFFSET(0x1847980)
+#define MX_DATA_FARMINGDUNGEONLOCATIONMANAGEEXCELDATA_ISOPEN_OFFSET UNITYSDK_OFFSET(0x18479C0)
+
+namespace MX::Data
+{
+	inline static constexpr unsigned int FarmingDungeonLocationManageExcelData_TypeDefinitionIndex = 15821;
+
+	class FarmingDungeonLocationManageExcelData : public Il2CppObject
+	{
+	public:
+		::MX::Data::Excel::FarmingDungeonLocationManageExcel* _excel; // 0x10
+		::System::DateTime* _OpenDate_k__BackingField; // 0x20
+		::System::DateTime* _EndDate_k__BackingField; // 0x28
+
+		::System::Int64 get_FarmingDungeonLocationId()
+		{
+			return (return (::System::Int64(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_DATA_FARMINGDUNGEONLOCATIONMANAGEEXCELDATA_GET_FARMINGDUNGEONLOCATIONID_OFFSET))(nullptr);
+		}
+
+		::FlatData::ContentType* get_ContentType()
+		{
+			return (return (::FlatData::ContentType*(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_DATA_FARMINGDUNGEONLOCATIONMANAGEEXCELDATA_GET_CONTENTTYPE_OFFSET))(nullptr);
+		}
+
+		::FlatData::WeekDungeonType* get_WeekDungeonType()
+		{
+			return (return (::FlatData::WeekDungeonType*(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_DATA_FARMINGDUNGEONLOCATIONMANAGEEXCELDATA_GET_WEEKDUNGEONTYPE_OFFSET))(nullptr);
+		}
+
+		::FlatData::SchoolDungeonType* get_SchoolDungeonType()
+		{
+			return (return (::FlatData::SchoolDungeonType*(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_DATA_FARMINGDUNGEONLOCATIONMANAGEEXCELDATA_GET_SCHOOLDUNGEONTYPE_OFFSET))(nullptr);
+		}
+
+		::System::Int64 get_Order()
+		{
+			return (return (::System::Int64(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_DATA_FARMINGDUNGEONLOCATIONMANAGEEXCELDATA_GET_ORDER_OFFSET))(nullptr);
+		}
+
+		::System::DateTime* get_OpenDate()
+		{
+			return (return (::System::DateTime*(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_DATA_FARMINGDUNGEONLOCATIONMANAGEEXCELDATA_GET_OPENDATE_OFFSET))(nullptr);
+		}
+
+		::System::Void set_OpenDate(::System::DateTime* arg)
+		{
+			((::System::Void(*)(::System::DateTime*, ::PVOID))((::PBYTE)hIl2Cpp + MX_DATA_FARMINGDUNGEONLOCATIONMANAGEEXCELDATA_SET_OPENDATE_OFFSET))(arg, nullptr);
+		}
+
+		::System::DateTime* get_EndDate()
+		{
+			return (return (::System::DateTime*(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_DATA_FARMINGDUNGEONLOCATIONMANAGEEXCELDATA_GET_ENDDATE_OFFSET))(nullptr);
+		}
+
+		::System::Void set_EndDate(::System::DateTime* arg)
+		{
+			((::System::Void(*)(::System::DateTime*, ::PVOID))((::PBYTE)hIl2Cpp + MX_DATA_FARMINGDUNGEONLOCATIONMANAGEEXCELDATA_SET_ENDDATE_OFFSET))(arg, nullptr);
+		}
+
+		::System::String* get_LocationButtonImagePath()
+		{
+			return (return (::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_DATA_FARMINGDUNGEONLOCATIONMANAGEEXCELDATA_GET_LOCATIONBUTTONIMAGEPATH_OFFSET))(nullptr);
+		}
+
+		::System::UInt32 get_LocalizeCodeTitle()
+		{
+			return (return (::System::UInt32(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_DATA_FARMINGDUNGEONLOCATIONMANAGEEXCELDATA_GET_LOCALIZECODETITLE_OFFSET))(nullptr);
+		}
+
+		::System::UInt32 get_LocalizeCodeInfo()
+		{
+			return (return (::System::UInt32(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_DATA_FARMINGDUNGEONLOCATIONMANAGEEXCELDATA_GET_LOCALIZECODEINFO_OFFSET))(nullptr);
+		}
+
+		::System::Void .ctor()
+		{
+			((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_DATA_FARMINGDUNGEONLOCATIONMANAGEEXCELDATA_.CTOR_OFFSET))(nullptr);
+		}
+
+		::System::Void .ctor(::MX::Data::Excel::FarmingDungeonLocationManageExcel* arg)
+		{
+			((::System::Void(*)(::MX::Data::Excel::FarmingDungeonLocationManageExcel*, ::PVOID))((::PBYTE)hIl2Cpp + MX_DATA_FARMINGDUNGEONLOCATIONMANAGEEXCELDATA_.CTOR_OFFSET))(arg, nullptr);
+		}
+
+		::System::Boolean get_IsWeekDungeonData()
+		{
+			return (return (::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_DATA_FARMINGDUNGEONLOCATIONMANAGEEXCELDATA_GET_ISWEEKDUNGEONDATA_OFFSET))(nullptr);
+		}
+
+		::System::Boolean get_IsSchoolDungeonData()
+		{
+			return (return (::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_DATA_FARMINGDUNGEONLOCATIONMANAGEEXCELDATA_GET_ISSCHOOLDUNGEONDATA_OFFSET))(nullptr);
+		}
+
+		::System::Boolean get_IsInvalid()
+		{
+			return (return (::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_DATA_FARMINGDUNGEONLOCATIONMANAGEEXCELDATA_GET_ISINVALID_OFFSET))(nullptr);
+		}
+
+		::System::Boolean IsOpen(::System::DateTime* arg)
+		{
+			return (return (::System::Boolean(*)(::System::DateTime*, ::PVOID))((::PBYTE)hIl2Cpp + MX_DATA_FARMINGDUNGEONLOCATIONMANAGEEXCELDATA_ISOPEN_OFFSET))(arg, nullptr);
+		}
+
+	};
+}
+

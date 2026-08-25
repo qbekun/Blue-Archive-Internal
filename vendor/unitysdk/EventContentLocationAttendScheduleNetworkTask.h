@@ -1,0 +1,83 @@
+#pragma once
+#include "unitysdk.h"
+
+namespace MX::NetworkProtocol { class Protocol; }
+
+#define EVENTCONTENTLOCATIONATTENDSCHEDULENETWORKTASK_ERRORHANDLER_OFFSET UNITYSDK_OFFSET(0x1F6BB20)
+#define EVENTCONTENTLOCATIONATTENDSCHEDULENETWORKTASK_GET_EVENTCONTENTID_OFFSET UNITYSDK_OFFSET(0x1F6BB30)
+#define EVENTCONTENTLOCATIONATTENDSCHEDULENETWORKTASK_PROCESSSESSION_OFFSET UNITYSDK_OFFSET(0x1F6BB40)
+#define EVENTCONTENTLOCATIONATTENDSCHEDULENETWORKTASK_SET_ZONEID_OFFSET UNITYSDK_OFFSET(0x1F6BBD0)
+#define EVENTCONTENTLOCATIONATTENDSCHEDULENETWORKTASK_HANDLEMESSAGE_OFFSET UNITYSDK_OFFSET(0x1F6BBE0)
+#define EVENTCONTENTLOCATIONATTENDSCHEDULENETWORKTASK_.CTOR_OFFSET UNITYSDK_OFFSET(0x1F6C350)
+#define EVENTCONTENTLOCATIONATTENDSCHEDULENETWORKTASK_GET_COUNT_OFFSET UNITYSDK_OFFSET(0x1F6C360)
+#define EVENTCONTENTLOCATIONATTENDSCHEDULENETWORKTASK_GET_ZONEID_OFFSET UNITYSDK_OFFSET(0x1F6C370)
+#define EVENTCONTENTLOCATIONATTENDSCHEDULENETWORKTASK_SET_EVENTCONTENTID_OFFSET UNITYSDK_OFFSET(0x1F6C380)
+#define EVENTCONTENTLOCATIONATTENDSCHEDULENETWORKTASK_SET_COUNT_OFFSET UNITYSDK_OFFSET(0x1F6C390)
+#define EVENTCONTENTLOCATIONATTENDSCHEDULENETWORKTASK__PROCESSSESSION_B__12_0_OFFSET UNITYSDK_OFFSET(0x1F6C3A0)
+
+	inline static constexpr unsigned int EventContentLocationAttendScheduleNetworkTask_TypeDefinitionIndex = 2479;
+
+	class EventContentLocationAttendScheduleNetworkTask : public Il2CppObject
+	{
+	public:
+		::System::Int64 _EventContentId_k__BackingField; // 0x40
+		::System::Int64 _ZoneId_k__BackingField; // 0x48
+		::System::Int64 _Count_k__BackingField; // 0x50
+
+		::System::Boolean ErrorHandler()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + EVENTCONTENTLOCATIONATTENDSCHEDULENETWORKTASK_ERRORHANDLER_OFFSET))(nullptr);
+		}
+
+		::System::Int64 get_EventContentId()
+		{
+			return ((::System::Int64(*)(::PVOID))((::PBYTE)hIl2Cpp + EVENTCONTENTLOCATIONATTENDSCHEDULENETWORKTASK_GET_EVENTCONTENTID_OFFSET))(nullptr);
+		}
+
+		::System::Collections::IEnumerator* ProcessSession()
+		{
+			return ((::System::Collections::IEnumerator*(*)(::PVOID))((::PBYTE)hIl2Cpp + EVENTCONTENTLOCATIONATTENDSCHEDULENETWORKTASK_PROCESSSESSION_OFFSET))(nullptr);
+		}
+
+		::System::Void set_ZoneId(::System::Int64 arg)
+		{
+			((::System::Void(*)(::System::Int64, ::PVOID))((::PBYTE)hIl2Cpp + EVENTCONTENTLOCATIONATTENDSCHEDULENETWORKTASK_SET_ZONEID_OFFSET))(arg, nullptr);
+		}
+
+		::System::Boolean HandleMessage(::MX::NetworkProtocol::Protocol* arg, ::System::String* str, ::Il2CppArray<::System::Object*>* arg2)
+		{
+			return ((::System::Boolean(*)(::MX::NetworkProtocol::Protocol*, ::System::String*, ::Il2CppArray<::System::Object*>*, ::PVOID))((::PBYTE)hIl2Cpp + EVENTCONTENTLOCATIONATTENDSCHEDULENETWORKTASK_HANDLEMESSAGE_OFFSET))(arg, str, arg2, nullptr);
+		}
+
+		::System::Void .ctor()
+		{
+			((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + EVENTCONTENTLOCATIONATTENDSCHEDULENETWORKTASK_.CTOR_OFFSET))(nullptr);
+		}
+
+		::System::Int64 get_Count()
+		{
+			return ((::System::Int64(*)(::PVOID))((::PBYTE)hIl2Cpp + EVENTCONTENTLOCATIONATTENDSCHEDULENETWORKTASK_GET_COUNT_OFFSET))(nullptr);
+		}
+
+		::System::Int64 get_ZoneId()
+		{
+			return ((::System::Int64(*)(::PVOID))((::PBYTE)hIl2Cpp + EVENTCONTENTLOCATIONATTENDSCHEDULENETWORKTASK_GET_ZONEID_OFFSET))(nullptr);
+		}
+
+		::System::Void set_EventContentId(::System::Int64 arg)
+		{
+			((::System::Void(*)(::System::Int64, ::PVOID))((::PBYTE)hIl2Cpp + EVENTCONTENTLOCATIONATTENDSCHEDULENETWORKTASK_SET_EVENTCONTENTID_OFFSET))(arg, nullptr);
+		}
+
+		::System::Void set_Count(::System::Int64 arg)
+		{
+			((::System::Void(*)(::System::Int64, ::PVOID))((::PBYTE)hIl2Cpp + EVENTCONTENTLOCATIONATTENDSCHEDULENETWORKTASK_SET_COUNT_OFFSET))(arg, nullptr);
+		}
+
+		::System::Boolean _ProcessSession_b__12_0()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + EVENTCONTENTLOCATIONATTENDSCHEDULENETWORKTASK__PROCESSSESSION_B__12_0_OFFSET))(nullptr);
+		}
+
+	};
+

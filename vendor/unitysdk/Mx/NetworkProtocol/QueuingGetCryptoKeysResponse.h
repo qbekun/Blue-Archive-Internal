@@ -1,0 +1,113 @@
+#pragma once
+#include "../../unitysdk.h"
+
+namespace MX::NetworkProtocol { class Protocol; }
+
+#define MX_NETWORKPROTOCOL_QUEUINGGETCRYPTOKEYSRESPONSE_GET_PROTOCOL_OFFSET UNITYSDK_OFFSET(0xF4B9F0)
+#define MX_NETWORKPROTOCOL_QUEUINGGETCRYPTOKEYSRESPONSE_SET_ENCRYPTEDSQLCIPHERKEY_OFFSET UNITYSDK_OFFSET(0xF4BA00)
+#define MX_NETWORKPROTOCOL_QUEUINGGETCRYPTOKEYSRESPONSE_GET_SIGNEDKEY_OFFSET UNITYSDK_OFFSET(0xF4BA10)
+#define MX_NETWORKPROTOCOL_QUEUINGGETCRYPTOKEYSRESPONSE_GET_ENCRYPTEDKEY_OFFSET UNITYSDK_OFFSET(0xF4BA20)
+#define MX_NETWORKPROTOCOL_QUEUINGGETCRYPTOKEYSRESPONSE_SET_ENCRYPTEDKEY_OFFSET UNITYSDK_OFFSET(0xF4BA30)
+#define MX_NETWORKPROTOCOL_QUEUINGGETCRYPTOKEYSRESPONSE_GET_SIGNEDIV_OFFSET UNITYSDK_OFFSET(0xF4BA40)
+#define MX_NETWORKPROTOCOL_QUEUINGGETCRYPTOKEYSRESPONSE_SET_SIGNEDIV_OFFSET UNITYSDK_OFFSET(0xF4BA50)
+#define MX_NETWORKPROTOCOL_QUEUINGGETCRYPTOKEYSRESPONSE_RESET_OFFSET UNITYSDK_OFFSET(0xF4BA60)
+#define MX_NETWORKPROTOCOL_QUEUINGGETCRYPTOKEYSRESPONSE_SET_ENCRYPTEDIV_OFFSET UNITYSDK_OFFSET(0xF4BAF0)
+#define MX_NETWORKPROTOCOL_QUEUINGGETCRYPTOKEYSRESPONSE_SET_ENCRYPTEDSQLCIPHERLICENSE_OFFSET UNITYSDK_OFFSET(0xF4BB00)
+#define MX_NETWORKPROTOCOL_QUEUINGGETCRYPTOKEYSRESPONSE_SET_SIGNEDKEY_OFFSET UNITYSDK_OFFSET(0xF4BB10)
+#define MX_NETWORKPROTOCOL_QUEUINGGETCRYPTOKEYSRESPONSE_GET_ENCRYPTEDSQLCIPHERKEY_OFFSET UNITYSDK_OFFSET(0xF4BB20)
+#define MX_NETWORKPROTOCOL_QUEUINGGETCRYPTOKEYSRESPONSE_GET_ENCRYPTEDIV_OFFSET UNITYSDK_OFFSET(0xF4BB30)
+#define MX_NETWORKPROTOCOL_QUEUINGGETCRYPTOKEYSRESPONSE_.CTOR_OFFSET UNITYSDK_OFFSET(0xF4BB40)
+#define MX_NETWORKPROTOCOL_QUEUINGGETCRYPTOKEYSRESPONSE_GET_ENCRYPTEDSQLCIPHERLICENSE_OFFSET UNITYSDK_OFFSET(0xF4BC30)
+
+namespace MX::NetworkProtocol
+{
+	inline static constexpr unsigned int QueuingGetCryptoKeysResponse_TypeDefinitionIndex = 12007;
+
+	class QueuingGetCryptoKeysResponse : public Il2CppObject
+	{
+	public:
+		::System::String* _EncryptedKey_k__BackingField; // 0x50
+		::System::String* _SignedKey_k__BackingField; // 0x58
+		::System::String* _EncryptedIV_k__BackingField; // 0x60
+		::System::String* _SignedIV_k__BackingField; // 0x68
+		::System::String* _EncryptedSqlCipherKey_k__BackingField; // 0x70
+		::System::String* _EncryptedSqlCipherLicense_k__BackingField; // 0x78
+
+		::MX::NetworkProtocol::Protocol* get_Protocol()
+		{
+			return ((::MX::NetworkProtocol::Protocol*(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_QUEUINGGETCRYPTOKEYSRESPONSE_GET_PROTOCOL_OFFSET))(nullptr);
+		}
+
+		::System::Void set_EncryptedSqlCipherKey(::System::String* str)
+		{
+			((::System::Void(*)(::System::String*, ::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_QUEUINGGETCRYPTOKEYSRESPONSE_SET_ENCRYPTEDSQLCIPHERKEY_OFFSET))(str, nullptr);
+		}
+
+		::System::String* get_SignedKey()
+		{
+			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_QUEUINGGETCRYPTOKEYSRESPONSE_GET_SIGNEDKEY_OFFSET))(nullptr);
+		}
+
+		::System::String* get_EncryptedKey()
+		{
+			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_QUEUINGGETCRYPTOKEYSRESPONSE_GET_ENCRYPTEDKEY_OFFSET))(nullptr);
+		}
+
+		::System::Void set_EncryptedKey(::System::String* str)
+		{
+			((::System::Void(*)(::System::String*, ::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_QUEUINGGETCRYPTOKEYSRESPONSE_SET_ENCRYPTEDKEY_OFFSET))(str, nullptr);
+		}
+
+		::System::String* get_SignedIV()
+		{
+			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_QUEUINGGETCRYPTOKEYSRESPONSE_GET_SIGNEDIV_OFFSET))(nullptr);
+		}
+
+		::System::Void set_SignedIV(::System::String* str)
+		{
+			((::System::Void(*)(::System::String*, ::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_QUEUINGGETCRYPTOKEYSRESPONSE_SET_SIGNEDIV_OFFSET))(str, nullptr);
+		}
+
+		::System::Void Reset()
+		{
+			((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_QUEUINGGETCRYPTOKEYSRESPONSE_RESET_OFFSET))(nullptr);
+		}
+
+		::System::Void set_EncryptedIV(::System::String* str)
+		{
+			((::System::Void(*)(::System::String*, ::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_QUEUINGGETCRYPTOKEYSRESPONSE_SET_ENCRYPTEDIV_OFFSET))(str, nullptr);
+		}
+
+		::System::Void set_EncryptedSqlCipherLicense(::System::String* str)
+		{
+			((::System::Void(*)(::System::String*, ::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_QUEUINGGETCRYPTOKEYSRESPONSE_SET_ENCRYPTEDSQLCIPHERLICENSE_OFFSET))(str, nullptr);
+		}
+
+		::System::Void set_SignedKey(::System::String* str)
+		{
+			((::System::Void(*)(::System::String*, ::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_QUEUINGGETCRYPTOKEYSRESPONSE_SET_SIGNEDKEY_OFFSET))(str, nullptr);
+		}
+
+		::System::String* get_EncryptedSqlCipherKey()
+		{
+			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_QUEUINGGETCRYPTOKEYSRESPONSE_GET_ENCRYPTEDSQLCIPHERKEY_OFFSET))(nullptr);
+		}
+
+		::System::String* get_EncryptedIV()
+		{
+			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_QUEUINGGETCRYPTOKEYSRESPONSE_GET_ENCRYPTEDIV_OFFSET))(nullptr);
+		}
+
+		::System::Void .ctor()
+		{
+			((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_QUEUINGGETCRYPTOKEYSRESPONSE_.CTOR_OFFSET))(nullptr);
+		}
+
+		::System::String* get_EncryptedSqlCipherLicense()
+		{
+			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_QUEUINGGETCRYPTOKEYSRESPONSE_GET_ENCRYPTEDSQLCIPHERLICENSE_OFFSET))(nullptr);
+		}
+
+	};
+}
+

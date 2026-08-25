@@ -1,0 +1,151 @@
+#pragma once
+#include "../../../../unitysdk.h"
+
+namespace MX::Logic::Data { class HealOverTimeEffectValue; }
+namespace MX::Core::Math { class BasisPoint; }
+namespace MX::Logic::Data { class DamageModifier; }
+namespace MX::Logic::Skills { class ExtraStatType; }
+namespace FlatData { class StatType; }
+namespace MX::Logic::Skills { class SkillSpecification; }
+namespace MX::Logic::Skills::LogicEffects { class LogicEffectHitSpecification; }
+
+#define MX_LOGIC_SKILLS_LOGICEFFECTS_HEALOVERTIMEEFFECT_GET_BONUSRATE_OFFSET UNITYSDK_OFFSET(0x141ADE0)
+#define MX_LOGIC_SKILLS_LOGICEFFECTS_HEALOVERTIMEEFFECT_GET_AMOUNT_OFFSET UNITYSDK_OFFSET(0x141AE00)
+#define MX_LOGIC_SKILLS_LOGICEFFECTS_HEALOVERTIMEEFFECT_GET_CHANGERATEBYCOST_OFFSET UNITYSDK_OFFSET(0x141AE20)
+#define MX_LOGIC_SKILLS_LOGICEFFECTS_HEALOVERTIMEEFFECT_GET_PERIODMAXHEALRATE_OFFSET UNITYSDK_OFFSET(0x141AE50)
+#define MX_LOGIC_SKILLS_LOGICEFFECTS_HEALOVERTIMEEFFECT_GET_APPLYHEALRATEBYARMORTYPE_OFFSET UNITYSDK_OFFSET(0x141AE80)
+#define MX_LOGIC_SKILLS_LOGICEFFECTS_HEALOVERTIMEEFFECT_GET_APPLYPERIODRATE_OFFSET UNITYSDK_OFFSET(0x141AEB0)
+#define MX_LOGIC_SKILLS_LOGICEFFECTS_HEALOVERTIMEEFFECT_ADDHEALMODIFIER_OFFSET UNITYSDK_OFFSET(0x141AEE0)
+#define MX_LOGIC_SKILLS_LOGICEFFECTS_HEALOVERTIMEEFFECT_GET_EXTRASTATSOURCE_OFFSET UNITYSDK_OFFSET(0x141AFF0)
+#define MX_LOGIC_SKILLS_LOGICEFFECTS_HEALOVERTIMEEFFECT_GET_HEALMODIFIERS_OFFSET UNITYSDK_OFFSET(0x141B010)
+#define MX_LOGIC_SKILLS_LOGICEFFECTS_HEALOVERTIMEEFFECT_GET_PERIODMINHEALRATE_OFFSET UNITYSDK_OFFSET(0x141B020)
+#define MX_LOGIC_SKILLS_LOGICEFFECTS_HEALOVERTIMEEFFECT_GET_BONUSSOURCE_OFFSET UNITYSDK_OFFSET(0x141B050)
+#define MX_LOGIC_SKILLS_LOGICEFFECTS_HEALOVERTIMEEFFECT_GET_PERIODFRAME_OFFSET UNITYSDK_OFFSET(0x141B070)
+#define MX_LOGIC_SKILLS_LOGICEFFECTS_HEALOVERTIMEEFFECT_GET_ISDISPELLABLE_OFFSET UNITYSDK_OFFSET(0x141B090)
+#define MX_LOGIC_SKILLS_LOGICEFFECTS_HEALOVERTIMEEFFECT_.CTOR_OFFSET UNITYSDK_OFFSET(0x141B0B0)
+#define MX_LOGIC_SKILLS_LOGICEFFECTS_HEALOVERTIMEEFFECT_SET_HEALMODIFIERS_OFFSET UNITYSDK_OFFSET(0x141B100)
+#define MX_LOGIC_SKILLS_LOGICEFFECTS_HEALOVERTIMEEFFECT_GET_APPLYHEALRATE_OFFSET UNITYSDK_OFFSET(0x141B120)
+#define MX_LOGIC_SKILLS_LOGICEFFECTS_HEALOVERTIMEEFFECT_GET_EXTRASTATRATE_OFFSET UNITYSDK_OFFSET(0x141B150)
+#define MX_LOGIC_SKILLS_LOGICEFFECTS_HEALOVERTIMEEFFECT_GET_DURATIONFRAME_OFFSET UNITYSDK_OFFSET(0x141B170)
+#define MX_LOGIC_SKILLS_LOGICEFFECTS_HEALOVERTIMEEFFECT_GET_VALUE_OFFSET UNITYSDK_OFFSET(0x141B190)
+#define MX_LOGIC_SKILLS_LOGICEFFECTS_HEALOVERTIMEEFFECT_GET_CHANGERATEBYCOSTLIST_OFFSET UNITYSDK_OFFSET(0x141B1A0)
+#define MX_LOGIC_SKILLS_LOGICEFFECTS_HEALOVERTIMEEFFECT_GET_APPLYHEALRATEBYBULLETTYPE_OFFSET UNITYSDK_OFFSET(0x141B1D0)
+
+namespace MX::Logic::Skills::LogicEffects
+{
+	inline static constexpr unsigned int HealOverTimeEffect_TypeDefinitionIndex = 14757;
+
+	class HealOverTimeEffect : public Il2CppObject
+	{
+	public:
+		::MX::Logic::Data::HealOverTimeEffectValue* _value_k__BackingField; // 0xD0
+		Il2CppObject* _HealModifiers_k__BackingField; // 0xD8
+
+		::MX::Core::Math::BasisPoint* get_BonusRate()
+		{
+			return ((::MX::Core::Math::BasisPoint*(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_LOGIC_SKILLS_LOGICEFFECTS_HEALOVERTIMEEFFECT_GET_BONUSRATE_OFFSET))(nullptr);
+		}
+
+		::System::Int64 get_Amount()
+		{
+			return ((::System::Int64(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_LOGIC_SKILLS_LOGICEFFECTS_HEALOVERTIMEEFFECT_GET_AMOUNT_OFFSET))(nullptr);
+		}
+
+		::System::String* get_ChangeRateByCost()
+		{
+			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_LOGIC_SKILLS_LOGICEFFECTS_HEALOVERTIMEEFFECT_GET_CHANGERATEBYCOST_OFFSET))(nullptr);
+		}
+
+		::System::Int64 get_PeriodMaxHealRate()
+		{
+			return ((::System::Int64(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_LOGIC_SKILLS_LOGICEFFECTS_HEALOVERTIMEEFFECT_GET_PERIODMAXHEALRATE_OFFSET))(nullptr);
+		}
+
+		::System::Boolean get_ApplyHealRateByArmorType()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_LOGIC_SKILLS_LOGICEFFECTS_HEALOVERTIMEEFFECT_GET_APPLYHEALRATEBYARMORTYPE_OFFSET))(nullptr);
+		}
+
+		::System::Int64 get_ApplyPeriodRate()
+		{
+			return ((::System::Int64(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_LOGIC_SKILLS_LOGICEFFECTS_HEALOVERTIMEEFFECT_GET_APPLYPERIODRATE_OFFSET))(nullptr);
+		}
+
+		::System::Void AddHealModifier(::MX::Logic::Data::DamageModifier* arg)
+		{
+			((::System::Void(*)(::MX::Logic::Data::DamageModifier*, ::PVOID))((::PBYTE)hIl2Cpp + MX_LOGIC_SKILLS_LOGICEFFECTS_HEALOVERTIMEEFFECT_ADDHEALMODIFIER_OFFSET))(arg, nullptr);
+		}
+
+		::MX::Logic::Skills::ExtraStatType* get_ExtraStatSource()
+		{
+			return ((::MX::Logic::Skills::ExtraStatType*(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_LOGIC_SKILLS_LOGICEFFECTS_HEALOVERTIMEEFFECT_GET_EXTRASTATSOURCE_OFFSET))(nullptr);
+		}
+
+		Il2CppObject* get_HealModifiers()
+		{
+			return ((Il2CppObject*(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_LOGIC_SKILLS_LOGICEFFECTS_HEALOVERTIMEEFFECT_GET_HEALMODIFIERS_OFFSET))(nullptr);
+		}
+
+		::System::Int64 get_PeriodMinHealRate()
+		{
+			return ((::System::Int64(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_LOGIC_SKILLS_LOGICEFFECTS_HEALOVERTIMEEFFECT_GET_PERIODMINHEALRATE_OFFSET))(nullptr);
+		}
+
+		::FlatData::StatType* get_BonusSource()
+		{
+			return ((::FlatData::StatType*(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_LOGIC_SKILLS_LOGICEFFECTS_HEALOVERTIMEEFFECT_GET_BONUSSOURCE_OFFSET))(nullptr);
+		}
+
+		::System::Int32 get_PeriodFrame()
+		{
+			return ((::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_LOGIC_SKILLS_LOGICEFFECTS_HEALOVERTIMEEFFECT_GET_PERIODFRAME_OFFSET))(nullptr);
+		}
+
+		::System::Boolean get_IsDispellable()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_LOGIC_SKILLS_LOGICEFFECTS_HEALOVERTIMEEFFECT_GET_ISDISPELLABLE_OFFSET))(nullptr);
+		}
+
+		::System::Void .ctor(::MX::Logic::Data::HealOverTimeEffectValue* arg, ::MX::Logic::Skills::SkillSpecification* arg2, ::MX::Logic::Skills::LogicEffects::LogicEffectHitSpecification* arg3)
+		{
+			((::System::Void(*)(::MX::Logic::Data::HealOverTimeEffectValue*, ::MX::Logic::Skills::SkillSpecification*, ::MX::Logic::Skills::LogicEffects::LogicEffectHitSpecification*, ::PVOID))((::PBYTE)hIl2Cpp + MX_LOGIC_SKILLS_LOGICEFFECTS_HEALOVERTIMEEFFECT_.CTOR_OFFSET))(arg, arg2, arg3, nullptr);
+		}
+
+		::System::Void set_HealModifiers(Il2CppObject* arg)
+		{
+			((::System::Void(*)(Il2CppObject*, ::PVOID))((::PBYTE)hIl2Cpp + MX_LOGIC_SKILLS_LOGICEFFECTS_HEALOVERTIMEEFFECT_SET_HEALMODIFIERS_OFFSET))(arg, nullptr);
+		}
+
+		::System::Boolean get_ApplyHealRate()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_LOGIC_SKILLS_LOGICEFFECTS_HEALOVERTIMEEFFECT_GET_APPLYHEALRATE_OFFSET))(nullptr);
+		}
+
+		::MX::Core::Math::BasisPoint* get_ExtraStatRate()
+		{
+			return ((::MX::Core::Math::BasisPoint*(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_LOGIC_SKILLS_LOGICEFFECTS_HEALOVERTIMEEFFECT_GET_EXTRASTATRATE_OFFSET))(nullptr);
+		}
+
+		::System::Int32 get_DurationFrame()
+		{
+			return ((::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_LOGIC_SKILLS_LOGICEFFECTS_HEALOVERTIMEEFFECT_GET_DURATIONFRAME_OFFSET))(nullptr);
+		}
+
+		::MX::Logic::Data::HealOverTimeEffectValue* get_value()
+		{
+			return ((::MX::Logic::Data::HealOverTimeEffectValue*(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_LOGIC_SKILLS_LOGICEFFECTS_HEALOVERTIMEEFFECT_GET_VALUE_OFFSET))(nullptr);
+		}
+
+		::Il2CppArray<::System::Object*>* get_ChangeRateByCostList()
+		{
+			return ((::Il2CppArray<::System::Object*>*(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_LOGIC_SKILLS_LOGICEFFECTS_HEALOVERTIMEEFFECT_GET_CHANGERATEBYCOSTLIST_OFFSET))(nullptr);
+		}
+
+		::System::Boolean get_ApplyHealRateByBulletType()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_LOGIC_SKILLS_LOGICEFFECTS_HEALOVERTIMEEFFECT_GET_APPLYHEALRATEBYBULLETTYPE_OFFSET))(nullptr);
+		}
+
+	};
+}
+

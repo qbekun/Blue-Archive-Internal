@@ -1,0 +1,108 @@
+#pragma once
+#include "../../unitysdk.h"
+
+namespace FlatData { class RaidSeasonType; }
+namespace MX::NetworkProtocol { class Protocol; }
+
+#define MX_NETWORKPROTOCOL_ELIMINATERAIDLOGINRESPONSE_GET_RECEIVELIMITEDREWARDIDS_OFFSET UNITYSDK_OFFSET(0xF42800)
+#define MX_NETWORKPROTOCOL_ELIMINATERAIDLOGINRESPONSE_SET_SWEEPPOINTBYRAIDUNIQUEID_OFFSET UNITYSDK_OFFSET(0xF42810)
+#define MX_NETWORKPROTOCOL_ELIMINATERAIDLOGINRESPONSE_GET_CANRECEIVERANKINGREWARD_OFFSET UNITYSDK_OFFSET(0xF42820)
+#define MX_NETWORKPROTOCOL_ELIMINATERAIDLOGINRESPONSE_SET_RECEIVELIMITEDREWARDIDS_OFFSET UNITYSDK_OFFSET(0xF42830)
+#define MX_NETWORKPROTOCOL_ELIMINATERAIDLOGINRESPONSE_GET_LASTSETTLEDTIER_OFFSET UNITYSDK_OFFSET(0xF42840)
+#define MX_NETWORKPROTOCOL_ELIMINATERAIDLOGINRESPONSE_GET_LASTSETTLEDRANKING_OFFSET UNITYSDK_OFFSET(0xF42850)
+#define MX_NETWORKPROTOCOL_ELIMINATERAIDLOGINRESPONSE_GET_PROTOCOL_OFFSET UNITYSDK_OFFSET(0xF42860)
+#define MX_NETWORKPROTOCOL_ELIMINATERAIDLOGINRESPONSE_SET_CANRECEIVERANKINGREWARD_OFFSET UNITYSDK_OFFSET(0xF42870)
+#define MX_NETWORKPROTOCOL_ELIMINATERAIDLOGINRESPONSE_SET_SEASONTYPE_OFFSET UNITYSDK_OFFSET(0xF42880)
+#define MX_NETWORKPROTOCOL_ELIMINATERAIDLOGINRESPONSE_SET_LASTSETTLEDRANKING_OFFSET UNITYSDK_OFFSET(0xF42890)
+#define MX_NETWORKPROTOCOL_ELIMINATERAIDLOGINRESPONSE_GET_SEASONTYPE_OFFSET UNITYSDK_OFFSET(0xF428A0)
+#define MX_NETWORKPROTOCOL_ELIMINATERAIDLOGINRESPONSE_SET_LASTSETTLEDTIER_OFFSET UNITYSDK_OFFSET(0xF428B0)
+#define MX_NETWORKPROTOCOL_ELIMINATERAIDLOGINRESPONSE_GET_SWEEPPOINTBYRAIDUNIQUEID_OFFSET UNITYSDK_OFFSET(0xF428C0)
+#define MX_NETWORKPROTOCOL_ELIMINATERAIDLOGINRESPONSE_.CTOR_OFFSET UNITYSDK_OFFSET(0xF428D0)
+
+namespace MX::NetworkProtocol
+{
+	inline static constexpr unsigned int EliminateRaidLoginResponse_TypeDefinitionIndex = 11640;
+
+	class EliminateRaidLoginResponse : public Il2CppObject
+	{
+	public:
+		::FlatData::RaidSeasonType* _SeasonType_k__BackingField; // 0x50
+		::System::Boolean _CanReceiveRankingReward_k__BackingField; // 0x54
+		Il2CppObject* _ReceiveLimitedRewardIds_k__BackingField; // 0x58
+		Il2CppObject* _SweepPointByRaidUniqueId_k__BackingField; // 0x60
+		::System::Int64 _LastSettledRanking_k__BackingField; // 0x68
+		Il2CppObject* _LastSettledTier_k__BackingField; // 0x70
+
+		Il2CppObject* get_ReceiveLimitedRewardIds()
+		{
+			return ((Il2CppObject*(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_ELIMINATERAIDLOGINRESPONSE_GET_RECEIVELIMITEDREWARDIDS_OFFSET))(nullptr);
+		}
+
+		::System::Void set_SweepPointByRaidUniqueId(Il2CppObject* arg)
+		{
+			((::System::Void(*)(Il2CppObject*, ::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_ELIMINATERAIDLOGINRESPONSE_SET_SWEEPPOINTBYRAIDUNIQUEID_OFFSET))(arg, nullptr);
+		}
+
+		::System::Boolean get_CanReceiveRankingReward()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_ELIMINATERAIDLOGINRESPONSE_GET_CANRECEIVERANKINGREWARD_OFFSET))(nullptr);
+		}
+
+		::System::Void set_ReceiveLimitedRewardIds(Il2CppObject* arg)
+		{
+			((::System::Void(*)(Il2CppObject*, ::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_ELIMINATERAIDLOGINRESPONSE_SET_RECEIVELIMITEDREWARDIDS_OFFSET))(arg, nullptr);
+		}
+
+		Il2CppObject* get_LastSettledTier()
+		{
+			return ((Il2CppObject*(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_ELIMINATERAIDLOGINRESPONSE_GET_LASTSETTLEDTIER_OFFSET))(nullptr);
+		}
+
+		::System::Int64 get_LastSettledRanking()
+		{
+			return ((::System::Int64(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_ELIMINATERAIDLOGINRESPONSE_GET_LASTSETTLEDRANKING_OFFSET))(nullptr);
+		}
+
+		::MX::NetworkProtocol::Protocol* get_Protocol()
+		{
+			return ((::MX::NetworkProtocol::Protocol*(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_ELIMINATERAIDLOGINRESPONSE_GET_PROTOCOL_OFFSET))(nullptr);
+		}
+
+		::System::Void set_CanReceiveRankingReward(::System::Boolean arg)
+		{
+			((::System::Void(*)(::System::Boolean, ::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_ELIMINATERAIDLOGINRESPONSE_SET_CANRECEIVERANKINGREWARD_OFFSET))(arg, nullptr);
+		}
+
+		::System::Void set_SeasonType(::FlatData::RaidSeasonType* arg)
+		{
+			((::System::Void(*)(::FlatData::RaidSeasonType*, ::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_ELIMINATERAIDLOGINRESPONSE_SET_SEASONTYPE_OFFSET))(arg, nullptr);
+		}
+
+		::System::Void set_LastSettledRanking(::System::Int64 arg)
+		{
+			((::System::Void(*)(::System::Int64, ::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_ELIMINATERAIDLOGINRESPONSE_SET_LASTSETTLEDRANKING_OFFSET))(arg, nullptr);
+		}
+
+		::FlatData::RaidSeasonType* get_SeasonType()
+		{
+			return ((::FlatData::RaidSeasonType*(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_ELIMINATERAIDLOGINRESPONSE_GET_SEASONTYPE_OFFSET))(nullptr);
+		}
+
+		::System::Void set_LastSettledTier(Il2CppObject* arg)
+		{
+			((::System::Void(*)(Il2CppObject*, ::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_ELIMINATERAIDLOGINRESPONSE_SET_LASTSETTLEDTIER_OFFSET))(arg, nullptr);
+		}
+
+		Il2CppObject* get_SweepPointByRaidUniqueId()
+		{
+			return ((Il2CppObject*(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_ELIMINATERAIDLOGINRESPONSE_GET_SWEEPPOINTBYRAIDUNIQUEID_OFFSET))(nullptr);
+		}
+
+		::System::Void .ctor()
+		{
+			((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_ELIMINATERAIDLOGINRESPONSE_.CTOR_OFFSET))(nullptr);
+		}
+
+	};
+}
+

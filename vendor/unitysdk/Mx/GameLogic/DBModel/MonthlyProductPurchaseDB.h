@@ -1,0 +1,87 @@
+#pragma once
+#include "../../../unitysdk.h"
+
+namespace FlatData { class ProductTagType; }
+
+#define MX_GAMELOGIC_DBMODEL_MONTHLYPRODUCTPURCHASEDB_SET_LASTDAILYREWARDDATE_OFFSET UNITYSDK_OFFSET(0x1004A40)
+#define MX_GAMELOGIC_DBMODEL_MONTHLYPRODUCTPURCHASEDB_SET_PURCHASEDATE_OFFSET UNITYSDK_OFFSET(0x1004A50)
+#define MX_GAMELOGIC_DBMODEL_MONTHLYPRODUCTPURCHASEDB_SET_REWARDENDDATE_OFFSET UNITYSDK_OFFSET(0x1004A60)
+#define MX_GAMELOGIC_DBMODEL_MONTHLYPRODUCTPURCHASEDB_GET_LASTDAILYREWARDDATE_OFFSET UNITYSDK_OFFSET(0x1004A70)
+#define MX_GAMELOGIC_DBMODEL_MONTHLYPRODUCTPURCHASEDB_GET_REWARDENDDATE_OFFSET UNITYSDK_OFFSET(0x1004A80)
+#define MX_GAMELOGIC_DBMODEL_MONTHLYPRODUCTPURCHASEDB_.CTOR_OFFSET UNITYSDK_OFFSET(0x1004A90)
+#define MX_GAMELOGIC_DBMODEL_MONTHLYPRODUCTPURCHASEDB_GET_PURCHASEDATE_OFFSET UNITYSDK_OFFSET(0x1004AA0)
+#define MX_GAMELOGIC_DBMODEL_MONTHLYPRODUCTPURCHASEDB_ISREPURCHASABLE_OFFSET UNITYSDK_OFFSET(0x1004AB0)
+#define MX_GAMELOGIC_DBMODEL_MONTHLYPRODUCTPURCHASEDB_SET_PRODUCTID_OFFSET UNITYSDK_OFFSET(0x1004D40)
+#define MX_GAMELOGIC_DBMODEL_MONTHLYPRODUCTPURCHASEDB_GET_PRODUCTTAGTYPE_OFFSET UNITYSDK_OFFSET(0x1004D50)
+#define MX_GAMELOGIC_DBMODEL_MONTHLYPRODUCTPURCHASEDB_GET_PRODUCTID_OFFSET UNITYSDK_OFFSET(0x1004E30)
+
+namespace MX::GameLogic::DBModel
+{
+	inline static constexpr unsigned int MonthlyProductPurchaseDB_TypeDefinitionIndex = 12667;
+
+	class MonthlyProductPurchaseDB : public Il2CppObject
+	{
+	public:
+		::System::Int64 _ProductId_k__BackingField; // 0x10
+		::System::DateTime* _PurchaseDate_k__BackingField; // 0x18
+		Il2CppObject* _LastDailyRewardDate_k__BackingField; // 0x20
+		Il2CppObject* _RewardEndDate_k__BackingField; // 0x30
+
+		::System::Void set_LastDailyRewardDate(Il2CppObject* arg)
+		{
+			((::System::Void(*)(Il2CppObject*, ::PVOID))((::PBYTE)hIl2Cpp + MX_GAMELOGIC_DBMODEL_MONTHLYPRODUCTPURCHASEDB_SET_LASTDAILYREWARDDATE_OFFSET))(arg, nullptr);
+		}
+
+		::System::Void set_PurchaseDate(::System::DateTime* arg)
+		{
+			((::System::Void(*)(::System::DateTime*, ::PVOID))((::PBYTE)hIl2Cpp + MX_GAMELOGIC_DBMODEL_MONTHLYPRODUCTPURCHASEDB_SET_PURCHASEDATE_OFFSET))(arg, nullptr);
+		}
+
+		::System::Void set_RewardEndDate(Il2CppObject* arg)
+		{
+			((::System::Void(*)(Il2CppObject*, ::PVOID))((::PBYTE)hIl2Cpp + MX_GAMELOGIC_DBMODEL_MONTHLYPRODUCTPURCHASEDB_SET_REWARDENDDATE_OFFSET))(arg, nullptr);
+		}
+
+		Il2CppObject* get_LastDailyRewardDate()
+		{
+			return ((Il2CppObject*(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_GAMELOGIC_DBMODEL_MONTHLYPRODUCTPURCHASEDB_GET_LASTDAILYREWARDDATE_OFFSET))(nullptr);
+		}
+
+		Il2CppObject* get_RewardEndDate()
+		{
+			return ((Il2CppObject*(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_GAMELOGIC_DBMODEL_MONTHLYPRODUCTPURCHASEDB_GET_REWARDENDDATE_OFFSET))(nullptr);
+		}
+
+		::System::Void .ctor()
+		{
+			((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_GAMELOGIC_DBMODEL_MONTHLYPRODUCTPURCHASEDB_.CTOR_OFFSET))(nullptr);
+		}
+
+		::System::DateTime* get_PurchaseDate()
+		{
+			return ((::System::DateTime*(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_GAMELOGIC_DBMODEL_MONTHLYPRODUCTPURCHASEDB_GET_PURCHASEDATE_OFFSET))(nullptr);
+		}
+
+		::System::Boolean IsRepurchasable(::System::DateTime* arg)
+		{
+			return ((::System::Boolean(*)(::System::DateTime*, ::PVOID))((::PBYTE)hIl2Cpp + MX_GAMELOGIC_DBMODEL_MONTHLYPRODUCTPURCHASEDB_ISREPURCHASABLE_OFFSET))(arg, nullptr);
+		}
+
+		::System::Void set_ProductId(::System::Int64 arg)
+		{
+			((::System::Void(*)(::System::Int64, ::PVOID))((::PBYTE)hIl2Cpp + MX_GAMELOGIC_DBMODEL_MONTHLYPRODUCTPURCHASEDB_SET_PRODUCTID_OFFSET))(arg, nullptr);
+		}
+
+		::FlatData::ProductTagType* get_ProductTagType()
+		{
+			return ((::FlatData::ProductTagType*(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_GAMELOGIC_DBMODEL_MONTHLYPRODUCTPURCHASEDB_GET_PRODUCTTAGTYPE_OFFSET))(nullptr);
+		}
+
+		::System::Int64 get_ProductId()
+		{
+			return ((::System::Int64(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_GAMELOGIC_DBMODEL_MONTHLYPRODUCTPURCHASEDB_GET_PRODUCTID_OFFSET))(nullptr);
+		}
+
+	};
+}
+

@@ -1,0 +1,111 @@
+#pragma once
+#include "../../unitysdk.h"
+
+#define MX_SAVEDATA_LOBBYCHARACTERSELECTDATA_GET_MULTISELECTED_OFFSET UNITYSDK_OFFSET(0x1CEEBD0)
+#define MX_SAVEDATA_LOBBYCHARACTERSELECTDATA_CLONE_OFFSET UNITYSDK_OFFSET(0x1CEEC10)
+#define MX_SAVEDATA_LOBBYCHARACTERSELECTDATA_ISMEMORIAL_OFFSET UNITYSDK_OFFSET(0x1CEEEA0)
+#define MX_SAVEDATA_LOBBYCHARACTERSELECTDATA_GET_CURRCHARACTERINDEX_OFFSET UNITYSDK_OFFSET(0x1CEEF10)
+#define MX_SAVEDATA_LOBBYCHARACTERSELECTDATA_.CTOR_OFFSET UNITYSDK_OFFSET(0x1CEED80)
+#define MX_SAVEDATA_LOBBYCHARACTERSELECTDATA_GET_CURRSELECTCHARACTERCOUNT_OFFSET UNITYSDK_OFFSET(0x1CEEF80)
+#define MX_SAVEDATA_LOBBYCHARACTERSELECTDATA_GET_PREVCHARACTERID_OFFSET UNITYSDK_OFFSET(0x1CEEFC0)
+#define MX_SAVEDATA_LOBBYCHARACTERSELECTDATA_RECORDRANDOMLOBBYTIME_OFFSET UNITYSDK_OFFSET(0x1CEF150)
+#define MX_SAVEDATA_LOBBYCHARACTERSELECTDATA_HASBEENRANDOMTODAY_OFFSET UNITYSDK_OFFSET(0x1CEF1F0)
+#define MX_SAVEDATA_LOBBYCHARACTERSELECTDATA_VALIDATE_OFFSET UNITYSDK_OFFSET(0x1CEF2D0)
+#define MX_SAVEDATA_LOBBYCHARACTERSELECTDATA_GET_PREVCHARACTERINDEX_OFFSET UNITYSDK_OFFSET(0x1CEF020)
+#define MX_SAVEDATA_LOBBYCHARACTERSELECTDATA_GET_NEXTCHARACTERINDEX_OFFSET UNITYSDK_OFFSET(0x1CEF570)
+#define MX_SAVEDATA_LOBBYCHARACTERSELECTDATA_SETDEFAULTDATA_OFFSET UNITYSDK_OFFSET(0x1CEF620)
+#define MX_SAVEDATA_LOBBYCHARACTERSELECTDATA_GET_NEXTCHARACTERID_OFFSET UNITYSDK_OFFSET(0x1CEFB60)
+#define MX_SAVEDATA_LOBBYCHARACTERSELECTDATA_TRYSETDATAONNEWMEMORIAL_OFFSET UNITYSDK_OFFSET(0x1CEFBC0)
+
+namespace MX::SaveData
+{
+	inline static constexpr unsigned int LobbyCharacterSelectData_TypeDefinitionIndex = 19880;
+
+	class LobbyCharacterSelectData : public Il2CppObject
+	{
+	public:
+		::System::Int32 MaxSelectCount; // 0x0
+		Il2CppObject* CharacterIds; // 0x10
+		Il2CppObject* IsMemorials; // 0x18
+		::System::Int64 CurrCharacterId; // 0x20
+		Il2CppObject* CurrSpineIndexes; // 0x28
+		::System::DateTime* RandomLobbySaveTime; // 0x30
+
+		::System::Boolean get_MultiSelected()
+		{
+			return (return (::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_SAVEDATA_LOBBYCHARACTERSELECTDATA_GET_MULTISELECTED_OFFSET))(nullptr);
+		}
+
+		::System::Object* Clone()
+		{
+			return (return (::System::Object*(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_SAVEDATA_LOBBYCHARACTERSELECTDATA_CLONE_OFFSET))(nullptr);
+		}
+
+		::System::Boolean IsMemorial(::System::Int32 arg)
+		{
+			return (return (::System::Boolean(*)(::System::Int32, ::PVOID))((::PBYTE)hIl2Cpp + MX_SAVEDATA_LOBBYCHARACTERSELECTDATA_ISMEMORIAL_OFFSET))(arg, nullptr);
+		}
+
+		::System::Int32 get_CurrCharacterIndex()
+		{
+			return (return (::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_SAVEDATA_LOBBYCHARACTERSELECTDATA_GET_CURRCHARACTERINDEX_OFFSET))(nullptr);
+		}
+
+		::System::Void .ctor()
+		{
+			((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_SAVEDATA_LOBBYCHARACTERSELECTDATA_.CTOR_OFFSET))(nullptr);
+		}
+
+		::System::Int32 get_CurrSelectCharacterCount()
+		{
+			return (return (::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_SAVEDATA_LOBBYCHARACTERSELECTDATA_GET_CURRSELECTCHARACTERCOUNT_OFFSET))(nullptr);
+		}
+
+		::System::Int64 get_PrevCharacterId()
+		{
+			return (return (::System::Int64(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_SAVEDATA_LOBBYCHARACTERSELECTDATA_GET_PREVCHARACTERID_OFFSET))(nullptr);
+		}
+
+		::System::Void RecordRandomLobbyTime()
+		{
+			((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_SAVEDATA_LOBBYCHARACTERSELECTDATA_RECORDRANDOMLOBBYTIME_OFFSET))(nullptr);
+		}
+
+		::System::Boolean HasBeenRandomToday()
+		{
+			return (return (::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_SAVEDATA_LOBBYCHARACTERSELECTDATA_HASBEENRANDOMTODAY_OFFSET))(nullptr);
+		}
+
+		::System::Boolean Validate()
+		{
+			return (return (::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_SAVEDATA_LOBBYCHARACTERSELECTDATA_VALIDATE_OFFSET))(nullptr);
+		}
+
+		::System::Int32 get_PrevCharacterIndex()
+		{
+			return (return (::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_SAVEDATA_LOBBYCHARACTERSELECTDATA_GET_PREVCHARACTERINDEX_OFFSET))(nullptr);
+		}
+
+		::System::Int32 get_NextCharacterIndex()
+		{
+			return (return (::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_SAVEDATA_LOBBYCHARACTERSELECTDATA_GET_NEXTCHARACTERINDEX_OFFSET))(nullptr);
+		}
+
+		::System::Void SetDefaultData()
+		{
+			((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_SAVEDATA_LOBBYCHARACTERSELECTDATA_SETDEFAULTDATA_OFFSET))(nullptr);
+		}
+
+		::System::Int64 get_NextCharacterId()
+		{
+			return (return (::System::Int64(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_SAVEDATA_LOBBYCHARACTERSELECTDATA_GET_NEXTCHARACTERID_OFFSET))(nullptr);
+		}
+
+		::System::Boolean TrySetDataOnNewMemorial(Il2CppObject* arg)
+		{
+			return (return (::System::Boolean(*)(Il2CppObject*, ::PVOID))((::PBYTE)hIl2Cpp + MX_SAVEDATA_LOBBYCHARACTERSELECTDATA_TRYSETDATAONNEWMEMORIAL_OFFSET))(arg, nullptr);
+		}
+
+	};
+}
+

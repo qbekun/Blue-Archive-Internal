@@ -1,0 +1,62 @@
+#pragma once
+#include "../../../unitysdk.h"
+
+#define MX_DATA_EXCEL_INTERACTIVEWORLDRAIDCONDITIONEXCELREPOSITORY_CACHE_OFFSET UNITYSDK_OFFSET(0x1B5CC00)
+#define MX_DATA_EXCEL_INTERACTIVEWORLDRAIDCONDITIONEXCELREPOSITORY_SELECT_WORLDRAIDPHASEID_OFFSET UNITYSDK_OFFSET(0x1B5CE60)
+#define MX_DATA_EXCEL_INTERACTIVEWORLDRAIDCONDITIONEXCELREPOSITORY_SELECT_WORLDRAIDSEASONID_OFFSET UNITYSDK_OFFSET(0x1B5D170)
+#define MX_DATA_EXCEL_INTERACTIVEWORLDRAIDCONDITIONEXCELREPOSITORY_.CTOR_OFFSET UNITYSDK_OFFSET(0x1B5D470)
+#define MX_DATA_EXCEL_INTERACTIVEWORLDRAIDCONDITIONEXCELREPOSITORY_SELECTFIRST_WORLDRAIDPHASEID_OFFSET UNITYSDK_OFFSET(0x1B5D4B0)
+#define MX_DATA_EXCEL_INTERACTIVEWORLDRAIDCONDITIONEXCELREPOSITORY_SELECTFIRST_WORLDRAIDSEASONID_OFFSET UNITYSDK_OFFSET(0x1B5D7D0)
+#define MX_DATA_EXCEL_INTERACTIVEWORLDRAIDCONDITIONEXCELREPOSITORY_SELECT_WORLDRAIDSEASONIDS_OFFSET UNITYSDK_OFFSET(0x1B5DAF0)
+#define MX_DATA_EXCEL_INTERACTIVEWORLDRAIDCONDITIONEXCELREPOSITORY_SELECT_WORLDRAIDPHASEIDS_OFFSET UNITYSDK_OFFSET(0x1B5DEF0)
+
+namespace MX::Data::Excel
+{
+	inline static constexpr unsigned int InteractiveWorldRaidConditionExcelRepository_TypeDefinitionIndex = 18248;
+
+	class InteractiveWorldRaidConditionExcelRepository : public <co_Invoke>d__3
+	{
+	public:
+		::System::Void Cache(Il2CppObject* arg)
+		{
+			((::System::Void(*)(Il2CppObject*, ::PVOID))((::PBYTE)hIl2Cpp + MX_DATA_EXCEL_INTERACTIVEWORLDRAIDCONDITIONEXCELREPOSITORY_CACHE_OFFSET))(arg, nullptr);
+		}
+
+		Il2CppObject* Select_WorldRaidPhaseId(::System::Int64 arg, ::System::Boolean arg)
+		{
+			return (return (Il2CppObject*(*)(::System::Int64, ::System::Boolean, ::PVOID))((::PBYTE)hIl2Cpp + MX_DATA_EXCEL_INTERACTIVEWORLDRAIDCONDITIONEXCELREPOSITORY_SELECT_WORLDRAIDPHASEID_OFFSET))(arg, arg, nullptr);
+		}
+
+		Il2CppObject* Select_WorldRaidSeasonId(::System::Int64 arg, ::System::Boolean arg)
+		{
+			return (return (Il2CppObject*(*)(::System::Int64, ::System::Boolean, ::PVOID))((::PBYTE)hIl2Cpp + MX_DATA_EXCEL_INTERACTIVEWORLDRAIDCONDITIONEXCELREPOSITORY_SELECT_WORLDRAIDSEASONID_OFFSET))(arg, arg, nullptr);
+		}
+
+		::System::Void .ctor()
+		{
+			((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_DATA_EXCEL_INTERACTIVEWORLDRAIDCONDITIONEXCELREPOSITORY_.CTOR_OFFSET))(nullptr);
+		}
+
+		Il2CppObject* SelectFirst_WorldRaidPhaseId(::System::Int64 arg, ::System::Boolean arg)
+		{
+			return (return (Il2CppObject*(*)(::System::Int64, ::System::Boolean, ::PVOID))((::PBYTE)hIl2Cpp + MX_DATA_EXCEL_INTERACTIVEWORLDRAIDCONDITIONEXCELREPOSITORY_SELECTFIRST_WORLDRAIDPHASEID_OFFSET))(arg, arg, nullptr);
+		}
+
+		Il2CppObject* SelectFirst_WorldRaidSeasonId(::System::Int64 arg, ::System::Boolean arg)
+		{
+			return (return (Il2CppObject*(*)(::System::Int64, ::System::Boolean, ::PVOID))((::PBYTE)hIl2Cpp + MX_DATA_EXCEL_INTERACTIVEWORLDRAIDCONDITIONEXCELREPOSITORY_SELECTFIRST_WORLDRAIDSEASONID_OFFSET))(arg, arg, nullptr);
+		}
+
+		Il2CppObject* Select_WorldRaidSeasonIds(Il2CppObject* arg, ::System::Boolean arg)
+		{
+			return (return (Il2CppObject*(*)(Il2CppObject*, ::System::Boolean, ::PVOID))((::PBYTE)hIl2Cpp + MX_DATA_EXCEL_INTERACTIVEWORLDRAIDCONDITIONEXCELREPOSITORY_SELECT_WORLDRAIDSEASONIDS_OFFSET))(arg, arg, nullptr);
+		}
+
+		Il2CppObject* Select_WorldRaidPhaseIds(Il2CppObject* arg, ::System::Boolean arg)
+		{
+			return (return (Il2CppObject*(*)(Il2CppObject*, ::System::Boolean, ::PVOID))((::PBYTE)hIl2Cpp + MX_DATA_EXCEL_INTERACTIVEWORLDRAIDCONDITIONEXCELREPOSITORY_SELECT_WORLDRAIDPHASEIDS_OFFSET))(arg, arg, nullptr);
+		}
+
+	};
+}
+

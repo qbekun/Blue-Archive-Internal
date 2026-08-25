@@ -1,0 +1,141 @@
+#pragma once
+#include "../../../../unitysdk.h"
+
+namespace Microsoft::CSharp::RuntimeBinder::Semantics { class SpecCons; }
+namespace Microsoft::CSharp::RuntimeBinder::Semantics { class TypeParameterType; }
+namespace Microsoft::CSharp::RuntimeBinder::Semantics { class TypeArray; }
+
+#define MICROSOFT_CSHARP_RUNTIMEBINDER_SEMANTICS_TYPEPARAMETERSYMBOL_GET_INVARIANT_OFFSET UNITYSDK_OFFSET(0x90CDD60)
+#define MICROSOFT_CSHARP_RUNTIMEBINDER_SEMANTICS_TYPEPARAMETERSYMBOL_SETTYPEPARAMETERTYPE_OFFSET UNITYSDK_OFFSET(0x90CDD70)
+#define MICROSOFT_CSHARP_RUNTIMEBINDER_SEMANTICS_TYPEPARAMETERSYMBOL_GETTYPEPARAMETERTYPE_OFFSET UNITYSDK_OFFSET(0x90CDD80)
+#define MICROSOFT_CSHARP_RUNTIMEBINDER_SEMANTICS_TYPEPARAMETERSYMBOL_ISMETHODTYPEPARAMETER_OFFSET UNITYSDK_OFFSET(0x90CDD90)
+#define MICROSOFT_CSHARP_RUNTIMEBINDER_SEMANTICS_TYPEPARAMETERSYMBOL_SETISMETHODTYPEPARAMETER_OFFSET UNITYSDK_OFFSET(0x90CDDA0)
+#define MICROSOFT_CSHARP_RUNTIMEBINDER_SEMANTICS_TYPEPARAMETERSYMBOL_GETINDEXINOWNPARAMETERS_OFFSET UNITYSDK_OFFSET(0x90CDDB0)
+#define MICROSOFT_CSHARP_RUNTIMEBINDER_SEMANTICS_TYPEPARAMETERSYMBOL_SETINDEXINOWNPARAMETERS_OFFSET UNITYSDK_OFFSET(0x90CDDC0)
+#define MICROSOFT_CSHARP_RUNTIMEBINDER_SEMANTICS_TYPEPARAMETERSYMBOL_GETINDEXINTOTALPARAMETERS_OFFSET UNITYSDK_OFFSET(0x90CDDD0)
+#define MICROSOFT_CSHARP_RUNTIMEBINDER_SEMANTICS_TYPEPARAMETERSYMBOL_SETINDEXINTOTALPARAMETERS_OFFSET UNITYSDK_OFFSET(0x90CDDE0)
+#define MICROSOFT_CSHARP_RUNTIMEBINDER_SEMANTICS_TYPEPARAMETERSYMBOL_SETBOUNDS_OFFSET UNITYSDK_OFFSET(0x90CDDF0)
+#define MICROSOFT_CSHARP_RUNTIMEBINDER_SEMANTICS_TYPEPARAMETERSYMBOL_GETBOUNDS_OFFSET UNITYSDK_OFFSET(0x90CDE00)
+#define MICROSOFT_CSHARP_RUNTIMEBINDER_SEMANTICS_TYPEPARAMETERSYMBOL_SETCONSTRAINTS_OFFSET UNITYSDK_OFFSET(0x90CDE10)
+#define MICROSOFT_CSHARP_RUNTIMEBINDER_SEMANTICS_TYPEPARAMETERSYMBOL_ISVALUETYPE_OFFSET UNITYSDK_OFFSET(0x90CDE20)
+#define MICROSOFT_CSHARP_RUNTIMEBINDER_SEMANTICS_TYPEPARAMETERSYMBOL_ISREFERENCETYPE_OFFSET UNITYSDK_OFFSET(0x90CDE30)
+#define MICROSOFT_CSHARP_RUNTIMEBINDER_SEMANTICS_TYPEPARAMETERSYMBOL_ISNONNULLABLEVALUETYPE_OFFSET UNITYSDK_OFFSET(0x90CDE40)
+#define MICROSOFT_CSHARP_RUNTIMEBINDER_SEMANTICS_TYPEPARAMETERSYMBOL_HASNEWCONSTRAINT_OFFSET UNITYSDK_OFFSET(0x90CDE50)
+#define MICROSOFT_CSHARP_RUNTIMEBINDER_SEMANTICS_TYPEPARAMETERSYMBOL_HASREFCONSTRAINT_OFFSET UNITYSDK_OFFSET(0x90CDE60)
+#define MICROSOFT_CSHARP_RUNTIMEBINDER_SEMANTICS_TYPEPARAMETERSYMBOL_HASVALCONSTRAINT_OFFSET UNITYSDK_OFFSET(0x90CDE70)
+#define MICROSOFT_CSHARP_RUNTIMEBINDER_SEMANTICS_TYPEPARAMETERSYMBOL_.CTOR_OFFSET UNITYSDK_OFFSET(0x90CBC80)
+
+namespace Microsoft::CSharp::RuntimeBinder::Semantics
+{
+	inline static constexpr unsigned int TypeParameterSymbol_TypeDefinitionIndex = 34551;
+
+	class TypeParameterSymbol : public Il2CppObject
+	{
+	public:
+		::System::Boolean _bIsMethodTypeParameter; // 0x38
+		::Microsoft::CSharp::RuntimeBinder::Semantics::SpecCons* _constraints; // 0x3C
+		::Microsoft::CSharp::RuntimeBinder::Semantics::TypeParameterType* _pTypeParameterType; // 0x40
+		::System::Int32 _nIndexInOwnParameters; // 0x48
+		::System::Int32 _nIndexInTotalParameters; // 0x4C
+		::Microsoft::CSharp::RuntimeBinder::Semantics::TypeArray* _pBounds; // 0x50
+		::System::Boolean Covariant; // 0x58
+		::System::Boolean Contravariant; // 0x59
+
+		::System::Boolean get_Invariant()
+		{
+			return (return (::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MICROSOFT_CSHARP_RUNTIMEBINDER_SEMANTICS_TYPEPARAMETERSYMBOL_GET_INVARIANT_OFFSET))(nullptr);
+		}
+
+		::System::Void SetTypeParameterType(::Microsoft::CSharp::RuntimeBinder::Semantics::TypeParameterType* arg)
+		{
+			((::System::Void(*)(::Microsoft::CSharp::RuntimeBinder::Semantics::TypeParameterType*, ::PVOID))((::PBYTE)hIl2Cpp + MICROSOFT_CSHARP_RUNTIMEBINDER_SEMANTICS_TYPEPARAMETERSYMBOL_SETTYPEPARAMETERTYPE_OFFSET))(arg, nullptr);
+		}
+
+		::Microsoft::CSharp::RuntimeBinder::Semantics::TypeParameterType* GetTypeParameterType()
+		{
+			return (return (::Microsoft::CSharp::RuntimeBinder::Semantics::TypeParameterType*(*)(::PVOID))((::PBYTE)hIl2Cpp + MICROSOFT_CSHARP_RUNTIMEBINDER_SEMANTICS_TYPEPARAMETERSYMBOL_GETTYPEPARAMETERTYPE_OFFSET))(nullptr);
+		}
+
+		::System::Boolean IsMethodTypeParameter()
+		{
+			return (return (::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MICROSOFT_CSHARP_RUNTIMEBINDER_SEMANTICS_TYPEPARAMETERSYMBOL_ISMETHODTYPEPARAMETER_OFFSET))(nullptr);
+		}
+
+		::System::Void SetIsMethodTypeParameter(::System::Boolean arg)
+		{
+			((::System::Void(*)(::System::Boolean, ::PVOID))((::PBYTE)hIl2Cpp + MICROSOFT_CSHARP_RUNTIMEBINDER_SEMANTICS_TYPEPARAMETERSYMBOL_SETISMETHODTYPEPARAMETER_OFFSET))(arg, nullptr);
+		}
+
+		::System::Int32 GetIndexInOwnParameters()
+		{
+			return (return (::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + MICROSOFT_CSHARP_RUNTIMEBINDER_SEMANTICS_TYPEPARAMETERSYMBOL_GETINDEXINOWNPARAMETERS_OFFSET))(nullptr);
+		}
+
+		::System::Void SetIndexInOwnParameters(::System::Int32 arg)
+		{
+			((::System::Void(*)(::System::Int32, ::PVOID))((::PBYTE)hIl2Cpp + MICROSOFT_CSHARP_RUNTIMEBINDER_SEMANTICS_TYPEPARAMETERSYMBOL_SETINDEXINOWNPARAMETERS_OFFSET))(arg, nullptr);
+		}
+
+		::System::Int32 GetIndexInTotalParameters()
+		{
+			return (return (::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + MICROSOFT_CSHARP_RUNTIMEBINDER_SEMANTICS_TYPEPARAMETERSYMBOL_GETINDEXINTOTALPARAMETERS_OFFSET))(nullptr);
+		}
+
+		::System::Void SetIndexInTotalParameters(::System::Int32 arg)
+		{
+			((::System::Void(*)(::System::Int32, ::PVOID))((::PBYTE)hIl2Cpp + MICROSOFT_CSHARP_RUNTIMEBINDER_SEMANTICS_TYPEPARAMETERSYMBOL_SETINDEXINTOTALPARAMETERS_OFFSET))(arg, nullptr);
+		}
+
+		::System::Void SetBounds(::Microsoft::CSharp::RuntimeBinder::Semantics::TypeArray* arg)
+		{
+			((::System::Void(*)(::Microsoft::CSharp::RuntimeBinder::Semantics::TypeArray*, ::PVOID))((::PBYTE)hIl2Cpp + MICROSOFT_CSHARP_RUNTIMEBINDER_SEMANTICS_TYPEPARAMETERSYMBOL_SETBOUNDS_OFFSET))(arg, nullptr);
+		}
+
+		::Microsoft::CSharp::RuntimeBinder::Semantics::TypeArray* GetBounds()
+		{
+			return (return (::Microsoft::CSharp::RuntimeBinder::Semantics::TypeArray*(*)(::PVOID))((::PBYTE)hIl2Cpp + MICROSOFT_CSHARP_RUNTIMEBINDER_SEMANTICS_TYPEPARAMETERSYMBOL_GETBOUNDS_OFFSET))(nullptr);
+		}
+
+		::System::Void SetConstraints(::Microsoft::CSharp::RuntimeBinder::Semantics::SpecCons* arg)
+		{
+			((::System::Void(*)(::Microsoft::CSharp::RuntimeBinder::Semantics::SpecCons*, ::PVOID))((::PBYTE)hIl2Cpp + MICROSOFT_CSHARP_RUNTIMEBINDER_SEMANTICS_TYPEPARAMETERSYMBOL_SETCONSTRAINTS_OFFSET))(arg, nullptr);
+		}
+
+		::System::Boolean IsValueType()
+		{
+			return (return (::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MICROSOFT_CSHARP_RUNTIMEBINDER_SEMANTICS_TYPEPARAMETERSYMBOL_ISVALUETYPE_OFFSET))(nullptr);
+		}
+
+		::System::Boolean IsReferenceType()
+		{
+			return (return (::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MICROSOFT_CSHARP_RUNTIMEBINDER_SEMANTICS_TYPEPARAMETERSYMBOL_ISREFERENCETYPE_OFFSET))(nullptr);
+		}
+
+		::System::Boolean IsNonNullableValueType()
+		{
+			return (return (::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MICROSOFT_CSHARP_RUNTIMEBINDER_SEMANTICS_TYPEPARAMETERSYMBOL_ISNONNULLABLEVALUETYPE_OFFSET))(nullptr);
+		}
+
+		::System::Boolean HasNewConstraint()
+		{
+			return (return (::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MICROSOFT_CSHARP_RUNTIMEBINDER_SEMANTICS_TYPEPARAMETERSYMBOL_HASNEWCONSTRAINT_OFFSET))(nullptr);
+		}
+
+		::System::Boolean HasRefConstraint()
+		{
+			return (return (::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MICROSOFT_CSHARP_RUNTIMEBINDER_SEMANTICS_TYPEPARAMETERSYMBOL_HASREFCONSTRAINT_OFFSET))(nullptr);
+		}
+
+		::System::Boolean HasValConstraint()
+		{
+			return (return (::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MICROSOFT_CSHARP_RUNTIMEBINDER_SEMANTICS_TYPEPARAMETERSYMBOL_HASVALCONSTRAINT_OFFSET))(nullptr);
+		}
+
+		::System::Void .ctor()
+		{
+			((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MICROSOFT_CSHARP_RUNTIMEBINDER_SEMANTICS_TYPEPARAMETERSYMBOL_.CTOR_OFFSET))(nullptr);
+		}
+
+	};
+}
+

@@ -1,0 +1,55 @@
+#pragma once
+#include "../../unitysdk.h"
+
+namespace MX::NetworkProtocol { class Protocol; }
+
+#define MX_NETWORKPROTOCOL_BATTLEPASSMISSIONSINGLEREWARDREQUEST_SET_MISSIONUNIQUEID_OFFSET UNITYSDK_OFFSET(0xF11EB0)
+#define MX_NETWORKPROTOCOL_BATTLEPASSMISSIONSINGLEREWARDREQUEST_GET_MISSIONUNIQUEID_OFFSET UNITYSDK_OFFSET(0xF11EC0)
+#define MX_NETWORKPROTOCOL_BATTLEPASSMISSIONSINGLEREWARDREQUEST_GET_PROTOCOL_OFFSET UNITYSDK_OFFSET(0xF11ED0)
+#define MX_NETWORKPROTOCOL_BATTLEPASSMISSIONSINGLEREWARDREQUEST_.CTOR_OFFSET UNITYSDK_OFFSET(0xF11EE0)
+#define MX_NETWORKPROTOCOL_BATTLEPASSMISSIONSINGLEREWARDREQUEST_GET_BATTLEPASSID_OFFSET UNITYSDK_OFFSET(0xF11EF0)
+#define MX_NETWORKPROTOCOL_BATTLEPASSMISSIONSINGLEREWARDREQUEST_SET_BATTLEPASSID_OFFSET UNITYSDK_OFFSET(0xF11F00)
+
+namespace MX::NetworkProtocol
+{
+	inline static constexpr unsigned int BattlePassMissionSingleRewardRequest_TypeDefinitionIndex = 11339;
+
+	class BattlePassMissionSingleRewardRequest : public Il2CppObject
+	{
+	public:
+		::System::Int64 _BattlePassId_k__BackingField; // 0x40
+		::System::Int64 _MissionUniqueId_k__BackingField; // 0x48
+
+		::System::Void set_MissionUniqueId(::System::Int64 arg)
+		{
+			((::System::Void(*)(::System::Int64, ::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_BATTLEPASSMISSIONSINGLEREWARDREQUEST_SET_MISSIONUNIQUEID_OFFSET))(arg, nullptr);
+		}
+
+		::System::Int64 get_MissionUniqueId()
+		{
+			return ((::System::Int64(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_BATTLEPASSMISSIONSINGLEREWARDREQUEST_GET_MISSIONUNIQUEID_OFFSET))(nullptr);
+		}
+
+		::MX::NetworkProtocol::Protocol* get_Protocol()
+		{
+			return ((::MX::NetworkProtocol::Protocol*(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_BATTLEPASSMISSIONSINGLEREWARDREQUEST_GET_PROTOCOL_OFFSET))(nullptr);
+		}
+
+		::System::Void .ctor()
+		{
+			((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_BATTLEPASSMISSIONSINGLEREWARDREQUEST_.CTOR_OFFSET))(nullptr);
+		}
+
+		::System::Int64 get_BattlePassId()
+		{
+			return ((::System::Int64(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_BATTLEPASSMISSIONSINGLEREWARDREQUEST_GET_BATTLEPASSID_OFFSET))(nullptr);
+		}
+
+		::System::Void set_BattlePassId(::System::Int64 arg)
+		{
+			((::System::Void(*)(::System::Int64, ::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_BATTLEPASSMISSIONSINGLEREWARDREQUEST_SET_BATTLEPASSID_OFFSET))(arg, nullptr);
+		}
+
+	};
+}
+

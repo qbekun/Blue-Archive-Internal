@@ -1,0 +1,138 @@
+#pragma once
+#include "../../unitysdk.h"
+
+namespace MXField::Quest { class FieldQuestProgressInfo; }
+
+#define MXFIELD_QUEST_FIELDQUESTPROGRESSINFO_SET_PROGRESSQUESTGROUP_CLEARQUESTCOUNT_OFFSET UNITYSDK_OFFSET(0xEBC410)
+#define MXFIELD_QUEST_FIELDQUESTPROGRESSINFO_ISLASTCLEAREDCHANGED_OFFSET UNITYSDK_OFFSET(0xEBC420)
+#define MXFIELD_QUEST_FIELDQUESTPROGRESSINFO_SET_QUESTGROUPCOUNT_OFFSET UNITYSDK_OFFSET(0xEBC490)
+#define MXFIELD_QUEST_FIELDQUESTPROGRESSINFO_.CTOR_OFFSET UNITYSDK_OFFSET(0xEBC4A0)
+#define MXFIELD_QUEST_FIELDQUESTPROGRESSINFO_SET_CLEARQUESTCOUNT_OFFSET UNITYSDK_OFFSET(0xEBC4B0)
+#define MXFIELD_QUEST_FIELDQUESTPROGRESSINFO_GET_QUESTGROUPCOUNT_OFFSET UNITYSDK_OFFSET(0xEBC4C0)
+#define MXFIELD_QUEST_FIELDQUESTPROGRESSINFO_GET_CLEARQUESTCOUNT_OFFSET UNITYSDK_OFFSET(0xEBC4D0)
+#define MXFIELD_QUEST_FIELDQUESTPROGRESSINFO_CLONE_OFFSET UNITYSDK_OFFSET(0xEBC4E0)
+#define MXFIELD_QUEST_FIELDQUESTPROGRESSINFO_ISPROGRESSGROUPCHANGED_OFFSET UNITYSDK_OFFSET(0xEBC570)
+#define MXFIELD_QUEST_FIELDQUESTPROGRESSINFO_SET_LASTCLEAREDQUESTGROUPINDEX_OFFSET UNITYSDK_OFFSET(0xEBC5E0)
+#define MXFIELD_QUEST_FIELDQUESTPROGRESSINFO_SET_PROGRESSQUESTGROUP_ALLQUESTCOUNT_OFFSET UNITYSDK_OFFSET(0xEBC5F0)
+#define MXFIELD_QUEST_FIELDQUESTPROGRESSINFO_GET_PROGRESSQUESTGROUPINDEX_OFFSET UNITYSDK_OFFSET(0xEBC600)
+#define MXFIELD_QUEST_FIELDQUESTPROGRESSINFO_GET_LASTCLEAREDQUESTGROUPINDEX_OFFSET UNITYSDK_OFFSET(0xEBC610)
+#define MXFIELD_QUEST_FIELDQUESTPROGRESSINFO_GET_PROGRESSQUESTGROUP_ALLQUESTCOUNT_OFFSET UNITYSDK_OFFSET(0xEBC620)
+#define MXFIELD_QUEST_FIELDQUESTPROGRESSINFO_SET_ALLQUESTCOUNT_OFFSET UNITYSDK_OFFSET(0xEBC630)
+#define MXFIELD_QUEST_FIELDQUESTPROGRESSINFO_GET_PROGRESSQUESTGROUP_CLEARQUESTCOUNT_OFFSET UNITYSDK_OFFSET(0xEBC640)
+#define MXFIELD_QUEST_FIELDQUESTPROGRESSINFO_GETCURRENTGROUPPROGRESSRATIO_OFFSET UNITYSDK_OFFSET(0xEBC650)
+#define MXFIELD_QUEST_FIELDQUESTPROGRESSINFO_SET_PROGRESSQUESTGROUPINDEX_OFFSET UNITYSDK_OFFSET(0xEBC670)
+#define MXFIELD_QUEST_FIELDQUESTPROGRESSINFO_GET_ALLQUESTCOUNT_OFFSET UNITYSDK_OFFSET(0xEBC680)
+
+namespace MXField::Quest
+{
+	inline static constexpr unsigned int FieldQuestProgressInfo_TypeDefinitionIndex = 10826;
+
+	class FieldQuestProgressInfo : public Il2CppObject
+	{
+	public:
+		::System::Int32 _ClearQuestCount_k__BackingField; // 0x10
+		::System::Int32 _AllQuestCount_k__BackingField; // 0x14
+		::System::Int32 _QuestGroupCount_k__BackingField; // 0x18
+		Il2CppObject* _ProgressQuestGroupIndex_k__BackingField; // 0x1C
+		Il2CppObject* _LastClearedQuestGroupIndex_k__BackingField; // 0x24
+		::System::Int32 _ProgressQuestGroup_ClearQuestCount_k__BackingField; // 0x2C
+		::System::Int32 _ProgressQuestGroup_AllQuestCount_k__BackingField; // 0x30
+
+		::System::Void set_ProgressQuestGroup_ClearQuestCount(::System::Int32 arg)
+		{
+			((::System::Void(*)(::System::Int32, ::PVOID))((::PBYTE)hIl2Cpp + MXFIELD_QUEST_FIELDQUESTPROGRESSINFO_SET_PROGRESSQUESTGROUP_CLEARQUESTCOUNT_OFFSET))(arg, nullptr);
+		}
+
+		::System::Boolean IsLastClearedChanged(::MXField::Quest::FieldQuestProgressInfo* arg)
+		{
+			return ((::System::Boolean(*)(::MXField::Quest::FieldQuestProgressInfo*, ::PVOID))((::PBYTE)hIl2Cpp + MXFIELD_QUEST_FIELDQUESTPROGRESSINFO_ISLASTCLEAREDCHANGED_OFFSET))(arg, nullptr);
+		}
+
+		::System::Void set_QuestGroupCount(::System::Int32 arg)
+		{
+			((::System::Void(*)(::System::Int32, ::PVOID))((::PBYTE)hIl2Cpp + MXFIELD_QUEST_FIELDQUESTPROGRESSINFO_SET_QUESTGROUPCOUNT_OFFSET))(arg, nullptr);
+		}
+
+		::System::Void .ctor()
+		{
+			((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MXFIELD_QUEST_FIELDQUESTPROGRESSINFO_.CTOR_OFFSET))(nullptr);
+		}
+
+		::System::Void set_ClearQuestCount(::System::Int32 arg)
+		{
+			((::System::Void(*)(::System::Int32, ::PVOID))((::PBYTE)hIl2Cpp + MXFIELD_QUEST_FIELDQUESTPROGRESSINFO_SET_CLEARQUESTCOUNT_OFFSET))(arg, nullptr);
+		}
+
+		::System::Int32 get_QuestGroupCount()
+		{
+			return ((::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + MXFIELD_QUEST_FIELDQUESTPROGRESSINFO_GET_QUESTGROUPCOUNT_OFFSET))(nullptr);
+		}
+
+		::System::Int32 get_ClearQuestCount()
+		{
+			return ((::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + MXFIELD_QUEST_FIELDQUESTPROGRESSINFO_GET_CLEARQUESTCOUNT_OFFSET))(nullptr);
+		}
+
+		::MXField::Quest::FieldQuestProgressInfo* Clone()
+		{
+			return ((::MXField::Quest::FieldQuestProgressInfo*(*)(::PVOID))((::PBYTE)hIl2Cpp + MXFIELD_QUEST_FIELDQUESTPROGRESSINFO_CLONE_OFFSET))(nullptr);
+		}
+
+		::System::Boolean IsProgressGroupChanged(::MXField::Quest::FieldQuestProgressInfo* arg)
+		{
+			return ((::System::Boolean(*)(::MXField::Quest::FieldQuestProgressInfo*, ::PVOID))((::PBYTE)hIl2Cpp + MXFIELD_QUEST_FIELDQUESTPROGRESSINFO_ISPROGRESSGROUPCHANGED_OFFSET))(arg, nullptr);
+		}
+
+		::System::Void set_LastClearedQuestGroupIndex(Il2CppObject* arg)
+		{
+			((::System::Void(*)(Il2CppObject*, ::PVOID))((::PBYTE)hIl2Cpp + MXFIELD_QUEST_FIELDQUESTPROGRESSINFO_SET_LASTCLEAREDQUESTGROUPINDEX_OFFSET))(arg, nullptr);
+		}
+
+		::System::Void set_ProgressQuestGroup_AllQuestCount(::System::Int32 arg)
+		{
+			((::System::Void(*)(::System::Int32, ::PVOID))((::PBYTE)hIl2Cpp + MXFIELD_QUEST_FIELDQUESTPROGRESSINFO_SET_PROGRESSQUESTGROUP_ALLQUESTCOUNT_OFFSET))(arg, nullptr);
+		}
+
+		Il2CppObject* get_ProgressQuestGroupIndex()
+		{
+			return ((Il2CppObject*(*)(::PVOID))((::PBYTE)hIl2Cpp + MXFIELD_QUEST_FIELDQUESTPROGRESSINFO_GET_PROGRESSQUESTGROUPINDEX_OFFSET))(nullptr);
+		}
+
+		Il2CppObject* get_LastClearedQuestGroupIndex()
+		{
+			return ((Il2CppObject*(*)(::PVOID))((::PBYTE)hIl2Cpp + MXFIELD_QUEST_FIELDQUESTPROGRESSINFO_GET_LASTCLEAREDQUESTGROUPINDEX_OFFSET))(nullptr);
+		}
+
+		::System::Int32 get_ProgressQuestGroup_AllQuestCount()
+		{
+			return ((::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + MXFIELD_QUEST_FIELDQUESTPROGRESSINFO_GET_PROGRESSQUESTGROUP_ALLQUESTCOUNT_OFFSET))(nullptr);
+		}
+
+		::System::Void set_AllQuestCount(::System::Int32 arg)
+		{
+			((::System::Void(*)(::System::Int32, ::PVOID))((::PBYTE)hIl2Cpp + MXFIELD_QUEST_FIELDQUESTPROGRESSINFO_SET_ALLQUESTCOUNT_OFFSET))(arg, nullptr);
+		}
+
+		::System::Int32 get_ProgressQuestGroup_ClearQuestCount()
+		{
+			return ((::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + MXFIELD_QUEST_FIELDQUESTPROGRESSINFO_GET_PROGRESSQUESTGROUP_CLEARQUESTCOUNT_OFFSET))(nullptr);
+		}
+
+		::System::Single GetCurrentGroupProgressRatio()
+		{
+			return ((::System::Single(*)(::PVOID))((::PBYTE)hIl2Cpp + MXFIELD_QUEST_FIELDQUESTPROGRESSINFO_GETCURRENTGROUPPROGRESSRATIO_OFFSET))(nullptr);
+		}
+
+		::System::Void set_ProgressQuestGroupIndex(Il2CppObject* arg)
+		{
+			((::System::Void(*)(Il2CppObject*, ::PVOID))((::PBYTE)hIl2Cpp + MXFIELD_QUEST_FIELDQUESTPROGRESSINFO_SET_PROGRESSQUESTGROUPINDEX_OFFSET))(arg, nullptr);
+		}
+
+		::System::Int32 get_AllQuestCount()
+		{
+			return ((::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + MXFIELD_QUEST_FIELDQUESTPROGRESSINFO_GET_ALLQUESTCOUNT_OFFSET))(nullptr);
+		}
+
+	};
+}
+

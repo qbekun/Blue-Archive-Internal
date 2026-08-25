@@ -1,0 +1,165 @@
+#pragma once
+#include "../../../../unitysdk.h"
+
+namespace FlatData { class EndCondition; }
+namespace MX::Logic::Data { class ForceApplyCheckTargetSide; }
+namespace MX::Logic::Battles { class Battle; }
+namespace MX::Logic::BattleEntities { class BattleEntity; }
+namespace MX::Logic::Battles { class O1054ef03f4eac11d4d980230b18b9ac5604ed06a81b68c87276faa849ac55e5a; }
+namespace MX::Logic::Battles { class KillEventArgs; }
+namespace MX::Logic::Data { class ForceAppliedStatChangeFromSingleTargetEffectValue; }
+namespace MX::Logic::Skills { class SkillSpecification; }
+namespace MX::Logic::Skills::LogicEffects { class LogicEffectHitSpecification; }
+namespace MX::Logic::Battles { class LogicEffectHitEventArgs; }
+
+#define MX_LOGIC_SKILLS_LOGICEFFECTS_FORCEAPPLIEDSTATCHANGEFROMSINGLETARGETEFFECT_STATCHANGESOURCE_DIED_OFFSET UNITYSDK_OFFSET(0x14168A0)
+#define MX_LOGIC_SKILLS_LOGICEFFECTS_FORCEAPPLIEDSTATCHANGEFROMSINGLETARGETEFFECT_GET_APPLIEDFROMSUMMONER_OFFSET UNITYSDK_OFFSET(0x14168F0)
+#define MX_LOGIC_SKILLS_LOGICEFFECTS_FORCEAPPLIEDSTATCHANGEFROMSINGLETARGETEFFECT_GET_CATEGORYCONDITION_OFFSET UNITYSDK_OFFSET(0x1416900)
+#define MX_LOGIC_SKILLS_LOGICEFFECTS_FORCEAPPLIEDSTATCHANGEFROMSINGLETARGETEFFECT_GET_DISPELLABLE_OFFSET UNITYSDK_OFFSET(0x1416910)
+#define MX_LOGIC_SKILLS_LOGICEFFECTS_FORCEAPPLIEDSTATCHANGEFROMSINGLETARGETEFFECT_GET_CHECKLOGICEFFECTGROUPID_OFFSET UNITYSDK_OFFSET(0x1416920)
+#define MX_LOGIC_SKILLS_LOGICEFFECTS_FORCEAPPLIEDSTATCHANGEFROMSINGLETARGETEFFECT_GET_ENDCONDITIONARGUMENTSECOND_OFFSET UNITYSDK_OFFSET(0x1416930)
+#define MX_LOGIC_SKILLS_LOGICEFFECTS_FORCEAPPLIEDSTATCHANGEFROMSINGLETARGETEFFECT_GET_SHOWFORCEAPPLIEDEFFECTCOMMONVISUAL_OFFSET UNITYSDK_OFFSET(0x1416940)
+#define MX_LOGIC_SKILLS_LOGICEFFECTS_FORCEAPPLIEDSTATCHANGEFROMSINGLETARGETEFFECT_GET_ENDCONDITIONARGUMENTFIRST_OFFSET UNITYSDK_OFFSET(0x1416950)
+#define MX_LOGIC_SKILLS_LOGICEFFECTS_FORCEAPPLIEDSTATCHANGEFROMSINGLETARGETEFFECT_ACTIVATE_OFFSET UNITYSDK_OFFSET(0x1416960)
+#define MX_LOGIC_SKILLS_LOGICEFFECTS_FORCEAPPLIEDSTATCHANGEFROMSINGLETARGETEFFECT_.CTOR_OFFSET UNITYSDK_OFFSET(0x1417130)
+#define MX_LOGIC_SKILLS_LOGICEFFECTS_FORCEAPPLIEDSTATCHANGEFROMSINGLETARGETEFFECT_GET_APPLYSTATCHANGELAYER_OFFSET UNITYSDK_OFFSET(0x1417320)
+#define MX_LOGIC_SKILLS_LOGICEFFECTS_FORCEAPPLIEDSTATCHANGEFROMSINGLETARGETEFFECT_GET_APPLYSKILLTYPE_OFFSET UNITYSDK_OFFSET(0x1417330)
+#define MX_LOGIC_SKILLS_LOGICEFFECTS_FORCEAPPLIEDSTATCHANGEFROMSINGLETARGETEFFECT_GET_UPDATESTATCHANGEALWAYS_OFFSET UNITYSDK_OFFSET(0x1417340)
+#define MX_LOGIC_SKILLS_LOGICEFFECTS_FORCEAPPLIEDSTATCHANGEFROMSINGLETARGETEFFECT_GET_SHOWFORCEAPPLIEDEFFECTSKILLVISUAL_OFFSET UNITYSDK_OFFSET(0x1417350)
+#define MX_LOGIC_SKILLS_LOGICEFFECTS_FORCEAPPLIEDSTATCHANGEFROMSINGLETARGETEFFECT_CHECKEXPIRED_OFFSET UNITYSDK_OFFSET(0x14170C0)
+#define MX_LOGIC_SKILLS_LOGICEFFECTS_FORCEAPPLIEDSTATCHANGEFROMSINGLETARGETEFFECT_GET_CHECKTARGETSIDE_OFFSET UNITYSDK_OFFSET(0x1417380)
+#define MX_LOGIC_SKILLS_LOGICEFFECTS_FORCEAPPLIEDSTATCHANGEFROMSINGLETARGETEFFECT_LOGICEFFECTPROCESSOR_LOGICEFFECTHIT_OFFSET UNITYSDK_OFFSET(0x1417390)
+#define MX_LOGIC_SKILLS_LOGICEFFECTS_FORCEAPPLIEDSTATCHANGEFROMSINGLETARGETEFFECT_GET_SHOWTARGETPORTRAIT_OFFSET UNITYSDK_OFFSET(0x1417920)
+#define MX_LOGIC_SKILLS_LOGICEFFECTS_FORCEAPPLIEDSTATCHANGEFROMSINGLETARGETEFFECT_GET_STATCHANGESOURCEEXCEL_OFFSET UNITYSDK_OFFSET(0x1417930)
+#define MX_LOGIC_SKILLS_LOGICEFFECTS_FORCEAPPLIEDSTATCHANGEFROMSINGLETARGETEFFECT_GET_ENDCONDITION_OFFSET UNITYSDK_OFFSET(0x1417A30)
+
+namespace MX::Logic::Skills::LogicEffects
+{
+	inline static constexpr unsigned int ForceAppliedStatChangeFromSingleTargetEffect_TypeDefinitionIndex = 14745;
+
+	class ForceAppliedStatChangeFromSingleTargetEffect : public Il2CppObject
+	{
+	public:
+		::System::Action* OnExpired; // 0xD0
+		Il2CppObject* _CategoryCondition_k__BackingField; // 0xD8
+		Il2CppObject* _ApplySkillType_k__BackingField; // 0xE0
+		::System::String* _CheckLogicEffectGroupId_k__BackingField; // 0xE8
+		::System::Boolean _ShowTargetPortrait_k__BackingField; // 0xF0
+		::FlatData::EndCondition* _EndCondition_k__BackingField; // 0xF4
+		::System::String* _EndConditionArgumentFirst_k__BackingField; // 0xF8
+		::System::String* _EndConditionArgumentSecond_k__BackingField; // 0x100
+		::System::Boolean _Dispellable_k__BackingField; // 0x108
+		::System::Boolean _UpdateStatChangeAlways_k__BackingField; // 0x109
+		::System::Boolean _ApplyStatChangeLayer_k__BackingField; // 0x10A
+		::System::Boolean _ShowForceAppliedEffectSkillVisual_k__BackingField; // 0x10B
+		::System::Boolean _ShowForceAppliedEffectCommonVisual_k__BackingField; // 0x10C
+		::System::Boolean _AppliedFromSummoner_k__BackingField; // 0x10D
+		::MX::Logic::Data::ForceApplyCheckTargetSide* _CheckTargetSide_k__BackingField; // 0x110
+		::MX::Logic::Battles::Battle* battle; // 0x118
+		::MX::Logic::BattleEntities::BattleEntity* statChangeSource; // 0x120
+		::MX::Logic::Battles::O1054ef03f4eac11d4d980230b18b9ac5604ed06a81b68c87276faa849ac55e5a* logicEffectProcessor; // 0x128
+		Il2CppObject* ability; // 0x130
+
+		::System::Void StatChangeSource_Died(::System::Object* arg, ::MX::Logic::Battles::KillEventArgs* arg2)
+		{
+			((::System::Void(*)(::System::Object*, ::MX::Logic::Battles::KillEventArgs*, ::PVOID))((::PBYTE)hIl2Cpp + MX_LOGIC_SKILLS_LOGICEFFECTS_FORCEAPPLIEDSTATCHANGEFROMSINGLETARGETEFFECT_STATCHANGESOURCE_DIED_OFFSET))(arg, arg2, nullptr);
+		}
+
+		::System::Boolean get_AppliedFromSummoner()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_LOGIC_SKILLS_LOGICEFFECTS_FORCEAPPLIEDSTATCHANGEFROMSINGLETARGETEFFECT_GET_APPLIEDFROMSUMMONER_OFFSET))(nullptr);
+		}
+
+		Il2CppObject* get_CategoryCondition()
+		{
+			return ((Il2CppObject*(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_LOGIC_SKILLS_LOGICEFFECTS_FORCEAPPLIEDSTATCHANGEFROMSINGLETARGETEFFECT_GET_CATEGORYCONDITION_OFFSET))(nullptr);
+		}
+
+		::System::Boolean get_Dispellable()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_LOGIC_SKILLS_LOGICEFFECTS_FORCEAPPLIEDSTATCHANGEFROMSINGLETARGETEFFECT_GET_DISPELLABLE_OFFSET))(nullptr);
+		}
+
+		::System::String* get_CheckLogicEffectGroupId()
+		{
+			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_LOGIC_SKILLS_LOGICEFFECTS_FORCEAPPLIEDSTATCHANGEFROMSINGLETARGETEFFECT_GET_CHECKLOGICEFFECTGROUPID_OFFSET))(nullptr);
+		}
+
+		::System::String* get_EndConditionArgumentSecond()
+		{
+			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_LOGIC_SKILLS_LOGICEFFECTS_FORCEAPPLIEDSTATCHANGEFROMSINGLETARGETEFFECT_GET_ENDCONDITIONARGUMENTSECOND_OFFSET))(nullptr);
+		}
+
+		::System::Boolean get_ShowForceAppliedEffectCommonVisual()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_LOGIC_SKILLS_LOGICEFFECTS_FORCEAPPLIEDSTATCHANGEFROMSINGLETARGETEFFECT_GET_SHOWFORCEAPPLIEDEFFECTCOMMONVISUAL_OFFSET))(nullptr);
+		}
+
+		::System::String* get_EndConditionArgumentFirst()
+		{
+			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_LOGIC_SKILLS_LOGICEFFECTS_FORCEAPPLIEDSTATCHANGEFROMSINGLETARGETEFFECT_GET_ENDCONDITIONARGUMENTFIRST_OFFSET))(nullptr);
+		}
+
+		::System::Void Activate(::MX::Logic::Battles::Battle* arg, Il2CppObject* arg2)
+		{
+			((::System::Void(*)(::MX::Logic::Battles::Battle*, Il2CppObject*, ::PVOID))((::PBYTE)hIl2Cpp + MX_LOGIC_SKILLS_LOGICEFFECTS_FORCEAPPLIEDSTATCHANGEFROMSINGLETARGETEFFECT_ACTIVATE_OFFSET))(arg, arg2, nullptr);
+		}
+
+		::System::Void .ctor(::MX::Logic::Data::ForceAppliedStatChangeFromSingleTargetEffectValue* arg, ::MX::Logic::Skills::SkillSpecification* arg2, ::MX::Logic::Skills::LogicEffects::LogicEffectHitSpecification* arg3)
+		{
+			((::System::Void(*)(::MX::Logic::Data::ForceAppliedStatChangeFromSingleTargetEffectValue*, ::MX::Logic::Skills::SkillSpecification*, ::MX::Logic::Skills::LogicEffects::LogicEffectHitSpecification*, ::PVOID))((::PBYTE)hIl2Cpp + MX_LOGIC_SKILLS_LOGICEFFECTS_FORCEAPPLIEDSTATCHANGEFROMSINGLETARGETEFFECT_.CTOR_OFFSET))(arg, arg2, arg3, nullptr);
+		}
+
+		::System::Boolean get_ApplyStatChangeLayer()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_LOGIC_SKILLS_LOGICEFFECTS_FORCEAPPLIEDSTATCHANGEFROMSINGLETARGETEFFECT_GET_APPLYSTATCHANGELAYER_OFFSET))(nullptr);
+		}
+
+		Il2CppObject* get_ApplySkillType()
+		{
+			return ((Il2CppObject*(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_LOGIC_SKILLS_LOGICEFFECTS_FORCEAPPLIEDSTATCHANGEFROMSINGLETARGETEFFECT_GET_APPLYSKILLTYPE_OFFSET))(nullptr);
+		}
+
+		::System::Boolean get_UpdateStatChangeAlways()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_LOGIC_SKILLS_LOGICEFFECTS_FORCEAPPLIEDSTATCHANGEFROMSINGLETARGETEFFECT_GET_UPDATESTATCHANGEALWAYS_OFFSET))(nullptr);
+		}
+
+		::System::Boolean get_ShowForceAppliedEffectSkillVisual()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_LOGIC_SKILLS_LOGICEFFECTS_FORCEAPPLIEDSTATCHANGEFROMSINGLETARGETEFFECT_GET_SHOWFORCEAPPLIEDEFFECTSKILLVISUAL_OFFSET))(nullptr);
+		}
+
+		::System::Collections::IEnumerator* CheckExpired()
+		{
+			return ((::System::Collections::IEnumerator*(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_LOGIC_SKILLS_LOGICEFFECTS_FORCEAPPLIEDSTATCHANGEFROMSINGLETARGETEFFECT_CHECKEXPIRED_OFFSET))(nullptr);
+		}
+
+		::MX::Logic::Data::ForceApplyCheckTargetSide* get_CheckTargetSide()
+		{
+			return ((::MX::Logic::Data::ForceApplyCheckTargetSide*(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_LOGIC_SKILLS_LOGICEFFECTS_FORCEAPPLIEDSTATCHANGEFROMSINGLETARGETEFFECT_GET_CHECKTARGETSIDE_OFFSET))(nullptr);
+		}
+
+		::System::Void LogicEffectProcessor_LogicEffectHit(::System::Object* arg, ::MX::Logic::Battles::LogicEffectHitEventArgs* arg2)
+		{
+			((::System::Void(*)(::System::Object*, ::MX::Logic::Battles::LogicEffectHitEventArgs*, ::PVOID))((::PBYTE)hIl2Cpp + MX_LOGIC_SKILLS_LOGICEFFECTS_FORCEAPPLIEDSTATCHANGEFROMSINGLETARGETEFFECT_LOGICEFFECTPROCESSOR_LOGICEFFECTHIT_OFFSET))(arg, arg2, nullptr);
+		}
+
+		::System::Boolean get_ShowTargetPortrait()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_LOGIC_SKILLS_LOGICEFFECTS_FORCEAPPLIEDSTATCHANGEFROMSINGLETARGETEFFECT_GET_SHOWTARGETPORTRAIT_OFFSET))(nullptr);
+		}
+
+		Il2CppObject* get_StatChangeSourceExcel()
+		{
+			return ((Il2CppObject*(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_LOGIC_SKILLS_LOGICEFFECTS_FORCEAPPLIEDSTATCHANGEFROMSINGLETARGETEFFECT_GET_STATCHANGESOURCEEXCEL_OFFSET))(nullptr);
+		}
+
+		::FlatData::EndCondition* get_EndCondition()
+		{
+			return ((::FlatData::EndCondition*(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_LOGIC_SKILLS_LOGICEFFECTS_FORCEAPPLIEDSTATCHANGEFROMSINGLETARGETEFFECT_GET_ENDCONDITION_OFFSET))(nullptr);
+		}
+
+	};
+}
+

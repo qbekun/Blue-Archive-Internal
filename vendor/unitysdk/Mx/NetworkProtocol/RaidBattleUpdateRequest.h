@@ -1,0 +1,100 @@
+#pragma once
+#include "../../unitysdk.h"
+
+namespace MX::NetworkProtocol { class Protocol; }
+
+#define MX_NETWORKPROTOCOL_RAIDBATTLEUPDATEREQUEST_SET_CUMULATIVEGROGGYPOINT_OFFSET UNITYSDK_OFFSET(0xF4CBF0)
+#define MX_NETWORKPROTOCOL_RAIDBATTLEUPDATEREQUEST_GET_RAIDSERVERID_OFFSET UNITYSDK_OFFSET(0xF4CC00)
+#define MX_NETWORKPROTOCOL_RAIDBATTLEUPDATEREQUEST_INITLIST_OFFSET UNITYSDK_OFFSET(0xF4CC10)
+#define MX_NETWORKPROTOCOL_RAIDBATTLEUPDATEREQUEST_GET_CUMULATIVEGROGGYPOINT_OFFSET UNITYSDK_OFFSET(0xF4CC90)
+#define MX_NETWORKPROTOCOL_RAIDBATTLEUPDATEREQUEST_GET_RAIDBOSSINDEX_OFFSET UNITYSDK_OFFSET(0xF4CCA0)
+#define MX_NETWORKPROTOCOL_RAIDBATTLEUPDATEREQUEST_.CTOR_OFFSET UNITYSDK_OFFSET(0xF4CCB0)
+#define MX_NETWORKPROTOCOL_RAIDBATTLEUPDATEREQUEST_GET_DEBUFFS_OFFSET UNITYSDK_OFFSET(0xF4CCC0)
+#define MX_NETWORKPROTOCOL_RAIDBATTLEUPDATEREQUEST_SET_RAIDBOSSINDEX_OFFSET UNITYSDK_OFFSET(0xF4CCD0)
+#define MX_NETWORKPROTOCOL_RAIDBATTLEUPDATEREQUEST_GET_PROTOCOL_OFFSET UNITYSDK_OFFSET(0xF4CCE0)
+#define MX_NETWORKPROTOCOL_RAIDBATTLEUPDATEREQUEST_SET_RAIDSERVERID_OFFSET UNITYSDK_OFFSET(0xF4CCF0)
+#define MX_NETWORKPROTOCOL_RAIDBATTLEUPDATEREQUEST_SET_CUMULATIVEDAMAGE_OFFSET UNITYSDK_OFFSET(0xF4CD00)
+#define MX_NETWORKPROTOCOL_RAIDBATTLEUPDATEREQUEST_GET_CUMULATIVEDAMAGE_OFFSET UNITYSDK_OFFSET(0xF4CD10)
+#define MX_NETWORKPROTOCOL_RAIDBATTLEUPDATEREQUEST_SHOULDSERIALIZEPLAYERDEBUFFS_OFFSET UNITYSDK_OFFSET(0xF4CD20)
+
+namespace MX::NetworkProtocol
+{
+	inline static constexpr unsigned int RaidBattleUpdateRequest_TypeDefinitionIndex = 12029;
+
+	class RaidBattleUpdateRequest : public Il2CppObject
+	{
+	public:
+		::System::Int64 _RaidServerId_k__BackingField; // 0x40
+		::System::Int32 _RaidBossIndex_k__BackingField; // 0x48
+		::System::Int64 _CumulativeDamage_k__BackingField; // 0x50
+		::System::Int64 _CumulativeGroggyPoint_k__BackingField; // 0x58
+		Il2CppObject* playerDebuffs; // 0x60
+
+		::System::Void set_CumulativeGroggyPoint(::System::Int64 arg)
+		{
+			((::System::Void(*)(::System::Int64, ::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_RAIDBATTLEUPDATEREQUEST_SET_CUMULATIVEGROGGYPOINT_OFFSET))(arg, nullptr);
+		}
+
+		::System::Int64 get_RaidServerId()
+		{
+			return ((::System::Int64(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_RAIDBATTLEUPDATEREQUEST_GET_RAIDSERVERID_OFFSET))(nullptr);
+		}
+
+		::System::Void InitList(Il2CppObject* arg)
+		{
+			((::System::Void(*)(Il2CppObject*, ::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_RAIDBATTLEUPDATEREQUEST_INITLIST_OFFSET))(arg, nullptr);
+		}
+
+		::System::Int64 get_CumulativeGroggyPoint()
+		{
+			return ((::System::Int64(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_RAIDBATTLEUPDATEREQUEST_GET_CUMULATIVEGROGGYPOINT_OFFSET))(nullptr);
+		}
+
+		::System::Int32 get_RaidBossIndex()
+		{
+			return ((::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_RAIDBATTLEUPDATEREQUEST_GET_RAIDBOSSINDEX_OFFSET))(nullptr);
+		}
+
+		::System::Void .ctor()
+		{
+			((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_RAIDBATTLEUPDATEREQUEST_.CTOR_OFFSET))(nullptr);
+		}
+
+		Il2CppObject* get_Debuffs()
+		{
+			return ((Il2CppObject*(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_RAIDBATTLEUPDATEREQUEST_GET_DEBUFFS_OFFSET))(nullptr);
+		}
+
+		::System::Void set_RaidBossIndex(::System::Int32 arg)
+		{
+			((::System::Void(*)(::System::Int32, ::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_RAIDBATTLEUPDATEREQUEST_SET_RAIDBOSSINDEX_OFFSET))(arg, nullptr);
+		}
+
+		::MX::NetworkProtocol::Protocol* get_Protocol()
+		{
+			return ((::MX::NetworkProtocol::Protocol*(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_RAIDBATTLEUPDATEREQUEST_GET_PROTOCOL_OFFSET))(nullptr);
+		}
+
+		::System::Void set_RaidServerId(::System::Int64 arg)
+		{
+			((::System::Void(*)(::System::Int64, ::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_RAIDBATTLEUPDATEREQUEST_SET_RAIDSERVERID_OFFSET))(arg, nullptr);
+		}
+
+		::System::Void set_CumulativeDamage(::System::Int64 arg)
+		{
+			((::System::Void(*)(::System::Int64, ::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_RAIDBATTLEUPDATEREQUEST_SET_CUMULATIVEDAMAGE_OFFSET))(arg, nullptr);
+		}
+
+		::System::Int64 get_CumulativeDamage()
+		{
+			return ((::System::Int64(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_RAIDBATTLEUPDATEREQUEST_GET_CUMULATIVEDAMAGE_OFFSET))(nullptr);
+		}
+
+		::System::Boolean ShouldSerializeplayerDebuffs()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_RAIDBATTLEUPDATEREQUEST_SHOULDSERIALIZEPLAYERDEBUFFS_OFFSET))(nullptr);
+		}
+
+	};
+}
+

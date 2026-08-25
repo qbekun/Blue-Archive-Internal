@@ -1,0 +1,99 @@
+#pragma once
+#include "../../../unitysdk.h"
+
+#define MX_GAMELOGIC_DBMODEL_SELECTGACHASNAPSHOTDB_SET_LASTRESULTS_OFFSET UNITYSDK_OFFSET(0x100AF50)
+#define MX_GAMELOGIC_DBMODEL_SELECTGACHASNAPSHOTDB_.CTOR_OFFSET UNITYSDK_OFFSET(0x100AF60)
+#define MX_GAMELOGIC_DBMODEL_SELECTGACHASNAPSHOTDB_GET_SHOPUNIQUEID_OFFSET UNITYSDK_OFFSET(0x100AF70)
+#define MX_GAMELOGIC_DBMODEL_SELECTGACHASNAPSHOTDB_SET_PICKEDINDEX_OFFSET UNITYSDK_OFFSET(0x100AF80)
+#define MX_GAMELOGIC_DBMODEL_SELECTGACHASNAPSHOTDB_GET_SAVEDINDEX_OFFSET UNITYSDK_OFFSET(0x100AF90)
+#define MX_GAMELOGIC_DBMODEL_SELECTGACHASNAPSHOTDB_SET_SAVEDINDEX_OFFSET UNITYSDK_OFFSET(0x100AFA0)
+#define MX_GAMELOGIC_DBMODEL_SELECTGACHASNAPSHOTDB_GET_SAVEDRESULTS_OFFSET UNITYSDK_OFFSET(0x100AFB0)
+#define MX_GAMELOGIC_DBMODEL_SELECTGACHASNAPSHOTDB_SET_SHOPUNIQUEID_OFFSET UNITYSDK_OFFSET(0x100AFC0)
+#define MX_GAMELOGIC_DBMODEL_SELECTGACHASNAPSHOTDB_SET_LASTINDEX_OFFSET UNITYSDK_OFFSET(0x100AFD0)
+#define MX_GAMELOGIC_DBMODEL_SELECTGACHASNAPSHOTDB_GET_LASTRESULTS_OFFSET UNITYSDK_OFFSET(0x100AFE0)
+#define MX_GAMELOGIC_DBMODEL_SELECTGACHASNAPSHOTDB_SET_SAVEDRESULTS_OFFSET UNITYSDK_OFFSET(0x100AFF0)
+#define MX_GAMELOGIC_DBMODEL_SELECTGACHASNAPSHOTDB_GET_PICKEDINDEX_OFFSET UNITYSDK_OFFSET(0x100B000)
+#define MX_GAMELOGIC_DBMODEL_SELECTGACHASNAPSHOTDB_GET_LASTINDEX_OFFSET UNITYSDK_OFFSET(0x100B010)
+
+namespace MX::GameLogic::DBModel
+{
+	inline static constexpr unsigned int SelectGachaSnapshotDB_TypeDefinitionIndex = 12719;
+
+	class SelectGachaSnapshotDB : public Il2CppObject
+	{
+	public:
+		::System::Int64 _ShopUniqueId_k__BackingField; // 0x10
+		::System::Int64 _LastIndex_k__BackingField; // 0x18
+		Il2CppObject* _LastResults_k__BackingField; // 0x20
+		Il2CppObject* _SavedIndex_k__BackingField; // 0x28
+		Il2CppObject* _SavedResults_k__BackingField; // 0x38
+		Il2CppObject* _PickedIndex_k__BackingField; // 0x40
+
+		::System::Void set_LastResults(Il2CppObject* arg)
+		{
+			((::System::Void(*)(Il2CppObject*, ::PVOID))((::PBYTE)hIl2Cpp + MX_GAMELOGIC_DBMODEL_SELECTGACHASNAPSHOTDB_SET_LASTRESULTS_OFFSET))(arg, nullptr);
+		}
+
+		::System::Void .ctor()
+		{
+			((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_GAMELOGIC_DBMODEL_SELECTGACHASNAPSHOTDB_.CTOR_OFFSET))(nullptr);
+		}
+
+		::System::Int64 get_ShopUniqueId()
+		{
+			return ((::System::Int64(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_GAMELOGIC_DBMODEL_SELECTGACHASNAPSHOTDB_GET_SHOPUNIQUEID_OFFSET))(nullptr);
+		}
+
+		::System::Void set_PickedIndex(Il2CppObject* arg)
+		{
+			((::System::Void(*)(Il2CppObject*, ::PVOID))((::PBYTE)hIl2Cpp + MX_GAMELOGIC_DBMODEL_SELECTGACHASNAPSHOTDB_SET_PICKEDINDEX_OFFSET))(arg, nullptr);
+		}
+
+		Il2CppObject* get_SavedIndex()
+		{
+			return ((Il2CppObject*(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_GAMELOGIC_DBMODEL_SELECTGACHASNAPSHOTDB_GET_SAVEDINDEX_OFFSET))(nullptr);
+		}
+
+		::System::Void set_SavedIndex(Il2CppObject* arg)
+		{
+			((::System::Void(*)(Il2CppObject*, ::PVOID))((::PBYTE)hIl2Cpp + MX_GAMELOGIC_DBMODEL_SELECTGACHASNAPSHOTDB_SET_SAVEDINDEX_OFFSET))(arg, nullptr);
+		}
+
+		Il2CppObject* get_SavedResults()
+		{
+			return ((Il2CppObject*(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_GAMELOGIC_DBMODEL_SELECTGACHASNAPSHOTDB_GET_SAVEDRESULTS_OFFSET))(nullptr);
+		}
+
+		::System::Void set_ShopUniqueId(::System::Int64 arg)
+		{
+			((::System::Void(*)(::System::Int64, ::PVOID))((::PBYTE)hIl2Cpp + MX_GAMELOGIC_DBMODEL_SELECTGACHASNAPSHOTDB_SET_SHOPUNIQUEID_OFFSET))(arg, nullptr);
+		}
+
+		::System::Void set_LastIndex(::System::Int64 arg)
+		{
+			((::System::Void(*)(::System::Int64, ::PVOID))((::PBYTE)hIl2Cpp + MX_GAMELOGIC_DBMODEL_SELECTGACHASNAPSHOTDB_SET_LASTINDEX_OFFSET))(arg, nullptr);
+		}
+
+		Il2CppObject* get_LastResults()
+		{
+			return ((Il2CppObject*(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_GAMELOGIC_DBMODEL_SELECTGACHASNAPSHOTDB_GET_LASTRESULTS_OFFSET))(nullptr);
+		}
+
+		::System::Void set_SavedResults(Il2CppObject* arg)
+		{
+			((::System::Void(*)(Il2CppObject*, ::PVOID))((::PBYTE)hIl2Cpp + MX_GAMELOGIC_DBMODEL_SELECTGACHASNAPSHOTDB_SET_SAVEDRESULTS_OFFSET))(arg, nullptr);
+		}
+
+		Il2CppObject* get_PickedIndex()
+		{
+			return ((Il2CppObject*(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_GAMELOGIC_DBMODEL_SELECTGACHASNAPSHOTDB_GET_PICKEDINDEX_OFFSET))(nullptr);
+		}
+
+		::System::Int64 get_LastIndex()
+		{
+			return ((::System::Int64(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_GAMELOGIC_DBMODEL_SELECTGACHASNAPSHOTDB_GET_LASTINDEX_OFFSET))(nullptr);
+		}
+
+	};
+}
+

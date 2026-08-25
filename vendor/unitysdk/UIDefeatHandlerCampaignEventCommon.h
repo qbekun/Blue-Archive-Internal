@@ -1,0 +1,214 @@
+#pragma once
+#include "unitysdk.h"
+
+namespace FlatData { class OperatorCondition; }
+namespace Assets::_MX::Program::Scripts::Network { class BaseMessage; }
+namespace MX::Logic::Data { class BattleTypes; }
+namespace Assets::_MX::Program::Scripts::Network { class TaskState; }
+
+#define UIDEFEATHANDLERCAMPAIGNEVENTCOMMON_REQUESTCAMPAIGNTUTORIALSTAGERESULT_OFFSET UNITYSDK_OFFSET(0x23BEA30)
+#define UIDEFEATHANDLERCAMPAIGNEVENTCOMMON_GET_OPERATORCONDITION_OFFSET UNITYSDK_OFFSET(0x23BEBF0)
+#define UIDEFEATHANDLERCAMPAIGNEVENTCOMMON_HANDLEEVENTCONTENTTACTICRESULTRESPONSEMESSAGE_OFFSET UNITYSDK_OFFSET(0x23BEC00)
+#define UIDEFEATHANDLERCAMPAIGNEVENTCOMMON_REQUESTEVENTCONTENTSUBSTAGERESULT_OFFSET UNITYSDK_OFFSET(0x23BEED0)
+#define UIDEFEATHANDLERCAMPAIGNEVENTCOMMON_HANDLETOLOBBY_OFFSET UNITYSDK_OFFSET(0x23BF120)
+#define UIDEFEATHANDLERCAMPAIGNEVENTCOMMON_HANDLEEVENTCONTENTMAINGROUNDSTAGERESULTRESPONSEMESSAGE_OFFSET UNITYSDK_OFFSET(0x23BF260)
+#define UIDEFEATHANDLERCAMPAIGNEVENTCOMMON_REQUESTCAMPAIGNTACTICRESULT_OFFSET UNITYSDK_OFFSET(0x23BF440)
+#define UIDEFEATHANDLERCAMPAIGNEVENTCOMMON_GET_BATTLETYPE_OFFSET UNITYSDK_OFFSET(0x23BF600)
+#define UIDEFEATHANDLERCAMPAIGNEVENTCOMMON__REQUESTCAMPAIGNTUTORIALSTAGERESULT_B__8_0_OFFSET UNITYSDK_OFFSET(0x23BF610)
+#define UIDEFEATHANDLERCAMPAIGNEVENTCOMMON_REQUESTEVENTCONTENTTACTICRESULT_OFFSET UNITYSDK_OFFSET(0x23BF640)
+#define UIDEFEATHANDLERCAMPAIGNEVENTCOMMON_HANDLECAMPAIGNTUTORIALSTAGEREWARDRESPONSEMESSAGE_OFFSET UNITYSDK_OFFSET(0x23BF890)
+#define UIDEFEATHANDLERCAMPAIGNEVENTCOMMON_HANDLESCENARIOTACTICRESULTRESPONSEMESSAGE_OFFSET UNITYSDK_OFFSET(0x23BF9A0)
+#define UIDEFEATHANDLERCAMPAIGNEVENTCOMMON_DETACHLISTENER_OFFSET UNITYSDK_OFFSET(0x23BFB40)
+#define UIDEFEATHANDLERCAMPAIGNEVENTCOMMON_ATTACHLISTENER_OFFSET UNITYSDK_OFFSET(0x23BFFB0)
+#define UIDEFEATHANDLERCAMPAIGNEVENTCOMMON__REQUESTCAMPAIGNTACTICRESULT_B__5_0_OFFSET UNITYSDK_OFFSET(0x23C03B0)
+#define UIDEFEATHANDLERCAMPAIGNEVENTCOMMON_HANDLEEVENTCONTENTSUBSTAGERESULTRESPONSEMESSAGE_OFFSET UNITYSDK_OFFSET(0x23C03D0)
+#define UIDEFEATHANDLERCAMPAIGNEVENTCOMMON_.CTOR_OFFSET UNITYSDK_OFFSET(0x23C06A0)
+#define UIDEFEATHANDLERCAMPAIGNEVENTCOMMON__REQUESTCAMPAIGNSUBSTAGERESULT_B__7_0_OFFSET UNITYSDK_OFFSET(0x23C06B0)
+#define UIDEFEATHANDLERCAMPAIGNEVENTCOMMON_REQUESTRESULT_OFFSET UNITYSDK_OFFSET(0x23C06D0)
+#define UIDEFEATHANDLERCAMPAIGNEVENTCOMMON_INITPOPUPLIST_OFFSET UNITYSDK_OFFSET(0x23C0FA0)
+#define UIDEFEATHANDLERCAMPAIGNEVENTCOMMON_HANDLERESULT_OFFSET UNITYSDK_OFFSET(0x23C1310)
+#define UIDEFEATHANDLERCAMPAIGNEVENTCOMMON_REQUESTSCENARIOTACTICRESULT_OFFSET UNITYSDK_OFFSET(0x23C0DE0)
+#define UIDEFEATHANDLERCAMPAIGNEVENTCOMMON_REQUESTCAMPAIGNSUBSTAGERESULT_OFFSET UNITYSDK_OFFSET(0x23C09D0)
+#define UIDEFEATHANDLERCAMPAIGNEVENTCOMMON__REQUESTSCENARIOTACTICRESULT_B__12_0_OFFSET UNITYSDK_OFFSET(0x23C1320)
+#define UIDEFEATHANDLERCAMPAIGNEVENTCOMMON_HANDLECLOSE_OFFSET UNITYSDK_OFFSET(0x23C1340)
+#define UIDEFEATHANDLERCAMPAIGNEVENTCOMMON__REQUESTEVENTCONTENTTACTICRESULT_B__9_0_OFFSET UNITYSDK_OFFSET(0x23C1E10)
+#define UIDEFEATHANDLERCAMPAIGNEVENTCOMMON__REQUESTEVENTCONTENTSUBSTAGERESULT_B__10_0_OFFSET UNITYSDK_OFFSET(0x23C1E30)
+#define UIDEFEATHANDLERCAMPAIGNEVENTCOMMON__REQUESTEVENTCONTENTMAINGROUNDSTAGERESULT_B__11_0_OFFSET UNITYSDK_OFFSET(0x23C1E50)
+#define UIDEFEATHANDLERCAMPAIGNEVENTCOMMON_REQUESTCAMPAIGNMAINSTAGESTRATEGYSKIPRESULT_OFFSET UNITYSDK_OFFSET(0x23C08C0)
+#define UIDEFEATHANDLERCAMPAIGNEVENTCOMMON__REQUESTCAMPAIGNMAINSTAGESTRATEGYSKIPRESULT_B__6_0_OFFSET UNITYSDK_OFFSET(0x23C1E70)
+#define UIDEFEATHANDLERCAMPAIGNEVENTCOMMON_HANDLECAMPAIGNTACTICRESULTRESPONSEMESSAGE_OFFSET UNITYSDK_OFFSET(0x23C1EA0)
+#define UIDEFEATHANDLERCAMPAIGNEVENTCOMMON_REQUESTEVENTCONTENTMAINGROUNDSTAGERESULT_OFFSET UNITYSDK_OFFSET(0x23C0B90)
+#define UIDEFEATHANDLERCAMPAIGNEVENTCOMMON_HANDLECAMPAIGNSUBSTAGERESULTRESPONSEMESSAGE_OFFSET UNITYSDK_OFFSET(0x23C1F20)
+
+	inline static constexpr unsigned int UIDefeatHandlerCampaignEventCommon_TypeDefinitionIndex = 5254;
+
+	class UIDefeatHandlerCampaignEventCommon : public Il2CppObject
+	{
+	public:
+		::System::Void RequestCampaignTutorialStageResult()
+		{
+			((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + UIDEFEATHANDLERCAMPAIGNEVENTCOMMON_REQUESTCAMPAIGNTUTORIALSTAGERESULT_OFFSET))(nullptr);
+		}
+
+		::FlatData::OperatorCondition* get_OperatorCondition()
+		{
+			return ((::FlatData::OperatorCondition*(*)(::PVOID))((::PBYTE)hIl2Cpp + UIDEFEATHANDLERCAMPAIGNEVENTCOMMON_GET_OPERATORCONDITION_OFFSET))(nullptr);
+		}
+
+		::System::Boolean HandleEventContentTacticResultResponseMessage(::Assets::_MX::Program::Scripts::Network::BaseMessage* arg)
+		{
+			return ((::System::Boolean(*)(::Assets::_MX::Program::Scripts::Network::BaseMessage*, ::PVOID))((::PBYTE)hIl2Cpp + UIDEFEATHANDLERCAMPAIGNEVENTCOMMON_HANDLEEVENTCONTENTTACTICRESULTRESPONSEMESSAGE_OFFSET))(arg, nullptr);
+		}
+
+		::System::Void RequestEventContentSubStageResult()
+		{
+			((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + UIDEFEATHANDLERCAMPAIGNEVENTCOMMON_REQUESTEVENTCONTENTSUBSTAGERESULT_OFFSET))(nullptr);
+		}
+
+		::System::Void HandleToLobby()
+		{
+			((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + UIDEFEATHANDLERCAMPAIGNEVENTCOMMON_HANDLETOLOBBY_OFFSET))(nullptr);
+		}
+
+		::System::Boolean HandleEventContentMainGroundStageResultResponseMessage(::Assets::_MX::Program::Scripts::Network::BaseMessage* arg)
+		{
+			return ((::System::Boolean(*)(::Assets::_MX::Program::Scripts::Network::BaseMessage*, ::PVOID))((::PBYTE)hIl2Cpp + UIDEFEATHANDLERCAMPAIGNEVENTCOMMON_HANDLEEVENTCONTENTMAINGROUNDSTAGERESULTRESPONSEMESSAGE_OFFSET))(arg, nullptr);
+		}
+
+		::System::Void RequestCampaignTacticResult()
+		{
+			((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + UIDEFEATHANDLERCAMPAIGNEVENTCOMMON_REQUESTCAMPAIGNTACTICRESULT_OFFSET))(nullptr);
+		}
+
+		::MX::Logic::Data::BattleTypes* get_BattleType()
+		{
+			return ((::MX::Logic::Data::BattleTypes*(*)(::PVOID))((::PBYTE)hIl2Cpp + UIDEFEATHANDLERCAMPAIGNEVENTCOMMON_GET_BATTLETYPE_OFFSET))(nullptr);
+		}
+
+		::System::Void _RequestCampaignTutorialStageResult_b__8_0(::Assets::_MX::Program::Scripts::Network::TaskState* arg)
+		{
+			((::System::Void(*)(::Assets::_MX::Program::Scripts::Network::TaskState*, ::PVOID))((::PBYTE)hIl2Cpp + UIDEFEATHANDLERCAMPAIGNEVENTCOMMON__REQUESTCAMPAIGNTUTORIALSTAGERESULT_B__8_0_OFFSET))(arg, nullptr);
+		}
+
+		::System::Void RequestEventContentTacticResult()
+		{
+			((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + UIDEFEATHANDLERCAMPAIGNEVENTCOMMON_REQUESTEVENTCONTENTTACTICRESULT_OFFSET))(nullptr);
+		}
+
+		::System::Boolean HandleCampaignTutorialStageRewardResponseMessage(::Assets::_MX::Program::Scripts::Network::BaseMessage* arg)
+		{
+			return ((::System::Boolean(*)(::Assets::_MX::Program::Scripts::Network::BaseMessage*, ::PVOID))((::PBYTE)hIl2Cpp + UIDEFEATHANDLERCAMPAIGNEVENTCOMMON_HANDLECAMPAIGNTUTORIALSTAGEREWARDRESPONSEMESSAGE_OFFSET))(arg, nullptr);
+		}
+
+		::System::Boolean HandleScenarioTacticResultResponseMessage(::Assets::_MX::Program::Scripts::Network::BaseMessage* arg)
+		{
+			return ((::System::Boolean(*)(::Assets::_MX::Program::Scripts::Network::BaseMessage*, ::PVOID))((::PBYTE)hIl2Cpp + UIDEFEATHANDLERCAMPAIGNEVENTCOMMON_HANDLESCENARIOTACTICRESULTRESPONSEMESSAGE_OFFSET))(arg, nullptr);
+		}
+
+		::System::Void DetachListener()
+		{
+			((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + UIDEFEATHANDLERCAMPAIGNEVENTCOMMON_DETACHLISTENER_OFFSET))(nullptr);
+		}
+
+		::System::Void AttachListener()
+		{
+			((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + UIDEFEATHANDLERCAMPAIGNEVENTCOMMON_ATTACHLISTENER_OFFSET))(nullptr);
+		}
+
+		::System::Void _RequestCampaignTacticResult_b__5_0(::Assets::_MX::Program::Scripts::Network::TaskState* arg)
+		{
+			((::System::Void(*)(::Assets::_MX::Program::Scripts::Network::TaskState*, ::PVOID))((::PBYTE)hIl2Cpp + UIDEFEATHANDLERCAMPAIGNEVENTCOMMON__REQUESTCAMPAIGNTACTICRESULT_B__5_0_OFFSET))(arg, nullptr);
+		}
+
+		::System::Boolean HandleEventContentSubStageResultResponseMessage(::Assets::_MX::Program::Scripts::Network::BaseMessage* arg)
+		{
+			return ((::System::Boolean(*)(::Assets::_MX::Program::Scripts::Network::BaseMessage*, ::PVOID))((::PBYTE)hIl2Cpp + UIDEFEATHANDLERCAMPAIGNEVENTCOMMON_HANDLEEVENTCONTENTSUBSTAGERESULTRESPONSEMESSAGE_OFFSET))(arg, nullptr);
+		}
+
+		::System::Void .ctor()
+		{
+			((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + UIDEFEATHANDLERCAMPAIGNEVENTCOMMON_.CTOR_OFFSET))(nullptr);
+		}
+
+		::System::Void _RequestCampaignSubStageResult_b__7_0(::Assets::_MX::Program::Scripts::Network::TaskState* arg)
+		{
+			((::System::Void(*)(::Assets::_MX::Program::Scripts::Network::TaskState*, ::PVOID))((::PBYTE)hIl2Cpp + UIDEFEATHANDLERCAMPAIGNEVENTCOMMON__REQUESTCAMPAIGNSUBSTAGERESULT_B__7_0_OFFSET))(arg, nullptr);
+		}
+
+		::System::Void RequestResult()
+		{
+			((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + UIDEFEATHANDLERCAMPAIGNEVENTCOMMON_REQUESTRESULT_OFFSET))(nullptr);
+		}
+
+		::System::Void InitPopupList(Il2CppObject* arg)
+		{
+			((::System::Void(*)(Il2CppObject*, ::PVOID))((::PBYTE)hIl2Cpp + UIDEFEATHANDLERCAMPAIGNEVENTCOMMON_INITPOPUPLIST_OFFSET))(arg, nullptr);
+		}
+
+		::System::Boolean HandleResult(::Assets::_MX::Program::Scripts::Network::BaseMessage* arg)
+		{
+			return ((::System::Boolean(*)(::Assets::_MX::Program::Scripts::Network::BaseMessage*, ::PVOID))((::PBYTE)hIl2Cpp + UIDEFEATHANDLERCAMPAIGNEVENTCOMMON_HANDLERESULT_OFFSET))(arg, nullptr);
+		}
+
+		::System::Void RequestScenarioTacticResult()
+		{
+			((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + UIDEFEATHANDLERCAMPAIGNEVENTCOMMON_REQUESTSCENARIOTACTICRESULT_OFFSET))(nullptr);
+		}
+
+		::System::Void RequestCampaignSubStageResult()
+		{
+			((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + UIDEFEATHANDLERCAMPAIGNEVENTCOMMON_REQUESTCAMPAIGNSUBSTAGERESULT_OFFSET))(nullptr);
+		}
+
+		::System::Void _RequestScenarioTacticResult_b__12_0(::Assets::_MX::Program::Scripts::Network::TaskState* arg)
+		{
+			((::System::Void(*)(::Assets::_MX::Program::Scripts::Network::TaskState*, ::PVOID))((::PBYTE)hIl2Cpp + UIDEFEATHANDLERCAMPAIGNEVENTCOMMON__REQUESTSCENARIOTACTICRESULT_B__12_0_OFFSET))(arg, nullptr);
+		}
+
+		::System::Void HandleClose()
+		{
+			((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + UIDEFEATHANDLERCAMPAIGNEVENTCOMMON_HANDLECLOSE_OFFSET))(nullptr);
+		}
+
+		::System::Void _RequestEventContentTacticResult_b__9_0(::Assets::_MX::Program::Scripts::Network::TaskState* arg)
+		{
+			((::System::Void(*)(::Assets::_MX::Program::Scripts::Network::TaskState*, ::PVOID))((::PBYTE)hIl2Cpp + UIDEFEATHANDLERCAMPAIGNEVENTCOMMON__REQUESTEVENTCONTENTTACTICRESULT_B__9_0_OFFSET))(arg, nullptr);
+		}
+
+		::System::Void _RequestEventContentSubStageResult_b__10_0(::Assets::_MX::Program::Scripts::Network::TaskState* arg)
+		{
+			((::System::Void(*)(::Assets::_MX::Program::Scripts::Network::TaskState*, ::PVOID))((::PBYTE)hIl2Cpp + UIDEFEATHANDLERCAMPAIGNEVENTCOMMON__REQUESTEVENTCONTENTSUBSTAGERESULT_B__10_0_OFFSET))(arg, nullptr);
+		}
+
+		::System::Void _RequestEventContentMainGroundStageResult_b__11_0(::Assets::_MX::Program::Scripts::Network::TaskState* arg)
+		{
+			((::System::Void(*)(::Assets::_MX::Program::Scripts::Network::TaskState*, ::PVOID))((::PBYTE)hIl2Cpp + UIDEFEATHANDLERCAMPAIGNEVENTCOMMON__REQUESTEVENTCONTENTMAINGROUNDSTAGERESULT_B__11_0_OFFSET))(arg, nullptr);
+		}
+
+		::System::Void RequestCampaignMainStageStrategySkipResult()
+		{
+			((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + UIDEFEATHANDLERCAMPAIGNEVENTCOMMON_REQUESTCAMPAIGNMAINSTAGESTRATEGYSKIPRESULT_OFFSET))(nullptr);
+		}
+
+		::System::Void _RequestCampaignMainStageStrategySkipResult_b__6_0(Il2CppObject* arg, Il2CppObject* arg2)
+		{
+			((::System::Void(*)(Il2CppObject*, Il2CppObject*, ::PVOID))((::PBYTE)hIl2Cpp + UIDEFEATHANDLERCAMPAIGNEVENTCOMMON__REQUESTCAMPAIGNMAINSTAGESTRATEGYSKIPRESULT_B__6_0_OFFSET))(arg, arg2, nullptr);
+		}
+
+		::System::Boolean HandleCampaignTacticResultResponseMessage(::Assets::_MX::Program::Scripts::Network::BaseMessage* arg)
+		{
+			return ((::System::Boolean(*)(::Assets::_MX::Program::Scripts::Network::BaseMessage*, ::PVOID))((::PBYTE)hIl2Cpp + UIDEFEATHANDLERCAMPAIGNEVENTCOMMON_HANDLECAMPAIGNTACTICRESULTRESPONSEMESSAGE_OFFSET))(arg, nullptr);
+		}
+
+		::System::Void RequestEventContentMainGroundStageResult()
+		{
+			((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + UIDEFEATHANDLERCAMPAIGNEVENTCOMMON_REQUESTEVENTCONTENTMAINGROUNDSTAGERESULT_OFFSET))(nullptr);
+		}
+
+		::System::Boolean HandleCampaignSubStageResultResponseMessage(::Assets::_MX::Program::Scripts::Network::BaseMessage* arg)
+		{
+			return ((::System::Boolean(*)(::Assets::_MX::Program::Scripts::Network::BaseMessage*, ::PVOID))((::PBYTE)hIl2Cpp + UIDEFEATHANDLERCAMPAIGNEVENTCOMMON_HANDLECAMPAIGNSUBSTAGERESULTRESPONSEMESSAGE_OFFSET))(arg, nullptr);
+		}
+
+	};
+

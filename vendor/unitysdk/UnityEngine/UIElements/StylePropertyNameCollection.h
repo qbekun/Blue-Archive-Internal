@@ -1,0 +1,40 @@
+#pragma once
+#include "../../unitysdk.h"
+
+#define UNITYENGINE_UIELEMENTS_STYLEPROPERTYNAMECOLLECTION_.CTOR_OFFSET UNITYSDK_OFFSET(0xA3FE9B0)
+#define UNITYENGINE_UIELEMENTS_STYLEPROPERTYNAMECOLLECTION_GETENUMERATOR_OFFSET UNITYSDK_OFFSET(0xA3FE9C0)
+#define UNITYENGINE_UIELEMENTS_STYLEPROPERTYNAMECOLLECTION_SYSTEM.COLLECTIONS.GENERIC.IENUMERABLE_UNITYENGINE.UIELEMENTS.STYLEPROPERTYNAME_.GETENUMERATOR_OFFSET UNITYSDK_OFFSET(0xA3FEA80)
+#define UNITYENGINE_UIELEMENTS_STYLEPROPERTYNAMECOLLECTION_SYSTEM.COLLECTIONS.IENUMERABLE.GETENUMERATOR_OFFSET UNITYSDK_OFFSET(0xA3FEB60)
+
+namespace UnityEngine::UIElements
+{
+	inline static constexpr unsigned int StylePropertyNameCollection_TypeDefinitionIndex = 30546;
+
+	class StylePropertyNameCollection : public Il2CppObject
+	{
+	public:
+		Il2CppObject* propertiesList; // 0x10
+
+		::System::Void .ctor(Il2CppObject* arg)
+		{
+			((::System::Void(*)(Il2CppObject*, ::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_UIELEMENTS_STYLEPROPERTYNAMECOLLECTION_.CTOR_OFFSET))(arg, nullptr);
+		}
+
+		Enumerator* GetEnumerator()
+		{
+			return (return (Enumerator*(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_UIELEMENTS_STYLEPROPERTYNAMECOLLECTION_GETENUMERATOR_OFFSET))(nullptr);
+		}
+
+		Il2CppObject* System.Collections.Generic.IEnumerable_UnityEngine.UIElements.StylePropertyName_.GetEnumerator()
+		{
+			return (return (Il2CppObject*(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_UIELEMENTS_STYLEPROPERTYNAMECOLLECTION_SYSTEM.COLLECTIONS.GENERIC.IENUMERABLE_UNITYENGINE.UIELEMENTS.STYLEPROPERTYNAME_.GETENUMERATOR_OFFSET))(nullptr);
+		}
+
+		::System::Collections::IEnumerator* System.Collections.IEnumerable.GetEnumerator()
+		{
+			return (return (::System::Collections::IEnumerator*(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_UIELEMENTS_STYLEPROPERTYNAMECOLLECTION_SYSTEM.COLLECTIONS.IENUMERABLE.GETENUMERATOR_OFFSET))(nullptr);
+		}
+
+	};
+}
+

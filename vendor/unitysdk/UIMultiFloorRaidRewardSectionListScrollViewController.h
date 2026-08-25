@@ -1,0 +1,44 @@
+#pragma once
+#include "unitysdk.h"
+
+#define UIMULTIFLOORRAIDREWARDSECTIONLISTSCROLLVIEWCONTROLLER_ONCLICKELEMENT_OFFSET UNITYSDK_OFFSET(0x26A5D60)
+#define UIMULTIFLOORRAIDREWARDSECTIONLISTSCROLLVIEWCONTROLLER_GET_SELECTSECTIONINDEX_OFFSET UNITYSDK_OFFSET(0x26A5DC0)
+#define UIMULTIFLOORRAIDREWARDSECTIONLISTSCROLLVIEWCONTROLLER_.CTOR_OFFSET UNITYSDK_OFFSET(0x26A5DD0)
+#define UIMULTIFLOORRAIDREWARDSECTIONLISTSCROLLVIEWCONTROLLER_SET_SELECTSECTIONINDEX_OFFSET UNITYSDK_OFFSET(0x26A5E10)
+#define UIMULTIFLOORRAIDREWARDSECTIONLISTSCROLLVIEWCONTROLLER_INITIALIZE_OFFSET UNITYSDK_OFFSET(0x26A5E20)
+
+	inline static constexpr unsigned int UIMultiFloorRaidRewardSectionListScrollViewController_TypeDefinitionIndex = 6856;
+
+	class UIMultiFloorRaidRewardSectionListScrollViewController : public ::System::Xml::XmlDeclaration
+	{
+	public:
+		::System::Int32 _SelectSectionIndex_k__BackingField; // 0x90
+		Il2CppObject* ElementClickCallback; // 0x98
+
+		::System::Void OnClickElement(::System::Int32 arg)
+		{
+			((::System::Void(*)(::System::Int32, ::PVOID))((::PBYTE)hIl2Cpp + UIMULTIFLOORRAIDREWARDSECTIONLISTSCROLLVIEWCONTROLLER_ONCLICKELEMENT_OFFSET))(arg, nullptr);
+		}
+
+		::System::Int32 get_SelectSectionIndex()
+		{
+			return ((::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + UIMULTIFLOORRAIDREWARDSECTIONLISTSCROLLVIEWCONTROLLER_GET_SELECTSECTIONINDEX_OFFSET))(nullptr);
+		}
+
+		::System::Void .ctor()
+		{
+			((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + UIMULTIFLOORRAIDREWARDSECTIONLISTSCROLLVIEWCONTROLLER_.CTOR_OFFSET))(nullptr);
+		}
+
+		::System::Void set_SelectSectionIndex(::System::Int32 arg)
+		{
+			((::System::Void(*)(::System::Int32, ::PVOID))((::PBYTE)hIl2Cpp + UIMULTIFLOORRAIDREWARDSECTIONLISTSCROLLVIEWCONTROLLER_SET_SELECTSECTIONINDEX_OFFSET))(arg, nullptr);
+		}
+
+		::System::Void Initialize(::System::Int32 arg, Il2CppObject* arg2)
+		{
+			((::System::Void(*)(::System::Int32, Il2CppObject*, ::PVOID))((::PBYTE)hIl2Cpp + UIMULTIFLOORRAIDREWARDSECTIONLISTSCROLLVIEWCONTROLLER_INITIALIZE_OFFSET))(arg, arg2, nullptr);
+		}
+
+	};
+

@@ -1,0 +1,46 @@
+#pragma once
+#include "../../../unitysdk.h"
+
+namespace FlatData { class EchelonType; }
+namespace MX::Logic::Data { class BattleTypes; }
+namespace MX::GameLogic::DBModel { class RaidDB; }
+namespace MX::GameLogic::DBModel { class RaidBattleDB; }
+namespace MX::GameLogic::DBModel { class AssistCharacterDB; }
+
+#define MX_APPBATTLE_BATTLESETTINGBUILDER_O66C487F3FF0C503BD55AFB47D43B941AC5D06EC5D3AD701A08614CD09E3B0DF8_GET_ECHELONTYPE_OFFSET UNITYSDK_OFFSET(0x1D2F0B0)
+#define MX_APPBATTLE_BATTLESETTINGBUILDER_O66C487F3FF0C503BD55AFB47D43B941AC5D06EC5D3AD701A08614CD09E3B0DF8_GET_BATTLETYPE_OFFSET UNITYSDK_OFFSET(0x1D2F0C0)
+#define MX_APPBATTLE_BATTLESETTINGBUILDER_O66C487F3FF0C503BD55AFB47D43B941AC5D06EC5D3AD701A08614CD09E3B0DF8_.CTOR_OFFSET UNITYSDK_OFFSET(0x1D2F0D0)
+#define MX_APPBATTLE_BATTLESETTINGBUILDER_O66C487F3FF0C503BD55AFB47D43B941AC5D06EC5D3AD701A08614CD09E3B0DF8_.CTOR_OFFSET UNITYSDK_OFFSET(0x1D2F0F0)
+
+namespace MX::AppBattle::BattleSettingBuilder
+{
+	inline static constexpr unsigned int O66c487f3ff0c503bd55afb47d43b941ac5d06ec5d3ad701a08614cd09e3b0df8_TypeDefinitionIndex = 20068;
+
+	class O66c487f3ff0c503bd55afb47d43b941ac5d06ec5d3ad701a08614cd09e3b0df8 : public Il2CppObject
+	{
+	public:
+		::FlatData::EchelonType* echelonType; // 0x50
+
+		::FlatData::EchelonType* get_EchelonType()
+		{
+			return (return (::FlatData::EchelonType*(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_APPBATTLE_BATTLESETTINGBUILDER_O66C487F3FF0C503BD55AFB47D43B941AC5D06EC5D3AD701A08614CD09E3B0DF8_GET_ECHELONTYPE_OFFSET))(nullptr);
+		}
+
+		::MX::Logic::Data::BattleTypes* get_BattleType()
+		{
+			return (return (::MX::Logic::Data::BattleTypes*(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_APPBATTLE_BATTLESETTINGBUILDER_O66C487F3FF0C503BD55AFB47D43B941AC5D06EC5D3AD701A08614CD09E3B0DF8_GET_BATTLETYPE_OFFSET))(nullptr);
+		}
+
+		::System::Void .ctor()
+		{
+			((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_APPBATTLE_BATTLESETTINGBUILDER_O66C487F3FF0C503BD55AFB47D43B941AC5D06EC5D3AD701A08614CD09E3B0DF8_.CTOR_OFFSET))(nullptr);
+		}
+
+		::System::Void .ctor(::MX::GameLogic::DBModel::RaidDB* arg, ::MX::GameLogic::DBModel::RaidBattleDB* arg, ::System::Int32 arg, ::MX::GameLogic::DBModel::AssistCharacterDB* arg)
+		{
+			((::System::Void(*)(::MX::GameLogic::DBModel::RaidDB*, ::MX::GameLogic::DBModel::RaidBattleDB*, ::System::Int32, ::MX::GameLogic::DBModel::AssistCharacterDB*, ::PVOID))((::PBYTE)hIl2Cpp + MX_APPBATTLE_BATTLESETTINGBUILDER_O66C487F3FF0C503BD55AFB47D43B941AC5D06EC5D3AD701A08614CD09E3B0DF8_.CTOR_OFFSET))(arg, arg, arg, arg, nullptr);
+		}
+
+	};
+}
+

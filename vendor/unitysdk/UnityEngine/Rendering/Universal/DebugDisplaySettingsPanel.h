@@ -1,0 +1,46 @@
+#pragma once
+#include "../../../unitysdk.h"
+
+#define UNITYENGINE_RENDERING_UNIVERSAL_DEBUGDISPLAYSETTINGSPANEL_ADDWIDGET_OFFSET UNITYSDK_OFFSET(0xA02F8D0)
+#define UNITYENGINE_RENDERING_UNIVERSAL_DEBUGDISPLAYSETTINGSPANEL_GET_PANELNAME_OFFSET UNITYSDK_OFFSET(0x000000)
+#define UNITYENGINE_RENDERING_UNIVERSAL_DEBUGDISPLAYSETTINGSPANEL_.CTOR_OFFSET UNITYSDK_OFFSET(0xA02F850)
+#define UNITYENGINE_RENDERING_UNIVERSAL_DEBUGDISPLAYSETTINGSPANEL_GET_WIDGETS_OFFSET UNITYSDK_OFFSET(0xA033C70)
+#define UNITYENGINE_RENDERING_UNIVERSAL_DEBUGDISPLAYSETTINGSPANEL_DISPOSE_OFFSET UNITYSDK_OFFSET(0xA033CC0)
+
+namespace UnityEngine::Rendering::Universal
+{
+	inline static constexpr unsigned int DebugDisplaySettingsPanel_TypeDefinitionIndex = 32561;
+
+	class DebugDisplaySettingsPanel : public Il2CppObject
+	{
+	public:
+		Il2CppObject* m_Widgets; // 0x10
+
+		::System::Void AddWidget(Widget* arg)
+		{
+			((::System::Void(*)(Widget*, ::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_RENDERING_UNIVERSAL_DEBUGDISPLAYSETTINGSPANEL_ADDWIDGET_OFFSET))(arg, nullptr);
+		}
+
+		::System::String* get_PanelName()
+		{
+			return (return (::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_RENDERING_UNIVERSAL_DEBUGDISPLAYSETTINGSPANEL_GET_PANELNAME_OFFSET))(nullptr);
+		}
+
+		::System::Void .ctor()
+		{
+			((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_RENDERING_UNIVERSAL_DEBUGDISPLAYSETTINGSPANEL_.CTOR_OFFSET))(nullptr);
+		}
+
+		::Il2CppArray<::System::Object*>* get_Widgets()
+		{
+			return (return (::Il2CppArray<::System::Object*>*(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_RENDERING_UNIVERSAL_DEBUGDISPLAYSETTINGSPANEL_GET_WIDGETS_OFFSET))(nullptr);
+		}
+
+		::System::Void Dispose()
+		{
+			((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_RENDERING_UNIVERSAL_DEBUGDISPLAYSETTINGSPANEL_DISPOSE_OFFSET))(nullptr);
+		}
+
+	};
+}
+

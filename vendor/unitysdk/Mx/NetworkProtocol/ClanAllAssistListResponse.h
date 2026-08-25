@@ -1,0 +1,68 @@
+#pragma once
+#include "../../unitysdk.h"
+
+namespace MX::NetworkProtocol { class Protocol; }
+
+#define MX_NETWORKPROTOCOL_CLANALLASSISTLISTRESPONSE_GET_ASSISTCHARACTERRENTHISTORYDBS_OFFSET UNITYSDK_OFFSET(0xF3F020)
+#define MX_NETWORKPROTOCOL_CLANALLASSISTLISTRESPONSE_GET_CLANDBID_OFFSET UNITYSDK_OFFSET(0xF3F030)
+#define MX_NETWORKPROTOCOL_CLANALLASSISTLISTRESPONSE_GET_ASSISTCHARACTERDBS_OFFSET UNITYSDK_OFFSET(0xF3F040)
+#define MX_NETWORKPROTOCOL_CLANALLASSISTLISTRESPONSE_SET_CLANDBID_OFFSET UNITYSDK_OFFSET(0xF3F050)
+#define MX_NETWORKPROTOCOL_CLANALLASSISTLISTRESPONSE_SET_ASSISTCHARACTERDBS_OFFSET UNITYSDK_OFFSET(0xF3F060)
+#define MX_NETWORKPROTOCOL_CLANALLASSISTLISTRESPONSE_GET_PROTOCOL_OFFSET UNITYSDK_OFFSET(0xF3F070)
+#define MX_NETWORKPROTOCOL_CLANALLASSISTLISTRESPONSE_SET_ASSISTCHARACTERRENTHISTORYDBS_OFFSET UNITYSDK_OFFSET(0xF3F080)
+#define MX_NETWORKPROTOCOL_CLANALLASSISTLISTRESPONSE_.CTOR_OFFSET UNITYSDK_OFFSET(0xF3F090)
+
+namespace MX::NetworkProtocol
+{
+	inline static constexpr unsigned int ClanAllAssistListResponse_TypeDefinitionIndex = 11525;
+
+	class ClanAllAssistListResponse : public Il2CppObject
+	{
+	public:
+		Il2CppObject* _AssistCharacterDBs_k__BackingField; // 0x50
+		Il2CppObject* _AssistCharacterRentHistoryDBs_k__BackingField; // 0x58
+		::System::Int64 _ClanDBId_k__BackingField; // 0x60
+
+		Il2CppObject* get_AssistCharacterRentHistoryDBs()
+		{
+			return ((Il2CppObject*(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_CLANALLASSISTLISTRESPONSE_GET_ASSISTCHARACTERRENTHISTORYDBS_OFFSET))(nullptr);
+		}
+
+		::System::Int64 get_ClanDBId()
+		{
+			return ((::System::Int64(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_CLANALLASSISTLISTRESPONSE_GET_CLANDBID_OFFSET))(nullptr);
+		}
+
+		Il2CppObject* get_AssistCharacterDBs()
+		{
+			return ((Il2CppObject*(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_CLANALLASSISTLISTRESPONSE_GET_ASSISTCHARACTERDBS_OFFSET))(nullptr);
+		}
+
+		::System::Void set_ClanDBId(::System::Int64 arg)
+		{
+			((::System::Void(*)(::System::Int64, ::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_CLANALLASSISTLISTRESPONSE_SET_CLANDBID_OFFSET))(arg, nullptr);
+		}
+
+		::System::Void set_AssistCharacterDBs(Il2CppObject* arg)
+		{
+			((::System::Void(*)(Il2CppObject*, ::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_CLANALLASSISTLISTRESPONSE_SET_ASSISTCHARACTERDBS_OFFSET))(arg, nullptr);
+		}
+
+		::MX::NetworkProtocol::Protocol* get_Protocol()
+		{
+			return ((::MX::NetworkProtocol::Protocol*(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_CLANALLASSISTLISTRESPONSE_GET_PROTOCOL_OFFSET))(nullptr);
+		}
+
+		::System::Void set_AssistCharacterRentHistoryDBs(Il2CppObject* arg)
+		{
+			((::System::Void(*)(Il2CppObject*, ::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_CLANALLASSISTLISTRESPONSE_SET_ASSISTCHARACTERRENTHISTORYDBS_OFFSET))(arg, nullptr);
+		}
+
+		::System::Void .ctor()
+		{
+			((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_CLANALLASSISTLISTRESPONSE_.CTOR_OFFSET))(nullptr);
+		}
+
+	};
+}
+

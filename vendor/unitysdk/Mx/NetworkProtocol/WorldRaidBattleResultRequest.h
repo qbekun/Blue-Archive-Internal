@@ -1,0 +1,147 @@
+#pragma once
+#include "../../unitysdk.h"
+
+namespace MX::Logic::Battles::Summary { class BattleSummary; }
+namespace MX::NetworkProtocol { class Protocol; }
+
+#define MX_NETWORKPROTOCOL_WORLDRAIDBATTLERESULTREQUEST_SET_PHASEID_OFFSET UNITYSDK_OFFSET(0xF50E00)
+#define MX_NETWORKPROTOCOL_WORLDRAIDBATTLERESULTREQUEST_GET_ISPRACTICE_OFFSET UNITYSDK_OFFSET(0xF50E10)
+#define MX_NETWORKPROTOCOL_WORLDRAIDBATTLERESULTREQUEST_.CTOR_OFFSET UNITYSDK_OFFSET(0xF50E20)
+#define MX_NETWORKPROTOCOL_WORLDRAIDBATTLERESULTREQUEST_SET_ISTICKET_OFFSET UNITYSDK_OFFSET(0xF50E30)
+#define MX_NETWORKPROTOCOL_WORLDRAIDBATTLERESULTREQUEST_GET_SUMMARY_OFFSET UNITYSDK_OFFSET(0xF50E40)
+#define MX_NETWORKPROTOCOL_WORLDRAIDBATTLERESULTREQUEST_SET_GROUPID_OFFSET UNITYSDK_OFFSET(0xF50E50)
+#define MX_NETWORKPROTOCOL_WORLDRAIDBATTLERESULTREQUEST_SET_ISPRACTICE_OFFSET UNITYSDK_OFFSET(0xF50E60)
+#define MX_NETWORKPROTOCOL_WORLDRAIDBATTLERESULTREQUEST_GET_ISTICKET_OFFSET UNITYSDK_OFFSET(0xF50E70)
+#define MX_NETWORKPROTOCOL_WORLDRAIDBATTLERESULTREQUEST_GET_SEASONID_OFFSET UNITYSDK_OFFSET(0xF50E80)
+#define MX_NETWORKPROTOCOL_WORLDRAIDBATTLERESULTREQUEST_GET_ECHELONID_OFFSET UNITYSDK_OFFSET(0xF50E90)
+#define MX_NETWORKPROTOCOL_WORLDRAIDBATTLERESULTREQUEST_SET_SUMMARY_OFFSET UNITYSDK_OFFSET(0xF50EA0)
+#define MX_NETWORKPROTOCOL_WORLDRAIDBATTLERESULTREQUEST_SET_SEASONID_OFFSET UNITYSDK_OFFSET(0xF50EB0)
+#define MX_NETWORKPROTOCOL_WORLDRAIDBATTLERESULTREQUEST_GET_UNIQUEID_OFFSET UNITYSDK_OFFSET(0xF50EC0)
+#define MX_NETWORKPROTOCOL_WORLDRAIDBATTLERESULTREQUEST_SET_UNIQUEID_OFFSET UNITYSDK_OFFSET(0xF50ED0)
+#define MX_NETWORKPROTOCOL_WORLDRAIDBATTLERESULTREQUEST_SET_ASSISTUSEINFOS_OFFSET UNITYSDK_OFFSET(0xF50EE0)
+#define MX_NETWORKPROTOCOL_WORLDRAIDBATTLERESULTREQUEST_SET_ECHELONID_OFFSET UNITYSDK_OFFSET(0xF50EF0)
+#define MX_NETWORKPROTOCOL_WORLDRAIDBATTLERESULTREQUEST_GET_PROTOCOL_OFFSET UNITYSDK_OFFSET(0xF50F00)
+#define MX_NETWORKPROTOCOL_WORLDRAIDBATTLERESULTREQUEST_GET_GROUPID_OFFSET UNITYSDK_OFFSET(0xF50F10)
+#define MX_NETWORKPROTOCOL_WORLDRAIDBATTLERESULTREQUEST_GET_ASSISTUSEINFOS_OFFSET UNITYSDK_OFFSET(0xF50F20)
+#define MX_NETWORKPROTOCOL_WORLDRAIDBATTLERESULTREQUEST_GET_PHASEID_OFFSET UNITYSDK_OFFSET(0xF50F30)
+
+namespace MX::NetworkProtocol
+{
+	inline static constexpr unsigned int WorldRaidBattleResultRequest_TypeDefinitionIndex = 12205;
+
+	class WorldRaidBattleResultRequest : public Il2CppObject
+	{
+	public:
+		::System::Int64 _SeasonId_k__BackingField; // 0x40
+		::System::Int64 _PhaseId_k__BackingField; // 0x48
+		::System::Int64 _GroupId_k__BackingField; // 0x50
+		::System::Int64 _UniqueId_k__BackingField; // 0x58
+		::System::Int64 _EchelonId_k__BackingField; // 0x60
+		::System::Boolean _IsPractice_k__BackingField; // 0x68
+		::System::Boolean _IsTicket_k__BackingField; // 0x69
+		::MX::Logic::Battles::Summary::BattleSummary* _Summary_k__BackingField; // 0x70
+		Il2CppObject* _AssistUseInfos_k__BackingField; // 0x78
+
+		::System::Void set_PhaseId(::System::Int64 arg)
+		{
+			((::System::Void(*)(::System::Int64, ::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_WORLDRAIDBATTLERESULTREQUEST_SET_PHASEID_OFFSET))(arg, nullptr);
+		}
+
+		::System::Boolean get_IsPractice()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_WORLDRAIDBATTLERESULTREQUEST_GET_ISPRACTICE_OFFSET))(nullptr);
+		}
+
+		::System::Void .ctor()
+		{
+			((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_WORLDRAIDBATTLERESULTREQUEST_.CTOR_OFFSET))(nullptr);
+		}
+
+		::System::Void set_IsTicket(::System::Boolean arg)
+		{
+			((::System::Void(*)(::System::Boolean, ::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_WORLDRAIDBATTLERESULTREQUEST_SET_ISTICKET_OFFSET))(arg, nullptr);
+		}
+
+		::MX::Logic::Battles::Summary::BattleSummary* get_Summary()
+		{
+			return ((::MX::Logic::Battles::Summary::BattleSummary*(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_WORLDRAIDBATTLERESULTREQUEST_GET_SUMMARY_OFFSET))(nullptr);
+		}
+
+		::System::Void set_GroupId(::System::Int64 arg)
+		{
+			((::System::Void(*)(::System::Int64, ::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_WORLDRAIDBATTLERESULTREQUEST_SET_GROUPID_OFFSET))(arg, nullptr);
+		}
+
+		::System::Void set_IsPractice(::System::Boolean arg)
+		{
+			((::System::Void(*)(::System::Boolean, ::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_WORLDRAIDBATTLERESULTREQUEST_SET_ISPRACTICE_OFFSET))(arg, nullptr);
+		}
+
+		::System::Boolean get_IsTicket()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_WORLDRAIDBATTLERESULTREQUEST_GET_ISTICKET_OFFSET))(nullptr);
+		}
+
+		::System::Int64 get_SeasonId()
+		{
+			return ((::System::Int64(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_WORLDRAIDBATTLERESULTREQUEST_GET_SEASONID_OFFSET))(nullptr);
+		}
+
+		::System::Int64 get_EchelonId()
+		{
+			return ((::System::Int64(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_WORLDRAIDBATTLERESULTREQUEST_GET_ECHELONID_OFFSET))(nullptr);
+		}
+
+		::System::Void set_Summary(::MX::Logic::Battles::Summary::BattleSummary* arg)
+		{
+			((::System::Void(*)(::MX::Logic::Battles::Summary::BattleSummary*, ::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_WORLDRAIDBATTLERESULTREQUEST_SET_SUMMARY_OFFSET))(arg, nullptr);
+		}
+
+		::System::Void set_SeasonId(::System::Int64 arg)
+		{
+			((::System::Void(*)(::System::Int64, ::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_WORLDRAIDBATTLERESULTREQUEST_SET_SEASONID_OFFSET))(arg, nullptr);
+		}
+
+		::System::Int64 get_UniqueId()
+		{
+			return ((::System::Int64(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_WORLDRAIDBATTLERESULTREQUEST_GET_UNIQUEID_OFFSET))(nullptr);
+		}
+
+		::System::Void set_UniqueId(::System::Int64 arg)
+		{
+			((::System::Void(*)(::System::Int64, ::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_WORLDRAIDBATTLERESULTREQUEST_SET_UNIQUEID_OFFSET))(arg, nullptr);
+		}
+
+		::System::Void set_AssistUseInfos(Il2CppObject* arg)
+		{
+			((::System::Void(*)(Il2CppObject*, ::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_WORLDRAIDBATTLERESULTREQUEST_SET_ASSISTUSEINFOS_OFFSET))(arg, nullptr);
+		}
+
+		::System::Void set_EchelonId(::System::Int64 arg)
+		{
+			((::System::Void(*)(::System::Int64, ::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_WORLDRAIDBATTLERESULTREQUEST_SET_ECHELONID_OFFSET))(arg, nullptr);
+		}
+
+		::MX::NetworkProtocol::Protocol* get_Protocol()
+		{
+			return ((::MX::NetworkProtocol::Protocol*(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_WORLDRAIDBATTLERESULTREQUEST_GET_PROTOCOL_OFFSET))(nullptr);
+		}
+
+		::System::Int64 get_GroupId()
+		{
+			return ((::System::Int64(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_WORLDRAIDBATTLERESULTREQUEST_GET_GROUPID_OFFSET))(nullptr);
+		}
+
+		Il2CppObject* get_AssistUseInfos()
+		{
+			return ((Il2CppObject*(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_WORLDRAIDBATTLERESULTREQUEST_GET_ASSISTUSEINFOS_OFFSET))(nullptr);
+		}
+
+		::System::Int64 get_PhaseId()
+		{
+			return ((::System::Int64(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_WORLDRAIDBATTLERESULTREQUEST_GET_PHASEID_OFFSET))(nullptr);
+		}
+
+	};
+}
+

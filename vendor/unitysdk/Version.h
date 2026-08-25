@@ -1,0 +1,13 @@
+#pragma once
+#include "unitysdk.h"
+
+	inline static constexpr unsigned int Version_TypeDefinitionIndex = 33809;
+
+	class Version : public Il2CppObject
+	{
+	public:
+		::System::Int32 value__; // 0x10
+		Version* Initial; // 0x0
+
+	};
+

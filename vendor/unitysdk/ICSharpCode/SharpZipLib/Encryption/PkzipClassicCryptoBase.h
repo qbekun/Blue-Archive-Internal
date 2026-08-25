@@ -1,0 +1,46 @@
+#pragma once
+#include "../../../unitysdk.h"
+
+#define ICSHARPCODE_SHARPZIPLIB_ENCRYPTION_PKZIPCLASSICCRYPTOBASE_TRANSFORMBYTE_OFFSET UNITYSDK_OFFSET(0x9055AD0)
+#define ICSHARPCODE_SHARPZIPLIB_ENCRYPTION_PKZIPCLASSICCRYPTOBASE_SETKEYS_OFFSET UNITYSDK_OFFSET(0x9055B10)
+#define ICSHARPCODE_SHARPZIPLIB_ENCRYPTION_PKZIPCLASSICCRYPTOBASE_UPDATEKEYS_OFFSET UNITYSDK_OFFSET(0x9055C60)
+#define ICSHARPCODE_SHARPZIPLIB_ENCRYPTION_PKZIPCLASSICCRYPTOBASE_RESET_OFFSET UNITYSDK_OFFSET(0x9055E50)
+#define ICSHARPCODE_SHARPZIPLIB_ENCRYPTION_PKZIPCLASSICCRYPTOBASE_.CTOR_OFFSET UNITYSDK_OFFSET(0x9055EB0)
+
+namespace ICSharpCode::SharpZipLib::Encryption
+{
+	inline static constexpr unsigned int PkzipClassicCryptoBase_TypeDefinitionIndex = 37132;
+
+	class PkzipClassicCryptoBase : public Il2CppObject
+	{
+	public:
+		::Il2CppArray<::System::Object*>* keys; // 0x10
+
+		::System::Byte TransformByte()
+		{
+			return (return (::System::Byte(*)(::PVOID))((::PBYTE)hIl2Cpp + ICSHARPCODE_SHARPZIPLIB_ENCRYPTION_PKZIPCLASSICCRYPTOBASE_TRANSFORMBYTE_OFFSET))(nullptr);
+		}
+
+		::System::Void SetKeys(::Il2CppArray<::System::Object*>* arg)
+		{
+			((::System::Void(*)(::Il2CppArray<::System::Object*>*, ::PVOID))((::PBYTE)hIl2Cpp + ICSHARPCODE_SHARPZIPLIB_ENCRYPTION_PKZIPCLASSICCRYPTOBASE_SETKEYS_OFFSET))(arg, nullptr);
+		}
+
+		::System::Void UpdateKeys(::System::Byte arg)
+		{
+			((::System::Void(*)(::System::Byte, ::PVOID))((::PBYTE)hIl2Cpp + ICSHARPCODE_SHARPZIPLIB_ENCRYPTION_PKZIPCLASSICCRYPTOBASE_UPDATEKEYS_OFFSET))(arg, nullptr);
+		}
+
+		::System::Void Reset()
+		{
+			((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + ICSHARPCODE_SHARPZIPLIB_ENCRYPTION_PKZIPCLASSICCRYPTOBASE_RESET_OFFSET))(nullptr);
+		}
+
+		::System::Void .ctor()
+		{
+			((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + ICSHARPCODE_SHARPZIPLIB_ENCRYPTION_PKZIPCLASSICCRYPTOBASE_.CTOR_OFFSET))(nullptr);
+		}
+
+	};
+}
+

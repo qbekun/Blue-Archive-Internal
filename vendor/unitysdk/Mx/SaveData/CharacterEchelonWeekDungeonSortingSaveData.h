@@ -1,0 +1,67 @@
+#pragma once
+#include "../../unitysdk.h"
+
+namespace FlatData { class EchelonType; }
+
+#define MX_SAVEDATA_CHARACTERECHELONWEEKDUNGEONSORTINGSAVEDATA_.CTOR_OFFSET UNITYSDK_OFFSET(0x1CF9780)
+#define MX_SAVEDATA_CHARACTERECHELONWEEKDUNGEONSORTINGSAVEDATA_SETSORTINGRULEWRAPPER_OFFSET UNITYSDK_OFFSET(0x1CF9810)
+#define MX_SAVEDATA_CHARACTERECHELONWEEKDUNGEONSORTINGSAVEDATA_GETSORTINGRULEWRAPPER_OFFSET UNITYSDK_OFFSET(0x1CF9870)
+#define MX_SAVEDATA_CHARACTERECHELONWEEKDUNGEONSORTINGSAVEDATA_VALIDATE_OFFSET UNITYSDK_OFFSET(0x1CF9920)
+#define MX_SAVEDATA_CHARACTERECHELONWEEKDUNGEONSORTINGSAVEDATA_CLONE_OFFSET UNITYSDK_OFFSET(0x1CF9CE0)
+#define MX_SAVEDATA_CHARACTERECHELONWEEKDUNGEONSORTINGSAVEDATA_SETCURRENTECHELONTYPE_OFFSET UNITYSDK_OFFSET(0x1CF9D40)
+#define MX_SAVEDATA_CHARACTERECHELONWEEKDUNGEONSORTINGSAVEDATA_SET_CURRENTECHELONTYPE_OFFSET UNITYSDK_OFFSET(0x1CF9DB0)
+#define MX_SAVEDATA_CHARACTERECHELONWEEKDUNGEONSORTINGSAVEDATA_GET_CURRENTECHELONTYPE_OFFSET UNITYSDK_OFFSET(0x1CF9DC0)
+
+namespace MX::SaveData
+{
+	inline static constexpr unsigned int CharacterEchelonWeekDungeonSortingSaveData_TypeDefinitionIndex = 19926;
+
+	class CharacterEchelonWeekDungeonSortingSaveData : public Il2CppObject
+	{
+	public:
+		Il2CppObject* SavedSubSortingRule; // 0x18
+		::FlatData::EchelonType* _CurrentEchelonType_k__BackingField; // 0x20
+
+		::System::Void .ctor()
+		{
+			((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_SAVEDATA_CHARACTERECHELONWEEKDUNGEONSORTINGSAVEDATA_.CTOR_OFFSET))(nullptr);
+		}
+
+		::System::Void SetSortingRuleWrapper(SortingRuleWrapper* arg)
+		{
+			((::System::Void(*)(SortingRuleWrapper*, ::PVOID))((::PBYTE)hIl2Cpp + MX_SAVEDATA_CHARACTERECHELONWEEKDUNGEONSORTINGSAVEDATA_SETSORTINGRULEWRAPPER_OFFSET))(arg, nullptr);
+		}
+
+		SortingRuleWrapper* GetSortingRuleWrapper(SortingRule* arg)
+		{
+			return (return (SortingRuleWrapper*(*)(SortingRule*, ::PVOID))((::PBYTE)hIl2Cpp + MX_SAVEDATA_CHARACTERECHELONWEEKDUNGEONSORTINGSAVEDATA_GETSORTINGRULEWRAPPER_OFFSET))(arg, nullptr);
+		}
+
+		::System::Boolean Validate()
+		{
+			return (return (::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_SAVEDATA_CHARACTERECHELONWEEKDUNGEONSORTINGSAVEDATA_VALIDATE_OFFSET))(nullptr);
+		}
+
+		::System::Object* Clone()
+		{
+			return (return (::System::Object*(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_SAVEDATA_CHARACTERECHELONWEEKDUNGEONSORTINGSAVEDATA_CLONE_OFFSET))(nullptr);
+		}
+
+		::System::Void SetCurrentEchelonType(::FlatData::EchelonType* arg)
+		{
+			((::System::Void(*)(::FlatData::EchelonType*, ::PVOID))((::PBYTE)hIl2Cpp + MX_SAVEDATA_CHARACTERECHELONWEEKDUNGEONSORTINGSAVEDATA_SETCURRENTECHELONTYPE_OFFSET))(arg, nullptr);
+		}
+
+		::System::Void set_CurrentEchelonType(::FlatData::EchelonType* arg)
+		{
+			((::System::Void(*)(::FlatData::EchelonType*, ::PVOID))((::PBYTE)hIl2Cpp + MX_SAVEDATA_CHARACTERECHELONWEEKDUNGEONSORTINGSAVEDATA_SET_CURRENTECHELONTYPE_OFFSET))(arg, nullptr);
+		}
+
+		::FlatData::EchelonType* get_CurrentEchelonType()
+		{
+			return (return (::FlatData::EchelonType*(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_SAVEDATA_CHARACTERECHELONWEEKDUNGEONSORTINGSAVEDATA_GET_CURRENTECHELONTYPE_OFFSET))(nullptr);
+		}
+
+	};
+}
+

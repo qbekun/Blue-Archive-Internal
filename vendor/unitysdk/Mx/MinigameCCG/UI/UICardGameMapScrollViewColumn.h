@@ -1,0 +1,101 @@
+#pragma once
+#include "../../../unitysdk.h"
+
+namespace MX::Data::Excel { class MinigameCCGLevelNodeExcel; }
+
+#define MX_MINIGAMECCG_UI_UICARDGAMEMAPSCROLLVIEWCOLUMN_SET_SEARCHABLENODEIDS_OFFSET UNITYSDK_OFFSET(0x1E0D270)
+#define MX_MINIGAMECCG_UI_UICARDGAMEMAPSCROLLVIEWCOLUMN_GET_COLUMN_OFFSET UNITYSDK_OFFSET(0x1E0D280)
+#define MX_MINIGAMECCG_UI_UICARDGAMEMAPSCROLLVIEWCOLUMN_GET_NODES_OFFSET UNITYSDK_OFFSET(0x1E0D290)
+#define MX_MINIGAMECCG_UI_UICARDGAMEMAPSCROLLVIEWCOLUMN_SET_NODES_OFFSET UNITYSDK_OFFSET(0x1E0D2A0)
+#define MX_MINIGAMECCG_UI_UICARDGAMEMAPSCROLLVIEWCOLUMN_GET_SEARCHABLENODEIDS_OFFSET UNITYSDK_OFFSET(0x1E0D2B0)
+#define MX_MINIGAMECCG_UI_UICARDGAMEMAPSCROLLVIEWCOLUMN_GET_LEVELNODETABLE_OFFSET UNITYSDK_OFFSET(0x1E0D2C0)
+#define MX_MINIGAMECCG_UI_UICARDGAMEMAPSCROLLVIEWCOLUMN_GET_HASCLEARHISTORY_OFFSET UNITYSDK_OFFSET(0x1E0D2D0)
+#define MX_MINIGAMECCG_UI_UICARDGAMEMAPSCROLLVIEWCOLUMN_SET_LASTCLEARNODEEXCEL_OFFSET UNITYSDK_OFFSET(0x1E0D300)
+#define MX_MINIGAMECCG_UI_UICARDGAMEMAPSCROLLVIEWCOLUMN_SET_NEXTCOLUMNNODECOUNT_OFFSET UNITYSDK_OFFSET(0x1E0D320)
+#define MX_MINIGAMECCG_UI_UICARDGAMEMAPSCROLLVIEWCOLUMN_GET_LASTCLEARNODEEXCEL_OFFSET UNITYSDK_OFFSET(0x1E0D330)
+#define MX_MINIGAMECCG_UI_UICARDGAMEMAPSCROLLVIEWCOLUMN_GET_NEXTCOLUMNNODECOUNT_OFFSET UNITYSDK_OFFSET(0x1E0D340)
+#define MX_MINIGAMECCG_UI_UICARDGAMEMAPSCROLLVIEWCOLUMN_SET_LEVELNODETABLE_OFFSET UNITYSDK_OFFSET(0x1E0D350)
+#define MX_MINIGAMECCG_UI_UICARDGAMEMAPSCROLLVIEWCOLUMN_SET_COLUMN_OFFSET UNITYSDK_OFFSET(0x1E0D360)
+
+namespace MX::MinigameCCG::UI
+{
+	inline static constexpr unsigned int UICardGameMapScrollViewColumn_TypeDefinitionIndex = 20783;
+
+	class UICardGameMapScrollViewColumn : public Il2CppObject
+	{
+	public:
+		::System::Int32 _Column_k__BackingField; // 0x10
+		Il2CppObject* _Nodes_k__BackingField; // 0x18
+		::MX::Data::Excel::MinigameCCGLevelNodeExcel* _LastClearNodeExcel_k__BackingField; // 0x20
+		::System::Int32 _NextColumnNodeCount_k__BackingField; // 0x30
+		Il2CppObject* _SearchableNodeIds_k__BackingField; // 0x38
+		Il2CppObject* _LevelNodeTable_k__BackingField; // 0x40
+
+		::System::Void set_SearchableNodeIds(Il2CppObject* arg)
+		{
+			((::System::Void(*)(Il2CppObject*, ::PVOID))((::PBYTE)hIl2Cpp + MX_MINIGAMECCG_UI_UICARDGAMEMAPSCROLLVIEWCOLUMN_SET_SEARCHABLENODEIDS_OFFSET))(arg, nullptr);
+		}
+
+		::System::Int32 get_Column()
+		{
+			return (return (::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_MINIGAMECCG_UI_UICARDGAMEMAPSCROLLVIEWCOLUMN_GET_COLUMN_OFFSET))(nullptr);
+		}
+
+		Il2CppObject* get_Nodes()
+		{
+			return (return (Il2CppObject*(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_MINIGAMECCG_UI_UICARDGAMEMAPSCROLLVIEWCOLUMN_GET_NODES_OFFSET))(nullptr);
+		}
+
+		::System::Void set_Nodes(Il2CppObject* arg)
+		{
+			((::System::Void(*)(Il2CppObject*, ::PVOID))((::PBYTE)hIl2Cpp + MX_MINIGAMECCG_UI_UICARDGAMEMAPSCROLLVIEWCOLUMN_SET_NODES_OFFSET))(arg, nullptr);
+		}
+
+		Il2CppObject* get_SearchableNodeIds()
+		{
+			return (return (Il2CppObject*(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_MINIGAMECCG_UI_UICARDGAMEMAPSCROLLVIEWCOLUMN_GET_SEARCHABLENODEIDS_OFFSET))(nullptr);
+		}
+
+		Il2CppObject* get_LevelNodeTable()
+		{
+			return (return (Il2CppObject*(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_MINIGAMECCG_UI_UICARDGAMEMAPSCROLLVIEWCOLUMN_GET_LEVELNODETABLE_OFFSET))(nullptr);
+		}
+
+		::System::Boolean get_HasClearHistory()
+		{
+			return (return (::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_MINIGAMECCG_UI_UICARDGAMEMAPSCROLLVIEWCOLUMN_GET_HASCLEARHISTORY_OFFSET))(nullptr);
+		}
+
+		::System::Void set_LastClearNodeExcel(::MX::Data::Excel::MinigameCCGLevelNodeExcel* arg)
+		{
+			((::System::Void(*)(::MX::Data::Excel::MinigameCCGLevelNodeExcel*, ::PVOID))((::PBYTE)hIl2Cpp + MX_MINIGAMECCG_UI_UICARDGAMEMAPSCROLLVIEWCOLUMN_SET_LASTCLEARNODEEXCEL_OFFSET))(arg, nullptr);
+		}
+
+		::System::Void set_NextColumnNodeCount(::System::Int32 arg)
+		{
+			((::System::Void(*)(::System::Int32, ::PVOID))((::PBYTE)hIl2Cpp + MX_MINIGAMECCG_UI_UICARDGAMEMAPSCROLLVIEWCOLUMN_SET_NEXTCOLUMNNODECOUNT_OFFSET))(arg, nullptr);
+		}
+
+		::MX::Data::Excel::MinigameCCGLevelNodeExcel* get_LastClearNodeExcel()
+		{
+			return (return (::MX::Data::Excel::MinigameCCGLevelNodeExcel*(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_MINIGAMECCG_UI_UICARDGAMEMAPSCROLLVIEWCOLUMN_GET_LASTCLEARNODEEXCEL_OFFSET))(nullptr);
+		}
+
+		::System::Int32 get_NextColumnNodeCount()
+		{
+			return (return (::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_MINIGAMECCG_UI_UICARDGAMEMAPSCROLLVIEWCOLUMN_GET_NEXTCOLUMNNODECOUNT_OFFSET))(nullptr);
+		}
+
+		::System::Void set_LevelNodeTable(Il2CppObject* arg)
+		{
+			((::System::Void(*)(Il2CppObject*, ::PVOID))((::PBYTE)hIl2Cpp + MX_MINIGAMECCG_UI_UICARDGAMEMAPSCROLLVIEWCOLUMN_SET_LEVELNODETABLE_OFFSET))(arg, nullptr);
+		}
+
+		::System::Void set_Column(::System::Int32 arg)
+		{
+			((::System::Void(*)(::System::Int32, ::PVOID))((::PBYTE)hIl2Cpp + MX_MINIGAMECCG_UI_UICARDGAMEMAPSCROLLVIEWCOLUMN_SET_COLUMN_OFFSET))(arg, nullptr);
+		}
+
+	};
+}
+

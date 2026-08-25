@@ -1,0 +1,106 @@
+#pragma once
+#include "../../../unitysdk.h"
+
+namespace FlatData { class ContentType; }
+namespace MX::GameLogic::DBModel { class CampaignMainStageSaveDB; }
+namespace MX::GameLogic::DBModel { class EventContentMainStageSaveDB; }
+namespace MX::Data { class CampaignStageInfo; }
+
+#define MX_GAMELOGIC_DBMODEL_EVENTCONTENTMAINSTAGESAVEDB_GET_CONTENTTYPE_OFFSET UNITYSDK_OFFSET(0xFE5C70)
+#define MX_GAMELOGIC_DBMODEL_EVENTCONTENTMAINSTAGESAVEDB_GET_SELECTEDBUFFDICT_OFFSET UNITYSDK_OFFSET(0xFE5C80)
+#define MX_GAMELOGIC_DBMODEL_EVENTCONTENTMAINSTAGESAVEDB_SET_SELECTEDBUFFDICT_OFFSET UNITYSDK_OFFSET(0xFE5C90)
+#define MX_GAMELOGIC_DBMODEL_EVENTCONTENTMAINSTAGESAVEDB_SHOULDSERIALIZESELECTEDBUFFDICT_OFFSET UNITYSDK_OFFSET(0xFE5CB0)
+#define MX_GAMELOGIC_DBMODEL_EVENTCONTENTMAINSTAGESAVEDB_GET_ISBUFFSELECTPOPUPOPEN_OFFSET UNITYSDK_OFFSET(0xFE5CF0)
+#define MX_GAMELOGIC_DBMODEL_EVENTCONTENTMAINSTAGESAVEDB_GET_CURRENTAPPEAREDBUFFGROUPID_OFFSET UNITYSDK_OFFSET(0xFE5D00)
+#define MX_GAMELOGIC_DBMODEL_EVENTCONTENTMAINSTAGESAVEDB_SET_CURRENTAPPEAREDBUFFGROUPID_OFFSET UNITYSDK_OFFSET(0xFE5D10)
+#define MX_GAMELOGIC_DBMODEL_EVENTCONTENTMAINSTAGESAVEDB_.CTOR_OFFSET UNITYSDK_OFFSET(0xFE5D20)
+#define MX_GAMELOGIC_DBMODEL_EVENTCONTENTMAINSTAGESAVEDB_.CTOR_OFFSET UNITYSDK_OFFSET(0xFE6160)
+#define MX_GAMELOGIC_DBMODEL_EVENTCONTENTMAINSTAGESAVEDB_.CTOR_OFFSET UNITYSDK_OFFSET(0xFE63A0)
+#define MX_GAMELOGIC_DBMODEL_EVENTCONTENTMAINSTAGESAVEDB_CLONE_OFFSET UNITYSDK_OFFSET(0xFE6490)
+#define MX_GAMELOGIC_DBMODEL_EVENTCONTENTMAINSTAGESAVEDB_GETSTAGEINFO_OFFSET UNITYSDK_OFFSET(0xFE81D0)
+#define MX_GAMELOGIC_DBMODEL_EVENTCONTENTMAINSTAGESAVEDB_TRYSELECTBUFF_OFFSET UNITYSDK_OFFSET(0xFE8290)
+#define MX_GAMELOGIC_DBMODEL_EVENTCONTENTMAINSTAGESAVEDB_TRYSETCURRENTAPPEAREDBUFFGROUPID_OFFSET UNITYSDK_OFFSET(0xFE8330)
+
+namespace MX::GameLogic::DBModel
+{
+	inline static constexpr unsigned int EventContentMainStageSaveDB_TypeDefinitionIndex = 12503;
+
+	class EventContentMainStageSaveDB : public Il2CppObject
+	{
+	public:
+		Il2CppObject* _SelectedBuffDict_k__BackingField; // 0xE8
+		::System::Int64 _CurrentAppearedBuffGroupId_k__BackingField; // 0xF0
+
+		::FlatData::ContentType* get_ContentType()
+		{
+			return ((::FlatData::ContentType*(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_GAMELOGIC_DBMODEL_EVENTCONTENTMAINSTAGESAVEDB_GET_CONTENTTYPE_OFFSET))(nullptr);
+		}
+
+		Il2CppObject* get_SelectedBuffDict()
+		{
+			return ((Il2CppObject*(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_GAMELOGIC_DBMODEL_EVENTCONTENTMAINSTAGESAVEDB_GET_SELECTEDBUFFDICT_OFFSET))(nullptr);
+		}
+
+		::System::Void set_SelectedBuffDict(Il2CppObject* arg)
+		{
+			((::System::Void(*)(Il2CppObject*, ::PVOID))((::PBYTE)hIl2Cpp + MX_GAMELOGIC_DBMODEL_EVENTCONTENTMAINSTAGESAVEDB_SET_SELECTEDBUFFDICT_OFFSET))(arg, nullptr);
+		}
+
+		::System::Boolean ShouldSerializeSelectedBuffDict()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_GAMELOGIC_DBMODEL_EVENTCONTENTMAINSTAGESAVEDB_SHOULDSERIALIZESELECTEDBUFFDICT_OFFSET))(nullptr);
+		}
+
+		::System::Boolean get_IsBuffSelectPopupOpen()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_GAMELOGIC_DBMODEL_EVENTCONTENTMAINSTAGESAVEDB_GET_ISBUFFSELECTPOPUPOPEN_OFFSET))(nullptr);
+		}
+
+		::System::Int64 get_CurrentAppearedBuffGroupId()
+		{
+			return ((::System::Int64(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_GAMELOGIC_DBMODEL_EVENTCONTENTMAINSTAGESAVEDB_GET_CURRENTAPPEAREDBUFFGROUPID_OFFSET))(nullptr);
+		}
+
+		::System::Void set_CurrentAppearedBuffGroupId(::System::Int64 arg)
+		{
+			((::System::Void(*)(::System::Int64, ::PVOID))((::PBYTE)hIl2Cpp + MX_GAMELOGIC_DBMODEL_EVENTCONTENTMAINSTAGESAVEDB_SET_CURRENTAPPEAREDBUFFGROUPID_OFFSET))(arg, nullptr);
+		}
+
+		::System::Void .ctor()
+		{
+			((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_GAMELOGIC_DBMODEL_EVENTCONTENTMAINSTAGESAVEDB_.CTOR_OFFSET))(nullptr);
+		}
+
+		::System::Void .ctor(::MX::GameLogic::DBModel::CampaignMainStageSaveDB* arg)
+		{
+			((::System::Void(*)(::MX::GameLogic::DBModel::CampaignMainStageSaveDB*, ::PVOID))((::PBYTE)hIl2Cpp + MX_GAMELOGIC_DBMODEL_EVENTCONTENTMAINSTAGESAVEDB_.CTOR_OFFSET))(arg, nullptr);
+		}
+
+		::System::Void .ctor(::MX::GameLogic::DBModel::EventContentMainStageSaveDB* arg)
+		{
+			((::System::Void(*)(::MX::GameLogic::DBModel::EventContentMainStageSaveDB*, ::PVOID))((::PBYTE)hIl2Cpp + MX_GAMELOGIC_DBMODEL_EVENTCONTENTMAINSTAGESAVEDB_.CTOR_OFFSET))(arg, nullptr);
+		}
+
+		::MX::GameLogic::DBModel::CampaignMainStageSaveDB* Clone()
+		{
+			return ((::MX::GameLogic::DBModel::CampaignMainStageSaveDB*(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_GAMELOGIC_DBMODEL_EVENTCONTENTMAINSTAGESAVEDB_CLONE_OFFSET))(nullptr);
+		}
+
+		::MX::Data::CampaignStageInfo* GetStageInfo()
+		{
+			return ((::MX::Data::CampaignStageInfo*(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_GAMELOGIC_DBMODEL_EVENTCONTENTMAINSTAGESAVEDB_GETSTAGEINFO_OFFSET))(nullptr);
+		}
+
+		::System::Boolean TrySelectBuff(::System::Int64 arg)
+		{
+			return ((::System::Boolean(*)(::System::Int64, ::PVOID))((::PBYTE)hIl2Cpp + MX_GAMELOGIC_DBMODEL_EVENTCONTENTMAINSTAGESAVEDB_TRYSELECTBUFF_OFFSET))(arg, nullptr);
+		}
+
+		::System::Boolean TrySetCurrentAppearedBuffGroupId(::System::Int64 arg)
+		{
+			return ((::System::Boolean(*)(::System::Int64, ::PVOID))((::PBYTE)hIl2Cpp + MX_GAMELOGIC_DBMODEL_EVENTCONTENTMAINSTAGESAVEDB_TRYSETCURRENTAPPEAREDBUFFGROUPID_OFFSET))(arg, nullptr);
+		}
+
+	};
+}
+

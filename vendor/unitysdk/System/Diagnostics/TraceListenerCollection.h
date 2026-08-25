@@ -1,0 +1,130 @@
+#pragma once
+#include "../../unitysdk.h"
+
+#define SYSTEM_DIAGNOSTICS_TRACELISTENERCOLLECTION_.CTOR_OFFSET UNITYSDK_OFFSET(0x9AFF800)
+#define SYSTEM_DIAGNOSTICS_TRACELISTENERCOLLECTION_GET_COUNT_OFFSET UNITYSDK_OFFSET(0x9B00710)
+#define SYSTEM_DIAGNOSTICS_TRACELISTENERCOLLECTION_ADD_OFFSET UNITYSDK_OFFSET(0x9AFF9C0)
+#define SYSTEM_DIAGNOSTICS_TRACELISTENERCOLLECTION_CLEAR_OFFSET UNITYSDK_OFFSET(0x9B008C0)
+#define SYSTEM_DIAGNOSTICS_TRACELISTENERCOLLECTION_GETENUMERATOR_OFFSET UNITYSDK_OFFSET(0x9B00930)
+#define SYSTEM_DIAGNOSTICS_TRACELISTENERCOLLECTION_INITIALIZELISTENER_OFFSET UNITYSDK_OFFSET(0x9B00740)
+#define SYSTEM_DIAGNOSTICS_TRACELISTENERCOLLECTION_REMOVEAT_OFFSET UNITYSDK_OFFSET(0x9B00960)
+#define SYSTEM_DIAGNOSTICS_TRACELISTENERCOLLECTION_SYSTEM.COLLECTIONS.ILIST.GET_ITEM_OFFSET UNITYSDK_OFFSET(0x9B00AB0)
+#define SYSTEM_DIAGNOSTICS_TRACELISTENERCOLLECTION_SYSTEM.COLLECTIONS.ILIST.SET_ITEM_OFFSET UNITYSDK_OFFSET(0x9B00AE0)
+#define SYSTEM_DIAGNOSTICS_TRACELISTENERCOLLECTION_SYSTEM.COLLECTIONS.ILIST.GET_ISREADONLY_OFFSET UNITYSDK_OFFSET(0x9B00BF0)
+#define SYSTEM_DIAGNOSTICS_TRACELISTENERCOLLECTION_SYSTEM.COLLECTIONS.ILIST.GET_ISFIXEDSIZE_OFFSET UNITYSDK_OFFSET(0x9B00C00)
+#define SYSTEM_DIAGNOSTICS_TRACELISTENERCOLLECTION_SYSTEM.COLLECTIONS.ILIST.ADD_OFFSET UNITYSDK_OFFSET(0x9B00C10)
+#define SYSTEM_DIAGNOSTICS_TRACELISTENERCOLLECTION_SYSTEM.COLLECTIONS.ILIST.CONTAINS_OFFSET UNITYSDK_OFFSET(0x9B00E40)
+#define SYSTEM_DIAGNOSTICS_TRACELISTENERCOLLECTION_SYSTEM.COLLECTIONS.ILIST.INDEXOF_OFFSET UNITYSDK_OFFSET(0x9B00E70)
+#define SYSTEM_DIAGNOSTICS_TRACELISTENERCOLLECTION_SYSTEM.COLLECTIONS.ILIST.INSERT_OFFSET UNITYSDK_OFFSET(0x9B00EA0)
+#define SYSTEM_DIAGNOSTICS_TRACELISTENERCOLLECTION_SYSTEM.COLLECTIONS.ILIST.REMOVE_OFFSET UNITYSDK_OFFSET(0x9B010C0)
+#define SYSTEM_DIAGNOSTICS_TRACELISTENERCOLLECTION_SYSTEM.COLLECTIONS.ICOLLECTION.GET_SYNCROOT_OFFSET UNITYSDK_OFFSET(0x9B01210)
+#define SYSTEM_DIAGNOSTICS_TRACELISTENERCOLLECTION_SYSTEM.COLLECTIONS.ICOLLECTION.GET_ISSYNCHRONIZED_OFFSET UNITYSDK_OFFSET(0x9B01220)
+#define SYSTEM_DIAGNOSTICS_TRACELISTENERCOLLECTION_SYSTEM.COLLECTIONS.ICOLLECTION.COPYTO_OFFSET UNITYSDK_OFFSET(0x9B01230)
+
+namespace System::Diagnostics
+{
+	inline static constexpr unsigned int TraceListenerCollection_TypeDefinitionIndex = 29249;
+
+	class TraceListenerCollection : public Il2CppObject
+	{
+	public:
+		::System::Collections::ArrayList* list; // 0x10
+
+		::System::Void .ctor()
+		{
+			((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_DIAGNOSTICS_TRACELISTENERCOLLECTION_.CTOR_OFFSET))(nullptr);
+		}
+
+		::System::Int32 get_Count()
+		{
+			return (return (::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_DIAGNOSTICS_TRACELISTENERCOLLECTION_GET_COUNT_OFFSET))(nullptr);
+		}
+
+		::System::Int32 Add(::System::Diagnostics::TraceListener* arg)
+		{
+			return (return (::System::Int32(*)(::System::Diagnostics::TraceListener*, ::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_DIAGNOSTICS_TRACELISTENERCOLLECTION_ADD_OFFSET))(arg, nullptr);
+		}
+
+		::System::Void Clear()
+		{
+			((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_DIAGNOSTICS_TRACELISTENERCOLLECTION_CLEAR_OFFSET))(nullptr);
+		}
+
+		::System::Collections::IEnumerator* GetEnumerator()
+		{
+			return (return (::System::Collections::IEnumerator*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_DIAGNOSTICS_TRACELISTENERCOLLECTION_GETENUMERATOR_OFFSET))(nullptr);
+		}
+
+		::System::Void InitializeListener(::System::Diagnostics::TraceListener* arg)
+		{
+			((::System::Void(*)(::System::Diagnostics::TraceListener*, ::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_DIAGNOSTICS_TRACELISTENERCOLLECTION_INITIALIZELISTENER_OFFSET))(arg, nullptr);
+		}
+
+		::System::Void RemoveAt(::System::Int32 arg)
+		{
+			((::System::Void(*)(::System::Int32, ::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_DIAGNOSTICS_TRACELISTENERCOLLECTION_REMOVEAT_OFFSET))(arg, nullptr);
+		}
+
+		::System::Object* System.Collections.IList.get_Item(::System::Int32 arg)
+		{
+			return (return (::System::Object*(*)(::System::Int32, ::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_DIAGNOSTICS_TRACELISTENERCOLLECTION_SYSTEM.COLLECTIONS.ILIST.GET_ITEM_OFFSET))(arg, nullptr);
+		}
+
+		::System::Void System.Collections.IList.set_Item(::System::Int32 arg, ::System::Object* arg)
+		{
+			((::System::Void(*)(::System::Int32, ::System::Object*, ::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_DIAGNOSTICS_TRACELISTENERCOLLECTION_SYSTEM.COLLECTIONS.ILIST.SET_ITEM_OFFSET))(arg, arg, nullptr);
+		}
+
+		::System::Boolean System.Collections.IList.get_IsReadOnly()
+		{
+			return (return (::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_DIAGNOSTICS_TRACELISTENERCOLLECTION_SYSTEM.COLLECTIONS.ILIST.GET_ISREADONLY_OFFSET))(nullptr);
+		}
+
+		::System::Boolean System.Collections.IList.get_IsFixedSize()
+		{
+			return (return (::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_DIAGNOSTICS_TRACELISTENERCOLLECTION_SYSTEM.COLLECTIONS.ILIST.GET_ISFIXEDSIZE_OFFSET))(nullptr);
+		}
+
+		::System::Int32 System.Collections.IList.Add(::System::Object* arg)
+		{
+			return (return (::System::Int32(*)(::System::Object*, ::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_DIAGNOSTICS_TRACELISTENERCOLLECTION_SYSTEM.COLLECTIONS.ILIST.ADD_OFFSET))(arg, nullptr);
+		}
+
+		::System::Boolean System.Collections.IList.Contains(::System::Object* arg)
+		{
+			return (return (::System::Boolean(*)(::System::Object*, ::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_DIAGNOSTICS_TRACELISTENERCOLLECTION_SYSTEM.COLLECTIONS.ILIST.CONTAINS_OFFSET))(arg, nullptr);
+		}
+
+		::System::Int32 System.Collections.IList.IndexOf(::System::Object* arg)
+		{
+			return (return (::System::Int32(*)(::System::Object*, ::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_DIAGNOSTICS_TRACELISTENERCOLLECTION_SYSTEM.COLLECTIONS.ILIST.INDEXOF_OFFSET))(arg, nullptr);
+		}
+
+		::System::Void System.Collections.IList.Insert(::System::Int32 arg, ::System::Object* arg)
+		{
+			((::System::Void(*)(::System::Int32, ::System::Object*, ::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_DIAGNOSTICS_TRACELISTENERCOLLECTION_SYSTEM.COLLECTIONS.ILIST.INSERT_OFFSET))(arg, arg, nullptr);
+		}
+
+		::System::Void System.Collections.IList.Remove(::System::Object* arg)
+		{
+			((::System::Void(*)(::System::Object*, ::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_DIAGNOSTICS_TRACELISTENERCOLLECTION_SYSTEM.COLLECTIONS.ILIST.REMOVE_OFFSET))(arg, nullptr);
+		}
+
+		::System::Object* System.Collections.ICollection.get_SyncRoot()
+		{
+			return (return (::System::Object*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_DIAGNOSTICS_TRACELISTENERCOLLECTION_SYSTEM.COLLECTIONS.ICOLLECTION.GET_SYNCROOT_OFFSET))(nullptr);
+		}
+
+		::System::Boolean System.Collections.ICollection.get_IsSynchronized()
+		{
+			return (return (::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_DIAGNOSTICS_TRACELISTENERCOLLECTION_SYSTEM.COLLECTIONS.ICOLLECTION.GET_ISSYNCHRONIZED_OFFSET))(nullptr);
+		}
+
+		::System::Void System.Collections.ICollection.CopyTo(::System::Array* arg, ::System::Int32 arg)
+		{
+			((::System::Void(*)(::System::Array*, ::System::Int32, ::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_DIAGNOSTICS_TRACELISTENERCOLLECTION_SYSTEM.COLLECTIONS.ICOLLECTION.COPYTO_OFFSET))(arg, arg, nullptr);
+		}
+
+	};
+}
+

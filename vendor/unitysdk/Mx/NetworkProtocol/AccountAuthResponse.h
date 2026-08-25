@@ -1,0 +1,371 @@
+#pragma once
+#include "../../unitysdk.h"
+
+namespace MX::GameLogic::DBModel { class AccountDB; }
+namespace MX::GameLogic::DBModel { class AccountRestrictionsDB; }
+namespace MX::GameLogic::DBModel { class OptionDB; }
+namespace MX::GameLogic::DBModel { class WelcomeCampaignDB; }
+namespace MX::NetworkProtocol { class Protocol; }
+
+#define MX_NETWORKPROTOCOL_ACCOUNTAUTHRESPONSE_GET_ISDEVELOPMENT_OFFSET UNITYSDK_OFFSET(0xF0EEF0)
+#define MX_NETWORKPROTOCOL_ACCOUNTAUTHRESPONSE_SET_NEWLYADDEDSHOPCASHIDS_OFFSET UNITYSDK_OFFSET(0xF0EF00)
+#define MX_NETWORKPROTOCOL_ACCOUNTAUTHRESPONSE_SET_ISSUEALERTINFOS_OFFSET UNITYSDK_OFFSET(0xF0EF20)
+#define MX_NETWORKPROTOCOL_ACCOUNTAUTHRESPONSE_SET_ACCOUNTBANBYNEXONDBS_OFFSET UNITYSDK_OFFSET(0xF0EF40)
+#define MX_NETWORKPROTOCOL_ACCOUNTAUTHRESPONSE_GET_ISSUEALERTINFOS_OFFSET UNITYSDK_OFFSET(0xF0EF60)
+#define MX_NETWORKPROTOCOL_ACCOUNTAUTHRESPONSE_SET_ATTENDANCEBOOKREWARDS_OFFSET UNITYSDK_OFFSET(0xF0EF70)
+#define MX_NETWORKPROTOCOL_ACCOUNTAUTHRESPONSE_GET_DAILYRECORDDBS_OFFSET UNITYSDK_OFFSET(0xF0EF80)
+#define MX_NETWORKPROTOCOL_ACCOUNTAUTHRESPONSE_SET_TTSCDNURI_OFFSET UNITYSDK_OFFSET(0xF0EF90)
+#define MX_NETWORKPROTOCOL_ACCOUNTAUTHRESPONSE_SET_ATTENDANCEHISTORYDBS_OFFSET UNITYSDK_OFFSET(0xF0EFA0)
+#define MX_NETWORKPROTOCOL_ACCOUNTAUTHRESPONSE_GET_NEWLYADDEDSHOPCASHIDS_OFFSET UNITYSDK_OFFSET(0xF0EFB0)
+#define MX_NETWORKPROTOCOL_ACCOUNTAUTHRESPONSE_SET_MINIMUMVERSION_OFFSET UNITYSDK_OFFSET(0xF0EFC0)
+#define MX_NETWORKPROTOCOL_ACCOUNTAUTHRESPONSE_SET_ACCOUNTLIMITEDFLASHSALEDBS_OFFSET UNITYSDK_OFFSET(0xF0EFD0)
+#define MX_NETWORKPROTOCOL_ACCOUNTAUTHRESPONSE_GET_UPDATEREQUIRED_OFFSET UNITYSDK_OFFSET(0xF0EFF0)
+#define MX_NETWORKPROTOCOL_ACCOUNTAUTHRESPONSE_GET_BATTLEVALIDATION_OFFSET UNITYSDK_OFFSET(0xF0F000)
+#define MX_NETWORKPROTOCOL_ACCOUNTAUTHRESPONSE_SET_REPURCHASABLEMONTHLYPRODUCTCOUNTDBS_OFFSET UNITYSDK_OFFSET(0xF0F010)
+#define MX_NETWORKPROTOCOL_ACCOUNTAUTHRESPONSE_GET_WELCOMECAMPAIGNINFO_OFFSET UNITYSDK_OFFSET(0xF0F030)
+#define MX_NETWORKPROTOCOL_ACCOUNTAUTHRESPONSE_SET_OPTIONDB_OFFSET UNITYSDK_OFFSET(0xF0F040)
+#define MX_NETWORKPROTOCOL_ACCOUNTAUTHRESPONSE_SET_ACCOUNTRESTRICTIONSDB_OFFSET UNITYSDK_OFFSET(0xF0F060)
+#define MX_NETWORKPROTOCOL_ACCOUNTAUTHRESPONSE_SET_WEEKLYPRODUCTPARCEL_OFFSET UNITYSDK_OFFSET(0xF0F080)
+#define MX_NETWORKPROTOCOL_ACCOUNTAUTHRESPONSE_GET_ACCOUNTBANBYNEXONDBS_OFFSET UNITYSDK_OFFSET(0xF0F0A0)
+#define MX_NETWORKPROTOCOL_ACCOUNTAUTHRESPONSE_GET_CURRENTVERSION_OFFSET UNITYSDK_OFFSET(0xF0F0B0)
+#define MX_NETWORKPROTOCOL_ACCOUNTAUTHRESPONSE_SET_UPDATEREQUIRED_OFFSET UNITYSDK_OFFSET(0xF0F0C0)
+#define MX_NETWORKPROTOCOL_ACCOUNTAUTHRESPONSE_SET_CURRENTVERSION_OFFSET UNITYSDK_OFFSET(0xF0F0D0)
+#define MX_NETWORKPROTOCOL_ACCOUNTAUTHRESPONSE_GET_OPTIONDB_OFFSET UNITYSDK_OFFSET(0xF0F0E0)
+#define MX_NETWORKPROTOCOL_ACCOUNTAUTHRESPONSE_SET_ENCRYPTEDUID_OFFSET UNITYSDK_OFFSET(0xF0F0F0)
+#define MX_NETWORKPROTOCOL_ACCOUNTAUTHRESPONSE_GET_BIWEEKLYPRODUCTPARCEL_OFFSET UNITYSDK_OFFSET(0xF0F110)
+#define MX_NETWORKPROTOCOL_ACCOUNTAUTHRESPONSE_SET_BATTLEVALIDATION_OFFSET UNITYSDK_OFFSET(0xF0F120)
+#define MX_NETWORKPROTOCOL_ACCOUNTAUTHRESPONSE_GET_ENCRYPTEDUID_OFFSET UNITYSDK_OFFSET(0xF0F130)
+#define MX_NETWORKPROTOCOL_ACCOUNTAUTHRESPONSE_GET_ISARENAANONYMOUS_OFFSET UNITYSDK_OFFSET(0xF0F140)
+#define MX_NETWORKPROTOCOL_ACCOUNTAUTHRESPONSE_SET_WEEKLYPRODUCTMAIL_OFFSET UNITYSDK_OFFSET(0xF0F150)
+#define MX_NETWORKPROTOCOL_ACCOUNTAUTHRESPONSE_SET_MONTHLYPRODUCTMAIL_OFFSET UNITYSDK_OFFSET(0xF0F170)
+#define MX_NETWORKPROTOCOL_ACCOUNTAUTHRESPONSE_GET_MONTHLYPRODUCTPARCEL_OFFSET UNITYSDK_OFFSET(0xF0F190)
+#define MX_NETWORKPROTOCOL_ACCOUNTAUTHRESPONSE_GET_TTSCDNURI_OFFSET UNITYSDK_OFFSET(0xF0F1A0)
+#define MX_NETWORKPROTOCOL_ACCOUNTAUTHRESPONSE_GET_MONTHLYPRODUCTMAIL_OFFSET UNITYSDK_OFFSET(0xF0F1B0)
+#define MX_NETWORKPROTOCOL_ACCOUNTAUTHRESPONSE_SET_ISARENAANONYMOUS_OFFSET UNITYSDK_OFFSET(0xF0F1C0)
+#define MX_NETWORKPROTOCOL_ACCOUNTAUTHRESPONSE_GET_ATTENDANCEBOOKREWARDS_OFFSET UNITYSDK_OFFSET(0xF0F1D0)
+#define MX_NETWORKPROTOCOL_ACCOUNTAUTHRESPONSE_SET_MONTHLYPRODUCTPARCEL_OFFSET UNITYSDK_OFFSET(0xF0F1E0)
+#define MX_NETWORKPROTOCOL_ACCOUNTAUTHRESPONSE_GET_BIWEEKLYPRODUCTMAIL_OFFSET UNITYSDK_OFFSET(0xF0F200)
+#define MX_NETWORKPROTOCOL_ACCOUNTAUTHRESPONSE_GET_ACCOUNTRESTRICTIONSDB_OFFSET UNITYSDK_OFFSET(0xF0F210)
+#define MX_NETWORKPROTOCOL_ACCOUNTAUTHRESPONSE_GET_ACCOUNTLIMITEDFLASHSALEDBS_OFFSET UNITYSDK_OFFSET(0xF0F220)
+#define MX_NETWORKPROTOCOL_ACCOUNTAUTHRESPONSE_GET_ATTENDANCEHISTORYDBS_OFFSET UNITYSDK_OFFSET(0xF0F230)
+#define MX_NETWORKPROTOCOL_ACCOUNTAUTHRESPONSE_.CTOR_OFFSET UNITYSDK_OFFSET(0xF0F240)
+#define MX_NETWORKPROTOCOL_ACCOUNTAUTHRESPONSE_SET_ISDEVELOPMENT_OFFSET UNITYSDK_OFFSET(0xF0F250)
+#define MX_NETWORKPROTOCOL_ACCOUNTAUTHRESPONSE_GET_REPURCHASABLEMONTHLYPRODUCTCOUNTDBS_OFFSET UNITYSDK_OFFSET(0xF0F260)
+#define MX_NETWORKPROTOCOL_ACCOUNTAUTHRESPONSE_SET_BIWEEKLYPRODUCTMAIL_OFFSET UNITYSDK_OFFSET(0xF0F270)
+#define MX_NETWORKPROTOCOL_ACCOUNTAUTHRESPONSE_SET_BIWEEKLYPRODUCTPARCEL_OFFSET UNITYSDK_OFFSET(0xF0F290)
+#define MX_NETWORKPROTOCOL_ACCOUNTAUTHRESPONSE_SET_DAILYRECORDDBS_OFFSET UNITYSDK_OFFSET(0xF0F2B0)
+#define MX_NETWORKPROTOCOL_ACCOUNTAUTHRESPONSE_GET_MINIMUMVERSION_OFFSET UNITYSDK_OFFSET(0xF0F2D0)
+#define MX_NETWORKPROTOCOL_ACCOUNTAUTHRESPONSE_GET_PROTOCOL_OFFSET UNITYSDK_OFFSET(0xF0F2E0)
+#define MX_NETWORKPROTOCOL_ACCOUNTAUTHRESPONSE_SET_ACCOUNTDB_OFFSET UNITYSDK_OFFSET(0xF0F2F0)
+#define MX_NETWORKPROTOCOL_ACCOUNTAUTHRESPONSE_GET_WEEKLYPRODUCTMAIL_OFFSET UNITYSDK_OFFSET(0xF0F300)
+#define MX_NETWORKPROTOCOL_ACCOUNTAUTHRESPONSE_GET_ACCOUNTDB_OFFSET UNITYSDK_OFFSET(0xF0F310)
+#define MX_NETWORKPROTOCOL_ACCOUNTAUTHRESPONSE_SET_WELCOMECAMPAIGNINFO_OFFSET UNITYSDK_OFFSET(0xF0F320)
+#define MX_NETWORKPROTOCOL_ACCOUNTAUTHRESPONSE_GET_WEEKLYPRODUCTPARCEL_OFFSET UNITYSDK_OFFSET(0xF0F340)
+
+namespace MX::NetworkProtocol
+{
+	inline static constexpr unsigned int AccountAuthResponse_TypeDefinitionIndex = 11230;
+
+	class AccountAuthResponse : public Il2CppObject
+	{
+	public:
+		::System::Int64 _CurrentVersion_k__BackingField; // 0x50
+		::System::Int64 _MinimumVersion_k__BackingField; // 0x58
+		::System::Boolean _IsDevelopment_k__BackingField; // 0x60
+		::System::Boolean _BattleValidation_k__BackingField; // 0x61
+		::System::Boolean _UpdateRequired_k__BackingField; // 0x62
+		::System::String* _TTSCdnUri_k__BackingField; // 0x68
+		::MX::GameLogic::DBModel::AccountDB* _AccountDB_k__BackingField; // 0x70
+		Il2CppObject* _AttendanceBookRewards_k__BackingField; // 0x78
+		Il2CppObject* _AttendanceHistoryDBs_k__BackingField; // 0x80
+		Il2CppObject* _RepurchasableMonthlyProductCountDBs_k__BackingField; // 0x88
+		Il2CppObject* _MonthlyProductParcel_k__BackingField; // 0x90
+		Il2CppObject* _MonthlyProductMail_k__BackingField; // 0x98
+		Il2CppObject* _BiweeklyProductParcel_k__BackingField; // 0xA0
+		Il2CppObject* _BiweeklyProductMail_k__BackingField; // 0xA8
+		Il2CppObject* _WeeklyProductParcel_k__BackingField; // 0xB0
+		Il2CppObject* _WeeklyProductMail_k__BackingField; // 0xB8
+		::System::String* _EncryptedUID_k__BackingField; // 0xC0
+		::MX::GameLogic::DBModel::AccountRestrictionsDB* _AccountRestrictionsDB_k__BackingField; // 0xC8
+		Il2CppObject* _IssueAlertInfos_k__BackingField; // 0xD0
+		Il2CppObject* _DailyRecordDBs_k__BackingField; // 0xD8
+		::MX::GameLogic::DBModel::OptionDB* _OptionDB_k__BackingField; // 0xE0
+		::System::Boolean _IsArenaAnonymous_k__BackingField; // 0xE8
+		Il2CppObject* _AccountLimitedFlashSaleDBs_k__BackingField; // 0xF0
+		Il2CppObject* _NewlyAddedShopCashIds_k__BackingField; // 0xF8
+		::MX::GameLogic::DBModel::WelcomeCampaignDB* _WelcomeCampaignInfo_k__BackingField; // 0x100
+		Il2CppObject* _accountBanByNexonDBs_k__BackingField; // 0x108
+
+		::System::Boolean get_IsDevelopment()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_ACCOUNTAUTHRESPONSE_GET_ISDEVELOPMENT_OFFSET))(nullptr);
+		}
+
+		::System::Void set_NewlyAddedShopCashIds(Il2CppObject* arg)
+		{
+			((::System::Void(*)(Il2CppObject*, ::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_ACCOUNTAUTHRESPONSE_SET_NEWLYADDEDSHOPCASHIDS_OFFSET))(arg, nullptr);
+		}
+
+		::System::Void set_IssueAlertInfos(Il2CppObject* arg)
+		{
+			((::System::Void(*)(Il2CppObject*, ::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_ACCOUNTAUTHRESPONSE_SET_ISSUEALERTINFOS_OFFSET))(arg, nullptr);
+		}
+
+		::System::Void set_accountBanByNexonDBs(Il2CppObject* arg)
+		{
+			((::System::Void(*)(Il2CppObject*, ::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_ACCOUNTAUTHRESPONSE_SET_ACCOUNTBANBYNEXONDBS_OFFSET))(arg, nullptr);
+		}
+
+		Il2CppObject* get_IssueAlertInfos()
+		{
+			return ((Il2CppObject*(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_ACCOUNTAUTHRESPONSE_GET_ISSUEALERTINFOS_OFFSET))(nullptr);
+		}
+
+		::System::Void set_AttendanceBookRewards(Il2CppObject* arg)
+		{
+			((::System::Void(*)(Il2CppObject*, ::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_ACCOUNTAUTHRESPONSE_SET_ATTENDANCEBOOKREWARDS_OFFSET))(arg, nullptr);
+		}
+
+		Il2CppObject* get_DailyRecordDBs()
+		{
+			return ((Il2CppObject*(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_ACCOUNTAUTHRESPONSE_GET_DAILYRECORDDBS_OFFSET))(nullptr);
+		}
+
+		::System::Void set_TTSCdnUri(::System::String* str)
+		{
+			((::System::Void(*)(::System::String*, ::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_ACCOUNTAUTHRESPONSE_SET_TTSCDNURI_OFFSET))(str, nullptr);
+		}
+
+		::System::Void set_AttendanceHistoryDBs(Il2CppObject* arg)
+		{
+			((::System::Void(*)(Il2CppObject*, ::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_ACCOUNTAUTHRESPONSE_SET_ATTENDANCEHISTORYDBS_OFFSET))(arg, nullptr);
+		}
+
+		Il2CppObject* get_NewlyAddedShopCashIds()
+		{
+			return ((Il2CppObject*(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_ACCOUNTAUTHRESPONSE_GET_NEWLYADDEDSHOPCASHIDS_OFFSET))(nullptr);
+		}
+
+		::System::Void set_MinimumVersion(::System::Int64 arg)
+		{
+			((::System::Void(*)(::System::Int64, ::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_ACCOUNTAUTHRESPONSE_SET_MINIMUMVERSION_OFFSET))(arg, nullptr);
+		}
+
+		::System::Void set_AccountLimitedFlashSaleDBs(Il2CppObject* arg)
+		{
+			((::System::Void(*)(Il2CppObject*, ::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_ACCOUNTAUTHRESPONSE_SET_ACCOUNTLIMITEDFLASHSALEDBS_OFFSET))(arg, nullptr);
+		}
+
+		::System::Boolean get_UpdateRequired()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_ACCOUNTAUTHRESPONSE_GET_UPDATEREQUIRED_OFFSET))(nullptr);
+		}
+
+		::System::Boolean get_BattleValidation()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_ACCOUNTAUTHRESPONSE_GET_BATTLEVALIDATION_OFFSET))(nullptr);
+		}
+
+		::System::Void set_RepurchasableMonthlyProductCountDBs(Il2CppObject* arg)
+		{
+			((::System::Void(*)(Il2CppObject*, ::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_ACCOUNTAUTHRESPONSE_SET_REPURCHASABLEMONTHLYPRODUCTCOUNTDBS_OFFSET))(arg, nullptr);
+		}
+
+		::MX::GameLogic::DBModel::WelcomeCampaignDB* get_WelcomeCampaignInfo()
+		{
+			return ((::MX::GameLogic::DBModel::WelcomeCampaignDB*(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_ACCOUNTAUTHRESPONSE_GET_WELCOMECAMPAIGNINFO_OFFSET))(nullptr);
+		}
+
+		::System::Void set_OptionDB(::MX::GameLogic::DBModel::OptionDB* arg)
+		{
+			((::System::Void(*)(::MX::GameLogic::DBModel::OptionDB*, ::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_ACCOUNTAUTHRESPONSE_SET_OPTIONDB_OFFSET))(arg, nullptr);
+		}
+
+		::System::Void set_AccountRestrictionsDB(::MX::GameLogic::DBModel::AccountRestrictionsDB* arg)
+		{
+			((::System::Void(*)(::MX::GameLogic::DBModel::AccountRestrictionsDB*, ::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_ACCOUNTAUTHRESPONSE_SET_ACCOUNTRESTRICTIONSDB_OFFSET))(arg, nullptr);
+		}
+
+		::System::Void set_WeeklyProductParcel(Il2CppObject* arg)
+		{
+			((::System::Void(*)(Il2CppObject*, ::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_ACCOUNTAUTHRESPONSE_SET_WEEKLYPRODUCTPARCEL_OFFSET))(arg, nullptr);
+		}
+
+		Il2CppObject* get_accountBanByNexonDBs()
+		{
+			return ((Il2CppObject*(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_ACCOUNTAUTHRESPONSE_GET_ACCOUNTBANBYNEXONDBS_OFFSET))(nullptr);
+		}
+
+		::System::Int64 get_CurrentVersion()
+		{
+			return ((::System::Int64(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_ACCOUNTAUTHRESPONSE_GET_CURRENTVERSION_OFFSET))(nullptr);
+		}
+
+		::System::Void set_UpdateRequired(::System::Boolean arg)
+		{
+			((::System::Void(*)(::System::Boolean, ::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_ACCOUNTAUTHRESPONSE_SET_UPDATEREQUIRED_OFFSET))(arg, nullptr);
+		}
+
+		::System::Void set_CurrentVersion(::System::Int64 arg)
+		{
+			((::System::Void(*)(::System::Int64, ::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_ACCOUNTAUTHRESPONSE_SET_CURRENTVERSION_OFFSET))(arg, nullptr);
+		}
+
+		::MX::GameLogic::DBModel::OptionDB* get_OptionDB()
+		{
+			return ((::MX::GameLogic::DBModel::OptionDB*(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_ACCOUNTAUTHRESPONSE_GET_OPTIONDB_OFFSET))(nullptr);
+		}
+
+		::System::Void set_EncryptedUID(::System::String* str)
+		{
+			((::System::Void(*)(::System::String*, ::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_ACCOUNTAUTHRESPONSE_SET_ENCRYPTEDUID_OFFSET))(str, nullptr);
+		}
+
+		Il2CppObject* get_BiweeklyProductParcel()
+		{
+			return ((Il2CppObject*(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_ACCOUNTAUTHRESPONSE_GET_BIWEEKLYPRODUCTPARCEL_OFFSET))(nullptr);
+		}
+
+		::System::Void set_BattleValidation(::System::Boolean arg)
+		{
+			((::System::Void(*)(::System::Boolean, ::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_ACCOUNTAUTHRESPONSE_SET_BATTLEVALIDATION_OFFSET))(arg, nullptr);
+		}
+
+		::System::String* get_EncryptedUID()
+		{
+			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_ACCOUNTAUTHRESPONSE_GET_ENCRYPTEDUID_OFFSET))(nullptr);
+		}
+
+		::System::Boolean get_IsArenaAnonymous()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_ACCOUNTAUTHRESPONSE_GET_ISARENAANONYMOUS_OFFSET))(nullptr);
+		}
+
+		::System::Void set_WeeklyProductMail(Il2CppObject* arg)
+		{
+			((::System::Void(*)(Il2CppObject*, ::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_ACCOUNTAUTHRESPONSE_SET_WEEKLYPRODUCTMAIL_OFFSET))(arg, nullptr);
+		}
+
+		::System::Void set_MonthlyProductMail(Il2CppObject* arg)
+		{
+			((::System::Void(*)(Il2CppObject*, ::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_ACCOUNTAUTHRESPONSE_SET_MONTHLYPRODUCTMAIL_OFFSET))(arg, nullptr);
+		}
+
+		Il2CppObject* get_MonthlyProductParcel()
+		{
+			return ((Il2CppObject*(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_ACCOUNTAUTHRESPONSE_GET_MONTHLYPRODUCTPARCEL_OFFSET))(nullptr);
+		}
+
+		::System::String* get_TTSCdnUri()
+		{
+			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_ACCOUNTAUTHRESPONSE_GET_TTSCDNURI_OFFSET))(nullptr);
+		}
+
+		Il2CppObject* get_MonthlyProductMail()
+		{
+			return ((Il2CppObject*(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_ACCOUNTAUTHRESPONSE_GET_MONTHLYPRODUCTMAIL_OFFSET))(nullptr);
+		}
+
+		::System::Void set_IsArenaAnonymous(::System::Boolean arg)
+		{
+			((::System::Void(*)(::System::Boolean, ::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_ACCOUNTAUTHRESPONSE_SET_ISARENAANONYMOUS_OFFSET))(arg, nullptr);
+		}
+
+		Il2CppObject* get_AttendanceBookRewards()
+		{
+			return ((Il2CppObject*(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_ACCOUNTAUTHRESPONSE_GET_ATTENDANCEBOOKREWARDS_OFFSET))(nullptr);
+		}
+
+		::System::Void set_MonthlyProductParcel(Il2CppObject* arg)
+		{
+			((::System::Void(*)(Il2CppObject*, ::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_ACCOUNTAUTHRESPONSE_SET_MONTHLYPRODUCTPARCEL_OFFSET))(arg, nullptr);
+		}
+
+		Il2CppObject* get_BiweeklyProductMail()
+		{
+			return ((Il2CppObject*(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_ACCOUNTAUTHRESPONSE_GET_BIWEEKLYPRODUCTMAIL_OFFSET))(nullptr);
+		}
+
+		::MX::GameLogic::DBModel::AccountRestrictionsDB* get_AccountRestrictionsDB()
+		{
+			return ((::MX::GameLogic::DBModel::AccountRestrictionsDB*(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_ACCOUNTAUTHRESPONSE_GET_ACCOUNTRESTRICTIONSDB_OFFSET))(nullptr);
+		}
+
+		Il2CppObject* get_AccountLimitedFlashSaleDBs()
+		{
+			return ((Il2CppObject*(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_ACCOUNTAUTHRESPONSE_GET_ACCOUNTLIMITEDFLASHSALEDBS_OFFSET))(nullptr);
+		}
+
+		Il2CppObject* get_AttendanceHistoryDBs()
+		{
+			return ((Il2CppObject*(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_ACCOUNTAUTHRESPONSE_GET_ATTENDANCEHISTORYDBS_OFFSET))(nullptr);
+		}
+
+		::System::Void .ctor()
+		{
+			((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_ACCOUNTAUTHRESPONSE_.CTOR_OFFSET))(nullptr);
+		}
+
+		::System::Void set_IsDevelopment(::System::Boolean arg)
+		{
+			((::System::Void(*)(::System::Boolean, ::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_ACCOUNTAUTHRESPONSE_SET_ISDEVELOPMENT_OFFSET))(arg, nullptr);
+		}
+
+		Il2CppObject* get_RepurchasableMonthlyProductCountDBs()
+		{
+			return ((Il2CppObject*(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_ACCOUNTAUTHRESPONSE_GET_REPURCHASABLEMONTHLYPRODUCTCOUNTDBS_OFFSET))(nullptr);
+		}
+
+		::System::Void set_BiweeklyProductMail(Il2CppObject* arg)
+		{
+			((::System::Void(*)(Il2CppObject*, ::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_ACCOUNTAUTHRESPONSE_SET_BIWEEKLYPRODUCTMAIL_OFFSET))(arg, nullptr);
+		}
+
+		::System::Void set_BiweeklyProductParcel(Il2CppObject* arg)
+		{
+			((::System::Void(*)(Il2CppObject*, ::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_ACCOUNTAUTHRESPONSE_SET_BIWEEKLYPRODUCTPARCEL_OFFSET))(arg, nullptr);
+		}
+
+		::System::Void set_DailyRecordDBs(Il2CppObject* arg)
+		{
+			((::System::Void(*)(Il2CppObject*, ::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_ACCOUNTAUTHRESPONSE_SET_DAILYRECORDDBS_OFFSET))(arg, nullptr);
+		}
+
+		::System::Int64 get_MinimumVersion()
+		{
+			return ((::System::Int64(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_ACCOUNTAUTHRESPONSE_GET_MINIMUMVERSION_OFFSET))(nullptr);
+		}
+
+		::MX::NetworkProtocol::Protocol* get_Protocol()
+		{
+			return ((::MX::NetworkProtocol::Protocol*(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_ACCOUNTAUTHRESPONSE_GET_PROTOCOL_OFFSET))(nullptr);
+		}
+
+		::System::Void set_AccountDB(::MX::GameLogic::DBModel::AccountDB* arg)
+		{
+			((::System::Void(*)(::MX::GameLogic::DBModel::AccountDB*, ::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_ACCOUNTAUTHRESPONSE_SET_ACCOUNTDB_OFFSET))(arg, nullptr);
+		}
+
+		Il2CppObject* get_WeeklyProductMail()
+		{
+			return ((Il2CppObject*(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_ACCOUNTAUTHRESPONSE_GET_WEEKLYPRODUCTMAIL_OFFSET))(nullptr);
+		}
+
+		::MX::GameLogic::DBModel::AccountDB* get_AccountDB()
+		{
+			return ((::MX::GameLogic::DBModel::AccountDB*(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_ACCOUNTAUTHRESPONSE_GET_ACCOUNTDB_OFFSET))(nullptr);
+		}
+
+		::System::Void set_WelcomeCampaignInfo(::MX::GameLogic::DBModel::WelcomeCampaignDB* arg)
+		{
+			((::System::Void(*)(::MX::GameLogic::DBModel::WelcomeCampaignDB*, ::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_ACCOUNTAUTHRESPONSE_SET_WELCOMECAMPAIGNINFO_OFFSET))(arg, nullptr);
+		}
+
+		Il2CppObject* get_WeeklyProductParcel()
+		{
+			return ((Il2CppObject*(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_ACCOUNTAUTHRESPONSE_GET_WEEKLYPRODUCTPARCEL_OFFSET))(nullptr);
+		}
+
+	};
+}
+

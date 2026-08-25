@@ -1,0 +1,87 @@
+#pragma once
+#include "unitysdk.h"
+
+class UIPopup_RaidRankDetail;
+class MXButton;
+namespace UnityEngine { class GameObject; }
+class RaidRankListScrollViewController;
+
+#define UIPOPUP_RAIDRANKDETAIL_RANKJUMPDELEGATOR_ONCLICKMYRANK_OFFSET UNITYSDK_OFFSET(0x279DF40)
+#define UIPOPUP_RAIDRANKDETAIL_RANKJUMPDELEGATOR_ONCLICKTIER1_OFFSET UNITYSDK_OFFSET(0x279E4D0)
+#define UIPOPUP_RAIDRANKDETAIL_RANKJUMPDELEGATOR_AWAKE_OFFSET UNITYSDK_OFFSET(0x279E870)
+#define UIPOPUP_RAIDRANKDETAIL_RANKJUMPDELEGATOR_.CTOR_OFFSET UNITYSDK_OFFSET(0x279EAD0)
+#define UIPOPUP_RAIDRANKDETAIL_RANKJUMPDELEGATOR_ONCLICKTIER4_OFFSET UNITYSDK_OFFSET(0x279EAE0)
+#define UIPOPUP_RAIDRANKDETAIL_RANKJUMPDELEGATOR_INIT_OFFSET UNITYSDK_OFFSET(0x279CB80)
+#define UIPOPUP_RAIDRANKDETAIL_RANKJUMPDELEGATOR_ONCLICKTIER_OFFSET UNITYSDK_OFFSET(0x279E4E0)
+#define UIPOPUP_RAIDRANKDETAIL_RANKJUMPDELEGATOR_ISRANKINGPOINTONFILTERRANGE_OFFSET UNITYSDK_OFFSET(0x279E2D0)
+#define UIPOPUP_RAIDRANKDETAIL_RANKJUMPDELEGATOR_GET_SCROLLVIEW_OFFSET UNITYSDK_OFFSET(0x279EB00)
+#define UIPOPUP_RAIDRANKDETAIL_RANKJUMPDELEGATOR_ONCLICKTIER3_OFFSET UNITYSDK_OFFSET(0x279EB20)
+#define UIPOPUP_RAIDRANKDETAIL_RANKJUMPDELEGATOR_ONCLICKTIER2_OFFSET UNITYSDK_OFFSET(0x279EB30)
+
+	inline static constexpr unsigned int UIPopup_RaidRankDetail_RankJumpDelegator_TypeDefinitionIndex = 7468;
+
+	class UIPopup_RaidRankDetail_RankJumpDelegator : public Il2CppObject
+	{
+	public:
+		UIPopup_RaidRankDetail* RaidRankDetailPopup; // 0x18
+		::Il2CppArray<::System::Object*>* TierJumpButton; // 0x20
+		MXButton* MyRank; // 0x28
+		::UnityEngine::GameObject* MyRankDisable; // 0x30
+
+		::System::Void OnClickMyRank()
+		{
+			((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + UIPOPUP_RAIDRANKDETAIL_RANKJUMPDELEGATOR_ONCLICKMYRANK_OFFSET))(nullptr);
+		}
+
+		::System::Void OnClickTier1()
+		{
+			((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + UIPOPUP_RAIDRANKDETAIL_RANKJUMPDELEGATOR_ONCLICKTIER1_OFFSET))(nullptr);
+		}
+
+		::System::Void Awake()
+		{
+			((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + UIPOPUP_RAIDRANKDETAIL_RANKJUMPDELEGATOR_AWAKE_OFFSET))(nullptr);
+		}
+
+		::System::Void .ctor()
+		{
+			((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + UIPOPUP_RAIDRANKDETAIL_RANKJUMPDELEGATOR_.CTOR_OFFSET))(nullptr);
+		}
+
+		::System::Void OnClickTier4()
+		{
+			((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + UIPOPUP_RAIDRANKDETAIL_RANKJUMPDELEGATOR_ONCLICKTIER4_OFFSET))(nullptr);
+		}
+
+		::System::Void Init()
+		{
+			((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + UIPOPUP_RAIDRANKDETAIL_RANKJUMPDELEGATOR_INIT_OFFSET))(nullptr);
+		}
+
+		::System::Void OnClickTier(::System::Int32 arg)
+		{
+			((::System::Void(*)(::System::Int32, ::PVOID))((::PBYTE)hIl2Cpp + UIPOPUP_RAIDRANKDETAIL_RANKJUMPDELEGATOR_ONCLICKTIER_OFFSET))(arg, nullptr);
+		}
+
+		::System::Boolean IsRankingPointOnFilterRange(::System::Int64 arg)
+		{
+			return ((::System::Boolean(*)(::System::Int64, ::PVOID))((::PBYTE)hIl2Cpp + UIPOPUP_RAIDRANKDETAIL_RANKJUMPDELEGATOR_ISRANKINGPOINTONFILTERRANGE_OFFSET))(arg, nullptr);
+		}
+
+		RaidRankListScrollViewController* get_ScrollView()
+		{
+			return ((RaidRankListScrollViewController*(*)(::PVOID))((::PBYTE)hIl2Cpp + UIPOPUP_RAIDRANKDETAIL_RANKJUMPDELEGATOR_GET_SCROLLVIEW_OFFSET))(nullptr);
+		}
+
+		::System::Void OnClickTier3()
+		{
+			((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + UIPOPUP_RAIDRANKDETAIL_RANKJUMPDELEGATOR_ONCLICKTIER3_OFFSET))(nullptr);
+		}
+
+		::System::Void OnClickTier2()
+		{
+			((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + UIPOPUP_RAIDRANKDETAIL_RANKJUMPDELEGATOR_ONCLICKTIER2_OFFSET))(nullptr);
+		}
+
+	};
+

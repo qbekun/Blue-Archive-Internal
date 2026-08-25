@@ -1,0 +1,47 @@
+#pragma once
+#include "../../../unitysdk.h"
+
+#define MX_GAMELOGIC_DBMODEL_EVENTCONTENTFORTUNEGACHASTACKCOUNTDB_SET_EVENTCONTENTID_OFFSET UNITYSDK_OFFSET(0xFFDA30)
+#define MX_GAMELOGIC_DBMODEL_EVENTCONTENTFORTUNEGACHASTACKCOUNTDB_SET_GACHASTACKCOUNT_OFFSET UNITYSDK_OFFSET(0xFFDA40)
+#define MX_GAMELOGIC_DBMODEL_EVENTCONTENTFORTUNEGACHASTACKCOUNTDB_GET_EVENTCONTENTID_OFFSET UNITYSDK_OFFSET(0xFFDA50)
+#define MX_GAMELOGIC_DBMODEL_EVENTCONTENTFORTUNEGACHASTACKCOUNTDB_.CTOR_OFFSET UNITYSDK_OFFSET(0xFFDA60)
+#define MX_GAMELOGIC_DBMODEL_EVENTCONTENTFORTUNEGACHASTACKCOUNTDB_GET_GACHASTACKCOUNT_OFFSET UNITYSDK_OFFSET(0xFFDA70)
+
+namespace MX::GameLogic::DBModel
+{
+	inline static constexpr unsigned int EventContentFortuneGachaStackCountDB_TypeDefinitionIndex = 12611;
+
+	class EventContentFortuneGachaStackCountDB : public Il2CppObject
+	{
+	public:
+		::System::Int64 _EventContentId_k__BackingField; // 0x10
+		::System::Int32 _GachaStackCount_k__BackingField; // 0x18
+
+		::System::Void set_EventContentId(::System::Int64 arg)
+		{
+			((::System::Void(*)(::System::Int64, ::PVOID))((::PBYTE)hIl2Cpp + MX_GAMELOGIC_DBMODEL_EVENTCONTENTFORTUNEGACHASTACKCOUNTDB_SET_EVENTCONTENTID_OFFSET))(arg, nullptr);
+		}
+
+		::System::Void set_GachaStackCount(::System::Int32 arg)
+		{
+			((::System::Void(*)(::System::Int32, ::PVOID))((::PBYTE)hIl2Cpp + MX_GAMELOGIC_DBMODEL_EVENTCONTENTFORTUNEGACHASTACKCOUNTDB_SET_GACHASTACKCOUNT_OFFSET))(arg, nullptr);
+		}
+
+		::System::Int64 get_EventContentId()
+		{
+			return ((::System::Int64(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_GAMELOGIC_DBMODEL_EVENTCONTENTFORTUNEGACHASTACKCOUNTDB_GET_EVENTCONTENTID_OFFSET))(nullptr);
+		}
+
+		::System::Void .ctor()
+		{
+			((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_GAMELOGIC_DBMODEL_EVENTCONTENTFORTUNEGACHASTACKCOUNTDB_.CTOR_OFFSET))(nullptr);
+		}
+
+		::System::Int32 get_GachaStackCount()
+		{
+			return ((::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_GAMELOGIC_DBMODEL_EVENTCONTENTFORTUNEGACHASTACKCOUNTDB_GET_GACHASTACKCOUNT_OFFSET))(nullptr);
+		}
+
+	};
+}
+

@@ -1,0 +1,55 @@
+#pragma once
+#include "../../unitysdk.h"
+
+namespace MX::NetworkProtocol { class Protocol; }
+
+#define MX_NETWORKPROTOCOL_OPENCONDITIONEVENTLISTRESPONSE_.CTOR_OFFSET UNITYSDK_OFFSET(0xF4B180)
+#define MX_NETWORKPROTOCOL_OPENCONDITIONEVENTLISTRESPONSE_GET_WORLDRAIDLOCALBOSSDBS_OFFSET UNITYSDK_OFFSET(0xF4B190)
+#define MX_NETWORKPROTOCOL_OPENCONDITIONEVENTLISTRESPONSE_GET_PROTOCOL_OFFSET UNITYSDK_OFFSET(0xF4B1A0)
+#define MX_NETWORKPROTOCOL_OPENCONDITIONEVENTLISTRESPONSE_SET_WORLDRAIDLOCALBOSSDBS_OFFSET UNITYSDK_OFFSET(0xF4B1B0)
+#define MX_NETWORKPROTOCOL_OPENCONDITIONEVENTLISTRESPONSE_GET_CONQUESTTILES_OFFSET UNITYSDK_OFFSET(0xF4B1C0)
+#define MX_NETWORKPROTOCOL_OPENCONDITIONEVENTLISTRESPONSE_SET_CONQUESTTILES_OFFSET UNITYSDK_OFFSET(0xF4B1D0)
+
+namespace MX::NetworkProtocol
+{
+	inline static constexpr unsigned int OpenConditionEventListResponse_TypeDefinitionIndex = 11988;
+
+	class OpenConditionEventListResponse : public Il2CppObject
+	{
+	public:
+		Il2CppObject* _ConquestTiles_k__BackingField; // 0x50
+		Il2CppObject* _WorldRaidLocalBossDBs_k__BackingField; // 0x58
+
+		::System::Void .ctor()
+		{
+			((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_OPENCONDITIONEVENTLISTRESPONSE_.CTOR_OFFSET))(nullptr);
+		}
+
+		Il2CppObject* get_WorldRaidLocalBossDBs()
+		{
+			return ((Il2CppObject*(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_OPENCONDITIONEVENTLISTRESPONSE_GET_WORLDRAIDLOCALBOSSDBS_OFFSET))(nullptr);
+		}
+
+		::MX::NetworkProtocol::Protocol* get_Protocol()
+		{
+			return ((::MX::NetworkProtocol::Protocol*(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_OPENCONDITIONEVENTLISTRESPONSE_GET_PROTOCOL_OFFSET))(nullptr);
+		}
+
+		::System::Void set_WorldRaidLocalBossDBs(Il2CppObject* arg)
+		{
+			((::System::Void(*)(Il2CppObject*, ::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_OPENCONDITIONEVENTLISTRESPONSE_SET_WORLDRAIDLOCALBOSSDBS_OFFSET))(arg, nullptr);
+		}
+
+		Il2CppObject* get_ConquestTiles()
+		{
+			return ((Il2CppObject*(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_OPENCONDITIONEVENTLISTRESPONSE_GET_CONQUESTTILES_OFFSET))(nullptr);
+		}
+
+		::System::Void set_ConquestTiles(Il2CppObject* arg)
+		{
+			((::System::Void(*)(Il2CppObject*, ::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_OPENCONDITIONEVENTLISTRESPONSE_SET_CONQUESTTILES_OFFSET))(arg, nullptr);
+		}
+
+	};
+}
+

@@ -1,0 +1,55 @@
+#pragma once
+#include "../../unitysdk.h"
+
+namespace MX::NetworkProtocol { class Protocol; }
+
+#define MX_NETWORKPROTOCOL_CAFESUMMONCHARACTERTICKETUSEREQUEST_GET_CHARACTERSERVERID_OFFSET UNITYSDK_OFFSET(0xF143B0)
+#define MX_NETWORKPROTOCOL_CAFESUMMONCHARACTERTICKETUSEREQUEST_SET_CHARACTERSERVERID_OFFSET UNITYSDK_OFFSET(0xF143C0)
+#define MX_NETWORKPROTOCOL_CAFESUMMONCHARACTERTICKETUSEREQUEST_SET_CAFEDBID_OFFSET UNITYSDK_OFFSET(0xF143D0)
+#define MX_NETWORKPROTOCOL_CAFESUMMONCHARACTERTICKETUSEREQUEST_GET_CAFEDBID_OFFSET UNITYSDK_OFFSET(0xF143E0)
+#define MX_NETWORKPROTOCOL_CAFESUMMONCHARACTERTICKETUSEREQUEST_.CTOR_OFFSET UNITYSDK_OFFSET(0xF143F0)
+#define MX_NETWORKPROTOCOL_CAFESUMMONCHARACTERTICKETUSEREQUEST_GET_PROTOCOL_OFFSET UNITYSDK_OFFSET(0xF14400)
+
+namespace MX::NetworkProtocol
+{
+	inline static constexpr unsigned int CafeSummonCharacterTicketUseRequest_TypeDefinitionIndex = 11402;
+
+	class CafeSummonCharacterTicketUseRequest : public Il2CppObject
+	{
+	public:
+		::System::Int64 _CafeDBId_k__BackingField; // 0x40
+		::System::Int64 _CharacterServerId_k__BackingField; // 0x48
+
+		::System::Int64 get_CharacterServerId()
+		{
+			return ((::System::Int64(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_CAFESUMMONCHARACTERTICKETUSEREQUEST_GET_CHARACTERSERVERID_OFFSET))(nullptr);
+		}
+
+		::System::Void set_CharacterServerId(::System::Int64 arg)
+		{
+			((::System::Void(*)(::System::Int64, ::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_CAFESUMMONCHARACTERTICKETUSEREQUEST_SET_CHARACTERSERVERID_OFFSET))(arg, nullptr);
+		}
+
+		::System::Void set_CafeDBId(::System::Int64 arg)
+		{
+			((::System::Void(*)(::System::Int64, ::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_CAFESUMMONCHARACTERTICKETUSEREQUEST_SET_CAFEDBID_OFFSET))(arg, nullptr);
+		}
+
+		::System::Int64 get_CafeDBId()
+		{
+			return ((::System::Int64(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_CAFESUMMONCHARACTERTICKETUSEREQUEST_GET_CAFEDBID_OFFSET))(nullptr);
+		}
+
+		::System::Void .ctor()
+		{
+			((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_CAFESUMMONCHARACTERTICKETUSEREQUEST_.CTOR_OFFSET))(nullptr);
+		}
+
+		::MX::NetworkProtocol::Protocol* get_Protocol()
+		{
+			return ((::MX::NetworkProtocol::Protocol*(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_CAFESUMMONCHARACTERTICKETUSEREQUEST_GET_PROTOCOL_OFFSET))(nullptr);
+		}
+
+	};
+}
+

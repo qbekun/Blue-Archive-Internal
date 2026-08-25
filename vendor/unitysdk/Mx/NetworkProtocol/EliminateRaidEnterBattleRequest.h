@@ -1,0 +1,95 @@
+#pragma once
+#include "../../unitysdk.h"
+
+namespace MX::GameLogic::DBModel { class ClanAssistUseInfo; }
+namespace MX::NetworkProtocol { class Protocol; }
+
+#define MX_NETWORKPROTOCOL_ELIMINATERAIDENTERBATTLEREQUEST_GET_ASSISTUSEINFO_OFFSET UNITYSDK_OFFSET(0xF42AE0)
+#define MX_NETWORKPROTOCOL_ELIMINATERAIDENTERBATTLEREQUEST_GET_PROTOCOL_OFFSET UNITYSDK_OFFSET(0xF42AF0)
+#define MX_NETWORKPROTOCOL_ELIMINATERAIDENTERBATTLEREQUEST_GET_RAIDSERVERID_OFFSET UNITYSDK_OFFSET(0xF42B00)
+#define MX_NETWORKPROTOCOL_ELIMINATERAIDENTERBATTLEREQUEST_GET_ECHELONID_OFFSET UNITYSDK_OFFSET(0xF42B10)
+#define MX_NETWORKPROTOCOL_ELIMINATERAIDENTERBATTLEREQUEST_GET_RAIDUNIQUEID_OFFSET UNITYSDK_OFFSET(0xF42B20)
+#define MX_NETWORKPROTOCOL_ELIMINATERAIDENTERBATTLEREQUEST_SET_ECHELONID_OFFSET UNITYSDK_OFFSET(0xF42B30)
+#define MX_NETWORKPROTOCOL_ELIMINATERAIDENTERBATTLEREQUEST_.CTOR_OFFSET UNITYSDK_OFFSET(0xF42B40)
+#define MX_NETWORKPROTOCOL_ELIMINATERAIDENTERBATTLEREQUEST_SET_ASSISTUSEINFO_OFFSET UNITYSDK_OFFSET(0xF42B50)
+#define MX_NETWORKPROTOCOL_ELIMINATERAIDENTERBATTLEREQUEST_GET_ISPRACTICE_OFFSET UNITYSDK_OFFSET(0xF42B60)
+#define MX_NETWORKPROTOCOL_ELIMINATERAIDENTERBATTLEREQUEST_SET_RAIDUNIQUEID_OFFSET UNITYSDK_OFFSET(0xF42B70)
+#define MX_NETWORKPROTOCOL_ELIMINATERAIDENTERBATTLEREQUEST_SET_ISPRACTICE_OFFSET UNITYSDK_OFFSET(0xF42B80)
+#define MX_NETWORKPROTOCOL_ELIMINATERAIDENTERBATTLEREQUEST_SET_RAIDSERVERID_OFFSET UNITYSDK_OFFSET(0xF42B90)
+
+namespace MX::NetworkProtocol
+{
+	inline static constexpr unsigned int EliminateRaidEnterBattleRequest_TypeDefinitionIndex = 11645;
+
+	class EliminateRaidEnterBattleRequest : public Il2CppObject
+	{
+	public:
+		::System::Int64 _RaidServerId_k__BackingField; // 0x40
+		::System::Int64 _RaidUniqueId_k__BackingField; // 0x48
+		::System::Boolean _IsPractice_k__BackingField; // 0x50
+		::System::Int64 _EchelonId_k__BackingField; // 0x58
+		::MX::GameLogic::DBModel::ClanAssistUseInfo* _AssistUseInfo_k__BackingField; // 0x60
+
+		::MX::GameLogic::DBModel::ClanAssistUseInfo* get_AssistUseInfo()
+		{
+			return ((::MX::GameLogic::DBModel::ClanAssistUseInfo*(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_ELIMINATERAIDENTERBATTLEREQUEST_GET_ASSISTUSEINFO_OFFSET))(nullptr);
+		}
+
+		::MX::NetworkProtocol::Protocol* get_Protocol()
+		{
+			return ((::MX::NetworkProtocol::Protocol*(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_ELIMINATERAIDENTERBATTLEREQUEST_GET_PROTOCOL_OFFSET))(nullptr);
+		}
+
+		::System::Int64 get_RaidServerId()
+		{
+			return ((::System::Int64(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_ELIMINATERAIDENTERBATTLEREQUEST_GET_RAIDSERVERID_OFFSET))(nullptr);
+		}
+
+		::System::Int64 get_EchelonId()
+		{
+			return ((::System::Int64(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_ELIMINATERAIDENTERBATTLEREQUEST_GET_ECHELONID_OFFSET))(nullptr);
+		}
+
+		::System::Int64 get_RaidUniqueId()
+		{
+			return ((::System::Int64(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_ELIMINATERAIDENTERBATTLEREQUEST_GET_RAIDUNIQUEID_OFFSET))(nullptr);
+		}
+
+		::System::Void set_EchelonId(::System::Int64 arg)
+		{
+			((::System::Void(*)(::System::Int64, ::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_ELIMINATERAIDENTERBATTLEREQUEST_SET_ECHELONID_OFFSET))(arg, nullptr);
+		}
+
+		::System::Void .ctor()
+		{
+			((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_ELIMINATERAIDENTERBATTLEREQUEST_.CTOR_OFFSET))(nullptr);
+		}
+
+		::System::Void set_AssistUseInfo(::MX::GameLogic::DBModel::ClanAssistUseInfo* arg)
+		{
+			((::System::Void(*)(::MX::GameLogic::DBModel::ClanAssistUseInfo*, ::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_ELIMINATERAIDENTERBATTLEREQUEST_SET_ASSISTUSEINFO_OFFSET))(arg, nullptr);
+		}
+
+		::System::Boolean get_IsPractice()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_ELIMINATERAIDENTERBATTLEREQUEST_GET_ISPRACTICE_OFFSET))(nullptr);
+		}
+
+		::System::Void set_RaidUniqueId(::System::Int64 arg)
+		{
+			((::System::Void(*)(::System::Int64, ::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_ELIMINATERAIDENTERBATTLEREQUEST_SET_RAIDUNIQUEID_OFFSET))(arg, nullptr);
+		}
+
+		::System::Void set_IsPractice(::System::Boolean arg)
+		{
+			((::System::Void(*)(::System::Boolean, ::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_ELIMINATERAIDENTERBATTLEREQUEST_SET_ISPRACTICE_OFFSET))(arg, nullptr);
+		}
+
+		::System::Void set_RaidServerId(::System::Int64 arg)
+		{
+			((::System::Void(*)(::System::Int64, ::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_ELIMINATERAIDENTERBATTLEREQUEST_SET_RAIDSERVERID_OFFSET))(arg, nullptr);
+		}
+
+	};
+}
+

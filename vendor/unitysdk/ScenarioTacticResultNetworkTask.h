@@ -1,0 +1,93 @@
+#pragma once
+#include "unitysdk.h"
+
+namespace MX::Logic::Battles::Summary { class BattleSummary; }
+namespace MX::Campaign { class SkillCardHand; }
+namespace MX::Logic::Battles::Summary { class TacticSkipSummary; }
+namespace Assets::_MX::Program::Scripts::Network { class SessionTask; }
+namespace MX::NetworkProtocol { class Protocol; }
+
+#define SCENARIOTACTICRESULTNETWORKTASK_SET_SKIPSUMMARY_OFFSET UNITYSDK_OFFSET(0x1F9B7D0)
+#define SCENARIOTACTICRESULTNETWORKTASK__PROCESSSESSION_B__12_0_OFFSET UNITYSDK_OFFSET(0x1F9B7E0)
+#define SCENARIOTACTICRESULTNETWORKTASK_.CTOR_OFFSET UNITYSDK_OFFSET(0x1F9B7F0)
+#define SCENARIOTACTICRESULTNETWORKTASK_PROCESSSESSION_OFFSET UNITYSDK_OFFSET(0x1F9B800)
+#define SCENARIOTACTICRESULTNETWORKTASK_ERRORHANDLER_OFFSET UNITYSDK_OFFSET(0x1F9B890)
+#define SCENARIOTACTICRESULTNETWORKTASK_GET_SUMMARY_OFFSET UNITYSDK_OFFSET(0x1F9B8A0)
+#define SCENARIOTACTICRESULTNETWORKTASK_SET_HAND_OFFSET UNITYSDK_OFFSET(0x1F9B8B0)
+#define SCENARIOTACTICRESULTNETWORKTASK_TOSESSIONTASK_OFFSET UNITYSDK_OFFSET(0x1F9B8C0)
+#define SCENARIOTACTICRESULTNETWORKTASK_SET_SUMMARY_OFFSET UNITYSDK_OFFSET(0x1F9B8D0)
+#define SCENARIOTACTICRESULTNETWORKTASK_GET_HAND_OFFSET UNITYSDK_OFFSET(0x1F9B8E0)
+#define SCENARIOTACTICRESULTNETWORKTASK_GET_SKIPSUMMARY_OFFSET UNITYSDK_OFFSET(0x1F9B8F0)
+#define SCENARIOTACTICRESULTNETWORKTASK_HANDLEMESSAGE_OFFSET UNITYSDK_OFFSET(0x1F9B900)
+
+	inline static constexpr unsigned int ScenarioTacticResultNetworkTask_TypeDefinitionIndex = 2786;
+
+	class ScenarioTacticResultNetworkTask : public Il2CppObject
+	{
+	public:
+		::MX::Logic::Battles::Summary::BattleSummary* _Summary_k__BackingField; // 0x40
+		::MX::Campaign::SkillCardHand* _Hand_k__BackingField; // 0x48
+		::MX::Logic::Battles::Summary::TacticSkipSummary* _SkipSummary_k__BackingField; // 0x50
+
+		::System::Void set_SkipSummary(::MX::Logic::Battles::Summary::TacticSkipSummary* arg)
+		{
+			((::System::Void(*)(::MX::Logic::Battles::Summary::TacticSkipSummary*, ::PVOID))((::PBYTE)hIl2Cpp + SCENARIOTACTICRESULTNETWORKTASK_SET_SKIPSUMMARY_OFFSET))(arg, nullptr);
+		}
+
+		::System::Boolean _ProcessSession_b__12_0()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + SCENARIOTACTICRESULTNETWORKTASK__PROCESSSESSION_B__12_0_OFFSET))(nullptr);
+		}
+
+		::System::Void .ctor()
+		{
+			((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + SCENARIOTACTICRESULTNETWORKTASK_.CTOR_OFFSET))(nullptr);
+		}
+
+		::System::Collections::IEnumerator* ProcessSession()
+		{
+			return ((::System::Collections::IEnumerator*(*)(::PVOID))((::PBYTE)hIl2Cpp + SCENARIOTACTICRESULTNETWORKTASK_PROCESSSESSION_OFFSET))(nullptr);
+		}
+
+		::System::Boolean ErrorHandler()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + SCENARIOTACTICRESULTNETWORKTASK_ERRORHANDLER_OFFSET))(nullptr);
+		}
+
+		::MX::Logic::Battles::Summary::BattleSummary* get_Summary()
+		{
+			return ((::MX::Logic::Battles::Summary::BattleSummary*(*)(::PVOID))((::PBYTE)hIl2Cpp + SCENARIOTACTICRESULTNETWORKTASK_GET_SUMMARY_OFFSET))(nullptr);
+		}
+
+		::System::Void set_Hand(::MX::Campaign::SkillCardHand* arg)
+		{
+			((::System::Void(*)(::MX::Campaign::SkillCardHand*, ::PVOID))((::PBYTE)hIl2Cpp + SCENARIOTACTICRESULTNETWORKTASK_SET_HAND_OFFSET))(arg, nullptr);
+		}
+
+		::Assets::_MX::Program::Scripts::Network::SessionTask* ToSessionTask()
+		{
+			return ((::Assets::_MX::Program::Scripts::Network::SessionTask*(*)(::PVOID))((::PBYTE)hIl2Cpp + SCENARIOTACTICRESULTNETWORKTASK_TOSESSIONTASK_OFFSET))(nullptr);
+		}
+
+		::System::Void set_Summary(::MX::Logic::Battles::Summary::BattleSummary* arg)
+		{
+			((::System::Void(*)(::MX::Logic::Battles::Summary::BattleSummary*, ::PVOID))((::PBYTE)hIl2Cpp + SCENARIOTACTICRESULTNETWORKTASK_SET_SUMMARY_OFFSET))(arg, nullptr);
+		}
+
+		::MX::Campaign::SkillCardHand* get_Hand()
+		{
+			return ((::MX::Campaign::SkillCardHand*(*)(::PVOID))((::PBYTE)hIl2Cpp + SCENARIOTACTICRESULTNETWORKTASK_GET_HAND_OFFSET))(nullptr);
+		}
+
+		::MX::Logic::Battles::Summary::TacticSkipSummary* get_SkipSummary()
+		{
+			return ((::MX::Logic::Battles::Summary::TacticSkipSummary*(*)(::PVOID))((::PBYTE)hIl2Cpp + SCENARIOTACTICRESULTNETWORKTASK_GET_SKIPSUMMARY_OFFSET))(nullptr);
+		}
+
+		::System::Boolean HandleMessage(::MX::NetworkProtocol::Protocol* arg, ::System::String* str, ::Il2CppArray<::System::Object*>* arg2)
+		{
+			return ((::System::Boolean(*)(::MX::NetworkProtocol::Protocol*, ::System::String*, ::Il2CppArray<::System::Object*>*, ::PVOID))((::PBYTE)hIl2Cpp + SCENARIOTACTICRESULTNETWORKTASK_HANDLEMESSAGE_OFFSET))(arg, str, arg2, nullptr);
+		}
+
+	};
+

@@ -1,0 +1,55 @@
+#pragma once
+#include "../../unitysdk.h"
+
+namespace MX::NetworkProtocol { class Protocol; }
+
+#define MX_NETWORKPROTOCOL_OPENCONDITIONEVENTLISTREQUEST_.CTOR_OFFSET UNITYSDK_OFFSET(0xF4B120)
+#define MX_NETWORKPROTOCOL_OPENCONDITIONEVENTLISTREQUEST_GET_PROTOCOL_OFFSET UNITYSDK_OFFSET(0xF4B130)
+#define MX_NETWORKPROTOCOL_OPENCONDITIONEVENTLISTREQUEST_GET_CONQUESTEVENTIDS_OFFSET UNITYSDK_OFFSET(0xF4B140)
+#define MX_NETWORKPROTOCOL_OPENCONDITIONEVENTLISTREQUEST_SET_WORLDRAIDSEASONANDGROUPIDS_OFFSET UNITYSDK_OFFSET(0xF4B150)
+#define MX_NETWORKPROTOCOL_OPENCONDITIONEVENTLISTREQUEST_GET_WORLDRAIDSEASONANDGROUPIDS_OFFSET UNITYSDK_OFFSET(0xF4B160)
+#define MX_NETWORKPROTOCOL_OPENCONDITIONEVENTLISTREQUEST_SET_CONQUESTEVENTIDS_OFFSET UNITYSDK_OFFSET(0xF4B170)
+
+namespace MX::NetworkProtocol
+{
+	inline static constexpr unsigned int OpenConditionEventListRequest_TypeDefinitionIndex = 11987;
+
+	class OpenConditionEventListRequest : public Il2CppObject
+	{
+	public:
+		Il2CppObject* _ConquestEventIds_k__BackingField; // 0x40
+		Il2CppObject* _WorldRaidSeasonAndGroupIds_k__BackingField; // 0x48
+
+		::System::Void .ctor()
+		{
+			((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_OPENCONDITIONEVENTLISTREQUEST_.CTOR_OFFSET))(nullptr);
+		}
+
+		::MX::NetworkProtocol::Protocol* get_Protocol()
+		{
+			return ((::MX::NetworkProtocol::Protocol*(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_OPENCONDITIONEVENTLISTREQUEST_GET_PROTOCOL_OFFSET))(nullptr);
+		}
+
+		Il2CppObject* get_ConquestEventIds()
+		{
+			return ((Il2CppObject*(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_OPENCONDITIONEVENTLISTREQUEST_GET_CONQUESTEVENTIDS_OFFSET))(nullptr);
+		}
+
+		::System::Void set_WorldRaidSeasonAndGroupIds(Il2CppObject* arg)
+		{
+			((::System::Void(*)(Il2CppObject*, ::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_OPENCONDITIONEVENTLISTREQUEST_SET_WORLDRAIDSEASONANDGROUPIDS_OFFSET))(arg, nullptr);
+		}
+
+		Il2CppObject* get_WorldRaidSeasonAndGroupIds()
+		{
+			return ((Il2CppObject*(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_OPENCONDITIONEVENTLISTREQUEST_GET_WORLDRAIDSEASONANDGROUPIDS_OFFSET))(nullptr);
+		}
+
+		::System::Void set_ConquestEventIds(Il2CppObject* arg)
+		{
+			((::System::Void(*)(Il2CppObject*, ::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_OPENCONDITIONEVENTLISTREQUEST_SET_CONQUESTEVENTIDS_OFFSET))(arg, nullptr);
+		}
+
+	};
+}
+

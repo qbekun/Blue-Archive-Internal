@@ -1,0 +1,306 @@
+#pragma once
+#include "../../../unitysdk.h"
+
+namespace UnityEngine::InputSystem { class InputActionProperty; }
+namespace UnityEngine { class Vector3; }
+namespace UnityEngine { class Quaternion; }
+namespace UnityEngine::InputSystem { class InputAction; }
+namespace UnityEngine { class Camera&; }
+
+#define UNITYENGINE_INPUTSYSTEM_XR_TRACKEDPOSEDRIVER_GET_TRACKINGTYPE_OFFSET UNITYSDK_OFFSET(0x9F23620)
+#define UNITYENGINE_INPUTSYSTEM_XR_TRACKEDPOSEDRIVER_GET_IGNORETRACKINGSTATE_OFFSET UNITYSDK_OFFSET(0x9F23630)
+#define UNITYENGINE_INPUTSYSTEM_XR_TRACKEDPOSEDRIVER_SET_UPDATETYPE_OFFSET UNITYSDK_OFFSET(0x9F23640)
+#define UNITYENGINE_INPUTSYSTEM_XR_TRACKEDPOSEDRIVER_HASSTEREOCAMERA_OFFSET UNITYSDK_OFFSET(0x9F23650)
+#define UNITYENGINE_INPUTSYSTEM_XR_TRACKEDPOSEDRIVER_UNBINDTRACKINGSTATE_OFFSET UNITYSDK_OFFSET(0x9F236C0)
+#define UNITYENGINE_INPUTSYSTEM_XR_TRACKEDPOSEDRIVER_ONPOSITIONPERFORMED_OFFSET UNITYSDK_OFFSET(0x9F23800)
+#define UNITYENGINE_INPUTSYSTEM_XR_TRACKEDPOSEDRIVER_UNITYENGINE.ISERIALIZATIONCALLBACKRECEIVER.ONAFTERDESERIALIZE_OFFSET UNITYSDK_OFFSET(0x9F23860)
+#define UNITYENGINE_INPUTSYSTEM_XR_TRACKEDPOSEDRIVER_ONBEFORERENDER_OFFSET UNITYSDK_OFFSET(0x9F23930)
+#define UNITYENGINE_INPUTSYSTEM_XR_TRACKEDPOSEDRIVER_GET_POSITIONACTION_OFFSET UNITYSDK_OFFSET(0x9F23950)
+#define UNITYENGINE_INPUTSYSTEM_XR_TRACKEDPOSEDRIVER_SET_POSITIONINPUT_OFFSET UNITYSDK_OFFSET(0x9F23960)
+#define UNITYENGINE_INPUTSYSTEM_XR_TRACKEDPOSEDRIVER_BINDACTIONS_OFFSET UNITYSDK_OFFSET(0x9F23CB0)
+#define UNITYENGINE_INPUTSYSTEM_XR_TRACKEDPOSEDRIVER_ONTRACKINGSTATECANCELED_OFFSET UNITYSDK_OFFSET(0x9F24020)
+#define UNITYENGINE_INPUTSYSTEM_XR_TRACKEDPOSEDRIVER_UPDATECALLBACK_OFFSET UNITYSDK_OFFSET(0x9F24030)
+#define UNITYENGINE_INPUTSYSTEM_XR_TRACKEDPOSEDRIVER_GET_POSITIONINPUT_OFFSET UNITYSDK_OFFSET(0x9F242A0)
+#define UNITYENGINE_INPUTSYSTEM_XR_TRACKEDPOSEDRIVER_AWAKE_OFFSET UNITYSDK_OFFSET(0x9F242C0)
+#define UNITYENGINE_INPUTSYSTEM_XR_TRACKEDPOSEDRIVER_UNBINDACTIONS_OFFSET UNITYSDK_OFFSET(0x9F24340)
+#define UNITYENGINE_INPUTSYSTEM_XR_TRACKEDPOSEDRIVER_ONENABLE_OFFSET UNITYSDK_OFFSET(0x9F244B0)
+#define UNITYENGINE_INPUTSYSTEM_XR_TRACKEDPOSEDRIVER_ONDESTROY_OFFSET UNITYSDK_OFFSET(0x9F24570)
+#define UNITYENGINE_INPUTSYSTEM_XR_TRACKEDPOSEDRIVER_UNITYENGINE.ISERIALIZATIONCALLBACKRECEIVER.ONBEFORESERIALIZE_OFFSET UNITYSDK_OFFSET(0x9F245F0)
+#define UNITYENGINE_INPUTSYSTEM_XR_TRACKEDPOSEDRIVER_RESET_OFFSET UNITYSDK_OFFSET(0x9F24600)
+#define UNITYENGINE_INPUTSYSTEM_XR_TRACKEDPOSEDRIVER_ONDISABLE_OFFSET UNITYSDK_OFFSET(0x9F24830)
+#define UNITYENGINE_INPUTSYSTEM_XR_TRACKEDPOSEDRIVER_BINDTRACKINGSTATE_OFFSET UNITYSDK_OFFSET(0x9F23E80)
+#define UNITYENGINE_INPUTSYSTEM_XR_TRACKEDPOSEDRIVER_SET_IGNORETRACKINGSTATE_OFFSET UNITYSDK_OFFSET(0x9F248E0)
+#define UNITYENGINE_INPUTSYSTEM_XR_TRACKEDPOSEDRIVER_UNBINDROTATION_OFFSET UNITYSDK_OFFSET(0x9F24370)
+#define UNITYENGINE_INPUTSYSTEM_XR_TRACKEDPOSEDRIVER_GET_ROTATIONACTION_OFFSET UNITYSDK_OFFSET(0x9F248F0)
+#define UNITYENGINE_INPUTSYSTEM_XR_TRACKEDPOSEDRIVER_GET_UPDATETYPE_OFFSET UNITYSDK_OFFSET(0x9F24900)
+#define UNITYENGINE_INPUTSYSTEM_XR_TRACKEDPOSEDRIVER_BINDROTATION_OFFSET UNITYSDK_OFFSET(0x9F23CE0)
+#define UNITYENGINE_INPUTSYSTEM_XR_TRACKEDPOSEDRIVER_ONROTATIONPERFORMED_OFFSET UNITYSDK_OFFSET(0x9F24910)
+#define UNITYENGINE_INPUTSYSTEM_XR_TRACKEDPOSEDRIVER_ONTRACKINGSTATEPERFORMED_OFFSET UNITYSDK_OFFSET(0x9F24960)
+#define UNITYENGINE_INPUTSYSTEM_XR_TRACKEDPOSEDRIVER_GET_TRACKINGSTATEINPUT_OFFSET UNITYSDK_OFFSET(0x9F249B0)
+#define UNITYENGINE_INPUTSYSTEM_XR_TRACKEDPOSEDRIVER_UNBINDPOSITION_OFFSET UNITYSDK_OFFSET(0x9F239D0)
+#define UNITYENGINE_INPUTSYSTEM_XR_TRACKEDPOSEDRIVER_SET_TRACKINGSTATEINPUT_OFFSET UNITYSDK_OFFSET(0x9F249D0)
+#define UNITYENGINE_INPUTSYSTEM_XR_TRACKEDPOSEDRIVER_GET_ROTATIONINPUT_OFFSET UNITYSDK_OFFSET(0x9F24A40)
+#define UNITYENGINE_INPUTSYSTEM_XR_TRACKEDPOSEDRIVER_ONPOSITIONCANCELED_OFFSET UNITYSDK_OFFSET(0x9F24A60)
+#define UNITYENGINE_INPUTSYSTEM_XR_TRACKEDPOSEDRIVER_SET_TRACKINGTYPE_OFFSET UNITYSDK_OFFSET(0x9F24AB0)
+#define UNITYENGINE_INPUTSYSTEM_XR_TRACKEDPOSEDRIVER_SET_ROTATIONINPUT_OFFSET UNITYSDK_OFFSET(0x9F24AC0)
+#define UNITYENGINE_INPUTSYSTEM_XR_TRACKEDPOSEDRIVER_SETLOCALTRANSFORM_OFFSET UNITYSDK_OFFSET(0x9F24B30)
+#define UNITYENGINE_INPUTSYSTEM_XR_TRACKEDPOSEDRIVER_PERFORMUPDATE_OFFSET UNITYSDK_OFFSET(0x9F24C40)
+#define UNITYENGINE_INPUTSYSTEM_XR_TRACKEDPOSEDRIVER_ONROTATIONCANCELED_OFFSET UNITYSDK_OFFSET(0x9F24C80)
+#define UNITYENGINE_INPUTSYSTEM_XR_TRACKEDPOSEDRIVER_SET_POSITIONACTION_OFFSET UNITYSDK_OFFSET(0x9F24CC0)
+#define UNITYENGINE_INPUTSYSTEM_XR_TRACKEDPOSEDRIVER_READTRACKINGSTATE_OFFSET UNITYSDK_OFFSET(0x9F24170)
+#define UNITYENGINE_INPUTSYSTEM_XR_TRACKEDPOSEDRIVER_BINDPOSITION_OFFSET UNITYSDK_OFFSET(0x9F23B10)
+#define UNITYENGINE_INPUTSYSTEM_XR_TRACKEDPOSEDRIVER_.CTOR_OFFSET UNITYSDK_OFFSET(0x9F24D60)
+#define UNITYENGINE_INPUTSYSTEM_XR_TRACKEDPOSEDRIVER_SET_ROTATIONACTION_OFFSET UNITYSDK_OFFSET(0x9F24DF0)
+#define UNITYENGINE_INPUTSYSTEM_XR_TRACKEDPOSEDRIVER_ONUPDATE_OFFSET UNITYSDK_OFFSET(0x9F24E90)
+
+namespace UnityEngine::InputSystem::XR
+{
+	inline static constexpr unsigned int TrackedPoseDriver_TypeDefinitionIndex = 28578;
+
+	class TrackedPoseDriver : public Il2CppObject
+	{
+	public:
+		TrackingType* m_TrackingType; // 0x18
+		UpdateType* m_UpdateType; // 0x1C
+		::System::Boolean m_IgnoreTrackingState; // 0x20
+		::UnityEngine::InputSystem::InputActionProperty* m_PositionInput; // 0x28
+		::UnityEngine::InputSystem::InputActionProperty* m_RotationInput; // 0x40
+		::UnityEngine::InputSystem::InputActionProperty* m_TrackingStateInput; // 0x58
+		::UnityEngine::Vector3* m_CurrentPosition; // 0x70
+		::UnityEngine::Quaternion* m_CurrentRotation; // 0x7C
+		TrackingStates* m_CurrentTrackingState; // 0x8C
+		::System::Boolean m_RotationBound; // 0x90
+		::System::Boolean m_PositionBound; // 0x91
+		::System::Boolean m_TrackingStateBound; // 0x92
+		::System::Boolean m_IsFirstUpdate; // 0x93
+		::UnityEngine::InputSystem::InputAction* m_PositionAction; // 0x98
+		::UnityEngine::InputSystem::InputAction* m_RotationAction; // 0xA0
+
+		TrackingType* get_trackingType()
+		{
+			return (return (TrackingType*(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_INPUTSYSTEM_XR_TRACKEDPOSEDRIVER_GET_TRACKINGTYPE_OFFSET))(nullptr);
+		}
+
+		::System::Boolean get_ignoreTrackingState()
+		{
+			return (return (::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_INPUTSYSTEM_XR_TRACKEDPOSEDRIVER_GET_IGNORETRACKINGSTATE_OFFSET))(nullptr);
+		}
+
+		::System::Void set_updateType(UpdateType* arg)
+		{
+			((::System::Void(*)(UpdateType*, ::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_INPUTSYSTEM_XR_TRACKEDPOSEDRIVER_SET_UPDATETYPE_OFFSET))(arg, nullptr);
+		}
+
+		::System::Boolean HasStereoCamera(::UnityEngine::Camera&* arg)
+		{
+			return (return (::System::Boolean(*)(::UnityEngine::Camera&*, ::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_INPUTSYSTEM_XR_TRACKEDPOSEDRIVER_HASSTEREOCAMERA_OFFSET))(arg, nullptr);
+		}
+
+		::System::Void UnbindTrackingState()
+		{
+			((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_INPUTSYSTEM_XR_TRACKEDPOSEDRIVER_UNBINDTRACKINGSTATE_OFFSET))(nullptr);
+		}
+
+		::System::Void OnPositionPerformed(CallbackContext* arg)
+		{
+			((::System::Void(*)(CallbackContext*, ::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_INPUTSYSTEM_XR_TRACKEDPOSEDRIVER_ONPOSITIONPERFORMED_OFFSET))(arg, nullptr);
+		}
+
+		::System::Void UnityEngine.ISerializationCallbackReceiver.OnAfterDeserialize()
+		{
+			((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_INPUTSYSTEM_XR_TRACKEDPOSEDRIVER_UNITYENGINE.ISERIALIZATIONCALLBACKRECEIVER.ONAFTERDESERIALIZE_OFFSET))(nullptr);
+		}
+
+		::System::Void OnBeforeRender()
+		{
+			((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_INPUTSYSTEM_XR_TRACKEDPOSEDRIVER_ONBEFORERENDER_OFFSET))(nullptr);
+		}
+
+		::UnityEngine::InputSystem::InputAction* get_positionAction()
+		{
+			return (return (::UnityEngine::InputSystem::InputAction*(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_INPUTSYSTEM_XR_TRACKEDPOSEDRIVER_GET_POSITIONACTION_OFFSET))(nullptr);
+		}
+
+		::System::Void set_positionInput(::UnityEngine::InputSystem::InputActionProperty* arg)
+		{
+			((::System::Void(*)(::UnityEngine::InputSystem::InputActionProperty*, ::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_INPUTSYSTEM_XR_TRACKEDPOSEDRIVER_SET_POSITIONINPUT_OFFSET))(arg, nullptr);
+		}
+
+		::System::Void BindActions()
+		{
+			((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_INPUTSYSTEM_XR_TRACKEDPOSEDRIVER_BINDACTIONS_OFFSET))(nullptr);
+		}
+
+		::System::Void OnTrackingStateCanceled(CallbackContext* arg)
+		{
+			((::System::Void(*)(CallbackContext*, ::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_INPUTSYSTEM_XR_TRACKEDPOSEDRIVER_ONTRACKINGSTATECANCELED_OFFSET))(arg, nullptr);
+		}
+
+		::System::Void UpdateCallback()
+		{
+			((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_INPUTSYSTEM_XR_TRACKEDPOSEDRIVER_UPDATECALLBACK_OFFSET))(nullptr);
+		}
+
+		::UnityEngine::InputSystem::InputActionProperty* get_positionInput()
+		{
+			return (return (::UnityEngine::InputSystem::InputActionProperty*(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_INPUTSYSTEM_XR_TRACKEDPOSEDRIVER_GET_POSITIONINPUT_OFFSET))(nullptr);
+		}
+
+		::System::Void Awake()
+		{
+			((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_INPUTSYSTEM_XR_TRACKEDPOSEDRIVER_AWAKE_OFFSET))(nullptr);
+		}
+
+		::System::Void UnbindActions()
+		{
+			((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_INPUTSYSTEM_XR_TRACKEDPOSEDRIVER_UNBINDACTIONS_OFFSET))(nullptr);
+		}
+
+		::System::Void OnEnable()
+		{
+			((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_INPUTSYSTEM_XR_TRACKEDPOSEDRIVER_ONENABLE_OFFSET))(nullptr);
+		}
+
+		::System::Void OnDestroy()
+		{
+			((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_INPUTSYSTEM_XR_TRACKEDPOSEDRIVER_ONDESTROY_OFFSET))(nullptr);
+		}
+
+		::System::Void UnityEngine.ISerializationCallbackReceiver.OnBeforeSerialize()
+		{
+			((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_INPUTSYSTEM_XR_TRACKEDPOSEDRIVER_UNITYENGINE.ISERIALIZATIONCALLBACKRECEIVER.ONBEFORESERIALIZE_OFFSET))(nullptr);
+		}
+
+		::System::Void Reset()
+		{
+			((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_INPUTSYSTEM_XR_TRACKEDPOSEDRIVER_RESET_OFFSET))(nullptr);
+		}
+
+		::System::Void OnDisable()
+		{
+			((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_INPUTSYSTEM_XR_TRACKEDPOSEDRIVER_ONDISABLE_OFFSET))(nullptr);
+		}
+
+		::System::Void BindTrackingState()
+		{
+			((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_INPUTSYSTEM_XR_TRACKEDPOSEDRIVER_BINDTRACKINGSTATE_OFFSET))(nullptr);
+		}
+
+		::System::Void set_ignoreTrackingState(::System::Boolean arg)
+		{
+			((::System::Void(*)(::System::Boolean, ::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_INPUTSYSTEM_XR_TRACKEDPOSEDRIVER_SET_IGNORETRACKINGSTATE_OFFSET))(arg, nullptr);
+		}
+
+		::System::Void UnbindRotation()
+		{
+			((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_INPUTSYSTEM_XR_TRACKEDPOSEDRIVER_UNBINDROTATION_OFFSET))(nullptr);
+		}
+
+		::UnityEngine::InputSystem::InputAction* get_rotationAction()
+		{
+			return (return (::UnityEngine::InputSystem::InputAction*(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_INPUTSYSTEM_XR_TRACKEDPOSEDRIVER_GET_ROTATIONACTION_OFFSET))(nullptr);
+		}
+
+		UpdateType* get_updateType()
+		{
+			return (return (UpdateType*(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_INPUTSYSTEM_XR_TRACKEDPOSEDRIVER_GET_UPDATETYPE_OFFSET))(nullptr);
+		}
+
+		::System::Void BindRotation()
+		{
+			((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_INPUTSYSTEM_XR_TRACKEDPOSEDRIVER_BINDROTATION_OFFSET))(nullptr);
+		}
+
+		::System::Void OnRotationPerformed(CallbackContext* arg)
+		{
+			((::System::Void(*)(CallbackContext*, ::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_INPUTSYSTEM_XR_TRACKEDPOSEDRIVER_ONROTATIONPERFORMED_OFFSET))(arg, nullptr);
+		}
+
+		::System::Void OnTrackingStatePerformed(CallbackContext* arg)
+		{
+			((::System::Void(*)(CallbackContext*, ::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_INPUTSYSTEM_XR_TRACKEDPOSEDRIVER_ONTRACKINGSTATEPERFORMED_OFFSET))(arg, nullptr);
+		}
+
+		::UnityEngine::InputSystem::InputActionProperty* get_trackingStateInput()
+		{
+			return (return (::UnityEngine::InputSystem::InputActionProperty*(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_INPUTSYSTEM_XR_TRACKEDPOSEDRIVER_GET_TRACKINGSTATEINPUT_OFFSET))(nullptr);
+		}
+
+		::System::Void UnbindPosition()
+		{
+			((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_INPUTSYSTEM_XR_TRACKEDPOSEDRIVER_UNBINDPOSITION_OFFSET))(nullptr);
+		}
+
+		::System::Void set_trackingStateInput(::UnityEngine::InputSystem::InputActionProperty* arg)
+		{
+			((::System::Void(*)(::UnityEngine::InputSystem::InputActionProperty*, ::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_INPUTSYSTEM_XR_TRACKEDPOSEDRIVER_SET_TRACKINGSTATEINPUT_OFFSET))(arg, nullptr);
+		}
+
+		::UnityEngine::InputSystem::InputActionProperty* get_rotationInput()
+		{
+			return (return (::UnityEngine::InputSystem::InputActionProperty*(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_INPUTSYSTEM_XR_TRACKEDPOSEDRIVER_GET_ROTATIONINPUT_OFFSET))(nullptr);
+		}
+
+		::System::Void OnPositionCanceled(CallbackContext* arg)
+		{
+			((::System::Void(*)(CallbackContext*, ::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_INPUTSYSTEM_XR_TRACKEDPOSEDRIVER_ONPOSITIONCANCELED_OFFSET))(arg, nullptr);
+		}
+
+		::System::Void set_trackingType(TrackingType* arg)
+		{
+			((::System::Void(*)(TrackingType*, ::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_INPUTSYSTEM_XR_TRACKEDPOSEDRIVER_SET_TRACKINGTYPE_OFFSET))(arg, nullptr);
+		}
+
+		::System::Void set_rotationInput(::UnityEngine::InputSystem::InputActionProperty* arg)
+		{
+			((::System::Void(*)(::UnityEngine::InputSystem::InputActionProperty*, ::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_INPUTSYSTEM_XR_TRACKEDPOSEDRIVER_SET_ROTATIONINPUT_OFFSET))(arg, nullptr);
+		}
+
+		::System::Void SetLocalTransform(::UnityEngine::Vector3* arg, ::UnityEngine::Quaternion* arg)
+		{
+			((::System::Void(*)(::UnityEngine::Vector3*, ::UnityEngine::Quaternion*, ::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_INPUTSYSTEM_XR_TRACKEDPOSEDRIVER_SETLOCALTRANSFORM_OFFSET))(arg, arg, nullptr);
+		}
+
+		::System::Void PerformUpdate()
+		{
+			((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_INPUTSYSTEM_XR_TRACKEDPOSEDRIVER_PERFORMUPDATE_OFFSET))(nullptr);
+		}
+
+		::System::Void OnRotationCanceled(CallbackContext* arg)
+		{
+			((::System::Void(*)(CallbackContext*, ::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_INPUTSYSTEM_XR_TRACKEDPOSEDRIVER_ONROTATIONCANCELED_OFFSET))(arg, nullptr);
+		}
+
+		::System::Void set_positionAction(::UnityEngine::InputSystem::InputAction* arg)
+		{
+			((::System::Void(*)(::UnityEngine::InputSystem::InputAction*, ::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_INPUTSYSTEM_XR_TRACKEDPOSEDRIVER_SET_POSITIONACTION_OFFSET))(arg, nullptr);
+		}
+
+		::System::Void ReadTrackingState()
+		{
+			((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_INPUTSYSTEM_XR_TRACKEDPOSEDRIVER_READTRACKINGSTATE_OFFSET))(nullptr);
+		}
+
+		::System::Void BindPosition()
+		{
+			((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_INPUTSYSTEM_XR_TRACKEDPOSEDRIVER_BINDPOSITION_OFFSET))(nullptr);
+		}
+
+		::System::Void .ctor()
+		{
+			((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_INPUTSYSTEM_XR_TRACKEDPOSEDRIVER_.CTOR_OFFSET))(nullptr);
+		}
+
+		::System::Void set_rotationAction(::UnityEngine::InputSystem::InputAction* arg)
+		{
+			((::System::Void(*)(::UnityEngine::InputSystem::InputAction*, ::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_INPUTSYSTEM_XR_TRACKEDPOSEDRIVER_SET_ROTATIONACTION_OFFSET))(arg, nullptr);
+		}
+
+		::System::Void OnUpdate()
+		{
+			((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_INPUTSYSTEM_XR_TRACKEDPOSEDRIVER_ONUPDATE_OFFSET))(nullptr);
+		}
+
+	};
+}
+

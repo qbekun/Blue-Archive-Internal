@@ -1,0 +1,62 @@
+#pragma once
+#include "../../unitysdk.h"
+
+namespace Spine::Unity { class SkeletonGraphic; }
+
+#define SPINE_UNITY_SKELETONGRAPHICCUSTOMMATERIALS_.CTOR_OFFSET UNITYSDK_OFFSET(0x96105E0)
+#define SPINE_UNITY_SKELETONGRAPHICCUSTOMMATERIALS_ONENABLE_OFFSET UNITYSDK_OFFSET(0x96106B0)
+#define SPINE_UNITY_SKELETONGRAPHICCUSTOMMATERIALS_REMOVECUSTOMTEXTUREOVERRIDES_OFFSET UNITYSDK_OFFSET(0x9610A50)
+#define SPINE_UNITY_SKELETONGRAPHICCUSTOMMATERIALS_SETCUSTOMMATERIALOVERRIDES_OFFSET UNITYSDK_OFFSET(0x96107D0)
+#define SPINE_UNITY_SKELETONGRAPHICCUSTOMMATERIALS_SETCUSTOMTEXTUREOVERRIDES_OFFSET UNITYSDK_OFFSET(0x9610910)
+#define SPINE_UNITY_SKELETONGRAPHICCUSTOMMATERIALS_REMOVECUSTOMMATERIALOVERRIDES_OFFSET UNITYSDK_OFFSET(0x9610C20)
+#define SPINE_UNITY_SKELETONGRAPHICCUSTOMMATERIALS_ONDISABLE_OFFSET UNITYSDK_OFFSET(0x9610DF0)
+
+namespace Spine::Unity
+{
+	inline static constexpr unsigned int SkeletonGraphicCustomMaterials_TypeDefinitionIndex = 35323;
+
+	class SkeletonGraphicCustomMaterials : public Il2CppObject
+	{
+	public:
+		::Spine::Unity::SkeletonGraphic* skeletonGraphic; // 0x18
+		Il2CppObject* customMaterialOverrides; // 0x20
+		Il2CppObject* customTextureOverrides; // 0x28
+
+		::System::Void .ctor()
+		{
+			((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + SPINE_UNITY_SKELETONGRAPHICCUSTOMMATERIALS_.CTOR_OFFSET))(nullptr);
+		}
+
+		::System::Void OnEnable()
+		{
+			((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + SPINE_UNITY_SKELETONGRAPHICCUSTOMMATERIALS_ONENABLE_OFFSET))(nullptr);
+		}
+
+		::System::Void RemoveCustomTextureOverrides()
+		{
+			((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + SPINE_UNITY_SKELETONGRAPHICCUSTOMMATERIALS_REMOVECUSTOMTEXTUREOVERRIDES_OFFSET))(nullptr);
+		}
+
+		::System::Void SetCustomMaterialOverrides()
+		{
+			((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + SPINE_UNITY_SKELETONGRAPHICCUSTOMMATERIALS_SETCUSTOMMATERIALOVERRIDES_OFFSET))(nullptr);
+		}
+
+		::System::Void SetCustomTextureOverrides()
+		{
+			((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + SPINE_UNITY_SKELETONGRAPHICCUSTOMMATERIALS_SETCUSTOMTEXTUREOVERRIDES_OFFSET))(nullptr);
+		}
+
+		::System::Void RemoveCustomMaterialOverrides()
+		{
+			((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + SPINE_UNITY_SKELETONGRAPHICCUSTOMMATERIALS_REMOVECUSTOMMATERIALOVERRIDES_OFFSET))(nullptr);
+		}
+
+		::System::Void OnDisable()
+		{
+			((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + SPINE_UNITY_SKELETONGRAPHICCUSTOMMATERIALS_ONDISABLE_OFFSET))(nullptr);
+		}
+
+	};
+}
+

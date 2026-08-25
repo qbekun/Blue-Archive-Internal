@@ -1,0 +1,109 @@
+#pragma once
+#include "../../unitysdk.h"
+
+namespace MX::GameLogic::DBModel { class CampaignStageHistoryDB; }
+namespace MX::GameLogic::Parcel { class ParcelResultDB; }
+namespace MX::NetworkProtocol { class Protocol; }
+
+#define MX_NETWORKPROTOCOL_CAMPAIGNSUBSTAGERESULTRESPONSE_SET_TACTICRANK_OFFSET UNITYSDK_OFFSET(0xF15160)
+#define MX_NETWORKPROTOCOL_CAMPAIGNSUBSTAGERESULTRESPONSE_SET_FIRSTCLEARREWARD_OFFSET UNITYSDK_OFFSET(0xF15170)
+#define MX_NETWORKPROTOCOL_CAMPAIGNSUBSTAGERESULTRESPONSE_GET_THREESTARREWARD_OFFSET UNITYSDK_OFFSET(0xF15180)
+#define MX_NETWORKPROTOCOL_CAMPAIGNSUBSTAGERESULTRESPONSE_GET_PROTOCOL_OFFSET UNITYSDK_OFFSET(0xF15190)
+#define MX_NETWORKPROTOCOL_CAMPAIGNSUBSTAGERESULTRESPONSE_GET_CAMPAIGNSTAGEHISTORYDB_OFFSET UNITYSDK_OFFSET(0xF151A0)
+#define MX_NETWORKPROTOCOL_CAMPAIGNSUBSTAGERESULTRESPONSE_GET_PARCELRESULTDB_OFFSET UNITYSDK_OFFSET(0xF151B0)
+#define MX_NETWORKPROTOCOL_CAMPAIGNSUBSTAGERESULTRESPONSE_GET_TACTICRANK_OFFSET UNITYSDK_OFFSET(0xF151C0)
+#define MX_NETWORKPROTOCOL_CAMPAIGNSUBSTAGERESULTRESPONSE_SET_PARCELRESULTDB_OFFSET UNITYSDK_OFFSET(0xF151D0)
+#define MX_NETWORKPROTOCOL_CAMPAIGNSUBSTAGERESULTRESPONSE_SET_CAMPAIGNSTAGEHISTORYDB_OFFSET UNITYSDK_OFFSET(0xF151E0)
+#define MX_NETWORKPROTOCOL_CAMPAIGNSUBSTAGERESULTRESPONSE_.CTOR_OFFSET UNITYSDK_OFFSET(0xF151F0)
+#define MX_NETWORKPROTOCOL_CAMPAIGNSUBSTAGERESULTRESPONSE_SET_LEVELUPCHARACTERDBS_OFFSET UNITYSDK_OFFSET(0xF15200)
+#define MX_NETWORKPROTOCOL_CAMPAIGNSUBSTAGERESULTRESPONSE_GET_LEVELUPCHARACTERDBS_OFFSET UNITYSDK_OFFSET(0xF15210)
+#define MX_NETWORKPROTOCOL_CAMPAIGNSUBSTAGERESULTRESPONSE_GET_FIRSTCLEARREWARD_OFFSET UNITYSDK_OFFSET(0xF15220)
+#define MX_NETWORKPROTOCOL_CAMPAIGNSUBSTAGERESULTRESPONSE_SET_THREESTARREWARD_OFFSET UNITYSDK_OFFSET(0xF15230)
+
+namespace MX::NetworkProtocol
+{
+	inline static constexpr unsigned int CampaignSubStageResultResponse_TypeDefinitionIndex = 11439;
+
+	class CampaignSubStageResultResponse : public Il2CppObject
+	{
+	public:
+		::System::Int64 _TacticRank_k__BackingField; // 0x50
+		::MX::GameLogic::DBModel::CampaignStageHistoryDB* _CampaignStageHistoryDB_k__BackingField; // 0x58
+		Il2CppObject* _LevelUpCharacterDBs_k__BackingField; // 0x60
+		::MX::GameLogic::Parcel::ParcelResultDB* _ParcelResultDB_k__BackingField; // 0x68
+		Il2CppObject* _FirstClearReward_k__BackingField; // 0x70
+		Il2CppObject* _ThreeStarReward_k__BackingField; // 0x78
+
+		::System::Void set_TacticRank(::System::Int64 arg)
+		{
+			((::System::Void(*)(::System::Int64, ::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_CAMPAIGNSUBSTAGERESULTRESPONSE_SET_TACTICRANK_OFFSET))(arg, nullptr);
+		}
+
+		::System::Void set_FirstClearReward(Il2CppObject* arg)
+		{
+			((::System::Void(*)(Il2CppObject*, ::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_CAMPAIGNSUBSTAGERESULTRESPONSE_SET_FIRSTCLEARREWARD_OFFSET))(arg, nullptr);
+		}
+
+		Il2CppObject* get_ThreeStarReward()
+		{
+			return ((Il2CppObject*(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_CAMPAIGNSUBSTAGERESULTRESPONSE_GET_THREESTARREWARD_OFFSET))(nullptr);
+		}
+
+		::MX::NetworkProtocol::Protocol* get_Protocol()
+		{
+			return ((::MX::NetworkProtocol::Protocol*(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_CAMPAIGNSUBSTAGERESULTRESPONSE_GET_PROTOCOL_OFFSET))(nullptr);
+		}
+
+		::MX::GameLogic::DBModel::CampaignStageHistoryDB* get_CampaignStageHistoryDB()
+		{
+			return ((::MX::GameLogic::DBModel::CampaignStageHistoryDB*(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_CAMPAIGNSUBSTAGERESULTRESPONSE_GET_CAMPAIGNSTAGEHISTORYDB_OFFSET))(nullptr);
+		}
+
+		::MX::GameLogic::Parcel::ParcelResultDB* get_ParcelResultDB()
+		{
+			return ((::MX::GameLogic::Parcel::ParcelResultDB*(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_CAMPAIGNSUBSTAGERESULTRESPONSE_GET_PARCELRESULTDB_OFFSET))(nullptr);
+		}
+
+		::System::Int64 get_TacticRank()
+		{
+			return ((::System::Int64(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_CAMPAIGNSUBSTAGERESULTRESPONSE_GET_TACTICRANK_OFFSET))(nullptr);
+		}
+
+		::System::Void set_ParcelResultDB(::MX::GameLogic::Parcel::ParcelResultDB* arg)
+		{
+			((::System::Void(*)(::MX::GameLogic::Parcel::ParcelResultDB*, ::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_CAMPAIGNSUBSTAGERESULTRESPONSE_SET_PARCELRESULTDB_OFFSET))(arg, nullptr);
+		}
+
+		::System::Void set_CampaignStageHistoryDB(::MX::GameLogic::DBModel::CampaignStageHistoryDB* arg)
+		{
+			((::System::Void(*)(::MX::GameLogic::DBModel::CampaignStageHistoryDB*, ::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_CAMPAIGNSUBSTAGERESULTRESPONSE_SET_CAMPAIGNSTAGEHISTORYDB_OFFSET))(arg, nullptr);
+		}
+
+		::System::Void .ctor()
+		{
+			((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_CAMPAIGNSUBSTAGERESULTRESPONSE_.CTOR_OFFSET))(nullptr);
+		}
+
+		::System::Void set_LevelUpCharacterDBs(Il2CppObject* arg)
+		{
+			((::System::Void(*)(Il2CppObject*, ::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_CAMPAIGNSUBSTAGERESULTRESPONSE_SET_LEVELUPCHARACTERDBS_OFFSET))(arg, nullptr);
+		}
+
+		Il2CppObject* get_LevelUpCharacterDBs()
+		{
+			return ((Il2CppObject*(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_CAMPAIGNSUBSTAGERESULTRESPONSE_GET_LEVELUPCHARACTERDBS_OFFSET))(nullptr);
+		}
+
+		Il2CppObject* get_FirstClearReward()
+		{
+			return ((Il2CppObject*(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_CAMPAIGNSUBSTAGERESULTRESPONSE_GET_FIRSTCLEARREWARD_OFFSET))(nullptr);
+		}
+
+		::System::Void set_ThreeStarReward(Il2CppObject* arg)
+		{
+			((::System::Void(*)(Il2CppObject*, ::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_CAMPAIGNSUBSTAGERESULTRESPONSE_SET_THREESTARREWARD_OFFSET))(arg, nullptr);
+		}
+
+	};
+}
+

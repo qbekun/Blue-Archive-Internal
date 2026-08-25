@@ -1,0 +1,73 @@
+#pragma once
+#include "../../../unitysdk.h"
+
+#define MX_GAMELOGIC_DBMODEL_ACADEMYMESSAGEOUTLINEDB_GET_NEWMESSAGECOUNT_OFFSET UNITYSDK_OFFSET(0xFE0E20)
+#define MX_GAMELOGIC_DBMODEL_ACADEMYMESSAGEOUTLINEDB_SET_CHARACTERUNIQUEID_OFFSET UNITYSDK_OFFSET(0xFE0E30)
+#define MX_GAMELOGIC_DBMODEL_ACADEMYMESSAGEOUTLINEDB_SET_LASTMESSAGESERVERID_OFFSET UNITYSDK_OFFSET(0xFE0E40)
+#define MX_GAMELOGIC_DBMODEL_ACADEMYMESSAGEOUTLINEDB_GET_LASTMESSAGEUNIQUEID_OFFSET UNITYSDK_OFFSET(0xFE0E50)
+#define MX_GAMELOGIC_DBMODEL_ACADEMYMESSAGEOUTLINEDB_GET_LASTMESSAGESERVERID_OFFSET UNITYSDK_OFFSET(0xFE0E60)
+#define MX_GAMELOGIC_DBMODEL_ACADEMYMESSAGEOUTLINEDB_SET_LASTMESSAGEUNIQUEID_OFFSET UNITYSDK_OFFSET(0xFE0E70)
+#define MX_GAMELOGIC_DBMODEL_ACADEMYMESSAGEOUTLINEDB_SET_NEWMESSAGECOUNT_OFFSET UNITYSDK_OFFSET(0xFE0E80)
+#define MX_GAMELOGIC_DBMODEL_ACADEMYMESSAGEOUTLINEDB_.CTOR_OFFSET UNITYSDK_OFFSET(0xFE0E90)
+#define MX_GAMELOGIC_DBMODEL_ACADEMYMESSAGEOUTLINEDB_GET_CHARACTERUNIQUEID_OFFSET UNITYSDK_OFFSET(0xFE0EA0)
+
+namespace MX::GameLogic::DBModel
+{
+	inline static constexpr unsigned int AcademyMessageOutLineDB_TypeDefinitionIndex = 12465;
+
+	class AcademyMessageOutLineDB : public Il2CppObject
+	{
+	public:
+		::System::Int64 _CharacterUniqueId_k__BackingField; // 0x10
+		::System::Int64 _NewMessageCount_k__BackingField; // 0x18
+		::System::Int64 _LastMessageUniqueId_k__BackingField; // 0x20
+		::System::Int64 _LastMessageServerId_k__BackingField; // 0x28
+
+		::System::Int64 get_NewMessageCount()
+		{
+			return ((::System::Int64(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_GAMELOGIC_DBMODEL_ACADEMYMESSAGEOUTLINEDB_GET_NEWMESSAGECOUNT_OFFSET))(nullptr);
+		}
+
+		::System::Void set_CharacterUniqueId(::System::Int64 arg)
+		{
+			((::System::Void(*)(::System::Int64, ::PVOID))((::PBYTE)hIl2Cpp + MX_GAMELOGIC_DBMODEL_ACADEMYMESSAGEOUTLINEDB_SET_CHARACTERUNIQUEID_OFFSET))(arg, nullptr);
+		}
+
+		::System::Void set_LastMessageServerId(::System::Int64 arg)
+		{
+			((::System::Void(*)(::System::Int64, ::PVOID))((::PBYTE)hIl2Cpp + MX_GAMELOGIC_DBMODEL_ACADEMYMESSAGEOUTLINEDB_SET_LASTMESSAGESERVERID_OFFSET))(arg, nullptr);
+		}
+
+		::System::Int64 get_LastMessageUniqueId()
+		{
+			return ((::System::Int64(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_GAMELOGIC_DBMODEL_ACADEMYMESSAGEOUTLINEDB_GET_LASTMESSAGEUNIQUEID_OFFSET))(nullptr);
+		}
+
+		::System::Int64 get_LastMessageServerId()
+		{
+			return ((::System::Int64(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_GAMELOGIC_DBMODEL_ACADEMYMESSAGEOUTLINEDB_GET_LASTMESSAGESERVERID_OFFSET))(nullptr);
+		}
+
+		::System::Void set_LastMessageUniqueId(::System::Int64 arg)
+		{
+			((::System::Void(*)(::System::Int64, ::PVOID))((::PBYTE)hIl2Cpp + MX_GAMELOGIC_DBMODEL_ACADEMYMESSAGEOUTLINEDB_SET_LASTMESSAGEUNIQUEID_OFFSET))(arg, nullptr);
+		}
+
+		::System::Void set_NewMessageCount(::System::Int64 arg)
+		{
+			((::System::Void(*)(::System::Int64, ::PVOID))((::PBYTE)hIl2Cpp + MX_GAMELOGIC_DBMODEL_ACADEMYMESSAGEOUTLINEDB_SET_NEWMESSAGECOUNT_OFFSET))(arg, nullptr);
+		}
+
+		::System::Void .ctor()
+		{
+			((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_GAMELOGIC_DBMODEL_ACADEMYMESSAGEOUTLINEDB_.CTOR_OFFSET))(nullptr);
+		}
+
+		::System::Int64 get_CharacterUniqueId()
+		{
+			return ((::System::Int64(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_GAMELOGIC_DBMODEL_ACADEMYMESSAGEOUTLINEDB_GET_CHARACTERUNIQUEID_OFFSET))(nullptr);
+		}
+
+	};
+}
+

@@ -1,0 +1,82 @@
+#pragma once
+#include "../../unitysdk.h"
+
+namespace MX::GameLogic::DBModel { class ConquestInfoDB; }
+namespace MX::NetworkProtocol { class Protocol; }
+
+#define MX_NETWORKPROTOCOL_CONQUESTMAINSTORYGETINFORESPONSE_SET_CONQUESTEDTILEDBS_OFFSET UNITYSDK_OFFSET(0xF40F80)
+#define MX_NETWORKPROTOCOL_CONQUESTMAINSTORYGETINFORESPONSE_SET_CONQUESTINFODB_OFFSET UNITYSDK_OFFSET(0xF40F90)
+#define MX_NETWORKPROTOCOL_CONQUESTMAINSTORYGETINFORESPONSE_GET_CONQUESTEDTILEDBS_OFFSET UNITYSDK_OFFSET(0xF40FA0)
+#define MX_NETWORKPROTOCOL_CONQUESTMAINSTORYGETINFORESPONSE_GET_PROTOCOL_OFFSET UNITYSDK_OFFSET(0xF40FB0)
+#define MX_NETWORKPROTOCOL_CONQUESTMAINSTORYGETINFORESPONSE_GET_ISFIRSTENTER_OFFSET UNITYSDK_OFFSET(0xF40FC0)
+#define MX_NETWORKPROTOCOL_CONQUESTMAINSTORYGETINFORESPONSE_GET_CONQUESTINFODB_OFFSET UNITYSDK_OFFSET(0xF40FD0)
+#define MX_NETWORKPROTOCOL_CONQUESTMAINSTORYGETINFORESPONSE_SET_ISFIRSTENTER_OFFSET UNITYSDK_OFFSET(0xF40FE0)
+#define MX_NETWORKPROTOCOL_CONQUESTMAINSTORYGETINFORESPONSE_SET_DIFFICULTYTOSTEPDICT_OFFSET UNITYSDK_OFFSET(0xF40FF0)
+#define MX_NETWORKPROTOCOL_CONQUESTMAINSTORYGETINFORESPONSE_GET_DIFFICULTYTOSTEPDICT_OFFSET UNITYSDK_OFFSET(0xF41000)
+#define MX_NETWORKPROTOCOL_CONQUESTMAINSTORYGETINFORESPONSE_.CTOR_OFFSET UNITYSDK_OFFSET(0xF41010)
+
+namespace MX::NetworkProtocol
+{
+	inline static constexpr unsigned int ConquestMainStoryGetInfoResponse_TypeDefinitionIndex = 11572;
+
+	class ConquestMainStoryGetInfoResponse : public Il2CppObject
+	{
+	public:
+		::MX::GameLogic::DBModel::ConquestInfoDB* _ConquestInfoDB_k__BackingField; // 0x50
+		Il2CppObject* _ConquestedTileDBs_k__BackingField; // 0x58
+		Il2CppObject* _DifficultyToStepDict_k__BackingField; // 0x60
+		::System::Boolean _IsFirstEnter_k__BackingField; // 0x68
+
+		::System::Void set_ConquestedTileDBs(Il2CppObject* arg)
+		{
+			((::System::Void(*)(Il2CppObject*, ::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_CONQUESTMAINSTORYGETINFORESPONSE_SET_CONQUESTEDTILEDBS_OFFSET))(arg, nullptr);
+		}
+
+		::System::Void set_ConquestInfoDB(::MX::GameLogic::DBModel::ConquestInfoDB* arg)
+		{
+			((::System::Void(*)(::MX::GameLogic::DBModel::ConquestInfoDB*, ::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_CONQUESTMAINSTORYGETINFORESPONSE_SET_CONQUESTINFODB_OFFSET))(arg, nullptr);
+		}
+
+		Il2CppObject* get_ConquestedTileDBs()
+		{
+			return ((Il2CppObject*(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_CONQUESTMAINSTORYGETINFORESPONSE_GET_CONQUESTEDTILEDBS_OFFSET))(nullptr);
+		}
+
+		::MX::NetworkProtocol::Protocol* get_Protocol()
+		{
+			return ((::MX::NetworkProtocol::Protocol*(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_CONQUESTMAINSTORYGETINFORESPONSE_GET_PROTOCOL_OFFSET))(nullptr);
+		}
+
+		::System::Boolean get_IsFirstEnter()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_CONQUESTMAINSTORYGETINFORESPONSE_GET_ISFIRSTENTER_OFFSET))(nullptr);
+		}
+
+		::MX::GameLogic::DBModel::ConquestInfoDB* get_ConquestInfoDB()
+		{
+			return ((::MX::GameLogic::DBModel::ConquestInfoDB*(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_CONQUESTMAINSTORYGETINFORESPONSE_GET_CONQUESTINFODB_OFFSET))(nullptr);
+		}
+
+		::System::Void set_IsFirstEnter(::System::Boolean arg)
+		{
+			((::System::Void(*)(::System::Boolean, ::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_CONQUESTMAINSTORYGETINFORESPONSE_SET_ISFIRSTENTER_OFFSET))(arg, nullptr);
+		}
+
+		::System::Void set_DifficultyToStepDict(Il2CppObject* arg)
+		{
+			((::System::Void(*)(Il2CppObject*, ::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_CONQUESTMAINSTORYGETINFORESPONSE_SET_DIFFICULTYTOSTEPDICT_OFFSET))(arg, nullptr);
+		}
+
+		Il2CppObject* get_DifficultyToStepDict()
+		{
+			return ((Il2CppObject*(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_CONQUESTMAINSTORYGETINFORESPONSE_GET_DIFFICULTYTOSTEPDICT_OFFSET))(nullptr);
+		}
+
+		::System::Void .ctor()
+		{
+			((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_CONQUESTMAINSTORYGETINFORESPONSE_.CTOR_OFFSET))(nullptr);
+		}
+
+	};
+}
+

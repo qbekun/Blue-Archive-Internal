@@ -1,0 +1,123 @@
+#pragma once
+#include "../../../unitysdk.h"
+
+#define SYSTEM_RUNTIME_INTEROPSERVICES_SAFEHANDLE_.CTOR_OFFSET UNITYSDK_OFFSET(0x9223010)
+#define SYSTEM_RUNTIME_INTEROPSERVICES_SAFEHANDLE_.CTOR_OFFSET UNITYSDK_OFFSET(0x92230A0)
+#define SYSTEM_RUNTIME_INTEROPSERVICES_SAFEHANDLE_FINALIZE_OFFSET UNITYSDK_OFFSET(0x92230F0)
+#define SYSTEM_RUNTIME_INTEROPSERVICES_SAFEHANDLE_SETHANDLE_OFFSET UNITYSDK_OFFSET(0x92231C0)
+#define SYSTEM_RUNTIME_INTEROPSERVICES_SAFEHANDLE_DANGEROUSGETHANDLE_OFFSET UNITYSDK_OFFSET(0x92231D0)
+#define SYSTEM_RUNTIME_INTEROPSERVICES_SAFEHANDLE_GET_ISCLOSED_OFFSET UNITYSDK_OFFSET(0x92231E0)
+#define SYSTEM_RUNTIME_INTEROPSERVICES_SAFEHANDLE_GET_ISINVALID_OFFSET UNITYSDK_OFFSET(0x000000)
+#define SYSTEM_RUNTIME_INTEROPSERVICES_SAFEHANDLE_CLOSE_OFFSET UNITYSDK_OFFSET(0x92231F0)
+#define SYSTEM_RUNTIME_INTEROPSERVICES_SAFEHANDLE_DISPOSE_OFFSET UNITYSDK_OFFSET(0x9223210)
+#define SYSTEM_RUNTIME_INTEROPSERVICES_SAFEHANDLE_DISPOSE_OFFSET UNITYSDK_OFFSET(0x9223230)
+#define SYSTEM_RUNTIME_INTEROPSERVICES_SAFEHANDLE_RELEASEHANDLE_OFFSET UNITYSDK_OFFSET(0x000000)
+#define SYSTEM_RUNTIME_INTEROPSERVICES_SAFEHANDLE_SETHANDLEASINVALID_OFFSET UNITYSDK_OFFSET(0x9223300)
+#define SYSTEM_RUNTIME_INTEROPSERVICES_SAFEHANDLE_DANGEROUSADDREF_OFFSET UNITYSDK_OFFSET(0x92226D0)
+#define SYSTEM_RUNTIME_INTEROPSERVICES_SAFEHANDLE_DANGEROUSRELEASE_OFFSET UNITYSDK_OFFSET(0x9222870)
+#define SYSTEM_RUNTIME_INTEROPSERVICES_SAFEHANDLE_INTERNALDISPOSE_OFFSET UNITYSDK_OFFSET(0x9223250)
+#define SYSTEM_RUNTIME_INTEROPSERVICES_SAFEHANDLE_INTERNALFINALIZE_OFFSET UNITYSDK_OFFSET(0x92232F0)
+#define SYSTEM_RUNTIME_INTEROPSERVICES_SAFEHANDLE_DANGEROUSRELEASEINTERNAL_OFFSET UNITYSDK_OFFSET(0x9223370)
+
+namespace System::Runtime::InteropServices
+{
+	inline static constexpr unsigned int SafeHandle_TypeDefinitionIndex = 24711;
+
+	class SafeHandle : public Il2CppObject
+	{
+	public:
+		::System::Int32 handle; // 0x10
+		::System::Int32 _state; // 0x18
+		::System::Boolean _ownsHandle; // 0x1C
+		::System::Boolean _fullyInitialized; // 0x1D
+		::System::Int32 RefCount_Mask; // 0x0
+		::System::Int32 RefCount_One; // 0x0
+
+		::System::Void .ctor(::System::Int32 arg, ::System::Boolean arg)
+		{
+			((::System::Void(*)(::System::Int32, ::System::Boolean, ::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_RUNTIME_INTEROPSERVICES_SAFEHANDLE_.CTOR_OFFSET))(arg, arg, nullptr);
+		}
+
+		::System::Void .ctor()
+		{
+			((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_RUNTIME_INTEROPSERVICES_SAFEHANDLE_.CTOR_OFFSET))(nullptr);
+		}
+
+		::System::Void Finalize()
+		{
+			((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_RUNTIME_INTEROPSERVICES_SAFEHANDLE_FINALIZE_OFFSET))(nullptr);
+		}
+
+		::System::Void SetHandle(::System::Int32 arg)
+		{
+			((::System::Void(*)(::System::Int32, ::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_RUNTIME_INTEROPSERVICES_SAFEHANDLE_SETHANDLE_OFFSET))(arg, nullptr);
+		}
+
+		::System::Int32 DangerousGetHandle()
+		{
+			return (return (::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_RUNTIME_INTEROPSERVICES_SAFEHANDLE_DANGEROUSGETHANDLE_OFFSET))(nullptr);
+		}
+
+		::System::Boolean get_IsClosed()
+		{
+			return (return (::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_RUNTIME_INTEROPSERVICES_SAFEHANDLE_GET_ISCLOSED_OFFSET))(nullptr);
+		}
+
+		::System::Boolean get_IsInvalid()
+		{
+			return (return (::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_RUNTIME_INTEROPSERVICES_SAFEHANDLE_GET_ISINVALID_OFFSET))(nullptr);
+		}
+
+		::System::Void Close()
+		{
+			((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_RUNTIME_INTEROPSERVICES_SAFEHANDLE_CLOSE_OFFSET))(nullptr);
+		}
+
+		::System::Void Dispose()
+		{
+			((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_RUNTIME_INTEROPSERVICES_SAFEHANDLE_DISPOSE_OFFSET))(nullptr);
+		}
+
+		::System::Void Dispose(::System::Boolean arg)
+		{
+			((::System::Void(*)(::System::Boolean, ::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_RUNTIME_INTEROPSERVICES_SAFEHANDLE_DISPOSE_OFFSET))(arg, nullptr);
+		}
+
+		::System::Boolean ReleaseHandle()
+		{
+			return (return (::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_RUNTIME_INTEROPSERVICES_SAFEHANDLE_RELEASEHANDLE_OFFSET))(nullptr);
+		}
+
+		::System::Void SetHandleAsInvalid()
+		{
+			((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_RUNTIME_INTEROPSERVICES_SAFEHANDLE_SETHANDLEASINVALID_OFFSET))(nullptr);
+		}
+
+		::System::Void DangerousAddRef(bool&* arg)
+		{
+			((::System::Void(*)(bool&*, ::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_RUNTIME_INTEROPSERVICES_SAFEHANDLE_DANGEROUSADDREF_OFFSET))(arg, nullptr);
+		}
+
+		::System::Void DangerousRelease()
+		{
+			((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_RUNTIME_INTEROPSERVICES_SAFEHANDLE_DANGEROUSRELEASE_OFFSET))(nullptr);
+		}
+
+		::System::Void InternalDispose()
+		{
+			((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_RUNTIME_INTEROPSERVICES_SAFEHANDLE_INTERNALDISPOSE_OFFSET))(nullptr);
+		}
+
+		::System::Void InternalFinalize()
+		{
+			((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_RUNTIME_INTEROPSERVICES_SAFEHANDLE_INTERNALFINALIZE_OFFSET))(nullptr);
+		}
+
+		::System::Void DangerousReleaseInternal(::System::Boolean arg)
+		{
+			((::System::Void(*)(::System::Boolean, ::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_RUNTIME_INTEROPSERVICES_SAFEHANDLE_DANGEROUSRELEASEINTERNAL_OFFSET))(arg, nullptr);
+		}
+
+	};
+}
+

@@ -1,0 +1,68 @@
+#pragma once
+#include "../../../unitysdk.h"
+
+namespace MX::NetworkProtocol { class Protocol; }
+
+#define MXFIELD_SHARED_NETWORKPROTOCOL_FIELDQUESTCLEARREQUEST_GET_UNIQUEID_OFFSET UNITYSDK_OFFSET(0xE6EB10)
+#define MXFIELD_SHARED_NETWORKPROTOCOL_FIELDQUESTCLEARREQUEST_SET_UNIQUEID_OFFSET UNITYSDK_OFFSET(0xE6EB20)
+#define MXFIELD_SHARED_NETWORKPROTOCOL_FIELDQUESTCLEARREQUEST_GET_ISDAILY_OFFSET UNITYSDK_OFFSET(0xE6EB30)
+#define MXFIELD_SHARED_NETWORKPROTOCOL_FIELDQUESTCLEARREQUEST_GET_FIELDSEASONID_OFFSET UNITYSDK_OFFSET(0xE6EB40)
+#define MXFIELD_SHARED_NETWORKPROTOCOL_FIELDQUESTCLEARREQUEST_SET_ISDAILY_OFFSET UNITYSDK_OFFSET(0xE6EB50)
+#define MXFIELD_SHARED_NETWORKPROTOCOL_FIELDQUESTCLEARREQUEST_GET_PROTOCOL_OFFSET UNITYSDK_OFFSET(0xE6EB60)
+#define MXFIELD_SHARED_NETWORKPROTOCOL_FIELDQUESTCLEARREQUEST_.CTOR_OFFSET UNITYSDK_OFFSET(0xE6EB70)
+#define MXFIELD_SHARED_NETWORKPROTOCOL_FIELDQUESTCLEARREQUEST_SET_FIELDSEASONID_OFFSET UNITYSDK_OFFSET(0xE6EB80)
+
+namespace MXField::Shared::NetworkProtocol
+{
+	inline static constexpr unsigned int FieldQuestClearRequest_TypeDefinitionIndex = 10528;
+
+	class FieldQuestClearRequest : public Il2CppObject
+	{
+	public:
+		::System::Int64 _FieldSeasonId_k__BackingField; // 0x40
+		::System::Boolean _IsDaily_k__BackingField; // 0x48
+		::System::Int64 _UniqueId_k__BackingField; // 0x50
+
+		::System::Int64 get_UniqueId()
+		{
+			return ((::System::Int64(*)(::PVOID))((::PBYTE)hIl2Cpp + MXFIELD_SHARED_NETWORKPROTOCOL_FIELDQUESTCLEARREQUEST_GET_UNIQUEID_OFFSET))(nullptr);
+		}
+
+		::System::Void set_UniqueId(::System::Int64 arg)
+		{
+			((::System::Void(*)(::System::Int64, ::PVOID))((::PBYTE)hIl2Cpp + MXFIELD_SHARED_NETWORKPROTOCOL_FIELDQUESTCLEARREQUEST_SET_UNIQUEID_OFFSET))(arg, nullptr);
+		}
+
+		::System::Boolean get_IsDaily()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MXFIELD_SHARED_NETWORKPROTOCOL_FIELDQUESTCLEARREQUEST_GET_ISDAILY_OFFSET))(nullptr);
+		}
+
+		::System::Int64 get_FieldSeasonId()
+		{
+			return ((::System::Int64(*)(::PVOID))((::PBYTE)hIl2Cpp + MXFIELD_SHARED_NETWORKPROTOCOL_FIELDQUESTCLEARREQUEST_GET_FIELDSEASONID_OFFSET))(nullptr);
+		}
+
+		::System::Void set_IsDaily(::System::Boolean arg)
+		{
+			((::System::Void(*)(::System::Boolean, ::PVOID))((::PBYTE)hIl2Cpp + MXFIELD_SHARED_NETWORKPROTOCOL_FIELDQUESTCLEARREQUEST_SET_ISDAILY_OFFSET))(arg, nullptr);
+		}
+
+		::MX::NetworkProtocol::Protocol* get_Protocol()
+		{
+			return ((::MX::NetworkProtocol::Protocol*(*)(::PVOID))((::PBYTE)hIl2Cpp + MXFIELD_SHARED_NETWORKPROTOCOL_FIELDQUESTCLEARREQUEST_GET_PROTOCOL_OFFSET))(nullptr);
+		}
+
+		::System::Void .ctor()
+		{
+			((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MXFIELD_SHARED_NETWORKPROTOCOL_FIELDQUESTCLEARREQUEST_.CTOR_OFFSET))(nullptr);
+		}
+
+		::System::Void set_FieldSeasonId(::System::Int64 arg)
+		{
+			((::System::Void(*)(::System::Int64, ::PVOID))((::PBYTE)hIl2Cpp + MXFIELD_SHARED_NETWORKPROTOCOL_FIELDQUESTCLEARREQUEST_SET_FIELDSEASONID_OFFSET))(arg, nullptr);
+		}
+
+	};
+}
+

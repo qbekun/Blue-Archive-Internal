@@ -1,0 +1,53 @@
+#pragma once
+#include "../../../../../unitysdk.h"
+
+#define BESTHTTP_SECUREPROTOCOL_ORG_BOUNCYCASTLE_ASN1_INDEFINITELENGTHINPUTSTREAM_REQUIREBYTE_OFFSET UNITYSDK_OFFSET(0x7DD5C0)
+#define BESTHTTP_SECUREPROTOCOL_ORG_BOUNCYCASTLE_ASN1_INDEFINITELENGTHINPUTSTREAM_.CTOR_OFFSET UNITYSDK_OFFSET(0x7CB670)
+#define BESTHTTP_SECUREPROTOCOL_ORG_BOUNCYCASTLE_ASN1_INDEFINITELENGTHINPUTSTREAM_READ_OFFSET UNITYSDK_OFFSET(0x7DD6E0)
+#define BESTHTTP_SECUREPROTOCOL_ORG_BOUNCYCASTLE_ASN1_INDEFINITELENGTHINPUTSTREAM_READBYTE_OFFSET UNITYSDK_OFFSET(0x7DD7D0)
+#define BESTHTTP_SECUREPROTOCOL_ORG_BOUNCYCASTLE_ASN1_INDEFINITELENGTHINPUTSTREAM_SETEOFON00_OFFSET UNITYSDK_OFFSET(0x7CB850)
+#define BESTHTTP_SECUREPROTOCOL_ORG_BOUNCYCASTLE_ASN1_INDEFINITELENGTHINPUTSTREAM_CHECKFOREOF_OFFSET UNITYSDK_OFFSET(0x7DD640)
+
+namespace BestHTTP::SecureProtocol::Org::BouncyCastle::Asn1
+{
+	inline static constexpr unsigned int IndefiniteLengthInputStream_TypeDefinitionIndex = 22822;
+
+	class IndefiniteLengthInputStream : public Il2CppObject
+	{
+	public:
+		::System::Int32 _lookAhead; // 0x40
+		::System::Boolean _eofOn00; // 0x44
+
+		::System::Int32 RequireByte()
+		{
+			return (return (::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + BESTHTTP_SECUREPROTOCOL_ORG_BOUNCYCASTLE_ASN1_INDEFINITELENGTHINPUTSTREAM_REQUIREBYTE_OFFSET))(nullptr);
+		}
+
+		::System::Void .ctor(::System::IO::Stream* arg, ::System::Int32 arg)
+		{
+			((::System::Void(*)(::System::IO::Stream*, ::System::Int32, ::PVOID))((::PBYTE)hIl2Cpp + BESTHTTP_SECUREPROTOCOL_ORG_BOUNCYCASTLE_ASN1_INDEFINITELENGTHINPUTSTREAM_.CTOR_OFFSET))(arg, arg, nullptr);
+		}
+
+		::System::Int32 Read(::Il2CppArray<::System::Object*>* arg, ::System::Int32 arg, ::System::Int32 arg)
+		{
+			return (return (::System::Int32(*)(::Il2CppArray<::System::Object*>*, ::System::Int32, ::System::Int32, ::PVOID))((::PBYTE)hIl2Cpp + BESTHTTP_SECUREPROTOCOL_ORG_BOUNCYCASTLE_ASN1_INDEFINITELENGTHINPUTSTREAM_READ_OFFSET))(arg, arg, arg, nullptr);
+		}
+
+		::System::Int32 ReadByte()
+		{
+			return (return (::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + BESTHTTP_SECUREPROTOCOL_ORG_BOUNCYCASTLE_ASN1_INDEFINITELENGTHINPUTSTREAM_READBYTE_OFFSET))(nullptr);
+		}
+
+		::System::Void SetEofOn00(::System::Boolean arg)
+		{
+			((::System::Void(*)(::System::Boolean, ::PVOID))((::PBYTE)hIl2Cpp + BESTHTTP_SECUREPROTOCOL_ORG_BOUNCYCASTLE_ASN1_INDEFINITELENGTHINPUTSTREAM_SETEOFON00_OFFSET))(arg, nullptr);
+		}
+
+		::System::Boolean CheckForEof()
+		{
+			return (return (::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + BESTHTTP_SECUREPROTOCOL_ORG_BOUNCYCASTLE_ASN1_INDEFINITELENGTHINPUTSTREAM_CHECKFOREOF_OFFSET))(nullptr);
+		}
+
+	};
+}
+

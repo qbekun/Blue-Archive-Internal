@@ -1,0 +1,60 @@
+#pragma once
+#include "../../../unitysdk.h"
+
+#define MX_DATA_EXCEL_INTERACTIVEWORLDRAIDCARRIERMAPDBSCHEMA_GET_ID_OFFSET UNITYSDK_OFFSET(0x1B59260)
+#define MX_DATA_EXCEL_INTERACTIVEWORLDRAIDCARRIERMAPDBSCHEMA_SET_ID_OFFSET UNITYSDK_OFFSET(0x1B59270)
+#define MX_DATA_EXCEL_INTERACTIVEWORLDRAIDCARRIERMAPDBSCHEMA_GET_WORLDRAIDSEASONID_OFFSET UNITYSDK_OFFSET(0x1B59280)
+#define MX_DATA_EXCEL_INTERACTIVEWORLDRAIDCARRIERMAPDBSCHEMA_SET_WORLDRAIDSEASONID_OFFSET UNITYSDK_OFFSET(0x1B59290)
+#define MX_DATA_EXCEL_INTERACTIVEWORLDRAIDCARRIERMAPDBSCHEMA_SET_WORLDRAIDPHASEID_OFFSET UNITYSDK_OFFSET(0x1B592A0)
+#define MX_DATA_EXCEL_INTERACTIVEWORLDRAIDCARRIERMAPDBSCHEMA_GET_WORLDRAIDPHASEID_OFFSET UNITYSDK_OFFSET(0x1B592B0)
+#define MX_DATA_EXCEL_INTERACTIVEWORLDRAIDCARRIERMAPDBSCHEMA_.CTOR_OFFSET UNITYSDK_OFFSET(0x1B592C0)
+
+namespace MX::Data::Excel
+{
+	inline static constexpr unsigned int InteractiveWorldRaidCarrierMapDBSchema_TypeDefinitionIndex = 18223;
+
+	class InteractiveWorldRaidCarrierMapDBSchema : public ::TriInspector::InfoBoxAttribute
+	{
+	public:
+		::System::Int64 _Id_k__BackingField; // 0x20
+		::System::Int64 _WorldRaidSeasonId_k__BackingField; // 0x28
+		::System::Int64 _WorldRaidPhaseId_k__BackingField; // 0x30
+
+		::System::Int64 get_Id()
+		{
+			return (return (::System::Int64(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_DATA_EXCEL_INTERACTIVEWORLDRAIDCARRIERMAPDBSCHEMA_GET_ID_OFFSET))(nullptr);
+		}
+
+		::System::Void set_Id(::System::Int64 arg)
+		{
+			((::System::Void(*)(::System::Int64, ::PVOID))((::PBYTE)hIl2Cpp + MX_DATA_EXCEL_INTERACTIVEWORLDRAIDCARRIERMAPDBSCHEMA_SET_ID_OFFSET))(arg, nullptr);
+		}
+
+		::System::Int64 get_WorldRaidSeasonId()
+		{
+			return (return (::System::Int64(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_DATA_EXCEL_INTERACTIVEWORLDRAIDCARRIERMAPDBSCHEMA_GET_WORLDRAIDSEASONID_OFFSET))(nullptr);
+		}
+
+		::System::Void set_WorldRaidSeasonId(::System::Int64 arg)
+		{
+			((::System::Void(*)(::System::Int64, ::PVOID))((::PBYTE)hIl2Cpp + MX_DATA_EXCEL_INTERACTIVEWORLDRAIDCARRIERMAPDBSCHEMA_SET_WORLDRAIDSEASONID_OFFSET))(arg, nullptr);
+		}
+
+		::System::Void set_WorldRaidPhaseId(::System::Int64 arg)
+		{
+			((::System::Void(*)(::System::Int64, ::PVOID))((::PBYTE)hIl2Cpp + MX_DATA_EXCEL_INTERACTIVEWORLDRAIDCARRIERMAPDBSCHEMA_SET_WORLDRAIDPHASEID_OFFSET))(arg, nullptr);
+		}
+
+		::System::Int64 get_WorldRaidPhaseId()
+		{
+			return (return (::System::Int64(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_DATA_EXCEL_INTERACTIVEWORLDRAIDCARRIERMAPDBSCHEMA_GET_WORLDRAIDPHASEID_OFFSET))(nullptr);
+		}
+
+		::System::Void .ctor()
+		{
+			((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_DATA_EXCEL_INTERACTIVEWORLDRAIDCARRIERMAPDBSCHEMA_.CTOR_OFFSET))(nullptr);
+		}
+
+	};
+}
+

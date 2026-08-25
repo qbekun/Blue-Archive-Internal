@@ -1,0 +1,49 @@
+#pragma once
+#include "unitysdk.h"
+
+#define UIFILTERSORTSHIFTINGCRAFTOPTIONLIST_RESTOREFILTER_OFFSET UNITYSDK_OFFSET(0xAFF2C0)
+#define UIFILTERSORTSHIFTINGCRAFTOPTIONLIST_RESETALL_OFFSET UNITYSDK_OFFSET(0xAFF390)
+#define UIFILTERSORTSHIFTINGCRAFTOPTIONLIST_.CTOR_OFFSET UNITYSDK_OFFSET(0xAFF650)
+#define UIFILTERSORTSHIFTINGCRAFTOPTIONLIST_LOADANDSETTABS_OFFSET UNITYSDK_OFFSET(0xAFF660)
+#define UIFILTERSORTSHIFTINGCRAFTOPTIONLIST_SAVEFILTER_OFFSET UNITYSDK_OFFSET(0xAFF880)
+#define UIFILTERSORTSHIFTINGCRAFTOPTIONLIST_GET_FILTERTABS_OFFSET UNITYSDK_OFFSET(0xAFF5A0)
+
+	inline static constexpr unsigned int UIFilterSortShiftingCraftOptionList_TypeDefinitionIndex = 8174;
+
+	class UIFilterSortShiftingCraftOptionList : public Il2CppObject
+	{
+	public:
+		Il2CppObject* filterTabList; // 0x20
+
+		::System::Void RestoreFilter()
+		{
+			((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + UIFILTERSORTSHIFTINGCRAFTOPTIONLIST_RESTOREFILTER_OFFSET))(nullptr);
+		}
+
+		::System::Void ResetAll()
+		{
+			((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + UIFILTERSORTSHIFTINGCRAFTOPTIONLIST_RESETALL_OFFSET))(nullptr);
+		}
+
+		::System::Void .ctor()
+		{
+			((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + UIFILTERSORTSHIFTINGCRAFTOPTIONLIST_.CTOR_OFFSET))(nullptr);
+		}
+
+		::System::Void LoadAndSetTabs()
+		{
+			((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + UIFILTERSORTSHIFTINGCRAFTOPTIONLIST_LOADANDSETTABS_OFFSET))(nullptr);
+		}
+
+		::System::Void SaveFilter()
+		{
+			((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + UIFILTERSORTSHIFTINGCRAFTOPTIONLIST_SAVEFILTER_OFFSET))(nullptr);
+		}
+
+		Il2CppObject* get_FilterTabs()
+		{
+			return ((Il2CppObject*(*)(::PVOID))((::PBYTE)hIl2Cpp + UIFILTERSORTSHIFTINGCRAFTOPTIONLIST_GET_FILTERTABS_OFFSET))(nullptr);
+		}
+
+	};
+

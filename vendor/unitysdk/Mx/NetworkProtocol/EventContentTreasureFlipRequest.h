@@ -1,0 +1,68 @@
+#pragma once
+#include "../../unitysdk.h"
+
+namespace MX::NetworkProtocol { class Protocol; }
+
+#define MX_NETWORKPROTOCOL_EVENTCONTENTTREASUREFLIPREQUEST_.CTOR_OFFSET UNITYSDK_OFFSET(0xF46030)
+#define MX_NETWORKPROTOCOL_EVENTCONTENTTREASUREFLIPREQUEST_GET_PROTOCOL_OFFSET UNITYSDK_OFFSET(0xF46040)
+#define MX_NETWORKPROTOCOL_EVENTCONTENTTREASUREFLIPREQUEST_GET_EVENTCONTENTID_OFFSET UNITYSDK_OFFSET(0xF46050)
+#define MX_NETWORKPROTOCOL_EVENTCONTENTTREASUREFLIPREQUEST_GET_ROUND_OFFSET UNITYSDK_OFFSET(0xF46060)
+#define MX_NETWORKPROTOCOL_EVENTCONTENTTREASUREFLIPREQUEST_SET_CELLS_OFFSET UNITYSDK_OFFSET(0xF46070)
+#define MX_NETWORKPROTOCOL_EVENTCONTENTTREASUREFLIPREQUEST_SET_EVENTCONTENTID_OFFSET UNITYSDK_OFFSET(0xF46080)
+#define MX_NETWORKPROTOCOL_EVENTCONTENTTREASUREFLIPREQUEST_SET_ROUND_OFFSET UNITYSDK_OFFSET(0xF46090)
+#define MX_NETWORKPROTOCOL_EVENTCONTENTTREASUREFLIPREQUEST_GET_CELLS_OFFSET UNITYSDK_OFFSET(0xF460A0)
+
+namespace MX::NetworkProtocol
+{
+	inline static constexpr unsigned int EventContentTreasureFlipRequest_TypeDefinitionIndex = 11769;
+
+	class EventContentTreasureFlipRequest : public Il2CppObject
+	{
+	public:
+		::System::Int64 _EventContentId_k__BackingField; // 0x40
+		::System::Int32 _Round_k__BackingField; // 0x48
+		Il2CppObject* _Cells_k__BackingField; // 0x50
+
+		::System::Void .ctor()
+		{
+			((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_EVENTCONTENTTREASUREFLIPREQUEST_.CTOR_OFFSET))(nullptr);
+		}
+
+		::MX::NetworkProtocol::Protocol* get_Protocol()
+		{
+			return ((::MX::NetworkProtocol::Protocol*(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_EVENTCONTENTTREASUREFLIPREQUEST_GET_PROTOCOL_OFFSET))(nullptr);
+		}
+
+		::System::Int64 get_EventContentId()
+		{
+			return ((::System::Int64(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_EVENTCONTENTTREASUREFLIPREQUEST_GET_EVENTCONTENTID_OFFSET))(nullptr);
+		}
+
+		::System::Int32 get_Round()
+		{
+			return ((::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_EVENTCONTENTTREASUREFLIPREQUEST_GET_ROUND_OFFSET))(nullptr);
+		}
+
+		::System::Void set_Cells(Il2CppObject* arg)
+		{
+			((::System::Void(*)(Il2CppObject*, ::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_EVENTCONTENTTREASUREFLIPREQUEST_SET_CELLS_OFFSET))(arg, nullptr);
+		}
+
+		::System::Void set_EventContentId(::System::Int64 arg)
+		{
+			((::System::Void(*)(::System::Int64, ::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_EVENTCONTENTTREASUREFLIPREQUEST_SET_EVENTCONTENTID_OFFSET))(arg, nullptr);
+		}
+
+		::System::Void set_Round(::System::Int32 arg)
+		{
+			((::System::Void(*)(::System::Int32, ::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_EVENTCONTENTTREASUREFLIPREQUEST_SET_ROUND_OFFSET))(arg, nullptr);
+		}
+
+		Il2CppObject* get_Cells()
+		{
+			return ((Il2CppObject*(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_EVENTCONTENTTREASUREFLIPREQUEST_GET_CELLS_OFFSET))(nullptr);
+		}
+
+	};
+}
+

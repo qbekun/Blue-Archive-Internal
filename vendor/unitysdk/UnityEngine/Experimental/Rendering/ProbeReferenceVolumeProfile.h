@@ -1,0 +1,62 @@
+#pragma once
+#include "../../../unitysdk.h"
+
+namespace UnityEngine::Experimental::Rendering { class ProbeReferenceVolumeProfile; }
+
+#define UNITYENGINE_EXPERIMENTAL_RENDERING_PROBEREFERENCEVOLUMEPROFILE_GET_CELLSIZEINMETERS_OFFSET UNITYSDK_OFFSET(0x9F8BF20)
+#define UNITYENGINE_EXPERIMENTAL_RENDERING_PROBEREFERENCEVOLUMEPROFILE_GET_MAXSUBDIVISION_OFFSET UNITYSDK_OFFSET(0x9F8BFC0)
+#define UNITYENGINE_EXPERIMENTAL_RENDERING_PROBEREFERENCEVOLUMEPROFILE_.CTOR_OFFSET UNITYSDK_OFFSET(0x9F8BFD0)
+#define UNITYENGINE_EXPERIMENTAL_RENDERING_PROBEREFERENCEVOLUMEPROFILE_ISEQUIVALENT_OFFSET UNITYSDK_OFFSET(0x9F8C050)
+#define UNITYENGINE_EXPERIMENTAL_RENDERING_PROBEREFERENCEVOLUMEPROFILE_GET_MINBRICKSIZE_OFFSET UNITYSDK_OFFSET(0x9F8BFA0)
+#define UNITYENGINE_EXPERIMENTAL_RENDERING_PROBEREFERENCEVOLUMEPROFILE_ONENABLE_OFFSET UNITYSDK_OFFSET(0x9F8C120)
+#define UNITYENGINE_EXPERIMENTAL_RENDERING_PROBEREFERENCEVOLUMEPROFILE_GET_CELLSIZEINBRICKS_OFFSET UNITYSDK_OFFSET(0x9F8BF70)
+
+namespace UnityEngine::Experimental::Rendering
+{
+	inline static constexpr unsigned int ProbeReferenceVolumeProfile_TypeDefinitionIndex = 33810;
+
+	class ProbeReferenceVolumeProfile : public Il2CppObject
+	{
+	public:
+		Version* version; // 0x18
+		::System::Int32 simplificationLevels; // 0x1C
+		::System::Single minDistanceBetweenProbes; // 0x20
+
+		::System::Single get_cellSizeInMeters()
+		{
+			return (return (::System::Single(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_EXPERIMENTAL_RENDERING_PROBEREFERENCEVOLUMEPROFILE_GET_CELLSIZEINMETERS_OFFSET))(nullptr);
+		}
+
+		::System::Int32 get_maxSubdivision()
+		{
+			return (return (::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_EXPERIMENTAL_RENDERING_PROBEREFERENCEVOLUMEPROFILE_GET_MAXSUBDIVISION_OFFSET))(nullptr);
+		}
+
+		::System::Void .ctor()
+		{
+			((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_EXPERIMENTAL_RENDERING_PROBEREFERENCEVOLUMEPROFILE_.CTOR_OFFSET))(nullptr);
+		}
+
+		::System::Boolean IsEquivalent(::UnityEngine::Experimental::Rendering::ProbeReferenceVolumeProfile* arg)
+		{
+			return (return (::System::Boolean(*)(::UnityEngine::Experimental::Rendering::ProbeReferenceVolumeProfile*, ::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_EXPERIMENTAL_RENDERING_PROBEREFERENCEVOLUMEPROFILE_ISEQUIVALENT_OFFSET))(arg, nullptr);
+		}
+
+		::System::Single get_minBrickSize()
+		{
+			return (return (::System::Single(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_EXPERIMENTAL_RENDERING_PROBEREFERENCEVOLUMEPROFILE_GET_MINBRICKSIZE_OFFSET))(nullptr);
+		}
+
+		::System::Void OnEnable()
+		{
+			((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_EXPERIMENTAL_RENDERING_PROBEREFERENCEVOLUMEPROFILE_ONENABLE_OFFSET))(nullptr);
+		}
+
+		::System::Int32 get_cellSizeInBricks()
+		{
+			return (return (::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_EXPERIMENTAL_RENDERING_PROBEREFERENCEVOLUMEPROFILE_GET_CELLSIZEINBRICKS_OFFSET))(nullptr);
+		}
+
+	};
+}
+

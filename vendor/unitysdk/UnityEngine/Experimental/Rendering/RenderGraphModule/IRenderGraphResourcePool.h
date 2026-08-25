@@ -1,0 +1,46 @@
+#pragma once
+#include "../../../../unitysdk.h"
+
+namespace UnityEngine::Experimental::Rendering::RenderGraphModule { class RenderGraphLogger; }
+
+#define UNITYENGINE_EXPERIMENTAL_RENDERING_RENDERGRAPHMODULE_IRENDERGRAPHRESOURCEPOOL_CLEANUP_OFFSET UNITYSDK_OFFSET(0x000000)
+#define UNITYENGINE_EXPERIMENTAL_RENDERING_RENDERGRAPHMODULE_IRENDERGRAPHRESOURCEPOOL_LOGRESOURCES_OFFSET UNITYSDK_OFFSET(0x000000)
+#define UNITYENGINE_EXPERIMENTAL_RENDERING_RENDERGRAPHMODULE_IRENDERGRAPHRESOURCEPOOL_PURGEUNUSEDRESOURCES_OFFSET UNITYSDK_OFFSET(0x000000)
+#define UNITYENGINE_EXPERIMENTAL_RENDERING_RENDERGRAPHMODULE_IRENDERGRAPHRESOURCEPOOL_.CTOR_OFFSET UNITYSDK_OFFSET(0x9F9F5A0)
+#define UNITYENGINE_EXPERIMENTAL_RENDERING_RENDERGRAPHMODULE_IRENDERGRAPHRESOURCEPOOL_CHECKFRAMEALLOCATION_OFFSET UNITYSDK_OFFSET(0x000000)
+
+namespace UnityEngine::Experimental::Rendering::RenderGraphModule
+{
+	inline static constexpr unsigned int IRenderGraphResourcePool_TypeDefinitionIndex = 33861;
+
+	class IRenderGraphResourcePool : public Il2CppObject
+	{
+	public:
+		::System::Void Cleanup()
+		{
+			((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_EXPERIMENTAL_RENDERING_RENDERGRAPHMODULE_IRENDERGRAPHRESOURCEPOOL_CLEANUP_OFFSET))(nullptr);
+		}
+
+		::System::Void LogResources(::UnityEngine::Experimental::Rendering::RenderGraphModule::RenderGraphLogger* arg)
+		{
+			((::System::Void(*)(::UnityEngine::Experimental::Rendering::RenderGraphModule::RenderGraphLogger*, ::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_EXPERIMENTAL_RENDERING_RENDERGRAPHMODULE_IRENDERGRAPHRESOURCEPOOL_LOGRESOURCES_OFFSET))(arg, nullptr);
+		}
+
+		::System::Void PurgeUnusedResources(::System::Int32 arg)
+		{
+			((::System::Void(*)(::System::Int32, ::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_EXPERIMENTAL_RENDERING_RENDERGRAPHMODULE_IRENDERGRAPHRESOURCEPOOL_PURGEUNUSEDRESOURCES_OFFSET))(arg, nullptr);
+		}
+
+		::System::Void .ctor()
+		{
+			((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_EXPERIMENTAL_RENDERING_RENDERGRAPHMODULE_IRENDERGRAPHRESOURCEPOOL_.CTOR_OFFSET))(nullptr);
+		}
+
+		::System::Void CheckFrameAllocation(::System::Boolean arg, ::System::Int32 arg)
+		{
+			((::System::Void(*)(::System::Boolean, ::System::Int32, ::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_EXPERIMENTAL_RENDERING_RENDERGRAPHMODULE_IRENDERGRAPHRESOURCEPOOL_CHECKFRAMEALLOCATION_OFFSET))(arg, arg, nullptr);
+		}
+
+	};
+}
+

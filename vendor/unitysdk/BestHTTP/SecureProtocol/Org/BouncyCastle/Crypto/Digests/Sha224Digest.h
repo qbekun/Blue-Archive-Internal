@@ -1,0 +1,144 @@
+#pragma once
+#include "../../../../../../unitysdk.h"
+
+namespace BestHTTP::SecureProtocol::Org::BouncyCastle::Crypto::Digests { class Sha224Digest; }
+namespace BestHTTP::SecureProtocol::Org::BouncyCastle::Utilities { class IMemoable; }
+
+#define BESTHTTP_SECUREPROTOCOL_ORG_BOUNCYCASTLE_CRYPTO_DIGESTS_SHA224DIGEST_.CTOR_OFFSET UNITYSDK_OFFSET(0x76E3D0)
+#define BESTHTTP_SECUREPROTOCOL_ORG_BOUNCYCASTLE_CRYPTO_DIGESTS_SHA224DIGEST_.CTOR_OFFSET UNITYSDK_OFFSET(0x76E440)
+#define BESTHTTP_SECUREPROTOCOL_ORG_BOUNCYCASTLE_CRYPTO_DIGESTS_SHA224DIGEST_COPYIN_OFFSET UNITYSDK_OFFSET(0x76E520)
+#define BESTHTTP_SECUREPROTOCOL_ORG_BOUNCYCASTLE_CRYPTO_DIGESTS_SHA224DIGEST_GET_ALGORITHMNAME_OFFSET UNITYSDK_OFFSET(0x76E5B0)
+#define BESTHTTP_SECUREPROTOCOL_ORG_BOUNCYCASTLE_CRYPTO_DIGESTS_SHA224DIGEST_GETDIGESTSIZE_OFFSET UNITYSDK_OFFSET(0x76E5E0)
+#define BESTHTTP_SECUREPROTOCOL_ORG_BOUNCYCASTLE_CRYPTO_DIGESTS_SHA224DIGEST_PROCESSWORD_OFFSET UNITYSDK_OFFSET(0x76E5F0)
+#define BESTHTTP_SECUREPROTOCOL_ORG_BOUNCYCASTLE_CRYPTO_DIGESTS_SHA224DIGEST_PROCESSLENGTH_OFFSET UNITYSDK_OFFSET(0x76E660)
+#define BESTHTTP_SECUREPROTOCOL_ORG_BOUNCYCASTLE_CRYPTO_DIGESTS_SHA224DIGEST_DOFINAL_OFFSET UNITYSDK_OFFSET(0x76E6D0)
+#define BESTHTTP_SECUREPROTOCOL_ORG_BOUNCYCASTLE_CRYPTO_DIGESTS_SHA224DIGEST_RESET_OFFSET UNITYSDK_OFFSET(0x76E790)
+#define BESTHTTP_SECUREPROTOCOL_ORG_BOUNCYCASTLE_CRYPTO_DIGESTS_SHA224DIGEST_PROCESSBLOCK_OFFSET UNITYSDK_OFFSET(0x76E7E0)
+#define BESTHTTP_SECUREPROTOCOL_ORG_BOUNCYCASTLE_CRYPTO_DIGESTS_SHA224DIGEST_CH_OFFSET UNITYSDK_OFFSET(0x76EE90)
+#define BESTHTTP_SECUREPROTOCOL_ORG_BOUNCYCASTLE_CRYPTO_DIGESTS_SHA224DIGEST_MAJ_OFFSET UNITYSDK_OFFSET(0x76EEC0)
+#define BESTHTTP_SECUREPROTOCOL_ORG_BOUNCYCASTLE_CRYPTO_DIGESTS_SHA224DIGEST_SUM0_OFFSET UNITYSDK_OFFSET(0x76EEA0)
+#define BESTHTTP_SECUREPROTOCOL_ORG_BOUNCYCASTLE_CRYPTO_DIGESTS_SHA224DIGEST_SUM1_OFFSET UNITYSDK_OFFSET(0x76EE70)
+#define BESTHTTP_SECUREPROTOCOL_ORG_BOUNCYCASTLE_CRYPTO_DIGESTS_SHA224DIGEST_THETA0_OFFSET UNITYSDK_OFFSET(0x76EE50)
+#define BESTHTTP_SECUREPROTOCOL_ORG_BOUNCYCASTLE_CRYPTO_DIGESTS_SHA224DIGEST_THETA1_OFFSET UNITYSDK_OFFSET(0x76EE30)
+#define BESTHTTP_SECUREPROTOCOL_ORG_BOUNCYCASTLE_CRYPTO_DIGESTS_SHA224DIGEST_COPY_OFFSET UNITYSDK_OFFSET(0x76EED0)
+#define BESTHTTP_SECUREPROTOCOL_ORG_BOUNCYCASTLE_CRYPTO_DIGESTS_SHA224DIGEST_RESET_OFFSET UNITYSDK_OFFSET(0x76EF30)
+#define BESTHTTP_SECUREPROTOCOL_ORG_BOUNCYCASTLE_CRYPTO_DIGESTS_SHA224DIGEST_.CCTOR_OFFSET UNITYSDK_OFFSET(0x76F020)
+
+namespace BestHTTP::SecureProtocol::Org::BouncyCastle::Crypto::Digests
+{
+	inline static constexpr unsigned int Sha224Digest_TypeDefinitionIndex = 22603;
+
+	class Sha224Digest : public Il2CppObject
+	{
+	public:
+		::System::Int32 DigestLength; // 0x0
+		::System::UInt32 H1; // 0x28
+		::System::UInt32 H2; // 0x2C
+		::System::UInt32 H3; // 0x30
+		::System::UInt32 H4; // 0x34
+		::System::UInt32 H5; // 0x38
+		::System::UInt32 H6; // 0x3C
+		::System::UInt32 H7; // 0x40
+		::System::UInt32 H8; // 0x44
+		::Il2CppArray<::System::Object*>* X; // 0x48
+		::System::Int32 xOff; // 0x50
+		::Il2CppArray<::System::Object*>* K; // 0x0
+
+		::System::Void .ctor()
+		{
+			((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + BESTHTTP_SECUREPROTOCOL_ORG_BOUNCYCASTLE_CRYPTO_DIGESTS_SHA224DIGEST_.CTOR_OFFSET))(nullptr);
+		}
+
+		::System::Void .ctor(::BestHTTP::SecureProtocol::Org::BouncyCastle::Crypto::Digests::Sha224Digest* arg)
+		{
+			((::System::Void(*)(::BestHTTP::SecureProtocol::Org::BouncyCastle::Crypto::Digests::Sha224Digest*, ::PVOID))((::PBYTE)hIl2Cpp + BESTHTTP_SECUREPROTOCOL_ORG_BOUNCYCASTLE_CRYPTO_DIGESTS_SHA224DIGEST_.CTOR_OFFSET))(arg, nullptr);
+		}
+
+		::System::Void CopyIn(::BestHTTP::SecureProtocol::Org::BouncyCastle::Crypto::Digests::Sha224Digest* arg)
+		{
+			((::System::Void(*)(::BestHTTP::SecureProtocol::Org::BouncyCastle::Crypto::Digests::Sha224Digest*, ::PVOID))((::PBYTE)hIl2Cpp + BESTHTTP_SECUREPROTOCOL_ORG_BOUNCYCASTLE_CRYPTO_DIGESTS_SHA224DIGEST_COPYIN_OFFSET))(arg, nullptr);
+		}
+
+		::System::String* get_AlgorithmName()
+		{
+			return (return (::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + BESTHTTP_SECUREPROTOCOL_ORG_BOUNCYCASTLE_CRYPTO_DIGESTS_SHA224DIGEST_GET_ALGORITHMNAME_OFFSET))(nullptr);
+		}
+
+		::System::Int32 GetDigestSize()
+		{
+			return (return (::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + BESTHTTP_SECUREPROTOCOL_ORG_BOUNCYCASTLE_CRYPTO_DIGESTS_SHA224DIGEST_GETDIGESTSIZE_OFFSET))(nullptr);
+		}
+
+		::System::Void ProcessWord(::Il2CppArray<::System::Object*>* arg, ::System::Int32 arg)
+		{
+			((::System::Void(*)(::Il2CppArray<::System::Object*>*, ::System::Int32, ::PVOID))((::PBYTE)hIl2Cpp + BESTHTTP_SECUREPROTOCOL_ORG_BOUNCYCASTLE_CRYPTO_DIGESTS_SHA224DIGEST_PROCESSWORD_OFFSET))(arg, arg, nullptr);
+		}
+
+		::System::Void ProcessLength(::System::Int64 arg)
+		{
+			((::System::Void(*)(::System::Int64, ::PVOID))((::PBYTE)hIl2Cpp + BESTHTTP_SECUREPROTOCOL_ORG_BOUNCYCASTLE_CRYPTO_DIGESTS_SHA224DIGEST_PROCESSLENGTH_OFFSET))(arg, nullptr);
+		}
+
+		::System::Int32 DoFinal(::Il2CppArray<::System::Object*>* arg, ::System::Int32 arg)
+		{
+			return (return (::System::Int32(*)(::Il2CppArray<::System::Object*>*, ::System::Int32, ::PVOID))((::PBYTE)hIl2Cpp + BESTHTTP_SECUREPROTOCOL_ORG_BOUNCYCASTLE_CRYPTO_DIGESTS_SHA224DIGEST_DOFINAL_OFFSET))(arg, arg, nullptr);
+		}
+
+		::System::Void Reset()
+		{
+			((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + BESTHTTP_SECUREPROTOCOL_ORG_BOUNCYCASTLE_CRYPTO_DIGESTS_SHA224DIGEST_RESET_OFFSET))(nullptr);
+		}
+
+		::System::Void ProcessBlock()
+		{
+			((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + BESTHTTP_SECUREPROTOCOL_ORG_BOUNCYCASTLE_CRYPTO_DIGESTS_SHA224DIGEST_PROCESSBLOCK_OFFSET))(nullptr);
+		}
+
+		::System::UInt32 Ch(::System::UInt32 arg, ::System::UInt32 arg, ::System::UInt32 arg)
+		{
+			return (return (::System::UInt32(*)(::System::UInt32, ::System::UInt32, ::System::UInt32, ::PVOID))((::PBYTE)hIl2Cpp + BESTHTTP_SECUREPROTOCOL_ORG_BOUNCYCASTLE_CRYPTO_DIGESTS_SHA224DIGEST_CH_OFFSET))(arg, arg, arg, nullptr);
+		}
+
+		::System::UInt32 Maj(::System::UInt32 arg, ::System::UInt32 arg, ::System::UInt32 arg)
+		{
+			return (return (::System::UInt32(*)(::System::UInt32, ::System::UInt32, ::System::UInt32, ::PVOID))((::PBYTE)hIl2Cpp + BESTHTTP_SECUREPROTOCOL_ORG_BOUNCYCASTLE_CRYPTO_DIGESTS_SHA224DIGEST_MAJ_OFFSET))(arg, arg, arg, nullptr);
+		}
+
+		::System::UInt32 Sum0(::System::UInt32 arg)
+		{
+			return (return (::System::UInt32(*)(::System::UInt32, ::PVOID))((::PBYTE)hIl2Cpp + BESTHTTP_SECUREPROTOCOL_ORG_BOUNCYCASTLE_CRYPTO_DIGESTS_SHA224DIGEST_SUM0_OFFSET))(arg, nullptr);
+		}
+
+		::System::UInt32 Sum1(::System::UInt32 arg)
+		{
+			return (return (::System::UInt32(*)(::System::UInt32, ::PVOID))((::PBYTE)hIl2Cpp + BESTHTTP_SECUREPROTOCOL_ORG_BOUNCYCASTLE_CRYPTO_DIGESTS_SHA224DIGEST_SUM1_OFFSET))(arg, nullptr);
+		}
+
+		::System::UInt32 Theta0(::System::UInt32 arg)
+		{
+			return (return (::System::UInt32(*)(::System::UInt32, ::PVOID))((::PBYTE)hIl2Cpp + BESTHTTP_SECUREPROTOCOL_ORG_BOUNCYCASTLE_CRYPTO_DIGESTS_SHA224DIGEST_THETA0_OFFSET))(arg, nullptr);
+		}
+
+		::System::UInt32 Theta1(::System::UInt32 arg)
+		{
+			return (return (::System::UInt32(*)(::System::UInt32, ::PVOID))((::PBYTE)hIl2Cpp + BESTHTTP_SECUREPROTOCOL_ORG_BOUNCYCASTLE_CRYPTO_DIGESTS_SHA224DIGEST_THETA1_OFFSET))(arg, nullptr);
+		}
+
+		::BestHTTP::SecureProtocol::Org::BouncyCastle::Utilities::IMemoable* Copy()
+		{
+			return (return (::BestHTTP::SecureProtocol::Org::BouncyCastle::Utilities::IMemoable*(*)(::PVOID))((::PBYTE)hIl2Cpp + BESTHTTP_SECUREPROTOCOL_ORG_BOUNCYCASTLE_CRYPTO_DIGESTS_SHA224DIGEST_COPY_OFFSET))(nullptr);
+		}
+
+		::System::Void Reset(::BestHTTP::SecureProtocol::Org::BouncyCastle::Utilities::IMemoable* arg)
+		{
+			((::System::Void(*)(::BestHTTP::SecureProtocol::Org::BouncyCastle::Utilities::IMemoable*, ::PVOID))((::PBYTE)hIl2Cpp + BESTHTTP_SECUREPROTOCOL_ORG_BOUNCYCASTLE_CRYPTO_DIGESTS_SHA224DIGEST_RESET_OFFSET))(arg, nullptr);
+		}
+
+		::System::Void .cctor()
+		{
+			((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + BESTHTTP_SECUREPROTOCOL_ORG_BOUNCYCASTLE_CRYPTO_DIGESTS_SHA224DIGEST_.CCTOR_OFFSET))(nullptr);
+		}
+
+	};
+}
+

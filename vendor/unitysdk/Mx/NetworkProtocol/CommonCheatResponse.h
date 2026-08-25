@@ -1,0 +1,279 @@
+#pragma once
+#include "../../unitysdk.h"
+
+namespace MX::GameLogic::DBModel { class AccountDB; }
+namespace MX::GameLogic::DBModel { class AccountCurrencyDB; }
+namespace MX::NetworkProtocol { class CheatFlags; }
+namespace MX::NetworkProtocol { class Protocol; }
+
+#define MX_NETWORKPROTOCOL_COMMONCHEATRESPONSE_.CTOR_OFFSET UNITYSDK_OFFSET(0xF3F8D0)
+#define MX_NETWORKPROTOCOL_COMMONCHEATRESPONSE_GET_SCENARIOCOLLECTIONDBS_OFFSET UNITYSDK_OFFSET(0xF3F8E0)
+#define MX_NETWORKPROTOCOL_COMMONCHEATRESPONSE_SET_ATTENDANCEHISTORYDBS_OFFSET UNITYSDK_OFFSET(0xF3F8F0)
+#define MX_NETWORKPROTOCOL_COMMONCHEATRESPONSE_GET_ATTENDANCEBOOKREWARDS_OFFSET UNITYSDK_OFFSET(0xF3F910)
+#define MX_NETWORKPROTOCOL_COMMONCHEATRESPONSE_GET_ATTENDANCEHISTORYDBS_OFFSET UNITYSDK_OFFSET(0xF3F920)
+#define MX_NETWORKPROTOCOL_COMMONCHEATRESPONSE_GET_SNSPOSTDBS_OFFSET UNITYSDK_OFFSET(0xF3F930)
+#define MX_NETWORKPROTOCOL_COMMONCHEATRESPONSE_SET_SCENARIOHISTORYDBS_OFFSET UNITYSDK_OFFSET(0xF3F940)
+#define MX_NETWORKPROTOCOL_COMMONCHEATRESPONSE_SET_COSTUMEDBS_OFFSET UNITYSDK_OFFSET(0xF3F960)
+#define MX_NETWORKPROTOCOL_COMMONCHEATRESPONSE_SET_EMBLEMDBS_OFFSET UNITYSDK_OFFSET(0xF3F970)
+#define MX_NETWORKPROTOCOL_COMMONCHEATRESPONSE_GET_ITEMDBS_OFFSET UNITYSDK_OFFSET(0xF3F990)
+#define MX_NETWORKPROTOCOL_COMMONCHEATRESPONSE_SET_ACCOUNT_OFFSET UNITYSDK_OFFSET(0xF3F9A0)
+#define MX_NETWORKPROTOCOL_COMMONCHEATRESPONSE_GET_SCENARIOGROUPHISTORYDBS_OFFSET UNITYSDK_OFFSET(0xF3F9B0)
+#define MX_NETWORKPROTOCOL_COMMONCHEATRESPONSE_SET_MEMORYLOBBYDBS_OFFSET UNITYSDK_OFFSET(0xF3F9C0)
+#define MX_NETWORKPROTOCOL_COMMONCHEATRESPONSE_SET_SCENARIOGROUPHISTORYDBS_OFFSET UNITYSDK_OFFSET(0xF3F9E0)
+#define MX_NETWORKPROTOCOL_COMMONCHEATRESPONSE_SET_ATTENDANCEBOOKREWARDS_OFFSET UNITYSDK_OFFSET(0xF3FA00)
+#define MX_NETWORKPROTOCOL_COMMONCHEATRESPONSE_GET_STICKERDBS_OFFSET UNITYSDK_OFFSET(0xF3FA20)
+#define MX_NETWORKPROTOCOL_COMMONCHEATRESPONSE_GET_CHEATFLAGS_OFFSET UNITYSDK_OFFSET(0xF3FA30)
+#define MX_NETWORKPROTOCOL_COMMONCHEATRESPONSE_GET_WEAPONDBS_OFFSET UNITYSDK_OFFSET(0xF3FA40)
+#define MX_NETWORKPROTOCOL_COMMONCHEATRESPONSE_SET_SCENARIOCOLLECTIONDBS_OFFSET UNITYSDK_OFFSET(0xF3FA50)
+#define MX_NETWORKPROTOCOL_COMMONCHEATRESPONSE_GET_EMBLEMDBS_OFFSET UNITYSDK_OFFSET(0xF3FA70)
+#define MX_NETWORKPROTOCOL_COMMONCHEATRESPONSE_SET_CHARACTERDBS_OFFSET UNITYSDK_OFFSET(0xF3FA80)
+#define MX_NETWORKPROTOCOL_COMMONCHEATRESPONSE_GET_CHARACTERDBS_OFFSET UNITYSDK_OFFSET(0xF3FA90)
+#define MX_NETWORKPROTOCOL_COMMONCHEATRESPONSE_GET_GEARDBS_OFFSET UNITYSDK_OFFSET(0xF3FAA0)
+#define MX_NETWORKPROTOCOL_COMMONCHEATRESPONSE_GET_SCENARIOHISTORYDBS_OFFSET UNITYSDK_OFFSET(0xF3FAB0)
+#define MX_NETWORKPROTOCOL_COMMONCHEATRESPONSE_GET_ACCOUNT_OFFSET UNITYSDK_OFFSET(0xF3FAC0)
+#define MX_NETWORKPROTOCOL_COMMONCHEATRESPONSE_SET_ACCOUNTCURRENCY_OFFSET UNITYSDK_OFFSET(0xF3FAD0)
+#define MX_NETWORKPROTOCOL_COMMONCHEATRESPONSE_GET_COSTUMEDBS_OFFSET UNITYSDK_OFFSET(0xF3FAE0)
+#define MX_NETWORKPROTOCOL_COMMONCHEATRESPONSE_SET_GEARDBS_OFFSET UNITYSDK_OFFSET(0xF3FAF0)
+#define MX_NETWORKPROTOCOL_COMMONCHEATRESPONSE_SET_ITEMDBS_OFFSET UNITYSDK_OFFSET(0xF3FB00)
+#define MX_NETWORKPROTOCOL_COMMONCHEATRESPONSE_SET_EQUIPMENTDBS_OFFSET UNITYSDK_OFFSET(0xF3FB20)
+#define MX_NETWORKPROTOCOL_COMMONCHEATRESPONSE_SET_STICKERDBS_OFFSET UNITYSDK_OFFSET(0xF3FB30)
+#define MX_NETWORKPROTOCOL_COMMONCHEATRESPONSE_GET_ACCOUNTCURRENCY_OFFSET UNITYSDK_OFFSET(0xF3FB50)
+#define MX_NETWORKPROTOCOL_COMMONCHEATRESPONSE_SET_CHEATFLAGS_OFFSET UNITYSDK_OFFSET(0xF3FB60)
+#define MX_NETWORKPROTOCOL_COMMONCHEATRESPONSE_GET_DEBUGPOPUPMESSAGE_OFFSET UNITYSDK_OFFSET(0xF3FB70)
+#define MX_NETWORKPROTOCOL_COMMONCHEATRESPONSE_GET_EQUIPMENTDBS_OFFSET UNITYSDK_OFFSET(0xF3FB80)
+#define MX_NETWORKPROTOCOL_COMMONCHEATRESPONSE_SET_SNSPOSTDBS_OFFSET UNITYSDK_OFFSET(0xF3FB90)
+#define MX_NETWORKPROTOCOL_COMMONCHEATRESPONSE_SET_WEAPONDBS_OFFSET UNITYSDK_OFFSET(0xF3FBB0)
+#define MX_NETWORKPROTOCOL_COMMONCHEATRESPONSE_GET_MEMORYLOBBYDBS_OFFSET UNITYSDK_OFFSET(0xF3FBC0)
+#define MX_NETWORKPROTOCOL_COMMONCHEATRESPONSE_GET_PROTOCOL_OFFSET UNITYSDK_OFFSET(0xF3FBD0)
+#define MX_NETWORKPROTOCOL_COMMONCHEATRESPONSE_SET_DEBUGPOPUPMESSAGE_OFFSET UNITYSDK_OFFSET(0xF3FBE0)
+
+namespace MX::NetworkProtocol
+{
+	inline static constexpr unsigned int CommonCheatResponse_TypeDefinitionIndex = 11536;
+
+	class CommonCheatResponse : public Il2CppObject
+	{
+	public:
+		::MX::GameLogic::DBModel::AccountDB* _Account_k__BackingField; // 0x50
+		::MX::GameLogic::DBModel::AccountCurrencyDB* _AccountCurrency_k__BackingField; // 0x58
+		Il2CppObject* _CharacterDBs_k__BackingField; // 0x60
+		Il2CppObject* _EquipmentDBs_k__BackingField; // 0x68
+		Il2CppObject* _WeaponDBs_k__BackingField; // 0x70
+		Il2CppObject* _GearDBs_k__BackingField; // 0x78
+		Il2CppObject* _CostumeDBs_k__BackingField; // 0x80
+		Il2CppObject* _ItemDBs_k__BackingField; // 0x88
+		Il2CppObject* _ScenarioHistoryDBs_k__BackingField; // 0x90
+		Il2CppObject* _ScenarioGroupHistoryDBs_k__BackingField; // 0x98
+		Il2CppObject* _EmblemDBs_k__BackingField; // 0xA0
+		Il2CppObject* _AttendanceBookRewards_k__BackingField; // 0xA8
+		Il2CppObject* _AttendanceHistoryDBs_k__BackingField; // 0xB0
+		Il2CppObject* _StickerDBs_k__BackingField; // 0xB8
+		Il2CppObject* _MemoryLobbyDBs_k__BackingField; // 0xC0
+		Il2CppObject* _ScenarioCollectionDBs_k__BackingField; // 0xC8
+		Il2CppObject* _SNSPostDBs_k__BackingField; // 0xD0
+		::MX::NetworkProtocol::CheatFlags* _CheatFlags_k__BackingField; // 0xD8
+		::System::String* _DebugPopupMessage_k__BackingField; // 0xE0
+
+		::System::Void .ctor()
+		{
+			((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_COMMONCHEATRESPONSE_.CTOR_OFFSET))(nullptr);
+		}
+
+		Il2CppObject* get_ScenarioCollectionDBs()
+		{
+			return ((Il2CppObject*(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_COMMONCHEATRESPONSE_GET_SCENARIOCOLLECTIONDBS_OFFSET))(nullptr);
+		}
+
+		::System::Void set_AttendanceHistoryDBs(Il2CppObject* arg)
+		{
+			((::System::Void(*)(Il2CppObject*, ::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_COMMONCHEATRESPONSE_SET_ATTENDANCEHISTORYDBS_OFFSET))(arg, nullptr);
+		}
+
+		Il2CppObject* get_AttendanceBookRewards()
+		{
+			return ((Il2CppObject*(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_COMMONCHEATRESPONSE_GET_ATTENDANCEBOOKREWARDS_OFFSET))(nullptr);
+		}
+
+		Il2CppObject* get_AttendanceHistoryDBs()
+		{
+			return ((Il2CppObject*(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_COMMONCHEATRESPONSE_GET_ATTENDANCEHISTORYDBS_OFFSET))(nullptr);
+		}
+
+		Il2CppObject* get_SNSPostDBs()
+		{
+			return ((Il2CppObject*(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_COMMONCHEATRESPONSE_GET_SNSPOSTDBS_OFFSET))(nullptr);
+		}
+
+		::System::Void set_ScenarioHistoryDBs(Il2CppObject* arg)
+		{
+			((::System::Void(*)(Il2CppObject*, ::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_COMMONCHEATRESPONSE_SET_SCENARIOHISTORYDBS_OFFSET))(arg, nullptr);
+		}
+
+		::System::Void set_CostumeDBs(Il2CppObject* arg)
+		{
+			((::System::Void(*)(Il2CppObject*, ::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_COMMONCHEATRESPONSE_SET_COSTUMEDBS_OFFSET))(arg, nullptr);
+		}
+
+		::System::Void set_EmblemDBs(Il2CppObject* arg)
+		{
+			((::System::Void(*)(Il2CppObject*, ::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_COMMONCHEATRESPONSE_SET_EMBLEMDBS_OFFSET))(arg, nullptr);
+		}
+
+		Il2CppObject* get_ItemDBs()
+		{
+			return ((Il2CppObject*(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_COMMONCHEATRESPONSE_GET_ITEMDBS_OFFSET))(nullptr);
+		}
+
+		::System::Void set_Account(::MX::GameLogic::DBModel::AccountDB* arg)
+		{
+			((::System::Void(*)(::MX::GameLogic::DBModel::AccountDB*, ::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_COMMONCHEATRESPONSE_SET_ACCOUNT_OFFSET))(arg, nullptr);
+		}
+
+		Il2CppObject* get_ScenarioGroupHistoryDBs()
+		{
+			return ((Il2CppObject*(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_COMMONCHEATRESPONSE_GET_SCENARIOGROUPHISTORYDBS_OFFSET))(nullptr);
+		}
+
+		::System::Void set_MemoryLobbyDBs(Il2CppObject* arg)
+		{
+			((::System::Void(*)(Il2CppObject*, ::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_COMMONCHEATRESPONSE_SET_MEMORYLOBBYDBS_OFFSET))(arg, nullptr);
+		}
+
+		::System::Void set_ScenarioGroupHistoryDBs(Il2CppObject* arg)
+		{
+			((::System::Void(*)(Il2CppObject*, ::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_COMMONCHEATRESPONSE_SET_SCENARIOGROUPHISTORYDBS_OFFSET))(arg, nullptr);
+		}
+
+		::System::Void set_AttendanceBookRewards(Il2CppObject* arg)
+		{
+			((::System::Void(*)(Il2CppObject*, ::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_COMMONCHEATRESPONSE_SET_ATTENDANCEBOOKREWARDS_OFFSET))(arg, nullptr);
+		}
+
+		Il2CppObject* get_StickerDBs()
+		{
+			return ((Il2CppObject*(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_COMMONCHEATRESPONSE_GET_STICKERDBS_OFFSET))(nullptr);
+		}
+
+		::MX::NetworkProtocol::CheatFlags* get_CheatFlags()
+		{
+			return ((::MX::NetworkProtocol::CheatFlags*(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_COMMONCHEATRESPONSE_GET_CHEATFLAGS_OFFSET))(nullptr);
+		}
+
+		Il2CppObject* get_WeaponDBs()
+		{
+			return ((Il2CppObject*(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_COMMONCHEATRESPONSE_GET_WEAPONDBS_OFFSET))(nullptr);
+		}
+
+		::System::Void set_ScenarioCollectionDBs(Il2CppObject* arg)
+		{
+			((::System::Void(*)(Il2CppObject*, ::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_COMMONCHEATRESPONSE_SET_SCENARIOCOLLECTIONDBS_OFFSET))(arg, nullptr);
+		}
+
+		Il2CppObject* get_EmblemDBs()
+		{
+			return ((Il2CppObject*(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_COMMONCHEATRESPONSE_GET_EMBLEMDBS_OFFSET))(nullptr);
+		}
+
+		::System::Void set_CharacterDBs(Il2CppObject* arg)
+		{
+			((::System::Void(*)(Il2CppObject*, ::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_COMMONCHEATRESPONSE_SET_CHARACTERDBS_OFFSET))(arg, nullptr);
+		}
+
+		Il2CppObject* get_CharacterDBs()
+		{
+			return ((Il2CppObject*(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_COMMONCHEATRESPONSE_GET_CHARACTERDBS_OFFSET))(nullptr);
+		}
+
+		Il2CppObject* get_GearDBs()
+		{
+			return ((Il2CppObject*(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_COMMONCHEATRESPONSE_GET_GEARDBS_OFFSET))(nullptr);
+		}
+
+		Il2CppObject* get_ScenarioHistoryDBs()
+		{
+			return ((Il2CppObject*(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_COMMONCHEATRESPONSE_GET_SCENARIOHISTORYDBS_OFFSET))(nullptr);
+		}
+
+		::MX::GameLogic::DBModel::AccountDB* get_Account()
+		{
+			return ((::MX::GameLogic::DBModel::AccountDB*(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_COMMONCHEATRESPONSE_GET_ACCOUNT_OFFSET))(nullptr);
+		}
+
+		::System::Void set_AccountCurrency(::MX::GameLogic::DBModel::AccountCurrencyDB* arg)
+		{
+			((::System::Void(*)(::MX::GameLogic::DBModel::AccountCurrencyDB*, ::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_COMMONCHEATRESPONSE_SET_ACCOUNTCURRENCY_OFFSET))(arg, nullptr);
+		}
+
+		Il2CppObject* get_CostumeDBs()
+		{
+			return ((Il2CppObject*(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_COMMONCHEATRESPONSE_GET_COSTUMEDBS_OFFSET))(nullptr);
+		}
+
+		::System::Void set_GearDBs(Il2CppObject* arg)
+		{
+			((::System::Void(*)(Il2CppObject*, ::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_COMMONCHEATRESPONSE_SET_GEARDBS_OFFSET))(arg, nullptr);
+		}
+
+		::System::Void set_ItemDBs(Il2CppObject* arg)
+		{
+			((::System::Void(*)(Il2CppObject*, ::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_COMMONCHEATRESPONSE_SET_ITEMDBS_OFFSET))(arg, nullptr);
+		}
+
+		::System::Void set_EquipmentDBs(Il2CppObject* arg)
+		{
+			((::System::Void(*)(Il2CppObject*, ::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_COMMONCHEATRESPONSE_SET_EQUIPMENTDBS_OFFSET))(arg, nullptr);
+		}
+
+		::System::Void set_StickerDBs(Il2CppObject* arg)
+		{
+			((::System::Void(*)(Il2CppObject*, ::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_COMMONCHEATRESPONSE_SET_STICKERDBS_OFFSET))(arg, nullptr);
+		}
+
+		::MX::GameLogic::DBModel::AccountCurrencyDB* get_AccountCurrency()
+		{
+			return ((::MX::GameLogic::DBModel::AccountCurrencyDB*(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_COMMONCHEATRESPONSE_GET_ACCOUNTCURRENCY_OFFSET))(nullptr);
+		}
+
+		::System::Void set_CheatFlags(::MX::NetworkProtocol::CheatFlags* arg)
+		{
+			((::System::Void(*)(::MX::NetworkProtocol::CheatFlags*, ::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_COMMONCHEATRESPONSE_SET_CHEATFLAGS_OFFSET))(arg, nullptr);
+		}
+
+		::System::String* get_DebugPopupMessage()
+		{
+			return ((::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_COMMONCHEATRESPONSE_GET_DEBUGPOPUPMESSAGE_OFFSET))(nullptr);
+		}
+
+		Il2CppObject* get_EquipmentDBs()
+		{
+			return ((Il2CppObject*(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_COMMONCHEATRESPONSE_GET_EQUIPMENTDBS_OFFSET))(nullptr);
+		}
+
+		::System::Void set_SNSPostDBs(Il2CppObject* arg)
+		{
+			((::System::Void(*)(Il2CppObject*, ::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_COMMONCHEATRESPONSE_SET_SNSPOSTDBS_OFFSET))(arg, nullptr);
+		}
+
+		::System::Void set_WeaponDBs(Il2CppObject* arg)
+		{
+			((::System::Void(*)(Il2CppObject*, ::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_COMMONCHEATRESPONSE_SET_WEAPONDBS_OFFSET))(arg, nullptr);
+		}
+
+		Il2CppObject* get_MemoryLobbyDBs()
+		{
+			return ((Il2CppObject*(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_COMMONCHEATRESPONSE_GET_MEMORYLOBBYDBS_OFFSET))(nullptr);
+		}
+
+		::MX::NetworkProtocol::Protocol* get_Protocol()
+		{
+			return ((::MX::NetworkProtocol::Protocol*(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_COMMONCHEATRESPONSE_GET_PROTOCOL_OFFSET))(nullptr);
+		}
+
+		::System::Void set_DebugPopupMessage(::System::String* str)
+		{
+			((::System::Void(*)(::System::String*, ::PVOID))((::PBYTE)hIl2Cpp + MX_NETWORKPROTOCOL_COMMONCHEATRESPONSE_SET_DEBUGPOPUPMESSAGE_OFFSET))(str, nullptr);
+		}
+
+	};
+}
+

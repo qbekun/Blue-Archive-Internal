@@ -1,0 +1,92 @@
+#pragma once
+#include "../../../unitysdk.h"
+
+#define MX_GAMELOGIC_DBMODEL_MINIGAMESHOOTINGHISTORYDB_GET_UNIQUEID_OFFSET UNITYSDK_OFFSET(0x10033C0)
+#define MX_GAMELOGIC_DBMODEL_MINIGAMESHOOTINGHISTORYDB_SET_UNIQUEID_OFFSET UNITYSDK_OFFSET(0x10033D0)
+#define MX_GAMELOGIC_DBMODEL_MINIGAMESHOOTINGHISTORYDB_SET_LASTUPDATEDATE_OFFSET UNITYSDK_OFFSET(0x10033E0)
+#define MX_GAMELOGIC_DBMODEL_MINIGAMESHOOTINGHISTORYDB_SET_EVENTCONTENTID_OFFSET UNITYSDK_OFFSET(0x10033F0)
+#define MX_GAMELOGIC_DBMODEL_MINIGAMESHOOTINGHISTORYDB_ISVALID_OFFSET UNITYSDK_OFFSET(0x1003400)
+#define MX_GAMELOGIC_DBMODEL_MINIGAMESHOOTINGHISTORYDB_.CTOR_OFFSET UNITYSDK_OFFSET(0x1003410)
+#define MX_GAMELOGIC_DBMODEL_MINIGAMESHOOTINGHISTORYDB_SET_ISCLEARTODAY_OFFSET UNITYSDK_OFFSET(0x1003420)
+#define MX_GAMELOGIC_DBMODEL_MINIGAMESHOOTINGHISTORYDB_GET_EVENTCONTENTID_OFFSET UNITYSDK_OFFSET(0x1003430)
+#define MX_GAMELOGIC_DBMODEL_MINIGAMESHOOTINGHISTORYDB_SET_ARRIVESECTION_OFFSET UNITYSDK_OFFSET(0x1003440)
+#define MX_GAMELOGIC_DBMODEL_MINIGAMESHOOTINGHISTORYDB_GET_ARRIVESECTION_OFFSET UNITYSDK_OFFSET(0x1003450)
+#define MX_GAMELOGIC_DBMODEL_MINIGAMESHOOTINGHISTORYDB_GET_LASTUPDATEDATE_OFFSET UNITYSDK_OFFSET(0x1003460)
+#define MX_GAMELOGIC_DBMODEL_MINIGAMESHOOTINGHISTORYDB_GET_ISCLEARTODAY_OFFSET UNITYSDK_OFFSET(0x1003470)
+
+namespace MX::GameLogic::DBModel
+{
+	inline static constexpr unsigned int MiniGameShootingHistoryDB_TypeDefinitionIndex = 12660;
+
+	class MiniGameShootingHistoryDB : public Il2CppObject
+	{
+	public:
+		::System::Int64 _EventContentId_k__BackingField; // 0x10
+		::System::Int64 _UniqueId_k__BackingField; // 0x18
+		::System::Int64 _ArriveSection_k__BackingField; // 0x20
+		::System::DateTime* _LastUpdateDate_k__BackingField; // 0x28
+		::System::Boolean _IsClearToday_k__BackingField; // 0x30
+
+		::System::Int64 get_UniqueId()
+		{
+			return ((::System::Int64(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_GAMELOGIC_DBMODEL_MINIGAMESHOOTINGHISTORYDB_GET_UNIQUEID_OFFSET))(nullptr);
+		}
+
+		::System::Void set_UniqueId(::System::Int64 arg)
+		{
+			((::System::Void(*)(::System::Int64, ::PVOID))((::PBYTE)hIl2Cpp + MX_GAMELOGIC_DBMODEL_MINIGAMESHOOTINGHISTORYDB_SET_UNIQUEID_OFFSET))(arg, nullptr);
+		}
+
+		::System::Void set_LastUpdateDate(::System::DateTime* arg)
+		{
+			((::System::Void(*)(::System::DateTime*, ::PVOID))((::PBYTE)hIl2Cpp + MX_GAMELOGIC_DBMODEL_MINIGAMESHOOTINGHISTORYDB_SET_LASTUPDATEDATE_OFFSET))(arg, nullptr);
+		}
+
+		::System::Void set_EventContentId(::System::Int64 arg)
+		{
+			((::System::Void(*)(::System::Int64, ::PVOID))((::PBYTE)hIl2Cpp + MX_GAMELOGIC_DBMODEL_MINIGAMESHOOTINGHISTORYDB_SET_EVENTCONTENTID_OFFSET))(arg, nullptr);
+		}
+
+		::System::Boolean IsValid()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_GAMELOGIC_DBMODEL_MINIGAMESHOOTINGHISTORYDB_ISVALID_OFFSET))(nullptr);
+		}
+
+		::System::Void .ctor()
+		{
+			((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_GAMELOGIC_DBMODEL_MINIGAMESHOOTINGHISTORYDB_.CTOR_OFFSET))(nullptr);
+		}
+
+		::System::Void set_IsClearToday(::System::Boolean arg)
+		{
+			((::System::Void(*)(::System::Boolean, ::PVOID))((::PBYTE)hIl2Cpp + MX_GAMELOGIC_DBMODEL_MINIGAMESHOOTINGHISTORYDB_SET_ISCLEARTODAY_OFFSET))(arg, nullptr);
+		}
+
+		::System::Int64 get_EventContentId()
+		{
+			return ((::System::Int64(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_GAMELOGIC_DBMODEL_MINIGAMESHOOTINGHISTORYDB_GET_EVENTCONTENTID_OFFSET))(nullptr);
+		}
+
+		::System::Void set_ArriveSection(::System::Int64 arg)
+		{
+			((::System::Void(*)(::System::Int64, ::PVOID))((::PBYTE)hIl2Cpp + MX_GAMELOGIC_DBMODEL_MINIGAMESHOOTINGHISTORYDB_SET_ARRIVESECTION_OFFSET))(arg, nullptr);
+		}
+
+		::System::Int64 get_ArriveSection()
+		{
+			return ((::System::Int64(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_GAMELOGIC_DBMODEL_MINIGAMESHOOTINGHISTORYDB_GET_ARRIVESECTION_OFFSET))(nullptr);
+		}
+
+		::System::DateTime* get_LastUpdateDate()
+		{
+			return ((::System::DateTime*(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_GAMELOGIC_DBMODEL_MINIGAMESHOOTINGHISTORYDB_GET_LASTUPDATEDATE_OFFSET))(nullptr);
+		}
+
+		::System::Boolean get_IsClearToday()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_GAMELOGIC_DBMODEL_MINIGAMESHOOTINGHISTORYDB_GET_ISCLEARTODAY_OFFSET))(nullptr);
+		}
+
+	};
+}
+

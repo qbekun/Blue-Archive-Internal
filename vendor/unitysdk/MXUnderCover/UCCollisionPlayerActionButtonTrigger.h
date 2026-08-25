@@ -1,0 +1,90 @@
+#pragma once
+#include "../unitysdk.h"
+
+class OnClickCheckTypes;
+namespace MXUnderCover { class UCEntity; }
+namespace UnityEngine { class Collider; }
+class CoroutineAsyncOperation;
+
+#define MXUNDERCOVER_UCCOLLISIONPLAYERACTIONBUTTONTRIGGER_GET_CANDIDATES_OFFSET UNITYSDK_OFFSET(0xD93B80)
+#define MXUNDERCOVER_UCCOLLISIONPLAYERACTIONBUTTONTRIGGER_INITIALIZE_OFFSET UNITYSDK_OFFSET(0xD93B90)
+#define MXUNDERCOVER_UCCOLLISIONPLAYERACTIONBUTTONTRIGGER_FIXEDUPDATE_OFFSET UNITYSDK_OFFSET(0xD93C50)
+#define MXUNDERCOVER_UCCOLLISIONPLAYERACTIONBUTTONTRIGGER_ONTRIGGERENTER_OFFSET UNITYSDK_OFFSET(0xD94160)
+#define MXUNDERCOVER_UCCOLLISIONPLAYERACTIONBUTTONTRIGGER_INVOKE_OFFSET UNITYSDK_OFFSET(0xD94180)
+#define MXUNDERCOVER_UCCOLLISIONPLAYERACTIONBUTTONTRIGGER_RELEASE_OFFSET UNITYSDK_OFFSET(0xD93F50)
+#define MXUNDERCOVER_UCCOLLISIONPLAYERACTIONBUTTONTRIGGER_ONDISABLE_OFFSET UNITYSDK_OFFSET(0xD94340)
+#define MXUNDERCOVER_UCCOLLISIONPLAYERACTIONBUTTONTRIGGER_.CTOR_OFFSET UNITYSDK_OFFSET(0xD94350)
+#define MXUNDERCOVER_UCCOLLISIONPLAYERACTIONBUTTONTRIGGER_SET_CANDIDATES_OFFSET UNITYSDK_OFFSET(0xD94420)
+#define MXUNDERCOVER_UCCOLLISIONPLAYERACTIONBUTTONTRIGGER_ONCUSTOMTRIGGERENTER_OFFSET UNITYSDK_OFFSET(0xD94430)
+#define MXUNDERCOVER_UCCOLLISIONPLAYERACTIONBUTTONTRIGGER_ONTRIGGEREXIT_OFFSET UNITYSDK_OFFSET(0xD94770)
+
+namespace MXUnderCover
+{
+	inline static constexpr unsigned int UCCollisionPlayerActionButtonTrigger_TypeDefinitionIndex = 9733;
+
+	class UCCollisionPlayerActionButtonTrigger : public Il2CppObject
+	{
+	public:
+		::System::Int32 Order; // 0x58
+		::System::String* ActionNameLocalizeKey; // 0x60
+		OnClickCheckTypes* OnClickCheck; // 0x68
+		Il2CppObject* _candidates_k__BackingField; // 0x70
+
+		Il2CppObject* get_candidates()
+		{
+			return ((Il2CppObject*(*)(::PVOID))((::PBYTE)hIl2Cpp + MXUNDERCOVER_UCCOLLISIONPLAYERACTIONBUTTONTRIGGER_GET_CANDIDATES_OFFSET))(nullptr);
+		}
+
+		::System::Void Initialize(::MXUnderCover::UCEntity* arg)
+		{
+			((::System::Void(*)(::MXUnderCover::UCEntity*, ::PVOID))((::PBYTE)hIl2Cpp + MXUNDERCOVER_UCCOLLISIONPLAYERACTIONBUTTONTRIGGER_INITIALIZE_OFFSET))(arg, nullptr);
+		}
+
+		::System::Void FixedUpdate()
+		{
+			((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MXUNDERCOVER_UCCOLLISIONPLAYERACTIONBUTTONTRIGGER_FIXEDUPDATE_OFFSET))(nullptr);
+		}
+
+		::System::Void OnTriggerEnter(::UnityEngine::Collider* arg)
+		{
+			((::System::Void(*)(::UnityEngine::Collider*, ::PVOID))((::PBYTE)hIl2Cpp + MXUNDERCOVER_UCCOLLISIONPLAYERACTIONBUTTONTRIGGER_ONTRIGGERENTER_OFFSET))(arg, nullptr);
+		}
+
+		CoroutineAsyncOperation* Invoke()
+		{
+			return ((CoroutineAsyncOperation*(*)(::PVOID))((::PBYTE)hIl2Cpp + MXUNDERCOVER_UCCOLLISIONPLAYERACTIONBUTTONTRIGGER_INVOKE_OFFSET))(nullptr);
+		}
+
+		::System::Void Release()
+		{
+			((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MXUNDERCOVER_UCCOLLISIONPLAYERACTIONBUTTONTRIGGER_RELEASE_OFFSET))(nullptr);
+		}
+
+		::System::Void OnDisable()
+		{
+			((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MXUNDERCOVER_UCCOLLISIONPLAYERACTIONBUTTONTRIGGER_ONDISABLE_OFFSET))(nullptr);
+		}
+
+		::System::Void .ctor()
+		{
+			((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MXUNDERCOVER_UCCOLLISIONPLAYERACTIONBUTTONTRIGGER_.CTOR_OFFSET))(nullptr);
+		}
+
+		::System::Void set_candidates(Il2CppObject* arg)
+		{
+			((::System::Void(*)(Il2CppObject*, ::PVOID))((::PBYTE)hIl2Cpp + MXUNDERCOVER_UCCOLLISIONPLAYERACTIONBUTTONTRIGGER_SET_CANDIDATES_OFFSET))(arg, nullptr);
+		}
+
+		::System::Boolean OnCustomTriggerEnter(::UnityEngine::Collider* arg)
+		{
+			return ((::System::Boolean(*)(::UnityEngine::Collider*, ::PVOID))((::PBYTE)hIl2Cpp + MXUNDERCOVER_UCCOLLISIONPLAYERACTIONBUTTONTRIGGER_ONCUSTOMTRIGGERENTER_OFFSET))(arg, nullptr);
+		}
+
+		::System::Void OnTriggerExit(::UnityEngine::Collider* arg)
+		{
+			((::System::Void(*)(::UnityEngine::Collider*, ::PVOID))((::PBYTE)hIl2Cpp + MXUNDERCOVER_UCCOLLISIONPLAYERACTIONBUTTONTRIGGER_ONTRIGGEREXIT_OFFSET))(arg, nullptr);
+		}
+
+	};
+}
+

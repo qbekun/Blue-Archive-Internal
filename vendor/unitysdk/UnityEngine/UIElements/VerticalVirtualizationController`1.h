@@ -1,0 +1,167 @@
+#pragma once
+#include "../../unitysdk.h"
+
+namespace UnityEngine::UIElements { class BaseVerticalCollectionView; }
+namespace UnityEngine::UIElements { class VisualElement; }
+namespace UnityEngine::UIElements { class SerializedVirtualizationData; }
+namespace UnityEngine::UIElements { class ReusableCollectionItem; }
+
+#define UNITYENGINE_UIELEMENTS_VERTICALVIRTUALIZATIONCONTROLLER`1_GET_ACTIVEITEMS_OFFSET UNITYSDK_OFFSET(0x000000)
+#define UNITYENGINE_UIELEMENTS_VERTICALVIRTUALIZATIONCONTROLLER`1_GET_ITEMSCOUNT_OFFSET UNITYSDK_OFFSET(0x000000)
+#define UNITYENGINE_UIELEMENTS_VERTICALVIRTUALIZATIONCONTROLLER`1_VISIBLEITEMPREDICATE_OFFSET UNITYSDK_OFFSET(0x000000)
+#define UNITYENGINE_UIELEMENTS_VERTICALVIRTUALIZATIONCONTROLLER`1_GET_FIRSTVISIBLEITEM_OFFSET UNITYSDK_OFFSET(0x000000)
+#define UNITYENGINE_UIELEMENTS_VERTICALVIRTUALIZATIONCONTROLLER`1_GET_LASTVISIBLEITEM_OFFSET UNITYSDK_OFFSET(0x000000)
+#define UNITYENGINE_UIELEMENTS_VERTICALVIRTUALIZATIONCONTROLLER`1_GET_VISIBLEITEMCOUNT_OFFSET UNITYSDK_OFFSET(0x000000)
+#define UNITYENGINE_UIELEMENTS_VERTICALVIRTUALIZATIONCONTROLLER`1_GET_SERIALIZEDDATA_OFFSET UNITYSDK_OFFSET(0x000000)
+#define UNITYENGINE_UIELEMENTS_VERTICALVIRTUALIZATIONCONTROLLER`1_GET_FIRSTVISIBLEINDEX_OFFSET UNITYSDK_OFFSET(0x000000)
+#define UNITYENGINE_UIELEMENTS_VERTICALVIRTUALIZATIONCONTROLLER`1_SET_FIRSTVISIBLEINDEX_OFFSET UNITYSDK_OFFSET(0x000000)
+#define UNITYENGINE_UIELEMENTS_VERTICALVIRTUALIZATIONCONTROLLER`1_GET_LASTHEIGHT_OFFSET UNITYSDK_OFFSET(0x000000)
+#define UNITYENGINE_UIELEMENTS_VERTICALVIRTUALIZATIONCONTROLLER`1_GET_ALWAYSREBINDONREFRESH_OFFSET UNITYSDK_OFFSET(0x000000)
+#define UNITYENGINE_UIELEMENTS_VERTICALVIRTUALIZATIONCONTROLLER`1_.CTOR_OFFSET UNITYSDK_OFFSET(0x000000)
+#define UNITYENGINE_UIELEMENTS_VERTICALVIRTUALIZATIONCONTROLLER`1_REFRESH_OFFSET UNITYSDK_OFFSET(0x000000)
+#define UNITYENGINE_UIELEMENTS_VERTICALVIRTUALIZATIONCONTROLLER`1_SETUP_OFFSET UNITYSDK_OFFSET(0x000000)
+#define UNITYENGINE_UIELEMENTS_VERTICALVIRTUALIZATIONCONTROLLER`1_ONFOCUS_OFFSET UNITYSDK_OFFSET(0x000000)
+#define UNITYENGINE_UIELEMENTS_VERTICALVIRTUALIZATIONCONTROLLER`1_ONBLUR_OFFSET UNITYSDK_OFFSET(0x000000)
+#define UNITYENGINE_UIELEMENTS_VERTICALVIRTUALIZATIONCONTROLLER`1_HANDLEFOCUS_OFFSET UNITYSDK_OFFSET(0x000000)
+#define UNITYENGINE_UIELEMENTS_VERTICALVIRTUALIZATIONCONTROLLER`1_UPDATEBACKGROUND_OFFSET UNITYSDK_OFFSET(0x000000)
+#define UNITYENGINE_UIELEMENTS_VERTICALVIRTUALIZATIONCONTROLLER`1_STARTDRAGITEM_OFFSET UNITYSDK_OFFSET(0x000000)
+#define UNITYENGINE_UIELEMENTS_VERTICALVIRTUALIZATIONCONTROLLER`1_ENDDRAG_OFFSET UNITYSDK_OFFSET(0x000000)
+#define UNITYENGINE_UIELEMENTS_VERTICALVIRTUALIZATIONCONTROLLER`1_GETORMAKEITEMATINDEX_OFFSET UNITYSDK_OFFSET(0x000000)
+#define UNITYENGINE_UIELEMENTS_VERTICALVIRTUALIZATIONCONTROLLER`1_RELEASEITEM_OFFSET UNITYSDK_OFFSET(0x000000)
+#define UNITYENGINE_UIELEMENTS_VERTICALVIRTUALIZATIONCONTROLLER`1_GETDRAGGEDINDEX_OFFSET UNITYSDK_OFFSET(0x000000)
+
+namespace UnityEngine::UIElements
+{
+	inline static constexpr unsigned int VerticalVirtualizationController`1_TypeDefinitionIndex = 30292;
+
+	class VerticalVirtualizationController`1 : public Il2CppObject
+	{
+	public:
+		Il2CppObject* m_Pool; // 0x0
+		::UnityEngine::UIElements::BaseVerticalCollectionView* m_CollectionView; // 0x0
+		Il2CppObject* m_ActiveItems; // 0x0
+		Il2CppObject* m_DraggedItem; // 0x0
+		::System::Int32 m_LastFocusedElementIndex; // 0x0
+		Il2CppObject* m_LastFocusedElementTreeChildIndexes; // 0x0
+		Il2CppObject* m_VisibleItemPredicateDelegate; // 0x0
+		Il2CppObject* m_ScrollInsertionList; // 0x0
+		::UnityEngine::UIElements::VisualElement* m_EmptyRows; // 0x0
+
+		Il2CppObject* get_activeItems()
+		{
+			return (return (Il2CppObject*(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_UIELEMENTS_VERTICALVIRTUALIZATIONCONTROLLER`1_GET_ACTIVEITEMS_OFFSET))(nullptr);
+		}
+
+		::System::Int32 get_itemsCount()
+		{
+			return (return (::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_UIELEMENTS_VERTICALVIRTUALIZATIONCONTROLLER`1_GET_ITEMSCOUNT_OFFSET))(nullptr);
+		}
+
+		::System::Boolean VisibleItemPredicate(Il2CppObject* arg)
+		{
+			return (return (::System::Boolean(*)(Il2CppObject*, ::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_UIELEMENTS_VERTICALVIRTUALIZATIONCONTROLLER`1_VISIBLEITEMPREDICATE_OFFSET))(arg, nullptr);
+		}
+
+		Il2CppObject* get_firstVisibleItem()
+		{
+			return (return (Il2CppObject*(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_UIELEMENTS_VERTICALVIRTUALIZATIONCONTROLLER`1_GET_FIRSTVISIBLEITEM_OFFSET))(nullptr);
+		}
+
+		Il2CppObject* get_lastVisibleItem()
+		{
+			return (return (Il2CppObject*(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_UIELEMENTS_VERTICALVIRTUALIZATIONCONTROLLER`1_GET_LASTVISIBLEITEM_OFFSET))(nullptr);
+		}
+
+		::System::Int32 get_visibleItemCount()
+		{
+			return (return (::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_UIELEMENTS_VERTICALVIRTUALIZATIONCONTROLLER`1_GET_VISIBLEITEMCOUNT_OFFSET))(nullptr);
+		}
+
+		::UnityEngine::UIElements::SerializedVirtualizationData* get_serializedData()
+		{
+			return (return (::UnityEngine::UIElements::SerializedVirtualizationData*(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_UIELEMENTS_VERTICALVIRTUALIZATIONCONTROLLER`1_GET_SERIALIZEDDATA_OFFSET))(nullptr);
+		}
+
+		::System::Int32 get_firstVisibleIndex()
+		{
+			return (return (::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_UIELEMENTS_VERTICALVIRTUALIZATIONCONTROLLER`1_GET_FIRSTVISIBLEINDEX_OFFSET))(nullptr);
+		}
+
+		::System::Void set_firstVisibleIndex(::System::Int32 arg)
+		{
+			((::System::Void(*)(::System::Int32, ::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_UIELEMENTS_VERTICALVIRTUALIZATIONCONTROLLER`1_SET_FIRSTVISIBLEINDEX_OFFSET))(arg, nullptr);
+		}
+
+		::System::Single get_lastHeight()
+		{
+			return (return (::System::Single(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_UIELEMENTS_VERTICALVIRTUALIZATIONCONTROLLER`1_GET_LASTHEIGHT_OFFSET))(nullptr);
+		}
+
+		::System::Boolean get_alwaysRebindOnRefresh()
+		{
+			return (return (::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_UIELEMENTS_VERTICALVIRTUALIZATIONCONTROLLER`1_GET_ALWAYSREBINDONREFRESH_OFFSET))(nullptr);
+		}
+
+		::System::Void .ctor(::UnityEngine::UIElements::BaseVerticalCollectionView* arg)
+		{
+			((::System::Void(*)(::UnityEngine::UIElements::BaseVerticalCollectionView*, ::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_UIELEMENTS_VERTICALVIRTUALIZATIONCONTROLLER`1_.CTOR_OFFSET))(arg, nullptr);
+		}
+
+		::System::Void Refresh(::System::Boolean arg)
+		{
+			((::System::Void(*)(::System::Boolean, ::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_UIELEMENTS_VERTICALVIRTUALIZATIONCONTROLLER`1_REFRESH_OFFSET))(arg, nullptr);
+		}
+
+		::System::Void Setup(Il2CppObject* arg, ::System::Int32 arg)
+		{
+			((::System::Void(*)(Il2CppObject*, ::System::Int32, ::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_UIELEMENTS_VERTICALVIRTUALIZATIONCONTROLLER`1_SETUP_OFFSET))(arg, arg, nullptr);
+		}
+
+		::System::Void OnFocus(::UnityEngine::UIElements::VisualElement* arg)
+		{
+			((::System::Void(*)(::UnityEngine::UIElements::VisualElement*, ::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_UIELEMENTS_VERTICALVIRTUALIZATIONCONTROLLER`1_ONFOCUS_OFFSET))(arg, nullptr);
+		}
+
+		::System::Void OnBlur(::UnityEngine::UIElements::VisualElement* arg)
+		{
+			((::System::Void(*)(::UnityEngine::UIElements::VisualElement*, ::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_UIELEMENTS_VERTICALVIRTUALIZATIONCONTROLLER`1_ONBLUR_OFFSET))(arg, nullptr);
+		}
+
+		::System::Void HandleFocus(::UnityEngine::UIElements::ReusableCollectionItem* arg, ::System::Int32 arg)
+		{
+			((::System::Void(*)(::UnityEngine::UIElements::ReusableCollectionItem*, ::System::Int32, ::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_UIELEMENTS_VERTICALVIRTUALIZATIONCONTROLLER`1_HANDLEFOCUS_OFFSET))(arg, arg, nullptr);
+		}
+
+		::System::Void UpdateBackground()
+		{
+			((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_UIELEMENTS_VERTICALVIRTUALIZATIONCONTROLLER`1_UPDATEBACKGROUND_OFFSET))(nullptr);
+		}
+
+		::System::Void StartDragItem(::UnityEngine::UIElements::ReusableCollectionItem* arg)
+		{
+			((::System::Void(*)(::UnityEngine::UIElements::ReusableCollectionItem*, ::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_UIELEMENTS_VERTICALVIRTUALIZATIONCONTROLLER`1_STARTDRAGITEM_OFFSET))(arg, nullptr);
+		}
+
+		::System::Void EndDrag(::System::Int32 arg)
+		{
+			((::System::Void(*)(::System::Int32, ::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_UIELEMENTS_VERTICALVIRTUALIZATIONCONTROLLER`1_ENDDRAG_OFFSET))(arg, nullptr);
+		}
+
+		Il2CppObject* GetOrMakeItemAtIndex(::System::Int32 arg, ::System::Int32 arg)
+		{
+			return (return (Il2CppObject*(*)(::System::Int32, ::System::Int32, ::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_UIELEMENTS_VERTICALVIRTUALIZATIONCONTROLLER`1_GETORMAKEITEMATINDEX_OFFSET))(arg, arg, nullptr);
+		}
+
+		::System::Void ReleaseItem(::System::Int32 arg)
+		{
+			((::System::Void(*)(::System::Int32, ::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_UIELEMENTS_VERTICALVIRTUALIZATIONCONTROLLER`1_RELEASEITEM_OFFSET))(arg, nullptr);
+		}
+
+		::System::Int32 GetDraggedIndex()
+		{
+			return (return (::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_UIELEMENTS_VERTICALVIRTUALIZATIONCONTROLLER`1_GETDRAGGEDINDEX_OFFSET))(nullptr);
+		}
+
+	};
+}
+

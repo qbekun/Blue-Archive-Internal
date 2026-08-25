@@ -1,0 +1,248 @@
+#pragma once
+#include "../../../unitysdk.h"
+
+namespace UnityEngine::UIElements::StyleSheets::Syntax { class Expression; }
+
+#define UNITYENGINE_UIELEMENTS_STYLESHEETS_BASESTYLEMATCHER_MATCHKEYWORD_OFFSET UNITYSDK_OFFSET(0x000000)
+#define UNITYENGINE_UIELEMENTS_STYLESHEETS_BASESTYLEMATCHER_MATCHNUMBER_OFFSET UNITYSDK_OFFSET(0x000000)
+#define UNITYENGINE_UIELEMENTS_STYLESHEETS_BASESTYLEMATCHER_MATCHINTEGER_OFFSET UNITYSDK_OFFSET(0x000000)
+#define UNITYENGINE_UIELEMENTS_STYLESHEETS_BASESTYLEMATCHER_MATCHLENGTH_OFFSET UNITYSDK_OFFSET(0x000000)
+#define UNITYENGINE_UIELEMENTS_STYLESHEETS_BASESTYLEMATCHER_MATCHPERCENTAGE_OFFSET UNITYSDK_OFFSET(0x000000)
+#define UNITYENGINE_UIELEMENTS_STYLESHEETS_BASESTYLEMATCHER_MATCHCOLOR_OFFSET UNITYSDK_OFFSET(0x000000)
+#define UNITYENGINE_UIELEMENTS_STYLESHEETS_BASESTYLEMATCHER_MATCHRESOURCE_OFFSET UNITYSDK_OFFSET(0x000000)
+#define UNITYENGINE_UIELEMENTS_STYLESHEETS_BASESTYLEMATCHER_MATCHURL_OFFSET UNITYSDK_OFFSET(0x000000)
+#define UNITYENGINE_UIELEMENTS_STYLESHEETS_BASESTYLEMATCHER_MATCHTIME_OFFSET UNITYSDK_OFFSET(0x000000)
+#define UNITYENGINE_UIELEMENTS_STYLESHEETS_BASESTYLEMATCHER_MATCHANGLE_OFFSET UNITYSDK_OFFSET(0x000000)
+#define UNITYENGINE_UIELEMENTS_STYLESHEETS_BASESTYLEMATCHER_MATCHCUSTOMIDENT_OFFSET UNITYSDK_OFFSET(0x000000)
+#define UNITYENGINE_UIELEMENTS_STYLESHEETS_BASESTYLEMATCHER_GET_VALUECOUNT_OFFSET UNITYSDK_OFFSET(0x000000)
+#define UNITYENGINE_UIELEMENTS_STYLESHEETS_BASESTYLEMATCHER_GET_ISCURRENTVARIABLE_OFFSET UNITYSDK_OFFSET(0x000000)
+#define UNITYENGINE_UIELEMENTS_STYLESHEETS_BASESTYLEMATCHER_GET_ISCURRENTCOMMA_OFFSET UNITYSDK_OFFSET(0x000000)
+#define UNITYENGINE_UIELEMENTS_STYLESHEETS_BASESTYLEMATCHER_GET_HASCURRENT_OFFSET UNITYSDK_OFFSET(0xA372DD0)
+#define UNITYENGINE_UIELEMENTS_STYLESHEETS_BASESTYLEMATCHER_GET_CURRENTINDEX_OFFSET UNITYSDK_OFFSET(0xA372E00)
+#define UNITYENGINE_UIELEMENTS_STYLESHEETS_BASESTYLEMATCHER_SET_CURRENTINDEX_OFFSET UNITYSDK_OFFSET(0xA372E10)
+#define UNITYENGINE_UIELEMENTS_STYLESHEETS_BASESTYLEMATCHER_GET_MATCHEDVARIABLECOUNT_OFFSET UNITYSDK_OFFSET(0xA372E20)
+#define UNITYENGINE_UIELEMENTS_STYLESHEETS_BASESTYLEMATCHER_SET_MATCHEDVARIABLECOUNT_OFFSET UNITYSDK_OFFSET(0xA372E30)
+#define UNITYENGINE_UIELEMENTS_STYLESHEETS_BASESTYLEMATCHER_INITIALIZE_OFFSET UNITYSDK_OFFSET(0xA372E40)
+#define UNITYENGINE_UIELEMENTS_STYLESHEETS_BASESTYLEMATCHER_MOVENEXT_OFFSET UNITYSDK_OFFSET(0xA372E90)
+#define UNITYENGINE_UIELEMENTS_STYLESHEETS_BASESTYLEMATCHER_SAVECONTEXT_OFFSET UNITYSDK_OFFSET(0xA372EC0)
+#define UNITYENGINE_UIELEMENTS_STYLESHEETS_BASESTYLEMATCHER_RESTORECONTEXT_OFFSET UNITYSDK_OFFSET(0xA372F10)
+#define UNITYENGINE_UIELEMENTS_STYLESHEETS_BASESTYLEMATCHER_DROPCONTEXT_OFFSET UNITYSDK_OFFSET(0xA372F60)
+#define UNITYENGINE_UIELEMENTS_STYLESHEETS_BASESTYLEMATCHER_MATCH_OFFSET UNITYSDK_OFFSET(0xA372FB0)
+#define UNITYENGINE_UIELEMENTS_STYLESHEETS_BASESTYLEMATCHER_MATCHEXPRESSION_OFFSET UNITYSDK_OFFSET(0xA373060)
+#define UNITYENGINE_UIELEMENTS_STYLESHEETS_BASESTYLEMATCHER_MATCHEXPRESSIONWITHMULTIPLIER_OFFSET UNITYSDK_OFFSET(0xA3731C0)
+#define UNITYENGINE_UIELEMENTS_STYLESHEETS_BASESTYLEMATCHER_MATCHGROUP_OFFSET UNITYSDK_OFFSET(0xA373530)
+#define UNITYENGINE_UIELEMENTS_STYLESHEETS_BASESTYLEMATCHER_MATCHCOMBINATOR_OFFSET UNITYSDK_OFFSET(0xA373340)
+#define UNITYENGINE_UIELEMENTS_STYLESHEETS_BASESTYLEMATCHER_MATCHOR_OFFSET UNITYSDK_OFFSET(0xA3735D0)
+#define UNITYENGINE_UIELEMENTS_STYLESHEETS_BASESTYLEMATCHER_MATCHOROR_OFFSET UNITYSDK_OFFSET(0xA373740)
+#define UNITYENGINE_UIELEMENTS_STYLESHEETS_BASESTYLEMATCHER_MATCHANDAND_OFFSET UNITYSDK_OFFSET(0xA373760)
+#define UNITYENGINE_UIELEMENTS_STYLESHEETS_BASESTYLEMATCHER_MATCHMANY_OFFSET UNITYSDK_OFFSET(0xA3737F0)
+#define UNITYENGINE_UIELEMENTS_STYLESHEETS_BASESTYLEMATCHER_MATCHMANYBYORDER_OFFSET UNITYSDK_OFFSET(0xA373AD0)
+#define UNITYENGINE_UIELEMENTS_STYLESHEETS_BASESTYLEMATCHER_MATCHJUXTAPOSITION_OFFSET UNITYSDK_OFFSET(0xA373790)
+#define UNITYENGINE_UIELEMENTS_STYLESHEETS_BASESTYLEMATCHER_MATCHDATATYPE_OFFSET UNITYSDK_OFFSET(0xA3734C0)
+#define UNITYENGINE_UIELEMENTS_STYLESHEETS_BASESTYLEMATCHER_.CTOR_OFFSET UNITYSDK_OFFSET(0xA373C70)
+#define UNITYENGINE_UIELEMENTS_STYLESHEETS_BASESTYLEMATCHER_.CCTOR_OFFSET UNITYSDK_OFFSET(0xA373CF0)
+
+namespace UnityEngine::UIElements::StyleSheets
+{
+	inline static constexpr unsigned int BaseStyleMatcher_TypeDefinitionIndex = 30819;
+
+	class BaseStyleMatcher : public Il2CppObject
+	{
+	public:
+		::System::Text::RegularExpressions::Regex* s_CustomIdentRegex; // 0x0
+		Il2CppObject* m_ContextStack; // 0x10
+		MatchContext* m_CurrentContext; // 0x18
+
+		::System::Boolean MatchKeyword(::System::String* str)
+		{
+			return (return (::System::Boolean(*)(::System::String*, ::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_UIELEMENTS_STYLESHEETS_BASESTYLEMATCHER_MATCHKEYWORD_OFFSET))(str, nullptr);
+		}
+
+		::System::Boolean MatchNumber()
+		{
+			return (return (::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_UIELEMENTS_STYLESHEETS_BASESTYLEMATCHER_MATCHNUMBER_OFFSET))(nullptr);
+		}
+
+		::System::Boolean MatchInteger()
+		{
+			return (return (::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_UIELEMENTS_STYLESHEETS_BASESTYLEMATCHER_MATCHINTEGER_OFFSET))(nullptr);
+		}
+
+		::System::Boolean MatchLength()
+		{
+			return (return (::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_UIELEMENTS_STYLESHEETS_BASESTYLEMATCHER_MATCHLENGTH_OFFSET))(nullptr);
+		}
+
+		::System::Boolean MatchPercentage()
+		{
+			return (return (::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_UIELEMENTS_STYLESHEETS_BASESTYLEMATCHER_MATCHPERCENTAGE_OFFSET))(nullptr);
+		}
+
+		::System::Boolean MatchColor()
+		{
+			return (return (::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_UIELEMENTS_STYLESHEETS_BASESTYLEMATCHER_MATCHCOLOR_OFFSET))(nullptr);
+		}
+
+		::System::Boolean MatchResource()
+		{
+			return (return (::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_UIELEMENTS_STYLESHEETS_BASESTYLEMATCHER_MATCHRESOURCE_OFFSET))(nullptr);
+		}
+
+		::System::Boolean MatchUrl()
+		{
+			return (return (::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_UIELEMENTS_STYLESHEETS_BASESTYLEMATCHER_MATCHURL_OFFSET))(nullptr);
+		}
+
+		::System::Boolean MatchTime()
+		{
+			return (return (::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_UIELEMENTS_STYLESHEETS_BASESTYLEMATCHER_MATCHTIME_OFFSET))(nullptr);
+		}
+
+		::System::Boolean MatchAngle()
+		{
+			return (return (::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_UIELEMENTS_STYLESHEETS_BASESTYLEMATCHER_MATCHANGLE_OFFSET))(nullptr);
+		}
+
+		::System::Boolean MatchCustomIdent()
+		{
+			return (return (::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_UIELEMENTS_STYLESHEETS_BASESTYLEMATCHER_MATCHCUSTOMIDENT_OFFSET))(nullptr);
+		}
+
+		::System::Int32 get_valueCount()
+		{
+			return (return (::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_UIELEMENTS_STYLESHEETS_BASESTYLEMATCHER_GET_VALUECOUNT_OFFSET))(nullptr);
+		}
+
+		::System::Boolean get_isCurrentVariable()
+		{
+			return (return (::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_UIELEMENTS_STYLESHEETS_BASESTYLEMATCHER_GET_ISCURRENTVARIABLE_OFFSET))(nullptr);
+		}
+
+		::System::Boolean get_isCurrentComma()
+		{
+			return (return (::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_UIELEMENTS_STYLESHEETS_BASESTYLEMATCHER_GET_ISCURRENTCOMMA_OFFSET))(nullptr);
+		}
+
+		::System::Boolean get_hasCurrent()
+		{
+			return (return (::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_UIELEMENTS_STYLESHEETS_BASESTYLEMATCHER_GET_HASCURRENT_OFFSET))(nullptr);
+		}
+
+		::System::Int32 get_currentIndex()
+		{
+			return (return (::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_UIELEMENTS_STYLESHEETS_BASESTYLEMATCHER_GET_CURRENTINDEX_OFFSET))(nullptr);
+		}
+
+		::System::Void set_currentIndex(::System::Int32 arg)
+		{
+			((::System::Void(*)(::System::Int32, ::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_UIELEMENTS_STYLESHEETS_BASESTYLEMATCHER_SET_CURRENTINDEX_OFFSET))(arg, nullptr);
+		}
+
+		::System::Int32 get_matchedVariableCount()
+		{
+			return (return (::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_UIELEMENTS_STYLESHEETS_BASESTYLEMATCHER_GET_MATCHEDVARIABLECOUNT_OFFSET))(nullptr);
+		}
+
+		::System::Void set_matchedVariableCount(::System::Int32 arg)
+		{
+			((::System::Void(*)(::System::Int32, ::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_UIELEMENTS_STYLESHEETS_BASESTYLEMATCHER_SET_MATCHEDVARIABLECOUNT_OFFSET))(arg, nullptr);
+		}
+
+		::System::Void Initialize()
+		{
+			((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_UIELEMENTS_STYLESHEETS_BASESTYLEMATCHER_INITIALIZE_OFFSET))(nullptr);
+		}
+
+		::System::Void MoveNext()
+		{
+			((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_UIELEMENTS_STYLESHEETS_BASESTYLEMATCHER_MOVENEXT_OFFSET))(nullptr);
+		}
+
+		::System::Void SaveContext()
+		{
+			((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_UIELEMENTS_STYLESHEETS_BASESTYLEMATCHER_SAVECONTEXT_OFFSET))(nullptr);
+		}
+
+		::System::Void RestoreContext()
+		{
+			((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_UIELEMENTS_STYLESHEETS_BASESTYLEMATCHER_RESTORECONTEXT_OFFSET))(nullptr);
+		}
+
+		::System::Void DropContext()
+		{
+			((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_UIELEMENTS_STYLESHEETS_BASESTYLEMATCHER_DROPCONTEXT_OFFSET))(nullptr);
+		}
+
+		::System::Boolean Match(::UnityEngine::UIElements::StyleSheets::Syntax::Expression* arg)
+		{
+			return (return (::System::Boolean(*)(::UnityEngine::UIElements::StyleSheets::Syntax::Expression*, ::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_UIELEMENTS_STYLESHEETS_BASESTYLEMATCHER_MATCH_OFFSET))(arg, nullptr);
+		}
+
+		::System::Boolean MatchExpression(::UnityEngine::UIElements::StyleSheets::Syntax::Expression* arg)
+		{
+			return (return (::System::Boolean(*)(::UnityEngine::UIElements::StyleSheets::Syntax::Expression*, ::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_UIELEMENTS_STYLESHEETS_BASESTYLEMATCHER_MATCHEXPRESSION_OFFSET))(arg, nullptr);
+		}
+
+		::System::Boolean MatchExpressionWithMultiplier(::UnityEngine::UIElements::StyleSheets::Syntax::Expression* arg)
+		{
+			return (return (::System::Boolean(*)(::UnityEngine::UIElements::StyleSheets::Syntax::Expression*, ::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_UIELEMENTS_STYLESHEETS_BASESTYLEMATCHER_MATCHEXPRESSIONWITHMULTIPLIER_OFFSET))(arg, nullptr);
+		}
+
+		::System::Boolean MatchGroup(::UnityEngine::UIElements::StyleSheets::Syntax::Expression* arg)
+		{
+			return (return (::System::Boolean(*)(::UnityEngine::UIElements::StyleSheets::Syntax::Expression*, ::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_UIELEMENTS_STYLESHEETS_BASESTYLEMATCHER_MATCHGROUP_OFFSET))(arg, nullptr);
+		}
+
+		::System::Boolean MatchCombinator(::UnityEngine::UIElements::StyleSheets::Syntax::Expression* arg)
+		{
+			return (return (::System::Boolean(*)(::UnityEngine::UIElements::StyleSheets::Syntax::Expression*, ::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_UIELEMENTS_STYLESHEETS_BASESTYLEMATCHER_MATCHCOMBINATOR_OFFSET))(arg, nullptr);
+		}
+
+		::System::Boolean MatchOr(::UnityEngine::UIElements::StyleSheets::Syntax::Expression* arg)
+		{
+			return (return (::System::Boolean(*)(::UnityEngine::UIElements::StyleSheets::Syntax::Expression*, ::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_UIELEMENTS_STYLESHEETS_BASESTYLEMATCHER_MATCHOR_OFFSET))(arg, nullptr);
+		}
+
+		::System::Boolean MatchOrOr(::UnityEngine::UIElements::StyleSheets::Syntax::Expression* arg)
+		{
+			return (return (::System::Boolean(*)(::UnityEngine::UIElements::StyleSheets::Syntax::Expression*, ::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_UIELEMENTS_STYLESHEETS_BASESTYLEMATCHER_MATCHOROR_OFFSET))(arg, nullptr);
+		}
+
+		::System::Boolean MatchAndAnd(::UnityEngine::UIElements::StyleSheets::Syntax::Expression* arg)
+		{
+			return (return (::System::Boolean(*)(::UnityEngine::UIElements::StyleSheets::Syntax::Expression*, ::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_UIELEMENTS_STYLESHEETS_BASESTYLEMATCHER_MATCHANDAND_OFFSET))(arg, nullptr);
+		}
+
+		::System::Int32 MatchMany(::UnityEngine::UIElements::StyleSheets::Syntax::Expression* arg)
+		{
+			return (return (::System::Int32(*)(::UnityEngine::UIElements::StyleSheets::Syntax::Expression*, ::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_UIELEMENTS_STYLESHEETS_BASESTYLEMATCHER_MATCHMANY_OFFSET))(arg, nullptr);
+		}
+
+		::System::Int32 MatchManyByOrder(::UnityEngine::UIElements::StyleSheets::Syntax::Expression* arg, ::System::Object** arg)
+		{
+			return (return (::System::Int32(*)(::UnityEngine::UIElements::StyleSheets::Syntax::Expression*, ::System::Object**, ::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_UIELEMENTS_STYLESHEETS_BASESTYLEMATCHER_MATCHMANYBYORDER_OFFSET))(arg, arg, nullptr);
+		}
+
+		::System::Boolean MatchJuxtaposition(::UnityEngine::UIElements::StyleSheets::Syntax::Expression* arg)
+		{
+			return (return (::System::Boolean(*)(::UnityEngine::UIElements::StyleSheets::Syntax::Expression*, ::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_UIELEMENTS_STYLESHEETS_BASESTYLEMATCHER_MATCHJUXTAPOSITION_OFFSET))(arg, nullptr);
+		}
+
+		::System::Boolean MatchDataType(::UnityEngine::UIElements::StyleSheets::Syntax::Expression* arg)
+		{
+			return (return (::System::Boolean(*)(::UnityEngine::UIElements::StyleSheets::Syntax::Expression*, ::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_UIELEMENTS_STYLESHEETS_BASESTYLEMATCHER_MATCHDATATYPE_OFFSET))(arg, nullptr);
+		}
+
+		::System::Void .ctor()
+		{
+			((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_UIELEMENTS_STYLESHEETS_BASESTYLEMATCHER_.CTOR_OFFSET))(nullptr);
+		}
+
+		::System::Void .cctor()
+		{
+			((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_UIELEMENTS_STYLESHEETS_BASESTYLEMATCHER_.CCTOR_OFFSET))(nullptr);
+		}
+
+	};
+}
+

@@ -1,0 +1,98 @@
+#pragma once
+#include "../../../unitysdk.h"
+
+#define MX_DATA_EXCEL_MINIGAMEROADPUZZLEROADROUNDEXCELREPOSITORY_SELECT_EVENTCONTENTID_OFFSET UNITYSDK_OFFSET(0x1BF4390)
+#define MX_DATA_EXCEL_MINIGAMEROADPUZZLEROADROUNDEXCELREPOSITORY_CACHE_OFFSET UNITYSDK_OFFSET(0x1BF4690)
+#define MX_DATA_EXCEL_MINIGAMEROADPUZZLEROADROUNDEXCELREPOSITORY_SELECTFIRST_MAPGROUPID_OFFSET UNITYSDK_OFFSET(0x1BF4AF0)
+#define MX_DATA_EXCEL_MINIGAMEROADPUZZLEROADROUNDEXCELREPOSITORY_.CTOR_OFFSET UNITYSDK_OFFSET(0x1BF4E10)
+#define MX_DATA_EXCEL_MINIGAMEROADPUZZLEROADROUNDEXCELREPOSITORY_SELECT_MAPGROUPIDS_OFFSET UNITYSDK_OFFSET(0x1BF4E50)
+#define MX_DATA_EXCEL_MINIGAMEROADPUZZLEROADROUNDEXCELREPOSITORY_SELECT_MAPGROUPID_OFFSET UNITYSDK_OFFSET(0x1BF5260)
+#define MX_DATA_EXCEL_MINIGAMEROADPUZZLEROADROUNDEXCELREPOSITORY_SELECT_EVENTCONTENTIDS_OFFSET UNITYSDK_OFFSET(0x1BF5570)
+#define MX_DATA_EXCEL_MINIGAMEROADPUZZLEROADROUNDEXCELREPOSITORY_SELECT_UNIQUEID_OFFSET UNITYSDK_OFFSET(0x1BF5970)
+#define MX_DATA_EXCEL_MINIGAMEROADPUZZLEROADROUNDEXCELREPOSITORY_SELECTFIRST_EVENTCONTENTID_OFFSET UNITYSDK_OFFSET(0x1BF5C80)
+#define MX_DATA_EXCEL_MINIGAMEROADPUZZLEROADROUNDEXCELREPOSITORY_SELECT_UNIQUEIDS_OFFSET UNITYSDK_OFFSET(0x1BF5FA0)
+#define MX_DATA_EXCEL_MINIGAMEROADPUZZLEROADROUNDEXCELREPOSITORY_SELECT_ROUNDS_OFFSET UNITYSDK_OFFSET(0x1BF63B0)
+#define MX_DATA_EXCEL_MINIGAMEROADPUZZLEROADROUNDEXCELREPOSITORY_SELECTFIRST_ROUND_OFFSET UNITYSDK_OFFSET(0x1BF67C0)
+#define MX_DATA_EXCEL_MINIGAMEROADPUZZLEROADROUNDEXCELREPOSITORY_SELECTFIRST_UNIQUEID_OFFSET UNITYSDK_OFFSET(0x1BF6AE0)
+#define MX_DATA_EXCEL_MINIGAMEROADPUZZLEROADROUNDEXCELREPOSITORY_SELECT_ROUND_OFFSET UNITYSDK_OFFSET(0x1BF6E00)
+
+namespace MX::Data::Excel
+{
+	inline static constexpr unsigned int MinigameRoadPuzzleRoadRoundExcelRepository_TypeDefinitionIndex = 18817;
+
+	class MinigameRoadPuzzleRoadRoundExcelRepository : public ::MXUnderCover::UCInteraction
+	{
+	public:
+		Il2CppObject* Select_EventContentId(::System::Int64 arg, ::System::Boolean arg)
+		{
+			return (return (Il2CppObject*(*)(::System::Int64, ::System::Boolean, ::PVOID))((::PBYTE)hIl2Cpp + MX_DATA_EXCEL_MINIGAMEROADPUZZLEROADROUNDEXCELREPOSITORY_SELECT_EVENTCONTENTID_OFFSET))(arg, arg, nullptr);
+		}
+
+		::System::Void Cache(Il2CppObject* arg)
+		{
+			((::System::Void(*)(Il2CppObject*, ::PVOID))((::PBYTE)hIl2Cpp + MX_DATA_EXCEL_MINIGAMEROADPUZZLEROADROUNDEXCELREPOSITORY_CACHE_OFFSET))(arg, nullptr);
+		}
+
+		Il2CppObject* SelectFirst_MapGroupId(::System::Int64 arg, ::System::Boolean arg)
+		{
+			return (return (Il2CppObject*(*)(::System::Int64, ::System::Boolean, ::PVOID))((::PBYTE)hIl2Cpp + MX_DATA_EXCEL_MINIGAMEROADPUZZLEROADROUNDEXCELREPOSITORY_SELECTFIRST_MAPGROUPID_OFFSET))(arg, arg, nullptr);
+		}
+
+		::System::Void .ctor()
+		{
+			((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_DATA_EXCEL_MINIGAMEROADPUZZLEROADROUNDEXCELREPOSITORY_.CTOR_OFFSET))(nullptr);
+		}
+
+		Il2CppObject* Select_MapGroupIds(Il2CppObject* arg, ::System::Boolean arg)
+		{
+			return (return (Il2CppObject*(*)(Il2CppObject*, ::System::Boolean, ::PVOID))((::PBYTE)hIl2Cpp + MX_DATA_EXCEL_MINIGAMEROADPUZZLEROADROUNDEXCELREPOSITORY_SELECT_MAPGROUPIDS_OFFSET))(arg, arg, nullptr);
+		}
+
+		Il2CppObject* Select_MapGroupId(::System::Int64 arg, ::System::Boolean arg)
+		{
+			return (return (Il2CppObject*(*)(::System::Int64, ::System::Boolean, ::PVOID))((::PBYTE)hIl2Cpp + MX_DATA_EXCEL_MINIGAMEROADPUZZLEROADROUNDEXCELREPOSITORY_SELECT_MAPGROUPID_OFFSET))(arg, arg, nullptr);
+		}
+
+		Il2CppObject* Select_EventContentIds(Il2CppObject* arg, ::System::Boolean arg)
+		{
+			return (return (Il2CppObject*(*)(Il2CppObject*, ::System::Boolean, ::PVOID))((::PBYTE)hIl2Cpp + MX_DATA_EXCEL_MINIGAMEROADPUZZLEROADROUNDEXCELREPOSITORY_SELECT_EVENTCONTENTIDS_OFFSET))(arg, arg, nullptr);
+		}
+
+		Il2CppObject* Select_UniqueId(::System::Int64 arg, ::System::Boolean arg)
+		{
+			return (return (Il2CppObject*(*)(::System::Int64, ::System::Boolean, ::PVOID))((::PBYTE)hIl2Cpp + MX_DATA_EXCEL_MINIGAMEROADPUZZLEROADROUNDEXCELREPOSITORY_SELECT_UNIQUEID_OFFSET))(arg, arg, nullptr);
+		}
+
+		Il2CppObject* SelectFirst_EventContentId(::System::Int64 arg, ::System::Boolean arg)
+		{
+			return (return (Il2CppObject*(*)(::System::Int64, ::System::Boolean, ::PVOID))((::PBYTE)hIl2Cpp + MX_DATA_EXCEL_MINIGAMEROADPUZZLEROADROUNDEXCELREPOSITORY_SELECTFIRST_EVENTCONTENTID_OFFSET))(arg, arg, nullptr);
+		}
+
+		Il2CppObject* Select_UniqueIds(Il2CppObject* arg, ::System::Boolean arg)
+		{
+			return (return (Il2CppObject*(*)(Il2CppObject*, ::System::Boolean, ::PVOID))((::PBYTE)hIl2Cpp + MX_DATA_EXCEL_MINIGAMEROADPUZZLEROADROUNDEXCELREPOSITORY_SELECT_UNIQUEIDS_OFFSET))(arg, arg, nullptr);
+		}
+
+		Il2CppObject* Select_Rounds(Il2CppObject* arg, ::System::Boolean arg)
+		{
+			return (return (Il2CppObject*(*)(Il2CppObject*, ::System::Boolean, ::PVOID))((::PBYTE)hIl2Cpp + MX_DATA_EXCEL_MINIGAMEROADPUZZLEROADROUNDEXCELREPOSITORY_SELECT_ROUNDS_OFFSET))(arg, arg, nullptr);
+		}
+
+		Il2CppObject* SelectFirst_Round(::System::Int32 arg, ::System::Boolean arg)
+		{
+			return (return (Il2CppObject*(*)(::System::Int32, ::System::Boolean, ::PVOID))((::PBYTE)hIl2Cpp + MX_DATA_EXCEL_MINIGAMEROADPUZZLEROADROUNDEXCELREPOSITORY_SELECTFIRST_ROUND_OFFSET))(arg, arg, nullptr);
+		}
+
+		Il2CppObject* SelectFirst_UniqueId(::System::Int64 arg, ::System::Boolean arg)
+		{
+			return (return (Il2CppObject*(*)(::System::Int64, ::System::Boolean, ::PVOID))((::PBYTE)hIl2Cpp + MX_DATA_EXCEL_MINIGAMEROADPUZZLEROADROUNDEXCELREPOSITORY_SELECTFIRST_UNIQUEID_OFFSET))(arg, arg, nullptr);
+		}
+
+		Il2CppObject* Select_Round(::System::Int32 arg, ::System::Boolean arg)
+		{
+			return (return (Il2CppObject*(*)(::System::Int32, ::System::Boolean, ::PVOID))((::PBYTE)hIl2Cpp + MX_DATA_EXCEL_MINIGAMEROADPUZZLEROADROUNDEXCELREPOSITORY_SELECT_ROUND_OFFSET))(arg, arg, nullptr);
+		}
+
+	};
+}
+

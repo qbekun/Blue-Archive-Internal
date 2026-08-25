@@ -1,0 +1,130 @@
+#pragma once
+#include "unitysdk.h"
+
+namespace FlatData { class EchelonType; }
+namespace FlatData { class EchelonExtensionType; }
+
+#define UIFORMATIONPRESETSCROLLVIEWCONTROLLER_SET_COPYTARGETTABINDEX_OFFSET UNITYSDK_OFFSET(0x2562E30)
+#define UIFORMATIONPRESETSCROLLVIEWCONTROLLER_GET_COPYTARGETELEMENTINDEX_OFFSET UNITYSDK_OFFSET(0x2562E40)
+#define UIFORMATIONPRESETSCROLLVIEWCONTROLLER_GET_CURRENTTABINDEX_OFFSET UNITYSDK_OFFSET(0x2562E50)
+#define UIFORMATIONPRESETSCROLLVIEWCONTROLLER_.CTOR_OFFSET UNITYSDK_OFFSET(0x2562E60)
+#define UIFORMATIONPRESETSCROLLVIEWCONTROLLER_GET_CURRENTFORMATIONECHELONTYPE_OFFSET UNITYSDK_OFFSET(0x2562EA0)
+#define UIFORMATIONPRESETSCROLLVIEWCONTROLLER_GET_CURRENTFORMATIONEXTENSIONTYPE_OFFSET UNITYSDK_OFFSET(0x2562EB0)
+#define UIFORMATIONPRESETSCROLLVIEWCONTROLLER_SET_COPYTARGETELEMENTINDEX_OFFSET UNITYSDK_OFFSET(0x2562EC0)
+#define UIFORMATIONPRESETSCROLLVIEWCONTROLLER_GET_CURRENTECHELONENTITYID_OFFSET UNITYSDK_OFFSET(0x2562ED0)
+#define UIFORMATIONPRESETSCROLLVIEWCONTROLLER_GET_COPYTARGETTABINDEX_OFFSET UNITYSDK_OFFSET(0x2562EE0)
+#define UIFORMATIONPRESETSCROLLVIEWCONTROLLER_SET_CURRENTTABINDEX_OFFSET UNITYSDK_OFFSET(0x2562EF0)
+#define UIFORMATIONPRESETSCROLLVIEWCONTROLLER_REFRESHELEMENTSBUTTON_OFFSET UNITYSDK_OFFSET(0x2562F00)
+#define UIFORMATIONPRESETSCROLLVIEWCONTROLLER_SET_ISCOPYMODE_OFFSET UNITYSDK_OFFSET(0x2563A00)
+#define UIFORMATIONPRESETSCROLLVIEWCONTROLLER_SET_CURRENTECHELONENTITYID_OFFSET UNITYSDK_OFFSET(0x2563A10)
+#define UIFORMATIONPRESETSCROLLVIEWCONTROLLER_ISCURRENTFORMATIONEMPTY_OFFSET UNITYSDK_OFFSET(0x2563A20)
+#define UIFORMATIONPRESETSCROLLVIEWCONTROLLER_REFRESHSTYLES_OFFSET UNITYSDK_OFFSET(0x2563B00)
+#define UIFORMATIONPRESETSCROLLVIEWCONTROLLER_SET_CURRENTFORMATIONECHELONTYPE_OFFSET UNITYSDK_OFFSET(0x2563D40)
+#define UIFORMATIONPRESETSCROLLVIEWCONTROLLER_GET_ISCOPYMODE_OFFSET UNITYSDK_OFFSET(0x2563D50)
+#define UIFORMATIONPRESETSCROLLVIEWCONTROLLER_SET_CURRENTFORMATIONEXTENSIONTYPE_OFFSET UNITYSDK_OFFSET(0x2563D60)
+
+	inline static constexpr unsigned int UIFormationPresetScrollViewController_TypeDefinitionIndex = 6126;
+
+	class UIFormationPresetScrollViewController : public ::System::Xml::DocumentXPathNodeIterator_Empty
+	{
+	public:
+		::System::Int32 _CurrentTabIndex_k__BackingField; // 0x90
+		::FlatData::EchelonType* _CurrentFormationEchelonType_k__BackingField; // 0x94
+		::FlatData::EchelonExtensionType* _CurrentFormationExtensionType_k__BackingField; // 0x98
+		::System::Int64 _CurrentEchelonEntityId_k__BackingField; // 0xA0
+		::System::Boolean _IsCopyMode_k__BackingField; // 0xA8
+		::System::Int32 _CopyTargetTabIndex_k__BackingField; // 0xAC
+		::System::Int32 _CopyTargetElementIndex_k__BackingField; // 0xB0
+
+		::System::Void set_CopyTargetTabIndex(::System::Int32 arg)
+		{
+			((::System::Void(*)(::System::Int32, ::PVOID))((::PBYTE)hIl2Cpp + UIFORMATIONPRESETSCROLLVIEWCONTROLLER_SET_COPYTARGETTABINDEX_OFFSET))(arg, nullptr);
+		}
+
+		::System::Int32 get_CopyTargetElementIndex()
+		{
+			return ((::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + UIFORMATIONPRESETSCROLLVIEWCONTROLLER_GET_COPYTARGETELEMENTINDEX_OFFSET))(nullptr);
+		}
+
+		::System::Int32 get_CurrentTabIndex()
+		{
+			return ((::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + UIFORMATIONPRESETSCROLLVIEWCONTROLLER_GET_CURRENTTABINDEX_OFFSET))(nullptr);
+		}
+
+		::System::Void .ctor()
+		{
+			((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + UIFORMATIONPRESETSCROLLVIEWCONTROLLER_.CTOR_OFFSET))(nullptr);
+		}
+
+		::FlatData::EchelonType* get_CurrentFormationEchelonType()
+		{
+			return ((::FlatData::EchelonType*(*)(::PVOID))((::PBYTE)hIl2Cpp + UIFORMATIONPRESETSCROLLVIEWCONTROLLER_GET_CURRENTFORMATIONECHELONTYPE_OFFSET))(nullptr);
+		}
+
+		::FlatData::EchelonExtensionType* get_CurrentFormationExtensionType()
+		{
+			return ((::FlatData::EchelonExtensionType*(*)(::PVOID))((::PBYTE)hIl2Cpp + UIFORMATIONPRESETSCROLLVIEWCONTROLLER_GET_CURRENTFORMATIONEXTENSIONTYPE_OFFSET))(nullptr);
+		}
+
+		::System::Void set_CopyTargetElementIndex(::System::Int32 arg)
+		{
+			((::System::Void(*)(::System::Int32, ::PVOID))((::PBYTE)hIl2Cpp + UIFORMATIONPRESETSCROLLVIEWCONTROLLER_SET_COPYTARGETELEMENTINDEX_OFFSET))(arg, nullptr);
+		}
+
+		::System::Int64 get_CurrentEchelonEntityId()
+		{
+			return ((::System::Int64(*)(::PVOID))((::PBYTE)hIl2Cpp + UIFORMATIONPRESETSCROLLVIEWCONTROLLER_GET_CURRENTECHELONENTITYID_OFFSET))(nullptr);
+		}
+
+		::System::Int32 get_CopyTargetTabIndex()
+		{
+			return ((::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + UIFORMATIONPRESETSCROLLVIEWCONTROLLER_GET_COPYTARGETTABINDEX_OFFSET))(nullptr);
+		}
+
+		::System::Void set_CurrentTabIndex(::System::Int32 arg)
+		{
+			((::System::Void(*)(::System::Int32, ::PVOID))((::PBYTE)hIl2Cpp + UIFORMATIONPRESETSCROLLVIEWCONTROLLER_SET_CURRENTTABINDEX_OFFSET))(arg, nullptr);
+		}
+
+		::System::Void RefreshElementsButton()
+		{
+			((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + UIFORMATIONPRESETSCROLLVIEWCONTROLLER_REFRESHELEMENTSBUTTON_OFFSET))(nullptr);
+		}
+
+		::System::Void set_IsCopyMode(::System::Boolean arg)
+		{
+			((::System::Void(*)(::System::Boolean, ::PVOID))((::PBYTE)hIl2Cpp + UIFORMATIONPRESETSCROLLVIEWCONTROLLER_SET_ISCOPYMODE_OFFSET))(arg, nullptr);
+		}
+
+		::System::Void set_CurrentEchelonEntityId(::System::Int64 arg)
+		{
+			((::System::Void(*)(::System::Int64, ::PVOID))((::PBYTE)hIl2Cpp + UIFORMATIONPRESETSCROLLVIEWCONTROLLER_SET_CURRENTECHELONENTITYID_OFFSET))(arg, nullptr);
+		}
+
+		::System::Boolean IsCurrentFormationEmpty()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + UIFORMATIONPRESETSCROLLVIEWCONTROLLER_ISCURRENTFORMATIONEMPTY_OFFSET))(nullptr);
+		}
+
+		::System::Void RefreshStyles()
+		{
+			((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + UIFORMATIONPRESETSCROLLVIEWCONTROLLER_REFRESHSTYLES_OFFSET))(nullptr);
+		}
+
+		::System::Void set_CurrentFormationEchelonType(::FlatData::EchelonType* arg)
+		{
+			((::System::Void(*)(::FlatData::EchelonType*, ::PVOID))((::PBYTE)hIl2Cpp + UIFORMATIONPRESETSCROLLVIEWCONTROLLER_SET_CURRENTFORMATIONECHELONTYPE_OFFSET))(arg, nullptr);
+		}
+
+		::System::Boolean get_IsCopyMode()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + UIFORMATIONPRESETSCROLLVIEWCONTROLLER_GET_ISCOPYMODE_OFFSET))(nullptr);
+		}
+
+		::System::Void set_CurrentFormationExtensionType(::FlatData::EchelonExtensionType* arg)
+		{
+			((::System::Void(*)(::FlatData::EchelonExtensionType*, ::PVOID))((::PBYTE)hIl2Cpp + UIFORMATIONPRESETSCROLLVIEWCONTROLLER_SET_CURRENTFORMATIONEXTENSIONTYPE_OFFSET))(arg, nullptr);
+		}
+
+	};
+

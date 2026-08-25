@@ -1,0 +1,525 @@
+#pragma once
+#include "../../../unitysdk.h"
+
+namespace UnityEngine::UIElements { class ComputedStyle; }
+namespace UnityEngine::UIElements { class ComputedStyle&; }
+namespace UnityEngine::UIElements { class Align; }
+namespace UnityEngine { class Color; }
+namespace UnityEngine::UIElements { class Background; }
+namespace UnityEngine::UIElements { class Length; }
+namespace UnityEngine::UIElements { class Cursor; }
+namespace UnityEngine::UIElements { class DisplayStyle; }
+namespace UnityEngine::UIElements { class FlexDirection; }
+namespace UnityEngine::UIElements { class Wrap; }
+namespace UnityEngine::UIElements { class Justify; }
+namespace UnityEngine::UIElements { class OverflowInternal; }
+namespace UnityEngine::UIElements { class Position; }
+namespace UnityEngine::UIElements { class Rotate; }
+namespace UnityEngine::UIElements { class Scale; }
+namespace UnityEngine::UIElements { class TextOverflow; }
+namespace UnityEngine::UIElements { class TextShadow; }
+namespace UnityEngine::UIElements { class TransformOrigin; }
+namespace UnityEngine::UIElements { class Translate; }
+namespace UnityEngine { class ScaleMode; }
+namespace UnityEngine { class Font; }
+namespace UnityEngine::UIElements { class FontDefinition; }
+namespace UnityEngine { class FontStyle; }
+namespace UnityEngine::UIElements { class OverflowClipBox; }
+namespace UnityEngine { class TextAnchor; }
+namespace UnityEngine::UIElements { class TextOverflowPosition; }
+namespace UnityEngine::UIElements { class Visibility; }
+namespace UnityEngine::UIElements { class WhiteSpace; }
+
+#define UNITYENGINE_UIELEMENTS_STYLESHEETS_INITIALSTYLE_GET_OFFSET UNITYSDK_OFFSET(0xA365010)
+#define UNITYENGINE_UIELEMENTS_STYLESHEETS_INITIALSTYLE_ACQUIRE_OFFSET UNITYSDK_OFFSET(0xA365080)
+#define UNITYENGINE_UIELEMENTS_STYLESHEETS_INITIALSTYLE_.CCTOR_OFFSET UNITYSDK_OFFSET(0xA365140)
+#define UNITYENGINE_UIELEMENTS_STYLESHEETS_INITIALSTYLE_GET_ALIGNCONTENT_OFFSET UNITYSDK_OFFSET(0xA3661F0)
+#define UNITYENGINE_UIELEMENTS_STYLESHEETS_INITIALSTYLE_GET_ALIGNITEMS_OFFSET UNITYSDK_OFFSET(0xA366260)
+#define UNITYENGINE_UIELEMENTS_STYLESHEETS_INITIALSTYLE_GET_ALIGNSELF_OFFSET UNITYSDK_OFFSET(0xA3662D0)
+#define UNITYENGINE_UIELEMENTS_STYLESHEETS_INITIALSTYLE_GET_BACKGROUNDCOLOR_OFFSET UNITYSDK_OFFSET(0xA366340)
+#define UNITYENGINE_UIELEMENTS_STYLESHEETS_INITIALSTYLE_GET_BACKGROUNDIMAGE_OFFSET UNITYSDK_OFFSET(0xA3663C0)
+#define UNITYENGINE_UIELEMENTS_STYLESHEETS_INITIALSTYLE_GET_BORDERBOTTOMCOLOR_OFFSET UNITYSDK_OFFSET(0xA366440)
+#define UNITYENGINE_UIELEMENTS_STYLESHEETS_INITIALSTYLE_GET_BORDERBOTTOMLEFTRADIUS_OFFSET UNITYSDK_OFFSET(0xA3664C0)
+#define UNITYENGINE_UIELEMENTS_STYLESHEETS_INITIALSTYLE_GET_BORDERBOTTOMRIGHTRADIUS_OFFSET UNITYSDK_OFFSET(0xA366530)
+#define UNITYENGINE_UIELEMENTS_STYLESHEETS_INITIALSTYLE_GET_BORDERBOTTOMWIDTH_OFFSET UNITYSDK_OFFSET(0xA3665A0)
+#define UNITYENGINE_UIELEMENTS_STYLESHEETS_INITIALSTYLE_GET_BORDERLEFTCOLOR_OFFSET UNITYSDK_OFFSET(0xA366610)
+#define UNITYENGINE_UIELEMENTS_STYLESHEETS_INITIALSTYLE_GET_BORDERLEFTWIDTH_OFFSET UNITYSDK_OFFSET(0xA366690)
+#define UNITYENGINE_UIELEMENTS_STYLESHEETS_INITIALSTYLE_GET_BORDERRIGHTCOLOR_OFFSET UNITYSDK_OFFSET(0xA366700)
+#define UNITYENGINE_UIELEMENTS_STYLESHEETS_INITIALSTYLE_GET_BORDERRIGHTWIDTH_OFFSET UNITYSDK_OFFSET(0xA366780)
+#define UNITYENGINE_UIELEMENTS_STYLESHEETS_INITIALSTYLE_GET_BORDERTOPCOLOR_OFFSET UNITYSDK_OFFSET(0xA3667F0)
+#define UNITYENGINE_UIELEMENTS_STYLESHEETS_INITIALSTYLE_GET_BORDERTOPLEFTRADIUS_OFFSET UNITYSDK_OFFSET(0xA366870)
+#define UNITYENGINE_UIELEMENTS_STYLESHEETS_INITIALSTYLE_GET_BORDERTOPRIGHTRADIUS_OFFSET UNITYSDK_OFFSET(0xA3668E0)
+#define UNITYENGINE_UIELEMENTS_STYLESHEETS_INITIALSTYLE_GET_BORDERTOPWIDTH_OFFSET UNITYSDK_OFFSET(0xA366950)
+#define UNITYENGINE_UIELEMENTS_STYLESHEETS_INITIALSTYLE_GET_BOTTOM_OFFSET UNITYSDK_OFFSET(0xA3669C0)
+#define UNITYENGINE_UIELEMENTS_STYLESHEETS_INITIALSTYLE_GET_COLOR_OFFSET UNITYSDK_OFFSET(0xA366A30)
+#define UNITYENGINE_UIELEMENTS_STYLESHEETS_INITIALSTYLE_GET_CURSOR_OFFSET UNITYSDK_OFFSET(0xA366AA0)
+#define UNITYENGINE_UIELEMENTS_STYLESHEETS_INITIALSTYLE_GET_DISPLAY_OFFSET UNITYSDK_OFFSET(0xA366B20)
+#define UNITYENGINE_UIELEMENTS_STYLESHEETS_INITIALSTYLE_GET_FLEXBASIS_OFFSET UNITYSDK_OFFSET(0xA366B90)
+#define UNITYENGINE_UIELEMENTS_STYLESHEETS_INITIALSTYLE_GET_FLEXDIRECTION_OFFSET UNITYSDK_OFFSET(0xA366C00)
+#define UNITYENGINE_UIELEMENTS_STYLESHEETS_INITIALSTYLE_GET_FLEXGROW_OFFSET UNITYSDK_OFFSET(0xA366C70)
+#define UNITYENGINE_UIELEMENTS_STYLESHEETS_INITIALSTYLE_GET_FLEXSHRINK_OFFSET UNITYSDK_OFFSET(0xA366CE0)
+#define UNITYENGINE_UIELEMENTS_STYLESHEETS_INITIALSTYLE_GET_FLEXWRAP_OFFSET UNITYSDK_OFFSET(0xA366D50)
+#define UNITYENGINE_UIELEMENTS_STYLESHEETS_INITIALSTYLE_GET_FONTSIZE_OFFSET UNITYSDK_OFFSET(0xA366DC0)
+#define UNITYENGINE_UIELEMENTS_STYLESHEETS_INITIALSTYLE_GET_HEIGHT_OFFSET UNITYSDK_OFFSET(0xA366E30)
+#define UNITYENGINE_UIELEMENTS_STYLESHEETS_INITIALSTYLE_GET_JUSTIFYCONTENT_OFFSET UNITYSDK_OFFSET(0xA366EA0)
+#define UNITYENGINE_UIELEMENTS_STYLESHEETS_INITIALSTYLE_GET_LEFT_OFFSET UNITYSDK_OFFSET(0xA366F10)
+#define UNITYENGINE_UIELEMENTS_STYLESHEETS_INITIALSTYLE_GET_LETTERSPACING_OFFSET UNITYSDK_OFFSET(0xA366F80)
+#define UNITYENGINE_UIELEMENTS_STYLESHEETS_INITIALSTYLE_GET_MARGINBOTTOM_OFFSET UNITYSDK_OFFSET(0xA366FF0)
+#define UNITYENGINE_UIELEMENTS_STYLESHEETS_INITIALSTYLE_GET_MARGINLEFT_OFFSET UNITYSDK_OFFSET(0xA367060)
+#define UNITYENGINE_UIELEMENTS_STYLESHEETS_INITIALSTYLE_GET_MARGINRIGHT_OFFSET UNITYSDK_OFFSET(0xA3670D0)
+#define UNITYENGINE_UIELEMENTS_STYLESHEETS_INITIALSTYLE_GET_MARGINTOP_OFFSET UNITYSDK_OFFSET(0xA367140)
+#define UNITYENGINE_UIELEMENTS_STYLESHEETS_INITIALSTYLE_GET_MAXHEIGHT_OFFSET UNITYSDK_OFFSET(0xA3671B0)
+#define UNITYENGINE_UIELEMENTS_STYLESHEETS_INITIALSTYLE_GET_MAXWIDTH_OFFSET UNITYSDK_OFFSET(0xA367220)
+#define UNITYENGINE_UIELEMENTS_STYLESHEETS_INITIALSTYLE_GET_MINHEIGHT_OFFSET UNITYSDK_OFFSET(0xA367290)
+#define UNITYENGINE_UIELEMENTS_STYLESHEETS_INITIALSTYLE_GET_MINWIDTH_OFFSET UNITYSDK_OFFSET(0xA367300)
+#define UNITYENGINE_UIELEMENTS_STYLESHEETS_INITIALSTYLE_GET_OPACITY_OFFSET UNITYSDK_OFFSET(0xA367370)
+#define UNITYENGINE_UIELEMENTS_STYLESHEETS_INITIALSTYLE_GET_OVERFLOW_OFFSET UNITYSDK_OFFSET(0xA3673E0)
+#define UNITYENGINE_UIELEMENTS_STYLESHEETS_INITIALSTYLE_GET_PADDINGBOTTOM_OFFSET UNITYSDK_OFFSET(0xA367450)
+#define UNITYENGINE_UIELEMENTS_STYLESHEETS_INITIALSTYLE_GET_PADDINGLEFT_OFFSET UNITYSDK_OFFSET(0xA3674C0)
+#define UNITYENGINE_UIELEMENTS_STYLESHEETS_INITIALSTYLE_GET_PADDINGRIGHT_OFFSET UNITYSDK_OFFSET(0xA367530)
+#define UNITYENGINE_UIELEMENTS_STYLESHEETS_INITIALSTYLE_GET_PADDINGTOP_OFFSET UNITYSDK_OFFSET(0xA3675A0)
+#define UNITYENGINE_UIELEMENTS_STYLESHEETS_INITIALSTYLE_GET_POSITION_OFFSET UNITYSDK_OFFSET(0xA367610)
+#define UNITYENGINE_UIELEMENTS_STYLESHEETS_INITIALSTYLE_GET_RIGHT_OFFSET UNITYSDK_OFFSET(0xA367680)
+#define UNITYENGINE_UIELEMENTS_STYLESHEETS_INITIALSTYLE_GET_ROTATE_OFFSET UNITYSDK_OFFSET(0xA3676F0)
+#define UNITYENGINE_UIELEMENTS_STYLESHEETS_INITIALSTYLE_GET_SCALE_OFFSET UNITYSDK_OFFSET(0xA367770)
+#define UNITYENGINE_UIELEMENTS_STYLESHEETS_INITIALSTYLE_GET_TEXTOVERFLOW_OFFSET UNITYSDK_OFFSET(0xA3677F0)
+#define UNITYENGINE_UIELEMENTS_STYLESHEETS_INITIALSTYLE_GET_TEXTSHADOW_OFFSET UNITYSDK_OFFSET(0xA367860)
+#define UNITYENGINE_UIELEMENTS_STYLESHEETS_INITIALSTYLE_GET_TOP_OFFSET UNITYSDK_OFFSET(0xA3678E0)
+#define UNITYENGINE_UIELEMENTS_STYLESHEETS_INITIALSTYLE_GET_TRANSFORMORIGIN_OFFSET UNITYSDK_OFFSET(0xA367950)
+#define UNITYENGINE_UIELEMENTS_STYLESHEETS_INITIALSTYLE_GET_TRANSITIONDELAY_OFFSET UNITYSDK_OFFSET(0xA3679D0)
+#define UNITYENGINE_UIELEMENTS_STYLESHEETS_INITIALSTYLE_GET_TRANSITIONDURATION_OFFSET UNITYSDK_OFFSET(0xA367A40)
+#define UNITYENGINE_UIELEMENTS_STYLESHEETS_INITIALSTYLE_GET_TRANSITIONPROPERTY_OFFSET UNITYSDK_OFFSET(0xA367AB0)
+#define UNITYENGINE_UIELEMENTS_STYLESHEETS_INITIALSTYLE_GET_TRANSITIONTIMINGFUNCTION_OFFSET UNITYSDK_OFFSET(0xA367B20)
+#define UNITYENGINE_UIELEMENTS_STYLESHEETS_INITIALSTYLE_GET_TRANSLATE_OFFSET UNITYSDK_OFFSET(0xA367B90)
+#define UNITYENGINE_UIELEMENTS_STYLESHEETS_INITIALSTYLE_GET_UNITYBACKGROUNDIMAGETINTCOLOR_OFFSET UNITYSDK_OFFSET(0xA367C10)
+#define UNITYENGINE_UIELEMENTS_STYLESHEETS_INITIALSTYLE_GET_UNITYBACKGROUNDSCALEMODE_OFFSET UNITYSDK_OFFSET(0xA367C90)
+#define UNITYENGINE_UIELEMENTS_STYLESHEETS_INITIALSTYLE_GET_UNITYFONT_OFFSET UNITYSDK_OFFSET(0xA367D00)
+#define UNITYENGINE_UIELEMENTS_STYLESHEETS_INITIALSTYLE_GET_UNITYFONTDEFINITION_OFFSET UNITYSDK_OFFSET(0xA367D70)
+#define UNITYENGINE_UIELEMENTS_STYLESHEETS_INITIALSTYLE_GET_UNITYFONTSTYLEANDWEIGHT_OFFSET UNITYSDK_OFFSET(0xA367DE0)
+#define UNITYENGINE_UIELEMENTS_STYLESHEETS_INITIALSTYLE_GET_UNITYOVERFLOWCLIPBOX_OFFSET UNITYSDK_OFFSET(0xA367E50)
+#define UNITYENGINE_UIELEMENTS_STYLESHEETS_INITIALSTYLE_GET_UNITYPARAGRAPHSPACING_OFFSET UNITYSDK_OFFSET(0xA367EC0)
+#define UNITYENGINE_UIELEMENTS_STYLESHEETS_INITIALSTYLE_GET_UNITYSLICEBOTTOM_OFFSET UNITYSDK_OFFSET(0xA367F30)
+#define UNITYENGINE_UIELEMENTS_STYLESHEETS_INITIALSTYLE_GET_UNITYSLICELEFT_OFFSET UNITYSDK_OFFSET(0xA367FA0)
+#define UNITYENGINE_UIELEMENTS_STYLESHEETS_INITIALSTYLE_GET_UNITYSLICERIGHT_OFFSET UNITYSDK_OFFSET(0xA368010)
+#define UNITYENGINE_UIELEMENTS_STYLESHEETS_INITIALSTYLE_GET_UNITYSLICETOP_OFFSET UNITYSDK_OFFSET(0xA368080)
+#define UNITYENGINE_UIELEMENTS_STYLESHEETS_INITIALSTYLE_GET_UNITYTEXTALIGN_OFFSET UNITYSDK_OFFSET(0xA3680F0)
+#define UNITYENGINE_UIELEMENTS_STYLESHEETS_INITIALSTYLE_GET_UNITYTEXTOUTLINECOLOR_OFFSET UNITYSDK_OFFSET(0xA368160)
+#define UNITYENGINE_UIELEMENTS_STYLESHEETS_INITIALSTYLE_GET_UNITYTEXTOUTLINEWIDTH_OFFSET UNITYSDK_OFFSET(0xA3681D0)
+#define UNITYENGINE_UIELEMENTS_STYLESHEETS_INITIALSTYLE_GET_UNITYTEXTOVERFLOWPOSITION_OFFSET UNITYSDK_OFFSET(0xA368240)
+#define UNITYENGINE_UIELEMENTS_STYLESHEETS_INITIALSTYLE_GET_VISIBILITY_OFFSET UNITYSDK_OFFSET(0xA3682B0)
+#define UNITYENGINE_UIELEMENTS_STYLESHEETS_INITIALSTYLE_GET_WHITESPACE_OFFSET UNITYSDK_OFFSET(0xA368320)
+#define UNITYENGINE_UIELEMENTS_STYLESHEETS_INITIALSTYLE_GET_WIDTH_OFFSET UNITYSDK_OFFSET(0xA368390)
+#define UNITYENGINE_UIELEMENTS_STYLESHEETS_INITIALSTYLE_GET_WORDSPACING_OFFSET UNITYSDK_OFFSET(0xA368400)
+
+namespace UnityEngine::UIElements::StyleSheets
+{
+	inline static constexpr unsigned int InitialStyle_TypeDefinitionIndex = 30794;
+
+	class InitialStyle : public Il2CppObject
+	{
+	public:
+		::UnityEngine::UIElements::ComputedStyle* s_InitialStyle; // 0x0
+
+		::UnityEngine::UIElements::ComputedStyle&* Get()
+		{
+			return (return (::UnityEngine::UIElements::ComputedStyle&*(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_UIELEMENTS_STYLESHEETS_INITIALSTYLE_GET_OFFSET))(nullptr);
+		}
+
+		::UnityEngine::UIElements::ComputedStyle* Acquire()
+		{
+			return (return (::UnityEngine::UIElements::ComputedStyle*(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_UIELEMENTS_STYLESHEETS_INITIALSTYLE_ACQUIRE_OFFSET))(nullptr);
+		}
+
+		::System::Void .cctor()
+		{
+			((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_UIELEMENTS_STYLESHEETS_INITIALSTYLE_.CCTOR_OFFSET))(nullptr);
+		}
+
+		::UnityEngine::UIElements::Align* get_alignContent()
+		{
+			return (return (::UnityEngine::UIElements::Align*(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_UIELEMENTS_STYLESHEETS_INITIALSTYLE_GET_ALIGNCONTENT_OFFSET))(nullptr);
+		}
+
+		::UnityEngine::UIElements::Align* get_alignItems()
+		{
+			return (return (::UnityEngine::UIElements::Align*(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_UIELEMENTS_STYLESHEETS_INITIALSTYLE_GET_ALIGNITEMS_OFFSET))(nullptr);
+		}
+
+		::UnityEngine::UIElements::Align* get_alignSelf()
+		{
+			return (return (::UnityEngine::UIElements::Align*(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_UIELEMENTS_STYLESHEETS_INITIALSTYLE_GET_ALIGNSELF_OFFSET))(nullptr);
+		}
+
+		::UnityEngine::Color* get_backgroundColor()
+		{
+			return (return (::UnityEngine::Color*(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_UIELEMENTS_STYLESHEETS_INITIALSTYLE_GET_BACKGROUNDCOLOR_OFFSET))(nullptr);
+		}
+
+		::UnityEngine::UIElements::Background* get_backgroundImage()
+		{
+			return (return (::UnityEngine::UIElements::Background*(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_UIELEMENTS_STYLESHEETS_INITIALSTYLE_GET_BACKGROUNDIMAGE_OFFSET))(nullptr);
+		}
+
+		::UnityEngine::Color* get_borderBottomColor()
+		{
+			return (return (::UnityEngine::Color*(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_UIELEMENTS_STYLESHEETS_INITIALSTYLE_GET_BORDERBOTTOMCOLOR_OFFSET))(nullptr);
+		}
+
+		::UnityEngine::UIElements::Length* get_borderBottomLeftRadius()
+		{
+			return (return (::UnityEngine::UIElements::Length*(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_UIELEMENTS_STYLESHEETS_INITIALSTYLE_GET_BORDERBOTTOMLEFTRADIUS_OFFSET))(nullptr);
+		}
+
+		::UnityEngine::UIElements::Length* get_borderBottomRightRadius()
+		{
+			return (return (::UnityEngine::UIElements::Length*(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_UIELEMENTS_STYLESHEETS_INITIALSTYLE_GET_BORDERBOTTOMRIGHTRADIUS_OFFSET))(nullptr);
+		}
+
+		::System::Single get_borderBottomWidth()
+		{
+			return (return (::System::Single(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_UIELEMENTS_STYLESHEETS_INITIALSTYLE_GET_BORDERBOTTOMWIDTH_OFFSET))(nullptr);
+		}
+
+		::UnityEngine::Color* get_borderLeftColor()
+		{
+			return (return (::UnityEngine::Color*(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_UIELEMENTS_STYLESHEETS_INITIALSTYLE_GET_BORDERLEFTCOLOR_OFFSET))(nullptr);
+		}
+
+		::System::Single get_borderLeftWidth()
+		{
+			return (return (::System::Single(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_UIELEMENTS_STYLESHEETS_INITIALSTYLE_GET_BORDERLEFTWIDTH_OFFSET))(nullptr);
+		}
+
+		::UnityEngine::Color* get_borderRightColor()
+		{
+			return (return (::UnityEngine::Color*(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_UIELEMENTS_STYLESHEETS_INITIALSTYLE_GET_BORDERRIGHTCOLOR_OFFSET))(nullptr);
+		}
+
+		::System::Single get_borderRightWidth()
+		{
+			return (return (::System::Single(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_UIELEMENTS_STYLESHEETS_INITIALSTYLE_GET_BORDERRIGHTWIDTH_OFFSET))(nullptr);
+		}
+
+		::UnityEngine::Color* get_borderTopColor()
+		{
+			return (return (::UnityEngine::Color*(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_UIELEMENTS_STYLESHEETS_INITIALSTYLE_GET_BORDERTOPCOLOR_OFFSET))(nullptr);
+		}
+
+		::UnityEngine::UIElements::Length* get_borderTopLeftRadius()
+		{
+			return (return (::UnityEngine::UIElements::Length*(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_UIELEMENTS_STYLESHEETS_INITIALSTYLE_GET_BORDERTOPLEFTRADIUS_OFFSET))(nullptr);
+		}
+
+		::UnityEngine::UIElements::Length* get_borderTopRightRadius()
+		{
+			return (return (::UnityEngine::UIElements::Length*(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_UIELEMENTS_STYLESHEETS_INITIALSTYLE_GET_BORDERTOPRIGHTRADIUS_OFFSET))(nullptr);
+		}
+
+		::System::Single get_borderTopWidth()
+		{
+			return (return (::System::Single(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_UIELEMENTS_STYLESHEETS_INITIALSTYLE_GET_BORDERTOPWIDTH_OFFSET))(nullptr);
+		}
+
+		::UnityEngine::UIElements::Length* get_bottom()
+		{
+			return (return (::UnityEngine::UIElements::Length*(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_UIELEMENTS_STYLESHEETS_INITIALSTYLE_GET_BOTTOM_OFFSET))(nullptr);
+		}
+
+		::UnityEngine::Color* get_color()
+		{
+			return (return (::UnityEngine::Color*(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_UIELEMENTS_STYLESHEETS_INITIALSTYLE_GET_COLOR_OFFSET))(nullptr);
+		}
+
+		::UnityEngine::UIElements::Cursor* get_cursor()
+		{
+			return (return (::UnityEngine::UIElements::Cursor*(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_UIELEMENTS_STYLESHEETS_INITIALSTYLE_GET_CURSOR_OFFSET))(nullptr);
+		}
+
+		::UnityEngine::UIElements::DisplayStyle* get_display()
+		{
+			return (return (::UnityEngine::UIElements::DisplayStyle*(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_UIELEMENTS_STYLESHEETS_INITIALSTYLE_GET_DISPLAY_OFFSET))(nullptr);
+		}
+
+		::UnityEngine::UIElements::Length* get_flexBasis()
+		{
+			return (return (::UnityEngine::UIElements::Length*(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_UIELEMENTS_STYLESHEETS_INITIALSTYLE_GET_FLEXBASIS_OFFSET))(nullptr);
+		}
+
+		::UnityEngine::UIElements::FlexDirection* get_flexDirection()
+		{
+			return (return (::UnityEngine::UIElements::FlexDirection*(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_UIELEMENTS_STYLESHEETS_INITIALSTYLE_GET_FLEXDIRECTION_OFFSET))(nullptr);
+		}
+
+		::System::Single get_flexGrow()
+		{
+			return (return (::System::Single(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_UIELEMENTS_STYLESHEETS_INITIALSTYLE_GET_FLEXGROW_OFFSET))(nullptr);
+		}
+
+		::System::Single get_flexShrink()
+		{
+			return (return (::System::Single(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_UIELEMENTS_STYLESHEETS_INITIALSTYLE_GET_FLEXSHRINK_OFFSET))(nullptr);
+		}
+
+		::UnityEngine::UIElements::Wrap* get_flexWrap()
+		{
+			return (return (::UnityEngine::UIElements::Wrap*(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_UIELEMENTS_STYLESHEETS_INITIALSTYLE_GET_FLEXWRAP_OFFSET))(nullptr);
+		}
+
+		::UnityEngine::UIElements::Length* get_fontSize()
+		{
+			return (return (::UnityEngine::UIElements::Length*(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_UIELEMENTS_STYLESHEETS_INITIALSTYLE_GET_FONTSIZE_OFFSET))(nullptr);
+		}
+
+		::UnityEngine::UIElements::Length* get_height()
+		{
+			return (return (::UnityEngine::UIElements::Length*(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_UIELEMENTS_STYLESHEETS_INITIALSTYLE_GET_HEIGHT_OFFSET))(nullptr);
+		}
+
+		::UnityEngine::UIElements::Justify* get_justifyContent()
+		{
+			return (return (::UnityEngine::UIElements::Justify*(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_UIELEMENTS_STYLESHEETS_INITIALSTYLE_GET_JUSTIFYCONTENT_OFFSET))(nullptr);
+		}
+
+		::UnityEngine::UIElements::Length* get_left()
+		{
+			return (return (::UnityEngine::UIElements::Length*(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_UIELEMENTS_STYLESHEETS_INITIALSTYLE_GET_LEFT_OFFSET))(nullptr);
+		}
+
+		::UnityEngine::UIElements::Length* get_letterSpacing()
+		{
+			return (return (::UnityEngine::UIElements::Length*(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_UIELEMENTS_STYLESHEETS_INITIALSTYLE_GET_LETTERSPACING_OFFSET))(nullptr);
+		}
+
+		::UnityEngine::UIElements::Length* get_marginBottom()
+		{
+			return (return (::UnityEngine::UIElements::Length*(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_UIELEMENTS_STYLESHEETS_INITIALSTYLE_GET_MARGINBOTTOM_OFFSET))(nullptr);
+		}
+
+		::UnityEngine::UIElements::Length* get_marginLeft()
+		{
+			return (return (::UnityEngine::UIElements::Length*(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_UIELEMENTS_STYLESHEETS_INITIALSTYLE_GET_MARGINLEFT_OFFSET))(nullptr);
+		}
+
+		::UnityEngine::UIElements::Length* get_marginRight()
+		{
+			return (return (::UnityEngine::UIElements::Length*(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_UIELEMENTS_STYLESHEETS_INITIALSTYLE_GET_MARGINRIGHT_OFFSET))(nullptr);
+		}
+
+		::UnityEngine::UIElements::Length* get_marginTop()
+		{
+			return (return (::UnityEngine::UIElements::Length*(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_UIELEMENTS_STYLESHEETS_INITIALSTYLE_GET_MARGINTOP_OFFSET))(nullptr);
+		}
+
+		::UnityEngine::UIElements::Length* get_maxHeight()
+		{
+			return (return (::UnityEngine::UIElements::Length*(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_UIELEMENTS_STYLESHEETS_INITIALSTYLE_GET_MAXHEIGHT_OFFSET))(nullptr);
+		}
+
+		::UnityEngine::UIElements::Length* get_maxWidth()
+		{
+			return (return (::UnityEngine::UIElements::Length*(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_UIELEMENTS_STYLESHEETS_INITIALSTYLE_GET_MAXWIDTH_OFFSET))(nullptr);
+		}
+
+		::UnityEngine::UIElements::Length* get_minHeight()
+		{
+			return (return (::UnityEngine::UIElements::Length*(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_UIELEMENTS_STYLESHEETS_INITIALSTYLE_GET_MINHEIGHT_OFFSET))(nullptr);
+		}
+
+		::UnityEngine::UIElements::Length* get_minWidth()
+		{
+			return (return (::UnityEngine::UIElements::Length*(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_UIELEMENTS_STYLESHEETS_INITIALSTYLE_GET_MINWIDTH_OFFSET))(nullptr);
+		}
+
+		::System::Single get_opacity()
+		{
+			return (return (::System::Single(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_UIELEMENTS_STYLESHEETS_INITIALSTYLE_GET_OPACITY_OFFSET))(nullptr);
+		}
+
+		::UnityEngine::UIElements::OverflowInternal* get_overflow()
+		{
+			return (return (::UnityEngine::UIElements::OverflowInternal*(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_UIELEMENTS_STYLESHEETS_INITIALSTYLE_GET_OVERFLOW_OFFSET))(nullptr);
+		}
+
+		::UnityEngine::UIElements::Length* get_paddingBottom()
+		{
+			return (return (::UnityEngine::UIElements::Length*(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_UIELEMENTS_STYLESHEETS_INITIALSTYLE_GET_PADDINGBOTTOM_OFFSET))(nullptr);
+		}
+
+		::UnityEngine::UIElements::Length* get_paddingLeft()
+		{
+			return (return (::UnityEngine::UIElements::Length*(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_UIELEMENTS_STYLESHEETS_INITIALSTYLE_GET_PADDINGLEFT_OFFSET))(nullptr);
+		}
+
+		::UnityEngine::UIElements::Length* get_paddingRight()
+		{
+			return (return (::UnityEngine::UIElements::Length*(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_UIELEMENTS_STYLESHEETS_INITIALSTYLE_GET_PADDINGRIGHT_OFFSET))(nullptr);
+		}
+
+		::UnityEngine::UIElements::Length* get_paddingTop()
+		{
+			return (return (::UnityEngine::UIElements::Length*(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_UIELEMENTS_STYLESHEETS_INITIALSTYLE_GET_PADDINGTOP_OFFSET))(nullptr);
+		}
+
+		::UnityEngine::UIElements::Position* get_position()
+		{
+			return (return (::UnityEngine::UIElements::Position*(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_UIELEMENTS_STYLESHEETS_INITIALSTYLE_GET_POSITION_OFFSET))(nullptr);
+		}
+
+		::UnityEngine::UIElements::Length* get_right()
+		{
+			return (return (::UnityEngine::UIElements::Length*(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_UIELEMENTS_STYLESHEETS_INITIALSTYLE_GET_RIGHT_OFFSET))(nullptr);
+		}
+
+		::UnityEngine::UIElements::Rotate* get_rotate()
+		{
+			return (return (::UnityEngine::UIElements::Rotate*(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_UIELEMENTS_STYLESHEETS_INITIALSTYLE_GET_ROTATE_OFFSET))(nullptr);
+		}
+
+		::UnityEngine::UIElements::Scale* get_scale()
+		{
+			return (return (::UnityEngine::UIElements::Scale*(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_UIELEMENTS_STYLESHEETS_INITIALSTYLE_GET_SCALE_OFFSET))(nullptr);
+		}
+
+		::UnityEngine::UIElements::TextOverflow* get_textOverflow()
+		{
+			return (return (::UnityEngine::UIElements::TextOverflow*(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_UIELEMENTS_STYLESHEETS_INITIALSTYLE_GET_TEXTOVERFLOW_OFFSET))(nullptr);
+		}
+
+		::UnityEngine::UIElements::TextShadow* get_textShadow()
+		{
+			return (return (::UnityEngine::UIElements::TextShadow*(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_UIELEMENTS_STYLESHEETS_INITIALSTYLE_GET_TEXTSHADOW_OFFSET))(nullptr);
+		}
+
+		::UnityEngine::UIElements::Length* get_top()
+		{
+			return (return (::UnityEngine::UIElements::Length*(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_UIELEMENTS_STYLESHEETS_INITIALSTYLE_GET_TOP_OFFSET))(nullptr);
+		}
+
+		::UnityEngine::UIElements::TransformOrigin* get_transformOrigin()
+		{
+			return (return (::UnityEngine::UIElements::TransformOrigin*(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_UIELEMENTS_STYLESHEETS_INITIALSTYLE_GET_TRANSFORMORIGIN_OFFSET))(nullptr);
+		}
+
+		Il2CppObject* get_transitionDelay()
+		{
+			return (return (Il2CppObject*(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_UIELEMENTS_STYLESHEETS_INITIALSTYLE_GET_TRANSITIONDELAY_OFFSET))(nullptr);
+		}
+
+		Il2CppObject* get_transitionDuration()
+		{
+			return (return (Il2CppObject*(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_UIELEMENTS_STYLESHEETS_INITIALSTYLE_GET_TRANSITIONDURATION_OFFSET))(nullptr);
+		}
+
+		Il2CppObject* get_transitionProperty()
+		{
+			return (return (Il2CppObject*(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_UIELEMENTS_STYLESHEETS_INITIALSTYLE_GET_TRANSITIONPROPERTY_OFFSET))(nullptr);
+		}
+
+		Il2CppObject* get_transitionTimingFunction()
+		{
+			return (return (Il2CppObject*(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_UIELEMENTS_STYLESHEETS_INITIALSTYLE_GET_TRANSITIONTIMINGFUNCTION_OFFSET))(nullptr);
+		}
+
+		::UnityEngine::UIElements::Translate* get_translate()
+		{
+			return (return (::UnityEngine::UIElements::Translate*(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_UIELEMENTS_STYLESHEETS_INITIALSTYLE_GET_TRANSLATE_OFFSET))(nullptr);
+		}
+
+		::UnityEngine::Color* get_unityBackgroundImageTintColor()
+		{
+			return (return (::UnityEngine::Color*(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_UIELEMENTS_STYLESHEETS_INITIALSTYLE_GET_UNITYBACKGROUNDIMAGETINTCOLOR_OFFSET))(nullptr);
+		}
+
+		::UnityEngine::ScaleMode* get_unityBackgroundScaleMode()
+		{
+			return (return (::UnityEngine::ScaleMode*(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_UIELEMENTS_STYLESHEETS_INITIALSTYLE_GET_UNITYBACKGROUNDSCALEMODE_OFFSET))(nullptr);
+		}
+
+		::UnityEngine::Font* get_unityFont()
+		{
+			return (return (::UnityEngine::Font*(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_UIELEMENTS_STYLESHEETS_INITIALSTYLE_GET_UNITYFONT_OFFSET))(nullptr);
+		}
+
+		::UnityEngine::UIElements::FontDefinition* get_unityFontDefinition()
+		{
+			return (return (::UnityEngine::UIElements::FontDefinition*(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_UIELEMENTS_STYLESHEETS_INITIALSTYLE_GET_UNITYFONTDEFINITION_OFFSET))(nullptr);
+		}
+
+		::UnityEngine::FontStyle* get_unityFontStyleAndWeight()
+		{
+			return (return (::UnityEngine::FontStyle*(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_UIELEMENTS_STYLESHEETS_INITIALSTYLE_GET_UNITYFONTSTYLEANDWEIGHT_OFFSET))(nullptr);
+		}
+
+		::UnityEngine::UIElements::OverflowClipBox* get_unityOverflowClipBox()
+		{
+			return (return (::UnityEngine::UIElements::OverflowClipBox*(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_UIELEMENTS_STYLESHEETS_INITIALSTYLE_GET_UNITYOVERFLOWCLIPBOX_OFFSET))(nullptr);
+		}
+
+		::UnityEngine::UIElements::Length* get_unityParagraphSpacing()
+		{
+			return (return (::UnityEngine::UIElements::Length*(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_UIELEMENTS_STYLESHEETS_INITIALSTYLE_GET_UNITYPARAGRAPHSPACING_OFFSET))(nullptr);
+		}
+
+		::System::Int32 get_unitySliceBottom()
+		{
+			return (return (::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_UIELEMENTS_STYLESHEETS_INITIALSTYLE_GET_UNITYSLICEBOTTOM_OFFSET))(nullptr);
+		}
+
+		::System::Int32 get_unitySliceLeft()
+		{
+			return (return (::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_UIELEMENTS_STYLESHEETS_INITIALSTYLE_GET_UNITYSLICELEFT_OFFSET))(nullptr);
+		}
+
+		::System::Int32 get_unitySliceRight()
+		{
+			return (return (::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_UIELEMENTS_STYLESHEETS_INITIALSTYLE_GET_UNITYSLICERIGHT_OFFSET))(nullptr);
+		}
+
+		::System::Int32 get_unitySliceTop()
+		{
+			return (return (::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_UIELEMENTS_STYLESHEETS_INITIALSTYLE_GET_UNITYSLICETOP_OFFSET))(nullptr);
+		}
+
+		::UnityEngine::TextAnchor* get_unityTextAlign()
+		{
+			return (return (::UnityEngine::TextAnchor*(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_UIELEMENTS_STYLESHEETS_INITIALSTYLE_GET_UNITYTEXTALIGN_OFFSET))(nullptr);
+		}
+
+		::UnityEngine::Color* get_unityTextOutlineColor()
+		{
+			return (return (::UnityEngine::Color*(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_UIELEMENTS_STYLESHEETS_INITIALSTYLE_GET_UNITYTEXTOUTLINECOLOR_OFFSET))(nullptr);
+		}
+
+		::System::Single get_unityTextOutlineWidth()
+		{
+			return (return (::System::Single(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_UIELEMENTS_STYLESHEETS_INITIALSTYLE_GET_UNITYTEXTOUTLINEWIDTH_OFFSET))(nullptr);
+		}
+
+		::UnityEngine::UIElements::TextOverflowPosition* get_unityTextOverflowPosition()
+		{
+			return (return (::UnityEngine::UIElements::TextOverflowPosition*(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_UIELEMENTS_STYLESHEETS_INITIALSTYLE_GET_UNITYTEXTOVERFLOWPOSITION_OFFSET))(nullptr);
+		}
+
+		::UnityEngine::UIElements::Visibility* get_visibility()
+		{
+			return (return (::UnityEngine::UIElements::Visibility*(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_UIELEMENTS_STYLESHEETS_INITIALSTYLE_GET_VISIBILITY_OFFSET))(nullptr);
+		}
+
+		::UnityEngine::UIElements::WhiteSpace* get_whiteSpace()
+		{
+			return (return (::UnityEngine::UIElements::WhiteSpace*(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_UIELEMENTS_STYLESHEETS_INITIALSTYLE_GET_WHITESPACE_OFFSET))(nullptr);
+		}
+
+		::UnityEngine::UIElements::Length* get_width()
+		{
+			return (return (::UnityEngine::UIElements::Length*(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_UIELEMENTS_STYLESHEETS_INITIALSTYLE_GET_WIDTH_OFFSET))(nullptr);
+		}
+
+		::UnityEngine::UIElements::Length* get_wordSpacing()
+		{
+			return (return (::UnityEngine::UIElements::Length*(*)(::PVOID))((::PBYTE)hIl2Cpp + UNITYENGINE_UIELEMENTS_STYLESHEETS_INITIALSTYLE_GET_WORDSPACING_OFFSET))(nullptr);
+		}
+
+	};
+}
+

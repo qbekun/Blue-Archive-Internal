@@ -1,0 +1,138 @@
+#pragma once
+#include "../../../../../unitysdk.h"
+
+namespace ICSharpCode::SharpZipLib::Zip::Compression { class Inflater; }
+namespace ICSharpCode::SharpZipLib::Zip::Compression::Streams { class InflaterInputBuffer; }
+
+#define ICSHARPCODE_SHARPZIPLIB_ZIP_COMPRESSION_STREAMS_INFLATERINPUTSTREAM_.CTOR_OFFSET UNITYSDK_OFFSET(0x904D480)
+#define ICSHARPCODE_SHARPZIPLIB_ZIP_COMPRESSION_STREAMS_INFLATERINPUTSTREAM_.CTOR_OFFSET UNITYSDK_OFFSET(0x90552A0)
+#define ICSHARPCODE_SHARPZIPLIB_ZIP_COMPRESSION_STREAMS_INFLATERINPUTSTREAM_GET_ISSTREAMOWNER_OFFSET UNITYSDK_OFFSET(0x90554A0)
+#define ICSHARPCODE_SHARPZIPLIB_ZIP_COMPRESSION_STREAMS_INFLATERINPUTSTREAM_SKIP_OFFSET UNITYSDK_OFFSET(0x904E8F0)
+#define ICSHARPCODE_SHARPZIPLIB_ZIP_COMPRESSION_STREAMS_INFLATERINPUTSTREAM_STOPDECRYPTING_OFFSET UNITYSDK_OFFSET(0x904E700)
+#define ICSHARPCODE_SHARPZIPLIB_ZIP_COMPRESSION_STREAMS_INFLATERINPUTSTREAM_FILL_OFFSET UNITYSDK_OFFSET(0x90554B0)
+#define ICSHARPCODE_SHARPZIPLIB_ZIP_COMPRESSION_STREAMS_INFLATERINPUTSTREAM_GET_CANREAD_OFFSET UNITYSDK_OFFSET(0x9055580)
+#define ICSHARPCODE_SHARPZIPLIB_ZIP_COMPRESSION_STREAMS_INFLATERINPUTSTREAM_GET_CANSEEK_OFFSET UNITYSDK_OFFSET(0x90555B0)
+#define ICSHARPCODE_SHARPZIPLIB_ZIP_COMPRESSION_STREAMS_INFLATERINPUTSTREAM_GET_CANWRITE_OFFSET UNITYSDK_OFFSET(0x90555C0)
+#define ICSHARPCODE_SHARPZIPLIB_ZIP_COMPRESSION_STREAMS_INFLATERINPUTSTREAM_GET_LENGTH_OFFSET UNITYSDK_OFFSET(0x90555D0)
+#define ICSHARPCODE_SHARPZIPLIB_ZIP_COMPRESSION_STREAMS_INFLATERINPUTSTREAM_GET_POSITION_OFFSET UNITYSDK_OFFSET(0x9055630)
+#define ICSHARPCODE_SHARPZIPLIB_ZIP_COMPRESSION_STREAMS_INFLATERINPUTSTREAM_SET_POSITION_OFFSET UNITYSDK_OFFSET(0x9055660)
+#define ICSHARPCODE_SHARPZIPLIB_ZIP_COMPRESSION_STREAMS_INFLATERINPUTSTREAM_FLUSH_OFFSET UNITYSDK_OFFSET(0x90556C0)
+#define ICSHARPCODE_SHARPZIPLIB_ZIP_COMPRESSION_STREAMS_INFLATERINPUTSTREAM_SEEK_OFFSET UNITYSDK_OFFSET(0x90556F0)
+#define ICSHARPCODE_SHARPZIPLIB_ZIP_COMPRESSION_STREAMS_INFLATERINPUTSTREAM_SETLENGTH_OFFSET UNITYSDK_OFFSET(0x9055750)
+#define ICSHARPCODE_SHARPZIPLIB_ZIP_COMPRESSION_STREAMS_INFLATERINPUTSTREAM_WRITE_OFFSET UNITYSDK_OFFSET(0x90557B0)
+#define ICSHARPCODE_SHARPZIPLIB_ZIP_COMPRESSION_STREAMS_INFLATERINPUTSTREAM_WRITEBYTE_OFFSET UNITYSDK_OFFSET(0x9055810)
+#define ICSHARPCODE_SHARPZIPLIB_ZIP_COMPRESSION_STREAMS_INFLATERINPUTSTREAM_DISPOSE_OFFSET UNITYSDK_OFFSET(0x90502C0)
+#define ICSHARPCODE_SHARPZIPLIB_ZIP_COMPRESSION_STREAMS_INFLATERINPUTSTREAM_READ_OFFSET UNITYSDK_OFFSET(0x904FFF0)
+
+namespace ICSharpCode::SharpZipLib::Zip::Compression::Streams
+{
+	inline static constexpr unsigned int InflaterInputStream_TypeDefinitionIndex = 37128;
+
+	class InflaterInputStream : public Il2CppObject
+	{
+	public:
+		::System::Boolean _IsStreamOwner_k__BackingField; // 0x28
+		::ICSharpCode::SharpZipLib::Zip::Compression::Inflater* inf; // 0x30
+		::ICSharpCode::SharpZipLib::Zip::Compression::Streams::InflaterInputBuffer* inputBuffer; // 0x38
+		::System::IO::Stream* baseInputStream; // 0x40
+		::System::Int64 csize; // 0x48
+		::System::Boolean isClosed; // 0x50
+
+		::System::Void .ctor(::System::IO::Stream* arg, ::ICSharpCode::SharpZipLib::Zip::Compression::Inflater* arg)
+		{
+			((::System::Void(*)(::System::IO::Stream*, ::ICSharpCode::SharpZipLib::Zip::Compression::Inflater*, ::PVOID))((::PBYTE)hIl2Cpp + ICSHARPCODE_SHARPZIPLIB_ZIP_COMPRESSION_STREAMS_INFLATERINPUTSTREAM_.CTOR_OFFSET))(arg, arg, nullptr);
+		}
+
+		::System::Void .ctor(::System::IO::Stream* arg, ::ICSharpCode::SharpZipLib::Zip::Compression::Inflater* arg, ::System::Int32 arg)
+		{
+			((::System::Void(*)(::System::IO::Stream*, ::ICSharpCode::SharpZipLib::Zip::Compression::Inflater*, ::System::Int32, ::PVOID))((::PBYTE)hIl2Cpp + ICSHARPCODE_SHARPZIPLIB_ZIP_COMPRESSION_STREAMS_INFLATERINPUTSTREAM_.CTOR_OFFSET))(arg, arg, arg, nullptr);
+		}
+
+		::System::Boolean get_IsStreamOwner()
+		{
+			return (return (::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + ICSHARPCODE_SHARPZIPLIB_ZIP_COMPRESSION_STREAMS_INFLATERINPUTSTREAM_GET_ISSTREAMOWNER_OFFSET))(nullptr);
+		}
+
+		::System::Int64 Skip(::System::Int64 arg)
+		{
+			return (return (::System::Int64(*)(::System::Int64, ::PVOID))((::PBYTE)hIl2Cpp + ICSHARPCODE_SHARPZIPLIB_ZIP_COMPRESSION_STREAMS_INFLATERINPUTSTREAM_SKIP_OFFSET))(arg, nullptr);
+		}
+
+		::System::Void StopDecrypting()
+		{
+			((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + ICSHARPCODE_SHARPZIPLIB_ZIP_COMPRESSION_STREAMS_INFLATERINPUTSTREAM_STOPDECRYPTING_OFFSET))(nullptr);
+		}
+
+		::System::Void Fill()
+		{
+			((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + ICSHARPCODE_SHARPZIPLIB_ZIP_COMPRESSION_STREAMS_INFLATERINPUTSTREAM_FILL_OFFSET))(nullptr);
+		}
+
+		::System::Boolean get_CanRead()
+		{
+			return (return (::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + ICSHARPCODE_SHARPZIPLIB_ZIP_COMPRESSION_STREAMS_INFLATERINPUTSTREAM_GET_CANREAD_OFFSET))(nullptr);
+		}
+
+		::System::Boolean get_CanSeek()
+		{
+			return (return (::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + ICSHARPCODE_SHARPZIPLIB_ZIP_COMPRESSION_STREAMS_INFLATERINPUTSTREAM_GET_CANSEEK_OFFSET))(nullptr);
+		}
+
+		::System::Boolean get_CanWrite()
+		{
+			return (return (::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + ICSHARPCODE_SHARPZIPLIB_ZIP_COMPRESSION_STREAMS_INFLATERINPUTSTREAM_GET_CANWRITE_OFFSET))(nullptr);
+		}
+
+		::System::Int64 get_Length()
+		{
+			return (return (::System::Int64(*)(::PVOID))((::PBYTE)hIl2Cpp + ICSHARPCODE_SHARPZIPLIB_ZIP_COMPRESSION_STREAMS_INFLATERINPUTSTREAM_GET_LENGTH_OFFSET))(nullptr);
+		}
+
+		::System::Int64 get_Position()
+		{
+			return (return (::System::Int64(*)(::PVOID))((::PBYTE)hIl2Cpp + ICSHARPCODE_SHARPZIPLIB_ZIP_COMPRESSION_STREAMS_INFLATERINPUTSTREAM_GET_POSITION_OFFSET))(nullptr);
+		}
+
+		::System::Void set_Position(::System::Int64 arg)
+		{
+			((::System::Void(*)(::System::Int64, ::PVOID))((::PBYTE)hIl2Cpp + ICSHARPCODE_SHARPZIPLIB_ZIP_COMPRESSION_STREAMS_INFLATERINPUTSTREAM_SET_POSITION_OFFSET))(arg, nullptr);
+		}
+
+		::System::Void Flush()
+		{
+			((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + ICSHARPCODE_SHARPZIPLIB_ZIP_COMPRESSION_STREAMS_INFLATERINPUTSTREAM_FLUSH_OFFSET))(nullptr);
+		}
+
+		::System::Int64 Seek(::System::Int64 arg, ::System::IO::SeekOrigin* arg)
+		{
+			return (return (::System::Int64(*)(::System::Int64, ::System::IO::SeekOrigin*, ::PVOID))((::PBYTE)hIl2Cpp + ICSHARPCODE_SHARPZIPLIB_ZIP_COMPRESSION_STREAMS_INFLATERINPUTSTREAM_SEEK_OFFSET))(arg, arg, nullptr);
+		}
+
+		::System::Void SetLength(::System::Int64 arg)
+		{
+			((::System::Void(*)(::System::Int64, ::PVOID))((::PBYTE)hIl2Cpp + ICSHARPCODE_SHARPZIPLIB_ZIP_COMPRESSION_STREAMS_INFLATERINPUTSTREAM_SETLENGTH_OFFSET))(arg, nullptr);
+		}
+
+		::System::Void Write(::Il2CppArray<::System::Object*>* arg, ::System::Int32 arg, ::System::Int32 arg)
+		{
+			((::System::Void(*)(::Il2CppArray<::System::Object*>*, ::System::Int32, ::System::Int32, ::PVOID))((::PBYTE)hIl2Cpp + ICSHARPCODE_SHARPZIPLIB_ZIP_COMPRESSION_STREAMS_INFLATERINPUTSTREAM_WRITE_OFFSET))(arg, arg, arg, nullptr);
+		}
+
+		::System::Void WriteByte(::System::Byte arg)
+		{
+			((::System::Void(*)(::System::Byte, ::PVOID))((::PBYTE)hIl2Cpp + ICSHARPCODE_SHARPZIPLIB_ZIP_COMPRESSION_STREAMS_INFLATERINPUTSTREAM_WRITEBYTE_OFFSET))(arg, nullptr);
+		}
+
+		::System::Void Dispose(::System::Boolean arg)
+		{
+			((::System::Void(*)(::System::Boolean, ::PVOID))((::PBYTE)hIl2Cpp + ICSHARPCODE_SHARPZIPLIB_ZIP_COMPRESSION_STREAMS_INFLATERINPUTSTREAM_DISPOSE_OFFSET))(arg, nullptr);
+		}
+
+		::System::Int32 Read(::Il2CppArray<::System::Object*>* arg, ::System::Int32 arg, ::System::Int32 arg)
+		{
+			return (return (::System::Int32(*)(::Il2CppArray<::System::Object*>*, ::System::Int32, ::System::Int32, ::PVOID))((::PBYTE)hIl2Cpp + ICSHARPCODE_SHARPZIPLIB_ZIP_COMPRESSION_STREAMS_INFLATERINPUTSTREAM_READ_OFFSET))(arg, arg, arg, nullptr);
+		}
+
+	};
+}
+

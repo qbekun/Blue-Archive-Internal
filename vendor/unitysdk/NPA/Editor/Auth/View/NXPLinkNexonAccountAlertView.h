@@ -1,0 +1,115 @@
+#pragma once
+#include "../../../../unitysdk.h"
+
+#define NPA_EDITOR_AUTH_VIEW_NXPLINKNEXONACCOUNTALERTVIEW_SETTITLE_OFFSET UNITYSDK_OFFSET(0x9CB66C0)
+#define NPA_EDITOR_AUTH_VIEW_NXPLINKNEXONACCOUNTALERTVIEW_SETDESCRIPTION_OFFSET UNITYSDK_OFFSET(0x9CB66D0)
+#define NPA_EDITOR_AUTH_VIEW_NXPLINKNEXONACCOUNTALERTVIEW_SETCAUTIONTEXT_OFFSET UNITYSDK_OFFSET(0x9CB66E0)
+#define NPA_EDITOR_AUTH_VIEW_NXPLINKNEXONACCOUNTALERTVIEW_SETCODEVIEWBUTTONTEXT_OFFSET UNITYSDK_OFFSET(0x9CB66F0)
+#define NPA_EDITOR_AUTH_VIEW_NXPLINKNEXONACCOUNTALERTVIEW_SETCONFIRMBUTTONTEXT_OFFSET UNITYSDK_OFFSET(0x9CB6700)
+#define NPA_EDITOR_AUTH_VIEW_NXPLINKNEXONACCOUNTALERTVIEW_SETCANCELBUTTONTEXT_OFFSET UNITYSDK_OFFSET(0x9CB6710)
+#define NPA_EDITOR_AUTH_VIEW_NXPLINKNEXONACCOUNTALERTVIEW_SETCHANGENEXONACCOUNTCALLBACK_OFFSET UNITYSDK_OFFSET(0x9CB6720)
+#define NPA_EDITOR_AUTH_VIEW_NXPLINKNEXONACCOUNTALERTVIEW_SETCODEVIEWCALLBACK_OFFSET UNITYSDK_OFFSET(0x9CB6740)
+#define NPA_EDITOR_AUTH_VIEW_NXPLINKNEXONACCOUNTALERTVIEW_LOAD_OFFSET UNITYSDK_OFFSET(0x9CB6760)
+#define NPA_EDITOR_AUTH_VIEW_NXPLINKNEXONACCOUNTALERTVIEW_SELECTIONGROUPEXIT_OFFSET UNITYSDK_OFFSET(0x9CB6D90)
+#define NPA_EDITOR_AUTH_VIEW_NXPLINKNEXONACCOUNTALERTVIEW_SETINTERACTABLE_OFFSET UNITYSDK_OFFSET(0x9CB6E10)
+#define NPA_EDITOR_AUTH_VIEW_NXPLINKNEXONACCOUNTALERTVIEW_ONCHANGENEXONACCOUNT_OFFSET UNITYSDK_OFFSET(0x9CB6E80)
+#define NPA_EDITOR_AUTH_VIEW_NXPLINKNEXONACCOUNTALERTVIEW_ONSHOWPLAYNOWCODE_OFFSET UNITYSDK_OFFSET(0x9CB6EC0)
+#define NPA_EDITOR_AUTH_VIEW_NXPLINKNEXONACCOUNTALERTVIEW_ONCANCEL_OFFSET UNITYSDK_OFFSET(0x9CB6DD0)
+#define NPA_EDITOR_AUTH_VIEW_NXPLINKNEXONACCOUNTALERTVIEW_.CTOR_OFFSET UNITYSDK_OFFSET(0x9CB6F00)
+
+namespace NPA::Editor::Auth::View
+{
+	inline static constexpr unsigned int NXPLinkNexonAccountAlertView_TypeDefinitionIndex = 27192;
+
+	class NXPLinkNexonAccountAlertView : public Il2CppObject
+	{
+	public:
+		::System::String* linkNexonAccountAlertViewPrefabUrl; // 0x48
+		::System::String* linkNexonAccountAlertWindowBasePath; // 0x50
+		::System::String* title; // 0x58
+		::System::String* description; // 0x60
+		::System::String* cautionText; // 0x68
+		::System::String* codeViewButtonText; // 0x70
+		::System::String* confirmButtonText; // 0x78
+		::System::String* cancelButtonText; // 0x80
+		::System::Action* changeNexonAccountCallback; // 0x88
+		::System::Action* codeViewCallback; // 0x90
+
+		::System::Void SetTitle(::System::String* str)
+		{
+			((::System::Void(*)(::System::String*, ::PVOID))((::PBYTE)hIl2Cpp + NPA_EDITOR_AUTH_VIEW_NXPLINKNEXONACCOUNTALERTVIEW_SETTITLE_OFFSET))(str, nullptr);
+		}
+
+		::System::Void SetDescription(::System::String* str)
+		{
+			((::System::Void(*)(::System::String*, ::PVOID))((::PBYTE)hIl2Cpp + NPA_EDITOR_AUTH_VIEW_NXPLINKNEXONACCOUNTALERTVIEW_SETDESCRIPTION_OFFSET))(str, nullptr);
+		}
+
+		::System::Void SetCautionText(::System::String* str)
+		{
+			((::System::Void(*)(::System::String*, ::PVOID))((::PBYTE)hIl2Cpp + NPA_EDITOR_AUTH_VIEW_NXPLINKNEXONACCOUNTALERTVIEW_SETCAUTIONTEXT_OFFSET))(str, nullptr);
+		}
+
+		::System::Void SetCodeViewButtonText(::System::String* str)
+		{
+			((::System::Void(*)(::System::String*, ::PVOID))((::PBYTE)hIl2Cpp + NPA_EDITOR_AUTH_VIEW_NXPLINKNEXONACCOUNTALERTVIEW_SETCODEVIEWBUTTONTEXT_OFFSET))(str, nullptr);
+		}
+
+		::System::Void SetConfirmButtonText(::System::String* str)
+		{
+			((::System::Void(*)(::System::String*, ::PVOID))((::PBYTE)hIl2Cpp + NPA_EDITOR_AUTH_VIEW_NXPLINKNEXONACCOUNTALERTVIEW_SETCONFIRMBUTTONTEXT_OFFSET))(str, nullptr);
+		}
+
+		::System::Void SetCancelButtonText(::System::String* str)
+		{
+			((::System::Void(*)(::System::String*, ::PVOID))((::PBYTE)hIl2Cpp + NPA_EDITOR_AUTH_VIEW_NXPLINKNEXONACCOUNTALERTVIEW_SETCANCELBUTTONTEXT_OFFSET))(str, nullptr);
+		}
+
+		::System::Void SetChangeNexonAccountCallback(::System::Action* arg)
+		{
+			((::System::Void(*)(::System::Action*, ::PVOID))((::PBYTE)hIl2Cpp + NPA_EDITOR_AUTH_VIEW_NXPLINKNEXONACCOUNTALERTVIEW_SETCHANGENEXONACCOUNTCALLBACK_OFFSET))(arg, nullptr);
+		}
+
+		::System::Void SetCodeViewCallback(::System::Action* arg)
+		{
+			((::System::Void(*)(::System::Action*, ::PVOID))((::PBYTE)hIl2Cpp + NPA_EDITOR_AUTH_VIEW_NXPLINKNEXONACCOUNTALERTVIEW_SETCODEVIEWCALLBACK_OFFSET))(arg, nullptr);
+		}
+
+		::System::Void Load()
+		{
+			((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + NPA_EDITOR_AUTH_VIEW_NXPLINKNEXONACCOUNTALERTVIEW_LOAD_OFFSET))(nullptr);
+		}
+
+		::System::Void SelectionGroupExit()
+		{
+			((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + NPA_EDITOR_AUTH_VIEW_NXPLINKNEXONACCOUNTALERTVIEW_SELECTIONGROUPEXIT_OFFSET))(nullptr);
+		}
+
+		::System::Void SetInteractable(::System::Boolean arg)
+		{
+			((::System::Void(*)(::System::Boolean, ::PVOID))((::PBYTE)hIl2Cpp + NPA_EDITOR_AUTH_VIEW_NXPLINKNEXONACCOUNTALERTVIEW_SETINTERACTABLE_OFFSET))(arg, nullptr);
+		}
+
+		::System::Void OnChangeNexonAccount()
+		{
+			((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + NPA_EDITOR_AUTH_VIEW_NXPLINKNEXONACCOUNTALERTVIEW_ONCHANGENEXONACCOUNT_OFFSET))(nullptr);
+		}
+
+		::System::Void OnShowPlayNowCode()
+		{
+			((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + NPA_EDITOR_AUTH_VIEW_NXPLINKNEXONACCOUNTALERTVIEW_ONSHOWPLAYNOWCODE_OFFSET))(nullptr);
+		}
+
+		::System::Void OnCancel()
+		{
+			((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + NPA_EDITOR_AUTH_VIEW_NXPLINKNEXONACCOUNTALERTVIEW_ONCANCEL_OFFSET))(nullptr);
+		}
+
+		::System::Void .ctor()
+		{
+			((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + NPA_EDITOR_AUTH_VIEW_NXPLINKNEXONACCOUNTALERTVIEW_.CTOR_OFFSET))(nullptr);
+		}
+
+	};
+}
+

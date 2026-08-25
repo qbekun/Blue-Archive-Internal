@@ -1,0 +1,73 @@
+#pragma once
+#include "../../../unitysdk.h"
+
+#define MX_GAMELOGIC_DBMODEL_EVENTCONTENTBOXGACHAROUNDELEMENT_SET_VARIATIONID_OFFSET UNITYSDK_OFFSET(0xFFCC50)
+#define MX_GAMELOGIC_DBMODEL_EVENTCONTENTBOXGACHAROUNDELEMENT_SET_ROUND_OFFSET UNITYSDK_OFFSET(0xFFCC60)
+#define MX_GAMELOGIC_DBMODEL_EVENTCONTENTBOXGACHAROUNDELEMENT_.CTOR_OFFSET UNITYSDK_OFFSET(0xFFCC70)
+#define MX_GAMELOGIC_DBMODEL_EVENTCONTENTBOXGACHAROUNDELEMENT_GET_ROUND_OFFSET UNITYSDK_OFFSET(0xFFCD20)
+#define MX_GAMELOGIC_DBMODEL_EVENTCONTENTBOXGACHAROUNDELEMENT_GET_EVENTCONTENTID_OFFSET UNITYSDK_OFFSET(0xFFCD30)
+#define MX_GAMELOGIC_DBMODEL_EVENTCONTENTBOXGACHAROUNDELEMENT_GET_ELEMENTS_OFFSET UNITYSDK_OFFSET(0xFFCD40)
+#define MX_GAMELOGIC_DBMODEL_EVENTCONTENTBOXGACHAROUNDELEMENT_SET_ELEMENTS_OFFSET UNITYSDK_OFFSET(0xFFCD50)
+#define MX_GAMELOGIC_DBMODEL_EVENTCONTENTBOXGACHAROUNDELEMENT_SET_EVENTCONTENTID_OFFSET UNITYSDK_OFFSET(0xFFCD60)
+#define MX_GAMELOGIC_DBMODEL_EVENTCONTENTBOXGACHAROUNDELEMENT_GET_VARIATIONID_OFFSET UNITYSDK_OFFSET(0xFFCD70)
+
+namespace MX::GameLogic::DBModel
+{
+	inline static constexpr unsigned int EventContentBoxGachaRoundElement_TypeDefinitionIndex = 12601;
+
+	class EventContentBoxGachaRoundElement : public Il2CppObject
+	{
+	public:
+		::System::Int64 _EventContentId_k__BackingField; // 0x10
+		::System::Int64 _VariationId_k__BackingField; // 0x18
+		::System::Int64 _Round_k__BackingField; // 0x20
+		Il2CppObject* _Elements_k__BackingField; // 0x28
+
+		::System::Void set_VariationId(::System::Int64 arg)
+		{
+			((::System::Void(*)(::System::Int64, ::PVOID))((::PBYTE)hIl2Cpp + MX_GAMELOGIC_DBMODEL_EVENTCONTENTBOXGACHAROUNDELEMENT_SET_VARIATIONID_OFFSET))(arg, nullptr);
+		}
+
+		::System::Void set_Round(::System::Int64 arg)
+		{
+			((::System::Void(*)(::System::Int64, ::PVOID))((::PBYTE)hIl2Cpp + MX_GAMELOGIC_DBMODEL_EVENTCONTENTBOXGACHAROUNDELEMENT_SET_ROUND_OFFSET))(arg, nullptr);
+		}
+
+		::System::Void .ctor(::System::Int64 arg, ::System::Int64 arg2, ::System::Int64 arg3, Il2CppObject* arg4)
+		{
+			((::System::Void(*)(::System::Int64, ::System::Int64, ::System::Int64, Il2CppObject*, ::PVOID))((::PBYTE)hIl2Cpp + MX_GAMELOGIC_DBMODEL_EVENTCONTENTBOXGACHAROUNDELEMENT_.CTOR_OFFSET))(arg, arg2, arg3, arg4, nullptr);
+		}
+
+		::System::Int64 get_Round()
+		{
+			return ((::System::Int64(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_GAMELOGIC_DBMODEL_EVENTCONTENTBOXGACHAROUNDELEMENT_GET_ROUND_OFFSET))(nullptr);
+		}
+
+		::System::Int64 get_EventContentId()
+		{
+			return ((::System::Int64(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_GAMELOGIC_DBMODEL_EVENTCONTENTBOXGACHAROUNDELEMENT_GET_EVENTCONTENTID_OFFSET))(nullptr);
+		}
+
+		Il2CppObject* get_Elements()
+		{
+			return ((Il2CppObject*(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_GAMELOGIC_DBMODEL_EVENTCONTENTBOXGACHAROUNDELEMENT_GET_ELEMENTS_OFFSET))(nullptr);
+		}
+
+		::System::Void set_Elements(Il2CppObject* arg)
+		{
+			((::System::Void(*)(Il2CppObject*, ::PVOID))((::PBYTE)hIl2Cpp + MX_GAMELOGIC_DBMODEL_EVENTCONTENTBOXGACHAROUNDELEMENT_SET_ELEMENTS_OFFSET))(arg, nullptr);
+		}
+
+		::System::Void set_EventContentId(::System::Int64 arg)
+		{
+			((::System::Void(*)(::System::Int64, ::PVOID))((::PBYTE)hIl2Cpp + MX_GAMELOGIC_DBMODEL_EVENTCONTENTBOXGACHAROUNDELEMENT_SET_EVENTCONTENTID_OFFSET))(arg, nullptr);
+		}
+
+		::System::Int64 get_VariationId()
+		{
+			return ((::System::Int64(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_GAMELOGIC_DBMODEL_EVENTCONTENTBOXGACHAROUNDELEMENT_GET_VARIATIONID_OFFSET))(nullptr);
+		}
+
+	};
+}
+

@@ -1,0 +1,87 @@
+#pragma once
+#include "unitysdk.h"
+
+class InteractiveWorldRaidDesignLevel;
+
+#define INTERACTIVEWORLDRAIDDESIGNLEVELROOT_.CTOR_OFFSET UNITYSDK_OFFSET(0x25A4830)
+#define INTERACTIVEWORLDRAIDDESIGNLEVELROOT_GET_STARTLEVELINDEX_OFFSET UNITYSDK_OFFSET(0x25A4850)
+#define INTERACTIVEWORLDRAIDDESIGNLEVELROOT_GET_CURRENT_OFFSET UNITYSDK_OFFSET(0x25A4870)
+#define INTERACTIVEWORLDRAIDDESIGNLEVELROOT_LEAVECURRENTLEVEL_OFFSET UNITYSDK_OFFSET(0x25A48B0)
+#define INTERACTIVEWORLDRAIDDESIGNLEVELROOT_SETACTIVELEVEL_OFFSET UNITYSDK_OFFSET(0x25A4960)
+#define INTERACTIVEWORLDRAIDDESIGNLEVELROOT_ENTERLASTACTIVELEVEL_OFFSET UNITYSDK_OFFSET(0x25A4A90)
+#define INTERACTIVEWORLDRAIDDESIGNLEVELROOT_GET_ELEMENTS_OFFSET UNITYSDK_OFFSET(0x25A4AA0)
+#define INTERACTIVEWORLDRAIDDESIGNLEVELROOT_SETPREFERREDSTARTLEVEL_OFFSET UNITYSDK_OFFSET(0x25A4AB0)
+#define INTERACTIVEWORLDRAIDDESIGNLEVELROOT_INITIALIZE_OFFSET UNITYSDK_OFFSET(0x25A4AC0)
+#define INTERACTIVEWORLDRAIDDESIGNLEVELROOT_GET_CURACTIVELEVELINDEX_OFFSET UNITYSDK_OFFSET(0x25A4AD0)
+#define INTERACTIVEWORLDRAIDDESIGNLEVELROOT_GET_LASTACTIVELEVELINDEX_OFFSET UNITYSDK_OFFSET(0x25A4AE0)
+
+	inline static constexpr unsigned int InteractiveWorldRaidDesignLevelRoot_TypeDefinitionIndex = 332;
+
+	class InteractiveWorldRaidDesignLevelRoot : public Il2CppObject
+	{
+	public:
+		::System::Int32 BridgeLevelIndex; // 0x0
+		::System::Int32 HangarLevelIndex; // 0x0
+		::System::Int32 LobbyLevelIndex; // 0x0
+		::Il2CppArray<::System::Object*>* elements; // 0x18
+		::System::Int32 _activeLevelIndex; // 0x20
+		::System::Int32 _lastActiveLevelIndex; // 0x24
+		::System::Int32 _preferredStartLevelIndex; // 0x28
+
+		::System::Void .ctor()
+		{
+			((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + INTERACTIVEWORLDRAIDDESIGNLEVELROOT_.CTOR_OFFSET))(nullptr);
+		}
+
+		::System::Int32 get_StartLevelIndex()
+		{
+			return ((::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + INTERACTIVEWORLDRAIDDESIGNLEVELROOT_GET_STARTLEVELINDEX_OFFSET))(nullptr);
+		}
+
+		InteractiveWorldRaidDesignLevel* get_Current()
+		{
+			return ((InteractiveWorldRaidDesignLevel*(*)(::PVOID))((::PBYTE)hIl2Cpp + INTERACTIVEWORLDRAIDDESIGNLEVELROOT_GET_CURRENT_OFFSET))(nullptr);
+		}
+
+		::System::Void LeaveCurrentLevel()
+		{
+			((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + INTERACTIVEWORLDRAIDDESIGNLEVELROOT_LEAVECURRENTLEVEL_OFFSET))(nullptr);
+		}
+
+		::System::Void SetActiveLevel(::System::Int32 arg)
+		{
+			((::System::Void(*)(::System::Int32, ::PVOID))((::PBYTE)hIl2Cpp + INTERACTIVEWORLDRAIDDESIGNLEVELROOT_SETACTIVELEVEL_OFFSET))(arg, nullptr);
+		}
+
+		::System::Void EnterLastActiveLevel()
+		{
+			((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + INTERACTIVEWORLDRAIDDESIGNLEVELROOT_ENTERLASTACTIVELEVEL_OFFSET))(nullptr);
+		}
+
+		Il2CppObject* get_Elements()
+		{
+			return ((Il2CppObject*(*)(::PVOID))((::PBYTE)hIl2Cpp + INTERACTIVEWORLDRAIDDESIGNLEVELROOT_GET_ELEMENTS_OFFSET))(nullptr);
+		}
+
+		::System::Void SetPreferredStartLevel(::System::Int32 arg)
+		{
+			((::System::Void(*)(::System::Int32, ::PVOID))((::PBYTE)hIl2Cpp + INTERACTIVEWORLDRAIDDESIGNLEVELROOT_SETPREFERREDSTARTLEVEL_OFFSET))(arg, nullptr);
+		}
+
+		::System::Void Initialize()
+		{
+			((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + INTERACTIVEWORLDRAIDDESIGNLEVELROOT_INITIALIZE_OFFSET))(nullptr);
+		}
+
+		::System::Int32 get_CurActiveLevelIndex()
+		{
+			return ((::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + INTERACTIVEWORLDRAIDDESIGNLEVELROOT_GET_CURACTIVELEVELINDEX_OFFSET))(nullptr);
+		}
+
+		::System::Int32 get_LastActiveLevelIndex()
+		{
+			return ((::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + INTERACTIVEWORLDRAIDDESIGNLEVELROOT_GET_LASTACTIVELEVELINDEX_OFFSET))(nullptr);
+		}
+
+	};
+

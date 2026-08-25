@@ -1,0 +1,92 @@
+#pragma once
+#include "../../../../../unitysdk.h"
+
+#define ICSHARPCODE_SHARPZIPLIB_ZIP_COMPRESSION_STREAMS_STREAMMANIPULATOR_PEEKBITS_OFFSET UNITYSDK_OFFSET(0x9051080)
+#define ICSHARPCODE_SHARPZIPLIB_ZIP_COMPRESSION_STREAMS_STREAMMANIPULATOR_TRYGETBITS_OFFSET UNITYSDK_OFFSET(0x9053F10)
+#define ICSHARPCODE_SHARPZIPLIB_ZIP_COMPRESSION_STREAMS_STREAMMANIPULATOR_TRYGETBITS_OFFSET UNITYSDK_OFFSET(0x9053F50)
+#define ICSHARPCODE_SHARPZIPLIB_ZIP_COMPRESSION_STREAMS_STREAMMANIPULATOR_DROPBITS_OFFSET UNITYSDK_OFFSET(0x9051130)
+#define ICSHARPCODE_SHARPZIPLIB_ZIP_COMPRESSION_STREAMS_STREAMMANIPULATOR_GET_AVAILABLEBITS_OFFSET UNITYSDK_OFFSET(0x9055AB0)
+#define ICSHARPCODE_SHARPZIPLIB_ZIP_COMPRESSION_STREAMS_STREAMMANIPULATOR_GET_AVAILABLEBYTES_OFFSET UNITYSDK_OFFSET(0x9053180)
+#define ICSHARPCODE_SHARPZIPLIB_ZIP_COMPRESSION_STREAMS_STREAMMANIPULATOR_SKIPTOBYTEBOUNDARY_OFFSET UNITYSDK_OFFSET(0x9052480)
+#define ICSHARPCODE_SHARPZIPLIB_ZIP_COMPRESSION_STREAMS_STREAMMANIPULATOR_GET_ISNEEDINGINPUT_OFFSET UNITYSDK_OFFSET(0x90526F0)
+#define ICSHARPCODE_SHARPZIPLIB_ZIP_COMPRESSION_STREAMS_STREAMMANIPULATOR_COPYBYTES_OFFSET UNITYSDK_OFFSET(0x90558F0)
+#define ICSHARPCODE_SHARPZIPLIB_ZIP_COMPRESSION_STREAMS_STREAMMANIPULATOR_RESET_OFFSET UNITYSDK_OFFSET(0x9050EC0)
+#define ICSHARPCODE_SHARPZIPLIB_ZIP_COMPRESSION_STREAMS_STREAMMANIPULATOR_SETINPUT_OFFSET UNITYSDK_OFFSET(0x9052930)
+#define ICSHARPCODE_SHARPZIPLIB_ZIP_COMPRESSION_STREAMS_STREAMMANIPULATOR_.CTOR_OFFSET UNITYSDK_OFFSET(0x9050E50)
+
+namespace ICSharpCode::SharpZipLib::Zip::Compression::Streams
+{
+	inline static constexpr unsigned int StreamManipulator_TypeDefinitionIndex = 37130;
+
+	class StreamManipulator : public Il2CppObject
+	{
+	public:
+		::Il2CppArray<::System::Object*>* window_; // 0x10
+		::System::Int32 windowStart_; // 0x18
+		::System::Int32 windowEnd_; // 0x1C
+		::System::UInt32 buffer_; // 0x20
+		::System::Int32 bitsInBuffer_; // 0x24
+
+		::System::Int32 PeekBits(::System::Int32 arg)
+		{
+			return (return (::System::Int32(*)(::System::Int32, ::PVOID))((::PBYTE)hIl2Cpp + ICSHARPCODE_SHARPZIPLIB_ZIP_COMPRESSION_STREAMS_STREAMMANIPULATOR_PEEKBITS_OFFSET))(arg, nullptr);
+		}
+
+		::System::Boolean TryGetBits(::System::Int32 arg, int32_t&* arg, ::System::Int32 arg)
+		{
+			return (return (::System::Boolean(*)(::System::Int32, int32_t&*, ::System::Int32, ::PVOID))((::PBYTE)hIl2Cpp + ICSHARPCODE_SHARPZIPLIB_ZIP_COMPRESSION_STREAMS_STREAMMANIPULATOR_TRYGETBITS_OFFSET))(arg, arg, arg, nullptr);
+		}
+
+		::System::Boolean TryGetBits(::System::Int32 arg, ::System::Object[]&* arg, ::System::Int32 arg)
+		{
+			return (return (::System::Boolean(*)(::System::Int32, ::System::Object[]&*, ::System::Int32, ::PVOID))((::PBYTE)hIl2Cpp + ICSHARPCODE_SHARPZIPLIB_ZIP_COMPRESSION_STREAMS_STREAMMANIPULATOR_TRYGETBITS_OFFSET))(arg, arg, arg, nullptr);
+		}
+
+		::System::Void DropBits(::System::Int32 arg)
+		{
+			((::System::Void(*)(::System::Int32, ::PVOID))((::PBYTE)hIl2Cpp + ICSHARPCODE_SHARPZIPLIB_ZIP_COMPRESSION_STREAMS_STREAMMANIPULATOR_DROPBITS_OFFSET))(arg, nullptr);
+		}
+
+		::System::Int32 get_AvailableBits()
+		{
+			return (return (::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + ICSHARPCODE_SHARPZIPLIB_ZIP_COMPRESSION_STREAMS_STREAMMANIPULATOR_GET_AVAILABLEBITS_OFFSET))(nullptr);
+		}
+
+		::System::Int32 get_AvailableBytes()
+		{
+			return (return (::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + ICSHARPCODE_SHARPZIPLIB_ZIP_COMPRESSION_STREAMS_STREAMMANIPULATOR_GET_AVAILABLEBYTES_OFFSET))(nullptr);
+		}
+
+		::System::Void SkipToByteBoundary()
+		{
+			((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + ICSHARPCODE_SHARPZIPLIB_ZIP_COMPRESSION_STREAMS_STREAMMANIPULATOR_SKIPTOBYTEBOUNDARY_OFFSET))(nullptr);
+		}
+
+		::System::Boolean get_IsNeedingInput()
+		{
+			return (return (::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + ICSHARPCODE_SHARPZIPLIB_ZIP_COMPRESSION_STREAMS_STREAMMANIPULATOR_GET_ISNEEDINGINPUT_OFFSET))(nullptr);
+		}
+
+		::System::Int32 CopyBytes(::Il2CppArray<::System::Object*>* arg, ::System::Int32 arg, ::System::Int32 arg)
+		{
+			return (return (::System::Int32(*)(::Il2CppArray<::System::Object*>*, ::System::Int32, ::System::Int32, ::PVOID))((::PBYTE)hIl2Cpp + ICSHARPCODE_SHARPZIPLIB_ZIP_COMPRESSION_STREAMS_STREAMMANIPULATOR_COPYBYTES_OFFSET))(arg, arg, arg, nullptr);
+		}
+
+		::System::Void Reset()
+		{
+			((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + ICSHARPCODE_SHARPZIPLIB_ZIP_COMPRESSION_STREAMS_STREAMMANIPULATOR_RESET_OFFSET))(nullptr);
+		}
+
+		::System::Void SetInput(::Il2CppArray<::System::Object*>* arg, ::System::Int32 arg, ::System::Int32 arg)
+		{
+			((::System::Void(*)(::Il2CppArray<::System::Object*>*, ::System::Int32, ::System::Int32, ::PVOID))((::PBYTE)hIl2Cpp + ICSHARPCODE_SHARPZIPLIB_ZIP_COMPRESSION_STREAMS_STREAMMANIPULATOR_SETINPUT_OFFSET))(arg, arg, arg, nullptr);
+		}
+
+		::System::Void .ctor()
+		{
+			((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + ICSHARPCODE_SHARPZIPLIB_ZIP_COMPRESSION_STREAMS_STREAMMANIPULATOR_.CTOR_OFFSET))(nullptr);
+		}
+
+	};
+}
+

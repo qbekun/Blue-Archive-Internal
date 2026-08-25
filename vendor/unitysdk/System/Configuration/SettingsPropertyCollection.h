@@ -1,0 +1,122 @@
+#pragma once
+#include "../../unitysdk.h"
+
+#define SYSTEM_CONFIGURATION_SETTINGSPROPERTYCOLLECTION_.CTOR_OFFSET UNITYSDK_OFFSET(0x9AB10B0)
+#define SYSTEM_CONFIGURATION_SETTINGSPROPERTYCOLLECTION_GET_COUNT_OFFSET UNITYSDK_OFFSET(0x9AB10E0)
+#define SYSTEM_CONFIGURATION_SETTINGSPROPERTYCOLLECTION_GET_ISSYNCHRONIZED_OFFSET UNITYSDK_OFFSET(0x9AB1110)
+#define SYSTEM_CONFIGURATION_SETTINGSPROPERTYCOLLECTION_GET_ITEM_OFFSET UNITYSDK_OFFSET(0x9AB1140)
+#define SYSTEM_CONFIGURATION_SETTINGSPROPERTYCOLLECTION_GET_SYNCROOT_OFFSET UNITYSDK_OFFSET(0x9AB1170)
+#define SYSTEM_CONFIGURATION_SETTINGSPROPERTYCOLLECTION_ADD_OFFSET UNITYSDK_OFFSET(0x9AB11A0)
+#define SYSTEM_CONFIGURATION_SETTINGSPROPERTYCOLLECTION_CLEAR_OFFSET UNITYSDK_OFFSET(0x9AB11D0)
+#define SYSTEM_CONFIGURATION_SETTINGSPROPERTYCOLLECTION_CLONE_OFFSET UNITYSDK_OFFSET(0x9AB1200)
+#define SYSTEM_CONFIGURATION_SETTINGSPROPERTYCOLLECTION_COPYTO_OFFSET UNITYSDK_OFFSET(0x9AB1230)
+#define SYSTEM_CONFIGURATION_SETTINGSPROPERTYCOLLECTION_GETENUMERATOR_OFFSET UNITYSDK_OFFSET(0x9AB1260)
+#define SYSTEM_CONFIGURATION_SETTINGSPROPERTYCOLLECTION_ONADD_OFFSET UNITYSDK_OFFSET(0x9AB1290)
+#define SYSTEM_CONFIGURATION_SETTINGSPROPERTYCOLLECTION_ONADDCOMPLETE_OFFSET UNITYSDK_OFFSET(0x9AB12C0)
+#define SYSTEM_CONFIGURATION_SETTINGSPROPERTYCOLLECTION_ONCLEAR_OFFSET UNITYSDK_OFFSET(0x9AB12F0)
+#define SYSTEM_CONFIGURATION_SETTINGSPROPERTYCOLLECTION_ONCLEARCOMPLETE_OFFSET UNITYSDK_OFFSET(0x9AB1320)
+#define SYSTEM_CONFIGURATION_SETTINGSPROPERTYCOLLECTION_ONREMOVE_OFFSET UNITYSDK_OFFSET(0x9AB1350)
+#define SYSTEM_CONFIGURATION_SETTINGSPROPERTYCOLLECTION_ONREMOVECOMPLETE_OFFSET UNITYSDK_OFFSET(0x9AB1380)
+#define SYSTEM_CONFIGURATION_SETTINGSPROPERTYCOLLECTION_REMOVE_OFFSET UNITYSDK_OFFSET(0x9AB13B0)
+#define SYSTEM_CONFIGURATION_SETTINGSPROPERTYCOLLECTION_SETREADONLY_OFFSET UNITYSDK_OFFSET(0x9AB13E0)
+
+namespace System::Configuration
+{
+	inline static constexpr unsigned int SettingsPropertyCollection_TypeDefinitionIndex = 29963;
+
+	class SettingsPropertyCollection : public Il2CppObject
+	{
+	public:
+		::System::Void .ctor()
+		{
+			((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_CONFIGURATION_SETTINGSPROPERTYCOLLECTION_.CTOR_OFFSET))(nullptr);
+		}
+
+		::System::Int32 get_Count()
+		{
+			return (return (::System::Int32(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_CONFIGURATION_SETTINGSPROPERTYCOLLECTION_GET_COUNT_OFFSET))(nullptr);
+		}
+
+		::System::Boolean get_IsSynchronized()
+		{
+			return (return (::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_CONFIGURATION_SETTINGSPROPERTYCOLLECTION_GET_ISSYNCHRONIZED_OFFSET))(nullptr);
+		}
+
+		::System::Configuration::SettingsProperty* get_Item(::System::String* str)
+		{
+			return (return (::System::Configuration::SettingsProperty*(*)(::System::String*, ::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_CONFIGURATION_SETTINGSPROPERTYCOLLECTION_GET_ITEM_OFFSET))(str, nullptr);
+		}
+
+		::System::Object* get_SyncRoot()
+		{
+			return (return (::System::Object*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_CONFIGURATION_SETTINGSPROPERTYCOLLECTION_GET_SYNCROOT_OFFSET))(nullptr);
+		}
+
+		::System::Void Add(::System::Configuration::SettingsProperty* arg)
+		{
+			((::System::Void(*)(::System::Configuration::SettingsProperty*, ::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_CONFIGURATION_SETTINGSPROPERTYCOLLECTION_ADD_OFFSET))(arg, nullptr);
+		}
+
+		::System::Void Clear()
+		{
+			((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_CONFIGURATION_SETTINGSPROPERTYCOLLECTION_CLEAR_OFFSET))(nullptr);
+		}
+
+		::System::Object* Clone()
+		{
+			return (return (::System::Object*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_CONFIGURATION_SETTINGSPROPERTYCOLLECTION_CLONE_OFFSET))(nullptr);
+		}
+
+		::System::Void CopyTo(::System::Array* arg, ::System::Int32 arg)
+		{
+			((::System::Void(*)(::System::Array*, ::System::Int32, ::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_CONFIGURATION_SETTINGSPROPERTYCOLLECTION_COPYTO_OFFSET))(arg, arg, nullptr);
+		}
+
+		::System::Collections::IEnumerator* GetEnumerator()
+		{
+			return (return (::System::Collections::IEnumerator*(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_CONFIGURATION_SETTINGSPROPERTYCOLLECTION_GETENUMERATOR_OFFSET))(nullptr);
+		}
+
+		::System::Void OnAdd(::System::Configuration::SettingsProperty* arg)
+		{
+			((::System::Void(*)(::System::Configuration::SettingsProperty*, ::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_CONFIGURATION_SETTINGSPROPERTYCOLLECTION_ONADD_OFFSET))(arg, nullptr);
+		}
+
+		::System::Void OnAddComplete(::System::Configuration::SettingsProperty* arg)
+		{
+			((::System::Void(*)(::System::Configuration::SettingsProperty*, ::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_CONFIGURATION_SETTINGSPROPERTYCOLLECTION_ONADDCOMPLETE_OFFSET))(arg, nullptr);
+		}
+
+		::System::Void OnClear()
+		{
+			((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_CONFIGURATION_SETTINGSPROPERTYCOLLECTION_ONCLEAR_OFFSET))(nullptr);
+		}
+
+		::System::Void OnClearComplete()
+		{
+			((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_CONFIGURATION_SETTINGSPROPERTYCOLLECTION_ONCLEARCOMPLETE_OFFSET))(nullptr);
+		}
+
+		::System::Void OnRemove(::System::Configuration::SettingsProperty* arg)
+		{
+			((::System::Void(*)(::System::Configuration::SettingsProperty*, ::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_CONFIGURATION_SETTINGSPROPERTYCOLLECTION_ONREMOVE_OFFSET))(arg, nullptr);
+		}
+
+		::System::Void OnRemoveComplete(::System::Configuration::SettingsProperty* arg)
+		{
+			((::System::Void(*)(::System::Configuration::SettingsProperty*, ::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_CONFIGURATION_SETTINGSPROPERTYCOLLECTION_ONREMOVECOMPLETE_OFFSET))(arg, nullptr);
+		}
+
+		::System::Void Remove(::System::String* str)
+		{
+			((::System::Void(*)(::System::String*, ::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_CONFIGURATION_SETTINGSPROPERTYCOLLECTION_REMOVE_OFFSET))(str, nullptr);
+		}
+
+		::System::Void SetReadOnly()
+		{
+			((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + SYSTEM_CONFIGURATION_SETTINGSPROPERTYCOLLECTION_SETREADONLY_OFFSET))(nullptr);
+		}
+
+	};
+}
+

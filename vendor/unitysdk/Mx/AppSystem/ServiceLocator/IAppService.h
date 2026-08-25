@@ -1,0 +1,76 @@
+#pragma once
+#include "../../../unitysdk.h"
+
+namespace MX::AppSystem::ServiceLocator { class BaseAppProfile; }
+
+#define MX_APPSYSTEM_SERVICELOCATOR_IAPPSERVICE_GET_CONFIGURATIONPROFILE_OFFSET UNITYSDK_OFFSET(0x000000)
+#define MX_APPSYSTEM_SERVICELOCATOR_IAPPSERVICE_RESET_OFFSET UNITYSDK_OFFSET(0x000000)
+#define MX_APPSYSTEM_SERVICELOCATOR_IAPPSERVICE_GET_NAME_OFFSET UNITYSDK_OFFSET(0x000000)
+#define MX_APPSYSTEM_SERVICELOCATOR_IAPPSERVICE_LATEUPDATE_OFFSET UNITYSDK_OFFSET(0x000000)
+#define MX_APPSYSTEM_SERVICELOCATOR_IAPPSERVICE_DISABLE_OFFSET UNITYSDK_OFFSET(0x000000)
+#define MX_APPSYSTEM_SERVICELOCATOR_IAPPSERVICE_UPDATE_OFFSET UNITYSDK_OFFSET(0x000000)
+#define MX_APPSYSTEM_SERVICELOCATOR_IAPPSERVICE_INITIALIZE_OFFSET UNITYSDK_OFFSET(0x000000)
+#define MX_APPSYSTEM_SERVICELOCATOR_IAPPSERVICE_ENABLE_OFFSET UNITYSDK_OFFSET(0x000000)
+#define MX_APPSYSTEM_SERVICELOCATOR_IAPPSERVICE_DESTROY_OFFSET UNITYSDK_OFFSET(0x000000)
+#define MX_APPSYSTEM_SERVICELOCATOR_IAPPSERVICE_GET_PRIORITY_OFFSET UNITYSDK_OFFSET(0x000000)
+
+namespace MX::AppSystem::ServiceLocator
+{
+	inline static constexpr unsigned int IAppService_TypeDefinitionIndex = 37696;
+
+	class IAppService : public Il2CppObject
+	{
+	public:
+		::MX::AppSystem::ServiceLocator::BaseAppProfile* get_ConfigurationProfile()
+		{
+			return (return (::MX::AppSystem::ServiceLocator::BaseAppProfile*(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_APPSYSTEM_SERVICELOCATOR_IAPPSERVICE_GET_CONFIGURATIONPROFILE_OFFSET))(nullptr);
+		}
+
+		::System::Void Reset()
+		{
+			((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_APPSYSTEM_SERVICELOCATOR_IAPPSERVICE_RESET_OFFSET))(nullptr);
+		}
+
+		::System::String* get_Name()
+		{
+			return (return (::System::String*(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_APPSYSTEM_SERVICELOCATOR_IAPPSERVICE_GET_NAME_OFFSET))(nullptr);
+		}
+
+		::System::Void LateUpdate()
+		{
+			((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_APPSYSTEM_SERVICELOCATOR_IAPPSERVICE_LATEUPDATE_OFFSET))(nullptr);
+		}
+
+		::System::Void Disable()
+		{
+			((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_APPSYSTEM_SERVICELOCATOR_IAPPSERVICE_DISABLE_OFFSET))(nullptr);
+		}
+
+		::System::Void Update()
+		{
+			((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_APPSYSTEM_SERVICELOCATOR_IAPPSERVICE_UPDATE_OFFSET))(nullptr);
+		}
+
+		::System::Void Initialize()
+		{
+			((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_APPSYSTEM_SERVICELOCATOR_IAPPSERVICE_INITIALIZE_OFFSET))(nullptr);
+		}
+
+		::System::Void Enable()
+		{
+			((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_APPSYSTEM_SERVICELOCATOR_IAPPSERVICE_ENABLE_OFFSET))(nullptr);
+		}
+
+		::System::Void Destroy()
+		{
+			((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_APPSYSTEM_SERVICELOCATOR_IAPPSERVICE_DESTROY_OFFSET))(nullptr);
+		}
+
+		::System::UInt32 get_Priority()
+		{
+			return (return (::System::UInt32(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_APPSYSTEM_SERVICELOCATOR_IAPPSERVICE_GET_PRIORITY_OFFSET))(nullptr);
+		}
+
+	};
+}
+

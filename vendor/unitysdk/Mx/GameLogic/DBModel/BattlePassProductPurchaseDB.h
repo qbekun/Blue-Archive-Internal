@@ -1,0 +1,60 @@
+#pragma once
+#include "../../../unitysdk.h"
+
+#define MX_GAMELOGIC_DBMODEL_BATTLEPASSPRODUCTPURCHASEDB_SET_PRODUCTID_OFFSET UNITYSDK_OFFSET(0xFE4880)
+#define MX_GAMELOGIC_DBMODEL_BATTLEPASSPRODUCTPURCHASEDB_.CTOR_OFFSET UNITYSDK_OFFSET(0xFE4890)
+#define MX_GAMELOGIC_DBMODEL_BATTLEPASSPRODUCTPURCHASEDB_GET_BATTLEPASSID_OFFSET UNITYSDK_OFFSET(0xFE48A0)
+#define MX_GAMELOGIC_DBMODEL_BATTLEPASSPRODUCTPURCHASEDB_GET_PURCHASEBATTLEPASSGROUPID_OFFSET UNITYSDK_OFFSET(0xFE48B0)
+#define MX_GAMELOGIC_DBMODEL_BATTLEPASSPRODUCTPURCHASEDB_GET_PRODUCTID_OFFSET UNITYSDK_OFFSET(0xFE48C0)
+#define MX_GAMELOGIC_DBMODEL_BATTLEPASSPRODUCTPURCHASEDB_SET_BATTLEPASSID_OFFSET UNITYSDK_OFFSET(0xFE48D0)
+#define MX_GAMELOGIC_DBMODEL_BATTLEPASSPRODUCTPURCHASEDB_SET_PURCHASEBATTLEPASSGROUPID_OFFSET UNITYSDK_OFFSET(0xFE48E0)
+
+namespace MX::GameLogic::DBModel
+{
+	inline static constexpr unsigned int BattlePassProductPurchaseDB_TypeDefinitionIndex = 12492;
+
+	class BattlePassProductPurchaseDB : public Il2CppObject
+	{
+	public:
+		::System::Int64 _ProductId_k__BackingField; // 0x10
+		::System::Int64 _BattlePassId_k__BackingField; // 0x18
+		::System::Int64 _PurchaseBattlePassGroupId_k__BackingField; // 0x20
+
+		::System::Void set_ProductId(::System::Int64 arg)
+		{
+			((::System::Void(*)(::System::Int64, ::PVOID))((::PBYTE)hIl2Cpp + MX_GAMELOGIC_DBMODEL_BATTLEPASSPRODUCTPURCHASEDB_SET_PRODUCTID_OFFSET))(arg, nullptr);
+		}
+
+		::System::Void .ctor()
+		{
+			((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_GAMELOGIC_DBMODEL_BATTLEPASSPRODUCTPURCHASEDB_.CTOR_OFFSET))(nullptr);
+		}
+
+		::System::Int64 get_BattlePassId()
+		{
+			return ((::System::Int64(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_GAMELOGIC_DBMODEL_BATTLEPASSPRODUCTPURCHASEDB_GET_BATTLEPASSID_OFFSET))(nullptr);
+		}
+
+		::System::Int64 get_PurchaseBattlePassGroupId()
+		{
+			return ((::System::Int64(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_GAMELOGIC_DBMODEL_BATTLEPASSPRODUCTPURCHASEDB_GET_PURCHASEBATTLEPASSGROUPID_OFFSET))(nullptr);
+		}
+
+		::System::Int64 get_ProductId()
+		{
+			return ((::System::Int64(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_GAMELOGIC_DBMODEL_BATTLEPASSPRODUCTPURCHASEDB_GET_PRODUCTID_OFFSET))(nullptr);
+		}
+
+		::System::Void set_BattlePassId(::System::Int64 arg)
+		{
+			((::System::Void(*)(::System::Int64, ::PVOID))((::PBYTE)hIl2Cpp + MX_GAMELOGIC_DBMODEL_BATTLEPASSPRODUCTPURCHASEDB_SET_BATTLEPASSID_OFFSET))(arg, nullptr);
+		}
+
+		::System::Void set_PurchaseBattlePassGroupId(::System::Int64 arg)
+		{
+			((::System::Void(*)(::System::Int64, ::PVOID))((::PBYTE)hIl2Cpp + MX_GAMELOGIC_DBMODEL_BATTLEPASSPRODUCTPURCHASEDB_SET_PURCHASEBATTLEPASSGROUPID_OFFSET))(arg, nullptr);
+		}
+
+	};
+}
+

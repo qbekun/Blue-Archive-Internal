@@ -1,0 +1,66 @@
+#pragma once
+#include "../../../unitysdk.h"
+
+#define MX_GAMELOGIC_DBMODEL_WEEKDUNGEONSTAGEHISTORYDB_SET_STAGEUNIQUEID_OFFSET UNITYSDK_OFFSET(0x1012D10)
+#define MX_GAMELOGIC_DBMODEL_WEEKDUNGEONSTAGEHISTORYDB_GET_STARGOALRECORD_OFFSET UNITYSDK_OFFSET(0x1012D20)
+#define MX_GAMELOGIC_DBMODEL_WEEKDUNGEONSTAGEHISTORYDB_GET_ACCOUNTSERVERID_OFFSET UNITYSDK_OFFSET(0x1012D30)
+#define MX_GAMELOGIC_DBMODEL_WEEKDUNGEONSTAGEHISTORYDB_GET_STAGEUNIQUEID_OFFSET UNITYSDK_OFFSET(0x1012D40)
+#define MX_GAMELOGIC_DBMODEL_WEEKDUNGEONSTAGEHISTORYDB_SET_ACCOUNTSERVERID_OFFSET UNITYSDK_OFFSET(0x1012D50)
+#define MX_GAMELOGIC_DBMODEL_WEEKDUNGEONSTAGEHISTORYDB_SET_STARGOALRECORD_OFFSET UNITYSDK_OFFSET(0x1012D60)
+#define MX_GAMELOGIC_DBMODEL_WEEKDUNGEONSTAGEHISTORYDB_.CTOR_OFFSET UNITYSDK_OFFSET(0x1012D70)
+#define MX_GAMELOGIC_DBMODEL_WEEKDUNGEONSTAGEHISTORYDB_GET_ISCLEARDEVER_OFFSET UNITYSDK_OFFSET(0x1012D80)
+
+namespace MX::GameLogic::DBModel
+{
+	inline static constexpr unsigned int WeekDungeonStageHistoryDB_TypeDefinitionIndex = 12751;
+
+	class WeekDungeonStageHistoryDB : public Il2CppObject
+	{
+	public:
+		::System::Int64 _AccountServerId_k__BackingField; // 0x10
+		::System::Int64 _StageUniqueId_k__BackingField; // 0x18
+		Il2CppObject* _StarGoalRecord_k__BackingField; // 0x20
+
+		::System::Void set_StageUniqueId(::System::Int64 arg)
+		{
+			((::System::Void(*)(::System::Int64, ::PVOID))((::PBYTE)hIl2Cpp + MX_GAMELOGIC_DBMODEL_WEEKDUNGEONSTAGEHISTORYDB_SET_STAGEUNIQUEID_OFFSET))(arg, nullptr);
+		}
+
+		Il2CppObject* get_StarGoalRecord()
+		{
+			return ((Il2CppObject*(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_GAMELOGIC_DBMODEL_WEEKDUNGEONSTAGEHISTORYDB_GET_STARGOALRECORD_OFFSET))(nullptr);
+		}
+
+		::System::Int64 get_AccountServerId()
+		{
+			return ((::System::Int64(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_GAMELOGIC_DBMODEL_WEEKDUNGEONSTAGEHISTORYDB_GET_ACCOUNTSERVERID_OFFSET))(nullptr);
+		}
+
+		::System::Int64 get_StageUniqueId()
+		{
+			return ((::System::Int64(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_GAMELOGIC_DBMODEL_WEEKDUNGEONSTAGEHISTORYDB_GET_STAGEUNIQUEID_OFFSET))(nullptr);
+		}
+
+		::System::Void set_AccountServerId(::System::Int64 arg)
+		{
+			((::System::Void(*)(::System::Int64, ::PVOID))((::PBYTE)hIl2Cpp + MX_GAMELOGIC_DBMODEL_WEEKDUNGEONSTAGEHISTORYDB_SET_ACCOUNTSERVERID_OFFSET))(arg, nullptr);
+		}
+
+		::System::Void set_StarGoalRecord(Il2CppObject* arg)
+		{
+			((::System::Void(*)(Il2CppObject*, ::PVOID))((::PBYTE)hIl2Cpp + MX_GAMELOGIC_DBMODEL_WEEKDUNGEONSTAGEHISTORYDB_SET_STARGOALRECORD_OFFSET))(arg, nullptr);
+		}
+
+		::System::Void .ctor()
+		{
+			((::System::Void(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_GAMELOGIC_DBMODEL_WEEKDUNGEONSTAGEHISTORYDB_.CTOR_OFFSET))(nullptr);
+		}
+
+		::System::Boolean get_IsCleardEver()
+		{
+			return ((::System::Boolean(*)(::PVOID))((::PBYTE)hIl2Cpp + MX_GAMELOGIC_DBMODEL_WEEKDUNGEONSTAGEHISTORYDB_GET_ISCLEARDEVER_OFFSET))(nullptr);
+		}
+
+	};
+}
+
